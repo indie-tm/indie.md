@@ -29,7 +29,7 @@ I shared the spreadsheet with a few friends who were also burned out. Their reac
 
 That was the signal. People didn't just want a list; they wanted someone they trusted to maintain the list. The curation itself was the product.
 
-I threw up a simple site at calmcompanies.club. A free company directory, a blog, and a weekly email newsletter every Monday with curated job openings from the companies I monitored. Last week's issue had 177 jobs across 53 companies.
+I threw up a simple site at [calmcompanies.club](https://calmcompanies.club). A free company directory, a blog, and a weekly email newsletter every Monday with curated job openings from the companies I monitored. Last week's issue had 177 jobs across 53 companies.
 
 :::advice{slug="mindset-personal-pain" category="mindset" person="raul" title="Build from personal pain, not market research"}
 Raul didn't do market research or competitive analysis. He built exactly the thing he wished existed when he was burned out and job hunting. Personal pain gives you an unfair advantage: you know the problem deeply, you can tell real solutions from fake ones, and you won't lose motivation when growth is slow because you genuinely care about the problem.

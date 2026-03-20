@@ -20,7 +20,7 @@ const people = await getCollection('people');
   <section class="container mx-auto px-4 pb-20">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
       {people.map((p) => (
-        <PersonCard person={{ slug: p.id, ...p.data }} />
+        <PersonCard person={{ slug: p.id, ...p.data }} products={p.data.products} />
       ))}
     </div>
   </section>

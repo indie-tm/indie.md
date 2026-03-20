@@ -23,7 +23,7 @@ The existing solutions all assumed you were a power user: sign up, pick a plan, 
 
 I already had our agency's SaaS template (Nuxt 3, TypeScript, PostgreSQL, Stripe) ready to go. On a Friday evening, I stripped it down to the absolute minimum: upload a file, enter a fax number, pay $5, send. No signup. No account creation. No subscription.
 
-By Sunday night, it worked. singlefax.com was live.
+By Sunday night, it worked. [singlefax.com](https://singlefax.com) was live.
 
 :::advice{slug="product-simplest-version" category="product" person="mircea" title="Build the simplest version first"}
 Mircea built SingleFax in a weekend by refusing to add anything beyond the core action: upload, enter a number, pay, send. No user accounts, no dashboards, no analytics. If your v1 takes longer than a week, you're building too much. Strip it down until a complete stranger can use it in under 60 seconds.

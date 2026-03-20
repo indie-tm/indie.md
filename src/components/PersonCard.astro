@@ -7,9 +7,10 @@ interface Props {
     tagline: string;
     bio: string;
   };
+  products?: { name: string; url: string }[];
 }
 
-const { person } = Astro.props;
+const { person, products } = Astro.props;
 ---
 
 <a href={`/people/${person.slug}`}
@@ -22,4 +23,13 @@ const { person } = Astro.props;
     </div>
   </div>
   <p class="text-sm text-muted-foreground leading-relaxed">{person.bio}</p>
+  {products && products.length > 0 && (
+    <div class="flex flex-wrap gap-1.5 mt-3">
+      {products.map((p) => (
+        <span class="text-xs font-medium text-primary bg-primary/10 px-2 py-0.5 rounded">
+          {p.name}
+        </span>
+      ))}
+    </div>
+  )}
 </a>

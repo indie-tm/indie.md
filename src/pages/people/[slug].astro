@@ -74,6 +74,16 @@ const personAdvice = adviceIndex.filter(a => a.personSlug === person.id);
     <p class="text-muted-foreground leading-relaxed max-w-2xl">
       {person.data.bio}
     </p>
+    {person.data.products && person.data.products.length > 0 && (
+      <div class="flex flex-wrap gap-2 mt-4">
+        {person.data.products.map((p) => (
+          <a href={p.url} target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-primary/20 bg-primary/5 text-sm font-medium text-primary hover:bg-primary/10 transition-colors">
+            {p.name}
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        ))}
+      </div>
+    )}
   </section>
 
   <!-- Journeys -->

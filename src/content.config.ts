@@ -8,6 +8,14 @@ const people = defineCollection({
     avatar: z.string(),
     tagline: z.string(),
     bio: z.string(),
+    products: z
+      .array(
+        z.object({
+          name: z.string(),
+          url: z.string().url(),
+        }),
+      )
+      .optional(),
   }),
 });
 

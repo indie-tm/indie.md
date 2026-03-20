@@ -15,7 +15,7 @@ I spent 15 years as a backend and DevOps engineer, building production infrastru
 
 ## Starting from scratch
 
-In December 2024, I started building sisif.ai: an AI video generation API that turns a text prompt into a video in 2-5 minutes. The tech was solid. I used SaaS Pegasus (a Django boilerplate) to move fast on the product side and focused my energy on the AI pipeline.
+In December 2024, I started building [sisif.ai](https://sisif.ai): an AI video generation API that turns a text prompt into a video in 2-5 minutes. The tech was solid. I used SaaS Pegasus (a Django boilerplate) to move fast on the product side and focused my energy on the AI pipeline.
 
 By early 2025, I had a working product. Time to get customers, right?
 
@@ -37,7 +37,7 @@ Building in public, Twitter threads, and ProductHunt launches all share the same
 
 ## The n8n breakthrough
 
-The turning point came when I stopped trying to build my own audience and started borrowing someone else's. I discovered n8n, the workflow automation platform, and realized its community was full of people who needed exactly what sisif.ai offered: a simple API to generate videos programmatically.
+The turning point came when I stopped trying to build my own audience and started borrowing someone else's. I discovered [n8n](https://n8n.io), the workflow automation platform, and realized its community was full of people who needed exactly what sisif.ai offered: a simple API to generate videos programmatically.
 
 I built workflow templates. A TikTok automation workflow. An Instagram Reels generator. Each template showed how sisif.ai plugged into a workflow people already wanted to build.
 
