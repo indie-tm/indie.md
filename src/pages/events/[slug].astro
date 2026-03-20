@@ -33,6 +33,26 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
 });
 ---
 <Base title={`${event.data.title} | indie.md`} description={event.data.subtitle} canonicalPath={`/events/${event.id}`} ogType="article">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": event.data.title,
+    "description": event.data.subtitle,
+    "startDate": event.data.date.toISOString(),
+    "location": {
+      "@type": "Place",
+      "name": event.data.location
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "indie.md",
+      "url": "https://indie.md"
+    },
+    "performer": presenters.map(p => ({
+      "@type": "Person",
+      "name": p.data.name
+    }))
+  })} />
   <article class="container mx-auto px-4 pt-16 pb-20 md:pt-20">
     <!-- Back link -->
     <a href="/events" class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">

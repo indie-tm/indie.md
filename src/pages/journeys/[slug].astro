@@ -27,6 +27,22 @@ const formattedDate = journey.data.date.toLocaleDateString('en-US', {
 });
 ---
 <Base title={`${journey.data.title} | indie.md`} description={journey.data.subtitle} canonicalPath={`/journeys/${journey.id}`} ogType="article">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": journey.data.title,
+    "description": journey.data.subtitle,
+    "datePublished": journey.data.date.toISOString(),
+    "author": {
+      "@type": "Person",
+      "name": person!.data.name
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "indie.md",
+      "url": "https://indie.md"
+    }
+  })} />
   <article class="container mx-auto px-4 pt-16 pb-20 md:pt-20">
     <!-- Back link -->
     <a href="/journeys" class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">

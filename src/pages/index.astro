@@ -42,6 +42,13 @@ const latestAdvice = await Promise.all(
 );
 ---
 <Base title="indie.md | Learn from indie hackers who've been there" description="Case studies, hard-won lessons, and practical advice from indie hackers who have been there. Every tip is extracted from a real journey." canonicalPath="/">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "indie.md",
+    "url": "https://indie.md",
+    "description": "Real stories, hard-won lessons, and practical advice from indie hackers."
+  })} />
   <!-- Hero -->
   <section class="container mx-auto px-4 pt-16 pb-14 md:pt-24 md:pb-20">
     <div class="max-w-2xl">
