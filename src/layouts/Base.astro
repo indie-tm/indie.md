@@ -11,6 +11,9 @@ interface Props {
 }
 
 const { title, description, canonicalPath, ogType } = Astro.props;
+const rawBase = import.meta.env.BASE_URL;
+const base = rawBase.endsWith("/") ? rawBase : `${rawBase}/`;
+const siteUrl = `${Astro.site}${base.slice(1)}`;
 ---
 
 <!doctype html>
@@ -18,18 +21,18 @@ const { title, description, canonicalPath, ogType } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="icon" type="image/png" href={`${base}favicon.png`} />
     {description && <meta name="description" content={description} />}
-    {canonicalPath && <link rel="canonical" href={`https://indie.md${canonicalPath}`} />}
+    {canonicalPath && <link rel="canonical" href={`${siteUrl}${canonicalPath}`} />}
 
     <!-- Open Graph -->
     <meta property="og:title" content={title} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:type" content={ogType ?? "website"} />
-    {canonicalPath && <meta property="og:url" content={`https://indie.md${canonicalPath}`} />}
+    {canonicalPath && <meta property="og:url" content={`${siteUrl}${canonicalPath}`} />}
     <meta property="og:site_name" content="indie.md" />
-    <meta property="og:image" content="https://indie.md/logo.png" />
-    <meta name="twitter:image" content="https://indie.md/logo.png" />
+    <meta property="og:image" content={`${siteUrl}logo.png`} />
+    <meta name="twitter:image" content={`${siteUrl}logo.png`} />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />

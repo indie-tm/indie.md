@@ -5,7 +5,8 @@ import remarkDirective from "remark-directive";
 import remarkExtractAdvice from "./src/plugins/remark-extract-advice.ts";
 
 export default defineConfig({
-  site: "https://indie.md",
+  site: process.env.CI ? "https://indie-tm.github.io" : "http://localhost:4321",
+  base: process.env.CI ? "/indie.md" : "/",
   integrations: [
     sitemap(),
     tailwind({
