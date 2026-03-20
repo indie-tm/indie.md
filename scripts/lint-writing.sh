@@ -17,9 +17,9 @@ if [ -n "$em_dash_files" ]; then
   errors=$((errors + 1))
 fi
 
-# Check for emojis in source and content files
+# Check for emojis in code and page files (content/*.md excluded: avatars use emojis as data)
 # Matches common emoji ranges: emoticons, dingbats, symbols, supplemental symbols
-emoji_files=$(grep -rlP --exclude-dir=generated '[\x{1F300}-\x{1F9FF}\x{2600}-\x{26FF}\x{2700}-\x{27BF}\x{FE00}-\x{FE0F}\x{1FA00}-\x{1FA6F}\x{1FA70}-\x{1FAFF}\x{200D}\x{2764}]' src/ tests/ docs/ CLAUDE.md 2>/dev/null || true)
+emoji_files=$(grep -rlP --exclude-dir=generated --exclude-dir=content '[\x{1F300}-\x{1F9FF}\x{2600}-\x{26FF}\x{2700}-\x{27BF}\x{FE00}-\x{FE0F}\x{1FA00}-\x{1FA6F}\x{1FA70}-\x{1FAFF}\x{200D}\x{2764}]' src/ tests/ CLAUDE.md 2>/dev/null || true)
 if [ -n "$emoji_files" ]; then
   echo "ERROR: Emojis found in the following files:"
   echo "$emoji_files" | while read -r f; do
