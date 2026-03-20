@@ -8,6 +8,9 @@ presenters:
   - vlad
   - mircea
   - raul
+  - mihai-balint
+  - cristian-antohe
+  - bogdan-moldovean
 ---
 
 Eleven of us met at Cowork Timisoara for the fifth Indie TM meetup. The topic: SEO and distribution tactics that actually work. We went around the room, shared what's working for our products, and compiled a checklist. Here's what came out of it.

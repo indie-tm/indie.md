@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "extract-advice": "npx tsx scripts/extract-advice.ts",
+    "build": "npm run extract-advice && astro build",
     "preview": "astro preview",
     "format": "biome format --write .",
     "lint": "biome lint --write .",
@@ -28,6 +29,7 @@
     "@biomejs/biome": "^2.4.8",
     "@types/node": "^25.5.0",
     "husky": "^9.1.7",
+    "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vitest": "^4.1.0"
   }

@@ -18,6 +18,7 @@ const { title, description, canonicalPath, ogType } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
     {description && <meta name="description" content={description} />}
     {canonicalPath && <link rel="canonical" href={`https://indie.md${canonicalPath}`} />}
 
@@ -27,6 +28,8 @@ const { title, description, canonicalPath, ogType } = Astro.props;
     <meta property="og:type" content={ogType ?? "website"} />
     {canonicalPath && <meta property="og:url" content={`https://indie.md${canonicalPath}`} />}
     <meta property="og:site_name" content="indie.md" />
+    <meta property="og:image" content="https://indie.md/logo.png" />
+    <meta name="twitter:image" content="https://indie.md/logo.png" />
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary" />

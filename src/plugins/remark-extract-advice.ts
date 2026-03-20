@@ -14,23 +14,14 @@ const RESERVED_SLUGS = new Set(["seo", "distribution", "product", "business", "m
  * once processing is complete.
  */
 const collectedAdvice: AdviceEntry[] = [];
-let writeScheduled = false;
 
-function scheduleWrite() {
-  if (writeScheduled) return;
-  writeScheduled = true;
-
-  // Use process.nextTick so the write happens after the current batch of
-  // file processing, not during. This keeps the JSON file consistent.
-  process.nextTick(() => {
-    const outDir = path.resolve("src/generated");
-    fs.mkdirSync(outDir, { recursive: true });
-    fs.writeFileSync(
-      path.join(outDir, "advice-index.json"),
-      `${JSON.stringify(collectedAdvice, null, 2)}\n`,
-    );
-    writeScheduled = false;
-  });
+function writeIndex() {
+  const outDir = path.resolve("src/generated");
+  fs.mkdirSync(outDir, { recursive: true });
+  fs.writeFileSync(
+    path.join(outDir, "advice-index.json"),
+    `${JSON.stringify(collectedAdvice, null, 2)}\n`,
+  );
 }
 
 function extractTextContent(node: ContainerDirective): string {
@@ -157,7 +148,7 @@ const remarkExtractAdvice: Plugin<[], Root> = () => (tree: Root, file) => {
     }
   });
 
-  scheduleWrite();
+  writeIndex();
 };
 
 export default remarkExtractAdvice;
