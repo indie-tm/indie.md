@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { BookOpen, Users, Sparkles } from "lucide-react";
+import { Users } from "lucide-react";
 
 const Header = () => {
   return (
@@ -12,22 +12,19 @@ const Header = () => {
         </Link>
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
           <Link to="/" className="text-foreground/70 hover:text-foreground transition-colors">
-            Knowledge Base
+            Home
           </Link>
-          <Link to="/topics/seo" className="text-foreground/70 hover:text-foreground transition-colors">
-            SEO
+          <Link to="/journeys" className="text-foreground/70 hover:text-foreground transition-colors">
+            Journeys
           </Link>
-          <Link to="/topics/business" className="text-foreground/70 hover:text-foreground transition-colors">
-            Business
-          </Link>
-          <Link to="/topics/growth" className="text-foreground/70 hover:text-foreground transition-colors">
-            Growth
+          <Link to="/advice" className="text-foreground/70 hover:text-foreground transition-colors">
+            Advice
           </Link>
         </nav>
         <div className="flex items-center gap-3">
           <span className="text-xs text-muted-foreground flex items-center gap-1">
             <Users className="w-3.5 h-3.5" />
-            Community-driven
+            From the community
           </span>
         </div>
       </div>

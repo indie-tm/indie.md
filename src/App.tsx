@@ -4,8 +4,10 @@ import { Toaster as Sonner } from "@/components/ui/sonner";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import Index from "./pages/Index.tsx";
-import TopicPage from "./pages/TopicPage.tsx";
-import ArticlePage from "./pages/ArticlePage.tsx";
+import JourneysPage from "./pages/JourneysPage.tsx";
+import JourneyDetailPage from "./pages/JourneyDetailPage.tsx";
+import AdvicePage from "./pages/AdvicePage.tsx";
+import AdviceDetailPage from "./pages/AdviceDetailPage.tsx";
 import NotFound from "./pages/NotFound.tsx";
 
 const queryClient = new QueryClient();
@@ -18,8 +20,10 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
-          <Route path="/topics/:slug" element={<TopicPage />} />
-          <Route path="/articles/:slug" element={<ArticlePage />} />
+          <Route path="/journeys" element={<JourneysPage />} />
+          <Route path="/journey/:id" element={<JourneyDetailPage />} />
+          <Route path="/advice" element={<AdvicePage />} />
+          <Route path="/advice/:id" element={<AdviceDetailPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
