@@ -29,6 +29,7 @@ const events = defineCollection({
     subtitle: z.string(),
     date: z.coerce.date(),
     location: z.string(),
+    link: z.string().url().optional(),
     presenters: z.array(z.string()),
   }),
 });

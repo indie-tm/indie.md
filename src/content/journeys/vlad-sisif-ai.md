@@ -1,5 +1,5 @@
 ---
-title: "From CTO to Indie Hacker: Building sisif.ai"
+title: "Building sisif.ai: an AI Video API"
 subtitle: "How I went from 0 customers to growing MRR by abandoning traditional marketing"
 person: "vlad"
 date: 2026-01-22
@@ -8,10 +8,10 @@ lessons:
   - "Platform-led growth lets you ride existing waves instead of creating your own"
   - "Tiered pricing unlocks revenue you're leaving on the table"
   - "Traditional indie marketing (Twitter, ProductHunt) is painfully slow for unknown founders"
-  - "Unlearn the CTO mindset: focus on customers, not code"
+  - "Stop polishing code, start finding customers"
 ---
 
-I spent 15 years building production infrastructure. I was CTO at QED (acquired by The Sandbox). I knew how to architect systems, lead teams, ship reliable software. None of that prepared me for finding my first paying customer.
+I spent 15 years as a backend and DevOps engineer, building production infrastructure and writing code I was proud of. I knew how to architect systems and ship reliable software. None of that prepared me for finding my first paying customer.
 
 ## Starting from scratch
 
@@ -19,8 +19,8 @@ In December 2024, I started building sisif.ai: an AI video generation API that t
 
 By early 2025, I had a working product. Time to get customers, right?
 
-:::advice{slug="mindset-unlearn-cto" category="mindset" title="Unlearn the CTO mindset" person="vlad"}
-After 15 years as a technical leader, your instinct is to keep improving the product. Resist it. A mediocre product with great distribution will outperform a great product with no distribution every single time. Vlad spent months polishing sisif.ai before realizing that nobody knew it existed. The hardest shift for technical founders is accepting that code quality doesn't drive revenue.
+:::advice{slug="mindset-stop-polishing" category="mindset" title="Stop polishing code, start finding customers" person="vlad"}
+As an engineer, your instinct is to keep improving the product. Resist it. A mediocre product with great distribution will outperform a great product with no distribution every single time. Vlad spent months polishing sisif.ai before realizing that nobody knew it existed. The hardest shift for technical founders is accepting that code quality doesn't drive revenue.
 :::
 
 ## The zero-customer desert
@@ -59,7 +59,7 @@ Vlad's single $9/month plan seemed simple and fair. Switching to three tiers ($1
 
 ## What I know now
 
-The CTO in me wanted to build the best AI video pipeline. The indie hacker I'm becoming knows that distribution is the whole game. A product that reaches the right people will always beat a product that's technically superior but invisible.
+The engineer in me wanted to build the best AI video pipeline. The indie hacker I'm becoming knows that distribution is the whole game. A product that reaches the right people will always beat a product that's technically superior but invisible.
 
 :::advice{slug="distribution-beats-product" category="distribution" title="Distribution beats product, every time" person="vlad"}
 Vlad had a working AI video API and zero customers. The product didn't change when he started getting signups. The distribution did. If you're a technical founder, this is the hardest pill to swallow: the market doesn't reward the best product. It rewards the product that shows up where buyers are looking. Spend at least half your time on distribution, especially in the early days.

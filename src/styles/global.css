@@ -105,3 +105,32 @@
     font-family: var(--font-body);
   }
 }
+
+/* Advice callout blocks inside journey/event prose */
+.advice-callout {
+  @apply my-8 rounded-xl border border-primary/20 bg-primary/5 p-6;
+}
+
+.advice-callout-header {
+  @apply flex items-start gap-2 mb-3;
+}
+
+.advice-callout-category {
+  @apply inline-block px-2 py-0.5 rounded text-[11px] font-semibold uppercase tracking-wider text-primary bg-primary/10 mt-0.5;
+}
+
+.advice-callout-header strong {
+  @apply font-display text-base text-foreground;
+}
+
+.advice-callout-body {
+  @apply text-sm text-muted-foreground leading-relaxed mb-3;
+}
+
+.advice-callout-body p {
+  @apply m-0;
+}
+
+.advice-callout-link {
+  @apply text-sm font-medium text-primary hover:underline;
+}

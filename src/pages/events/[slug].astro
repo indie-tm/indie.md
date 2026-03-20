@@ -62,7 +62,12 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
 
     <!-- Event header -->
     <div class="mb-8">
-      <p class="text-sm text-muted-foreground mb-2">{formattedDate} &middot; {event.data.location}</p>
+      <div class="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+        <span>{formattedDate} &middot; {event.data.location}</span>
+        {event.data.link && (
+          <a href={event.data.link} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Event page</a>
+        )}
+      </div>
       <h1 class="font-display text-3xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-3">
         {event.data.title}
       </h1>

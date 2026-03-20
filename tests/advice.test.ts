@@ -33,10 +33,10 @@ describe("advice helpers", () => {
 
   describe("getAdviceBySlug", () => {
     it("finds an existing advice entry", () => {
-      const entry = getAdviceBySlug("seo-keyword-research");
+      const entry = getAdviceBySlug("mindset-stop-polishing");
       expect(entry).toBeDefined();
-      expect(entry?.title).toBe("Use search data, not assumptions");
-      expect(entry?.category).toBe("seo");
+      expect(entry?.title).toBe("Stop polishing code, start finding customers");
+      expect(entry?.category).toBe("mindset");
     });
 
     it("returns undefined for non-existent slug", () => {
@@ -62,10 +62,10 @@ describe("advice helpers", () => {
 
   describe("getAdviceForJourney", () => {
     it("returns advice for a specific journey", () => {
-      const advice = getAdviceForJourney("vlad-seo-journey");
+      const advice = getAdviceForJourney("vlad-sisif-ai");
       expect(advice.length).toBeGreaterThan(0);
       for (const entry of advice) {
-        expect(entry.journeySlug).toBe("vlad-seo-journey");
+        expect(entry.journeySlug).toBe("vlad-sisif-ai");
       }
     });
 
@@ -117,10 +117,10 @@ describe("advice helpers", () => {
     });
 
     it("returns advice for a specific event", () => {
-      const advice = getAdviceForEvent("bucharest-meetup-march-2026");
+      const advice = getAdviceForEvent("indie-tm-5-timisoara-march-2026");
       expect(advice.length).toBeGreaterThan(0);
       for (const entry of advice) {
-        expect(entry.eventSlug).toBe("bucharest-meetup-march-2026");
+        expect(entry.eventSlug).toBe("indie-tm-5-timisoara-march-2026");
         expect(entry.journeySlug).toBeNull();
       }
     });
