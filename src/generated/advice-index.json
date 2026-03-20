@@ -3,64 +3,72 @@
     "slug": "seo-keyword-research",
     "category": "seo",
     "title": "Use search data, not assumptions",
-    "content": "Stop guessing what to write about. Use Google Search Console (free), Ubersuggest free tier, or even Google’s ‘People also ask’ to find what people actually search for. One hour of keyword research saves you 10 hours of writing content nobody will find.",
+    "content": "Stop guessing what to write about. Use Google Search Console (free), Ubersuggest free tier, or even Google's 'People also ask' to find what people actually search for. One hour of keyword research saves you 10 hours of writing content nobody will find.",
     "journeySlug": "alex-seo-journey",
+    "eventSlug": null,
     "personSlug": "alex"
   },
   {
     "slug": "seo-programmatic",
     "category": "seo",
     "title": "Try programmatic SEO",
-    "content": "Create template pages that follow the same structure but target different keywords. Think ‘invoice template for [country]’ or ‘[tool] alternative.’ It’s tedious to set up but scales incredibly well. Alex got most of his 10k visitors from template pages.",
+    "content": "Create template pages that follow the same structure but target different keywords. Think 'invoice template for [country]' or '[tool] alternative.' It's tedious to set up but scales incredibly well. Alex got most of his 10k visitors from template pages.",
     "journeySlug": "alex-seo-journey",
+    "eventSlug": null,
     "personSlug": "alex"
   },
   {
     "slug": "seo-patience",
     "category": "seo",
     "title": "SEO takes 3-6 months, so don't quit early",
-    "content": "Most indie hackers publish 5 posts, see no traffic after 2 weeks, and declare SEO dead. It takes Google 3-6 months to fully index and rank your content. Set a calendar reminder for 90 days and don’t check your rankings until then.",
+    "content": "Most indie hackers publish 5 posts, see no traffic after 2 weeks, and declare SEO dead. It takes Google 3-6 months to fully index and rank your content. Set a calendar reminder for 90 days and don't check your rankings until then.",
     "journeySlug": "alex-seo-journey",
+    "eventSlug": null,
     "personSlug": "alex"
   },
   {
     "slug": "mindset-pareto",
     "category": "mindset",
     "title": "The Pareto principle is brutally real",
-    "content": "Alex wrote 45 pages. 3 of them drove 80% of his traffic. Raul posted 90 tweets. 5 of them brought most of his followers. Don’t spread yourself thin. Find what works and double down ruthlessly.",
+    "content": "Alex wrote 45 pages. 3 of them drove 80% of his traffic. Raul posted 90 tweets. 5 of them brought most of his followers. Don't spread yourself thin. Find what works and double down ruthlessly.",
     "journeySlug": "alex-seo-journey",
+    "eventSlug": null,
     "personSlug": "alex"
   },
   {
     "slug": "product-boring-business",
     "category": "product",
     "title": "Boring problems = less competition",
-    "content": "Nobody wants to build CSV converters or invoice formatters. That’s exactly why you should. Boring B2B tools have less competition, more willingness to pay, and lower churn. Mircea’s ‘boring’ SaaS hit $4k MRR while his AI todo app made $0.",
+    "content": "Nobody wants to build CSV converters or invoice formatters. That's exactly why you should. Boring B2B tools have less competition, more willingness to pay, and lower churn. Mircea's 'boring' SaaS hit $4k MRR while his AI todo app made $0.",
     "journeySlug": "mircea-boring-saas",
+    "eventSlug": null,
     "personSlug": "mircea"
   },
   {
     "slug": "distribution-cold-email",
     "category": "distribution",
     "title": "Cold email works when targeting is specific",
-    "content": "Generic cold emails get deleted. But if you can say ‘I built a tool that imports invoices into [exact software they use]’, that’s not spam, that’s solving a problem. Mircea got his first 50 customers through targeted cold emails to accounting firms.",
+    "content": "Generic cold emails get deleted. But if you can say 'I built a tool that imports invoices into [exact software they use]', that's not spam, that's solving a problem. Mircea got his first 50 customers through targeted cold emails to accounting firms.",
     "journeySlug": "mircea-boring-saas",
+    "eventSlug": null,
     "personSlug": "mircea"
   },
   {
     "slug": "business-b2b-pricing",
     "category": "business",
     "title": "B2B customers pay more and complain less",
-    "content": "Mircea charges €19/month for a tool that saves accountants 2 hours/week. Nobody blinks at that price. Compare that to trying to charge consumers $5/month for an app: they’ll demand a free tier and leave 1-star reviews. B2B is a different game.",
+    "content": "Mircea charges €19/month for a tool that saves accountants 2 hours/week. Nobody blinks at that price. Compare that to trying to charge consumers $5/month for an app: they'll demand a free tier and leave 1-star reviews. B2B is a different game.",
     "journeySlug": "mircea-boring-saas",
+    "eventSlug": null,
     "personSlug": "mircea"
   },
   {
     "slug": "mindset-boring-wins",
     "category": "mindset",
     "title": "Stop chasing 'cool' and start chasing 'useful'",
-    "content": "Your AI-powered everything app won’t beat a simple tool that solves a specific pain point. The most successful indie hackers build unsexy products for people who gladly pay to save time. Cool ideas get Twitter likes. Useful products get MRR.",
+    "content": "Your AI-powered everything app won't beat a simple tool that solves a specific pain point. The most successful indie hackers build unsexy products for people who gladly pay to save time. Cool ideas get Twitter likes. Useful products get MRR.",
     "journeySlug": "mircea-boring-saas",
+    "eventSlug": null,
     "personSlug": "mircea"
   },
   {
@@ -69,30 +77,34 @@
     "title": "Build in public: honesty wins",
     "content": "Share your real numbers, real struggles, real screenshots. People are tired of polished success stories. Raul grew from 200 to 2,800 Twitter followers in 3 months just by posting raw, honest updates about his journey.",
     "journeySlug": "raul-twitter-seo",
+    "eventSlug": null,
     "personSlug": "raul"
   },
   {
     "slug": "seo-template-pages",
     "category": "seo",
     "title": "Free resource pages rank well",
-    "content": "Pages offering something free (templates, tools, calculators) tend to rank better because they get more backlinks and longer time-on-page. Raul’s free Figma template pages drove the majority of his organic traffic.",
+    "content": "Pages offering something free (templates, tools, calculators) tend to rank better because they get more backlinks and longer time-on-page. Raul's free Figma template pages drove the majority of his organic traffic.",
     "journeySlug": "raul-twitter-seo",
+    "eventSlug": null,
     "personSlug": "raul"
   },
   {
     "slug": "distribution-two-channels",
     "category": "distribution",
     "title": "Combine a spike channel with a compounding channel",
-    "content": "Twitter/social media gives you spikes around launches. SEO/content gives you steady baseline traffic. Together they create a growth flywheel. Don’t try to be everywhere. Master two channels first.",
+    "content": "Twitter/social media gives you spikes around launches. SEO/content gives you steady baseline traffic. Together they create a growth flywheel. Don't try to be everywhere. Master two channels first.",
     "journeySlug": "raul-twitter-seo",
+    "eventSlug": null,
     "personSlug": "raul"
   },
   {
     "slug": "mindset-consistency",
     "category": "mindset",
     "title": "Consistency beats tactics",
-    "content": "There’s no secret growth hack. Raul posted every day for 3 months. Alex published SEO content for 6 months. Mircea sent cold emails for 4 months. The common thread isn’t a tactic; it’s showing up consistently when results aren’t visible yet.",
+    "content": "There's no secret growth hack. Raul posted every day for 3 months. Alex published SEO content for 6 months. Mircea sent cold emails for 4 months. The common thread isn't a tactic; it's showing up consistently when results aren't visible yet.",
     "journeySlug": "raul-twitter-seo",
+    "eventSlug": null,
     "personSlug": "raul"
   }
 ]

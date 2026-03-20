@@ -24,7 +24,9 @@ describe("advice helpers", () => {
         expect(entry.content).toBeTruthy();
         expect(entry.personSlug).toBeTruthy();
         // journeySlug or eventSlug must be set (not both)
-        expect(entry.journeySlug !== null || entry.eventSlug !== null).toBe(true);
+        const hasJourney = typeof entry.journeySlug === "string";
+        const hasEvent = typeof entry.eventSlug === "string";
+        expect(hasJourney || hasEvent).toBe(true);
       }
     });
   });
