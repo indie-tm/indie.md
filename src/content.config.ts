@@ -22,4 +22,15 @@ const journeys = defineCollection({
   }),
 });
 
-export const collections = { people, journeys };
+const events = defineCollection({
+  loader: glob({ pattern: "**/*.md", base: "src/content/events" }),
+  schema: z.object({
+    title: z.string(),
+    subtitle: z.string(),
+    date: z.coerce.date(),
+    location: z.string(),
+    presenters: z.array(z.string()),
+  }),
+});
+
+export const collections = { people, journeys, events };
