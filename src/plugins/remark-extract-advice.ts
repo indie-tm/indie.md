@@ -131,6 +131,7 @@ const remarkExtractAdvice: Plugin<[], Root> = () => (tree: Root, file) => {
       title,
       content,
       journeySlug,
+      eventSlug: null,
       personSlug,
     };
 

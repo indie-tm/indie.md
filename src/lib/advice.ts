@@ -6,7 +6,8 @@ export interface AdviceEntry {
   category: string;
   title: string;
   content: string;
-  journeySlug: string;
+  journeySlug: string | null;
+  eventSlug: string | null;
   personSlug: string;
 }
 
@@ -50,6 +51,10 @@ export function getAdviceByCategory(category: string): AdviceEntry[] {
 
 export function getAdviceForJourney(journeySlug: string): AdviceEntry[] {
   return readIndex().filter((a) => a.journeySlug === journeySlug);
+}
+
+export function getAdviceForEvent(eventSlug: string): AdviceEntry[] {
+  return readIndex().filter((a) => a.eventSlug === eventSlug);
 }
 
 export function getAllCategories(): CategoryMeta[] {

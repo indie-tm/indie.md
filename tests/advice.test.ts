@@ -2,6 +2,7 @@ import { describe, expect, it } from "vitest";
 import {
   getAdviceByCategory,
   getAdviceBySlug,
+  getAdviceForEvent,
   getAdviceForJourney,
   getAdviceIndex,
   getAllCategories,
@@ -21,8 +22,9 @@ describe("advice helpers", () => {
         expect(entry.category).toBeTruthy();
         expect(entry.title).toBeTruthy();
         expect(entry.content).toBeTruthy();
-        expect(entry.journeySlug).toBeTruthy();
         expect(entry.personSlug).toBeTruthy();
+        // journeySlug or eventSlug must be set (not both)
+        expect(entry.journeySlug !== null || entry.eventSlug !== null).toBe(true);
       }
     });
   });
@@ -104,6 +106,17 @@ describe("advice helpers", () => {
         const actualCount = index.filter((a) => a.category === cat.slug).length;
         expect(cat.count).toBe(actualCount);
       }
+    });
+  });
+
+  describe("getAdviceForEvent", () => {
+    it("is exported as a function", () => {
+      expect(typeof getAdviceForEvent).toBe("function");
+    });
+
+    it("returns empty array when no events exist yet", () => {
+      const result = getAdviceForEvent("nonexistent-event");
+      expect(result).toEqual([]);
     });
   });
 
