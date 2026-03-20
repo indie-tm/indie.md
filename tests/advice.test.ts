@@ -116,7 +116,16 @@ describe("advice helpers", () => {
       expect(typeof getAdviceForEvent).toBe("function");
     });
 
-    it("returns empty array when no events exist yet", () => {
+    it("returns advice for a specific event", () => {
+      const advice = getAdviceForEvent("bucharest-meetup-march-2026");
+      expect(advice.length).toBeGreaterThan(0);
+      for (const entry of advice) {
+        expect(entry.eventSlug).toBe("bucharest-meetup-march-2026");
+        expect(entry.journeySlug).toBeNull();
+      }
+    });
+
+    it("returns empty array for unknown event", () => {
       const result = getAdviceForEvent("nonexistent-event");
       expect(result).toEqual([]);
     });
