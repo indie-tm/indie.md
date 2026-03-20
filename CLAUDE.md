@@ -42,6 +42,7 @@ src/
   content/
     people/           # Person profiles (frontmatter-only .md)
     journeys/         # Case studies with embedded :::advice directives
+    events/           # IRL meetup recaps with multi-presenter :::advice directives
   content.config.ts   # Zod schemas for content collections
   layouts/            # Base.astro (HTML shell, header, footer)
   components/         # Astro components (Header, Footer, cards)
@@ -56,16 +57,19 @@ tests/                # Vitest test files
 ### Content Model
 
 ```
-Person → Journey (1:many) → Advice (embedded via :::advice directives)
+Person -> Journey (1:many) -> Advice (embedded via :::advice directives)
+Person -> Event (many:many) -> Advice (embedded via :::advice with person attribute)
 ```
 
-People and journeys are content collections. Advice is auto-extracted from journey markdown at build time by the remark plugin and written to `src/generated/advice-index.json`.
+People, journeys, and events are content collections. Advice is auto-extracted from journey and event markdown at build time by the remark plugin and written to `src/generated/advice-index.json`.
 
 ### Adding Content
 
 1. Add a person: create `src/content/people/{slug}.md` with name, avatar, tagline, bio frontmatter
 2. Add a journey: create `src/content/journeys/{slug}.md` with title, subtitle, person, date, lessons frontmatter and markdown body
-3. Embed advice: use `:::advice{slug="..." category="..." title="..."}` directives in journey markdown
+3. Add an event: create `src/content/events/{slug}.md` with title, subtitle, date, location, presenters frontmatter and markdown body
+4. Embed advice in journeys: use `:::advice{slug="..." category="..." title="..."}` directives
+5. Embed advice in events: use `:::advice{slug="..." category="..." title="..." person="..."}` directives (person attribute required to identify the presenter)
 
 Categories: seo, distribution, product, business, mindset
 
