@@ -10,12 +10,12 @@ interface Props {
   products?: { name: string; url: string }[];
 }
 
-import { assetPath } from "../lib/base-url";
+import { assetPath, href } from "../lib/base-url";
 
 const { person, products } = Astro.props;
 ---
 
-<a href={`/people/${person.slug}`}
+<a href={href(`/people/${person.slug}`)}
    class="group block rounded-xl border border-border/80 bg-card p-6 hover:shadow-[var(--shadow-card-hover)] hover:border-primary/30 transition-all duration-300">
   <div class="flex items-center gap-4 mb-3">
     <img src={assetPath(person.avatar)} alt={person.name} class="w-14 h-14 rounded-full object-cover" />

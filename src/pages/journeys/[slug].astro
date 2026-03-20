@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import CategoryBadge from '../../components/CategoryBadge.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import { getAdviceForJourney, getAllCategories } from '../../lib/advice';
-import { assetPath } from "../../lib/base-url";
+import { assetPath, href } from "../../lib/base-url";
 
 export async function getStaticPaths() {
   const journeys = await getCollection('journeys');
@@ -46,7 +46,7 @@ const formattedDate = journey.data.date.toLocaleDateString('en-US', {
   })} />
   <article class="container mx-auto px-4 pt-16 pb-20 md:pt-20">
     <!-- Back link -->
-    <a href="/journeys" class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">
+    <a href={href("/journeys")} class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
       All journeys
     </a>
@@ -55,7 +55,7 @@ const formattedDate = journey.data.date.toLocaleDateString('en-US', {
     <div class="flex items-center gap-4 mb-8">
       <img src={assetPath(person!.data.avatar)} alt={person!.data.name} class="w-16 h-16 rounded-full object-cover" />
       <div>
-        <a href={`/people/${journey.data.person}`} class="font-semibold text-foreground hover:text-primary transition-colors">
+        <a href={href(`/people/${journey.data.person}`)} class="font-semibold text-foreground hover:text-primary transition-colors">
           {person!.data.name}
         </a>
         <p class="text-sm text-muted-foreground italic">{person!.data.tagline}</p>
@@ -109,7 +109,7 @@ const formattedDate = journey.data.date.toLocaleDateString('en-US', {
           {adviceList.map((a) => {
             const cat = categoryMap.get(a.category);
             return (
-              <a href={`/advice/${a.slug}`}
+              <a href={href(`/advice/${a.slug}`)}
                  class="group flex items-start gap-4 rounded-xl border border-border/80 bg-card p-5 hover:border-primary/30 hover:shadow-[var(--shadow-card)] transition-all">
                 <div class="flex-1">
                   <div class="flex items-center gap-2 mb-1">

@@ -11,7 +11,7 @@ interface Props {
   adviceCount: number;
 }
 
-import { assetPath } from "../lib/base-url";
+import { assetPath, href } from "../lib/base-url";
 
 const { event, presenters, adviceCount } = Astro.props;
 
@@ -22,7 +22,7 @@ const formattedDate = event.date.toLocaleDateString('en-US', {
 });
 ---
 
-<a href={`/events/${event.slug}`}
+<a href={href(`/events/${event.slug}`)}
    class="group block rounded-xl border border-border/80 bg-card p-6 hover:shadow-[var(--shadow-card-hover)] hover:border-primary/30 transition-all duration-300">
   <div class="flex items-center gap-2 mb-4">
     <div class="flex -space-x-2">

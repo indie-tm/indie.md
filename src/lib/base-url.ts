@@ -8,3 +8,6 @@ export function assetPath(path: string): string {
   }
   return `${base}/${path}`;
 }
+
+/** Alias for internal links: same behavior as assetPath. */
+export const href = assetPath;

@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import CategoryBadge from '../../components/CategoryBadge.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import { getAdviceForEvent, getAllCategories } from '../../lib/advice';
-import { assetPath } from "../../lib/base-url";
+import { assetPath, href } from "../../lib/base-url";
 
 export async function getStaticPaths() {
   const events = await getCollection('events');
@@ -56,7 +56,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
   })} />
   <article class="container mx-auto px-4 pt-16 pb-20 md:pt-20">
     <!-- Back link -->
-    <a href="/events" class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">
+    <a href={href("/events")} class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">
       <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
       All events
     </a>
@@ -80,7 +80,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
     <!-- Presenters -->
     <div class="flex flex-wrap gap-3 mb-10">
       {presenters.map((p) => (
-        <a href={`/people/${p.id}`}
+        <a href={href(`/people/${p.id}`)}
            class="flex items-center gap-2 px-3 py-2 rounded-lg border border-border/60 bg-card hover:border-primary/30 transition-all">
           <img src={assetPath(p.data.avatar)} alt={p.data.name} class="w-8 h-8 rounded-full object-cover" />
           <span class="text-sm font-medium text-foreground">{p.data.name}</span>
@@ -109,7 +109,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
           {adviceList.map((a) => {
             const cat = categoryMap.get(a.category);
             return (
-              <a href={`/advice/${a.slug}`}
+              <a href={href(`/advice/${a.slug}`)}
                  class="group flex items-start gap-4 rounded-xl border border-border/80 bg-card p-5 hover:border-primary/30 hover:shadow-[var(--shadow-card)] transition-all">
                 <div class="flex-1">
                   <div class="flex items-center gap-2 mb-1">

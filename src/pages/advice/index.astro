@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import AdviceCard from '../../components/AdviceCard.astro';
 import { getEntry } from 'astro:content';
 import { getAdviceIndex, getAllCategories } from '../../lib/advice';
+import { href } from '../../lib/base-url';
 
 const adviceIndex = getAdviceIndex();
 const categories = getAllCategories();
@@ -30,12 +31,12 @@ const adviceWithPeople = await Promise.all(
   <!-- Category filters -->
   <section class="container mx-auto px-4 pb-8">
     <div class="flex flex-wrap items-center gap-2">
-      <a href="/advice"
+      <a href={href("/advice")}
          class="inline-flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium bg-primary text-primary-foreground">
         All
       </a>
       {categories.map((cat) => (
-        <a href={`/advice/${cat.slug}`}
+        <a href={href(`/advice/${cat.slug}`)}
            class="inline-flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium border border-border/80 text-muted-foreground hover:border-primary/30 hover:text-foreground transition-all">
           {cat.icon} {cat.label}
         </a>
