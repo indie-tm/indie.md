@@ -84,16 +84,18 @@ function buildCalloutHtml(attrs: {
 }
 
 const remarkExtractAdvice: Plugin<[], Root> = () => (tree: Root, file) => {
-  // Derive journey slug from the file name (e.g. "alex-seo.md" -> "alex-seo")
+  // Derive source slug from the file name (e.g. "alex-seo.md" -> "alex-seo")
   const fileName = file.history[0]
     ? path.basename(file.history[0], path.extname(file.history[0]))
     : undefined;
 
-  // Only process files that live under content/journeys
+  // Only process files that live under content/journeys or content/events
   const filePath = file.history[0] ?? "";
-  if (!filePath.includes("content/journeys")) return;
+  const isJourney = filePath.includes("content/journeys");
+  const isEvent = filePath.includes("content/events");
+  if (!isJourney && !isEvent) return;
 
-  const journeySlug = fileName ?? "unknown";
+  const sourceSlug = fileName ?? "unknown";
 
   // Extract personSlug from frontmatter (set by gray-matter / Astro)
   const frontmatter = (file.data as Record<string, unknown>)?.astro
@@ -125,18 +127,25 @@ const remarkExtractAdvice: Plugin<[], Root> = () => (tree: Root, file) => {
       );
     }
 
+    // For events, use the person attribute from the directive.
+    // For journeys, fall back to frontmatter person.
+    const directivePerson = attrs.person ?? "";
+    const resolvedPerson = directivePerson || personSlug;
+
     const entry: AdviceEntry = {
       slug,
       category,
       title,
       content,
-      journeySlug,
-      eventSlug: null,
-      personSlug,
+      journeySlug: isJourney ? sourceSlug : null,
+      eventSlug: isEvent ? sourceSlug : null,
+      personSlug: resolvedPerson,
     };
 
     // Avoid duplicates if the same file is processed more than once (HMR)
-    const exists = collectedAdvice.some((a) => a.slug === slug && a.journeySlug === journeySlug);
+    const exists = collectedAdvice.some(
+      (a) => a.slug === slug && (a.journeySlug === sourceSlug || a.eventSlug === sourceSlug),
+    );
     if (!exists) {
       collectedAdvice.push(entry);
     }
