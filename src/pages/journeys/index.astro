@@ -1,0 +1,41 @@
+---
+import Base from '../../layouts/Base.astro';
+import JourneyCard from '../../components/JourneyCard.astro';
+import { getCollection, getEntry } from 'astro:content';
+import { getAdviceIndex } from '../../lib/advice';
+
+const journeys = await getCollection('journeys');
+const adviceIndex = getAdviceIndex();
+
+const journeysWithPeople = await Promise.all(
+  journeys.map(async (j) => {
+    const person = await getEntry('people', j.data.person);
+    const adviceCount = adviceIndex.filter(a => a.journeySlug === j.id).length;
+    return { journey: j, person: person!, adviceCount };
+  })
+);
+---
+<Base title="Journeys | indie.md" description="Case studies from indie hackers: the full story behind every product, every pivot, every lesson learned." canonicalPath="/journeys">
+  <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
+    <div class="max-w-2xl">
+      <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4">
+        Journeys
+      </h1>
+      <p class="text-lg text-muted-foreground leading-relaxed">
+        The full story behind every product, every pivot, every lesson learned. No highlight reels, just honest accounts of what it takes to build something from nothing.
+      </p>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      {journeysWithPeople.map(({ journey, person, adviceCount }) => (
+        <JourneyCard
+          journey={{ slug: journey.id, ...journey.data }}
+          person={person.data}
+          adviceCount={adviceCount}
+        />
+      ))}
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import EventCard from '../../components/EventCard.astro';
+import { getCollection, getEntry } from 'astro:content';
+import { getAdviceForEvent } from '../../lib/advice';
+
+const events = await getCollection('events');
+
+const eventsWithData = await Promise.all(
+  events.map(async (e) => {
+    const presenters = await Promise.all(
+      e.data.presenters.map(async (slug: string) => {
+        const person = await getEntry('people', slug);
+        return person!.data;
+      })
+    );
+    const adviceCount = getAdviceForEvent(e.id).length;
+    return { event: e, presenters, adviceCount };
+  })
+);
+---
+<Base title="Events | indie.md" description="Recaps from our IRL meetups. Real conversations, real advice." canonicalPath="/events">
+  <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
+    <div class="max-w-2xl">
+      <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4">
+        Events
+      </h1>
+      <p class="text-lg text-muted-foreground leading-relaxed">
+        Recaps from our IRL meetups. Every event captures real conversations, real feedback, and actionable advice from the community.
+      </p>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+      {eventsWithData.map(({ event, presenters, adviceCount }) => (
+        <EventCard
+          event={{ slug: event.id, ...event.data }}
+          presenters={presenters}
+          adviceCount={adviceCount}
+        />
+      ))}
+    </div>
+  </section>
+</Base>

@@ -1,0 +1,134 @@
+---
+import Base from '../../layouts/Base.astro';
+import CategoryBadge from '../../components/CategoryBadge.astro';
+import { getCollection, getEntry, render } from 'astro:content';
+import { getAdviceForEvent, getAllCategories } from '../../lib/advice';
+
+export async function getStaticPaths() {
+  const events = await getCollection('events');
+  return events.map((e) => ({
+    params: { slug: e.id },
+    props: { event: e },
+  }));
+}
+
+const { event } = Astro.props;
+const adviceList = getAdviceForEvent(event.id);
+const categories = getAllCategories();
+const categoryMap = new Map(categories.map(c => [c.slug, c]));
+
+const presenters = await Promise.all(
+  event.data.presenters.map(async (slug: string) => {
+    const person = await getEntry('people', slug);
+    return person!;
+  })
+);
+
+const { Content } = await render(event);
+
+const formattedDate = event.data.date.toLocaleDateString('en-US', {
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+});
+---
+<Base title={`${event.data.title} | indie.md`} description={event.data.subtitle} canonicalPath={`/events/${event.id}`} ogType="article">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": event.data.title,
+    "description": event.data.subtitle,
+    "startDate": event.data.date.toISOString(),
+    "location": {
+      "@type": "Place",
+      "name": event.data.location
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "indie.md",
+      "url": "https://indie.md"
+    },
+    "performer": presenters.map(p => ({
+      "@type": "Person",
+      "name": p.data.name
+    }))
+  })} />
+  <article class="container mx-auto px-4 pt-16 pb-20 md:pt-20">
+    <!-- Back link -->
+    <a href="/events" class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+      All events
+    </a>
+
+    <!-- Event header -->
+    <div class="mb-8">
+      <div class="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+        <span>{formattedDate} &middot; {event.data.location}</span>
+        {event.data.link && (
+          <a href={event.data.link} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Event page</a>
+        )}
+      </div>
+      <h1 class="font-display text-3xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-3">
+        {event.data.title}
+      </h1>
+      <p class="text-lg text-muted-foreground leading-relaxed max-w-2xl">
+        {event.data.subtitle}
+      </p>
+    </div>
+
+    <!-- Presenters -->
+    <div class="flex flex-wrap gap-3 mb-10">
+      {presenters.map((p) => (
+        <a href={`/people/${p.id}`}
+           class="flex items-center gap-2 px-3 py-2 rounded-lg border border-border/60 bg-card hover:border-primary/30 transition-all">
+          <img src={p.data.avatar} alt={p.data.name} class="w-8 h-8 rounded-full object-cover" />
+          <span class="text-sm font-medium text-foreground">{p.data.name}</span>
+        </a>
+      ))}
+    </div>
+
+    <!-- Event content -->
+    <div class="prose prose-lg max-w-2xl
+      prose-headings:font-display prose-headings:text-foreground prose-headings:tracking-tight
+      prose-p:text-muted-foreground prose-p:leading-relaxed
+      prose-strong:text-foreground
+      prose-a:text-primary prose-a:no-underline hover:prose-a:underline
+      prose-li:text-muted-foreground
+      prose-blockquote:border-primary/40 prose-blockquote:text-muted-foreground">
+      <Content />
+    </div>
+
+    <!-- Advice extracted from this event -->
+    {adviceList.length > 0 && (
+      <div class="mt-16 max-w-2xl">
+        <h2 class="font-display text-2xl text-foreground mb-6">
+          Advice from this event
+        </h2>
+        <div class="space-y-3">
+          {adviceList.map((a) => {
+            const cat = categoryMap.get(a.category);
+            return (
+              <a href={`/advice/${a.slug}`}
+                 class="group flex items-start gap-4 rounded-xl border border-border/80 bg-card p-5 hover:border-primary/30 hover:shadow-[var(--shadow-card)] transition-all">
+                <div class="flex-1">
+                  <div class="flex items-center gap-2 mb-1">
+                    {cat && (
+                      <CategoryBadge category={cat.slug} label={cat.label} icon={cat.icon} />
+                    )}
+                  </div>
+                  <h3 class="font-display text-lg text-foreground group-hover:text-primary transition-colors">
+                    {a.title}
+                  </h3>
+                  <p class="text-sm text-muted-foreground mt-1 line-clamp-2">{a.content}</p>
+                </div>
+                <span class="text-muted-foreground group-hover:text-primary transition-colors mt-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </span>
+              </a>
+            );
+          })}
+        </div>
+      </div>
+    )}
+  </article>
+</Base>

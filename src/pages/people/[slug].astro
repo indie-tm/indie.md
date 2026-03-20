@@ -1,0 +1,160 @@
+---
+import Base from '../../layouts/Base.astro';
+import JourneyCard from '../../components/JourneyCard.astro';
+import EventCard from '../../components/EventCard.astro';
+import CategoryBadge from '../../components/CategoryBadge.astro';
+import { getCollection, getEntry } from 'astro:content';
+import { getAdviceIndex, getAdviceForEvent, getAllCategories } from '../../lib/advice';
+
+export async function getStaticPaths() {
+  const people = await getCollection('people');
+  return people.map((p) => ({
+    params: { slug: p.id },
+    props: { person: p },
+  }));
+}
+
+const { person } = Astro.props;
+const allJourneys = await getCollection('journeys');
+const adviceIndex = getAdviceIndex();
+const categories = getAllCategories();
+const categoryMap = new Map(categories.map(c => [c.slug, c]));
+
+const personJourneys = allJourneys.filter(j => j.data.person === person.id);
+
+const allEvents = await getCollection('events');
+const personEvents = allEvents.filter(e => e.data.presenters.includes(person.id));
+const eventsWithData = await Promise.all(
+  personEvents.map(async (e) => {
+    const presenters = await Promise.all(
+      e.data.presenters.map(async (slug: string) => {
+        const p = await getEntry('people', slug);
+        return p!.data;
+      })
+    );
+    const adviceCount = getAdviceForEvent(e.id).length;
+    return { event: e, presenters, adviceCount };
+  })
+);
+
+const journeysWithAdviceCount = await Promise.all(
+  personJourneys.map(async (j) => {
+    const adviceCount = adviceIndex.filter(a => a.journeySlug === j.id).length;
+    return { journey: j, adviceCount };
+  })
+);
+
+const personAdvice = adviceIndex.filter(a => a.personSlug === person.id);
+---
+<Base title={`${person.data.name} | indie.md`} description={person.data.tagline} canonicalPath={`/people/${person.id}`}>
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": person.data.name,
+    "description": person.data.bio,
+    "url": `https://indie.md/people/${person.id}`
+  })} />
+  <section class="container mx-auto px-4 pt-16 pb-10 md:pt-20">
+    <!-- Back link -->
+    <a href="/people" class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+      All people
+    </a>
+
+    <!-- Person header -->
+    <div class="flex items-start gap-5 mb-4">
+      <img src={person.data.avatar} alt={person.data.name} class="w-20 h-20 rounded-full object-cover" />
+      <div>
+        <h1 class="font-display text-3xl md:text-4xl tracking-tight text-foreground mb-1">
+          {person.data.name}
+        </h1>
+        <p class="text-lg text-muted-foreground italic">{person.data.tagline}</p>
+      </div>
+    </div>
+    <p class="text-muted-foreground leading-relaxed max-w-2xl">
+      {person.data.bio}
+    </p>
+    {person.data.products && person.data.products.length > 0 && (
+      <div class="flex flex-wrap gap-2 mt-4">
+        {person.data.products.map((p) => (
+          <a href={p.url} target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-primary/20 bg-primary/5 text-sm font-medium text-primary hover:bg-primary/10 transition-colors">
+            {p.name}
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        ))}
+      </div>
+    )}
+  </section>
+
+  <!-- Journeys -->
+  {journeysWithAdviceCount.length > 0 && (
+    <section class="container mx-auto px-4 pb-12">
+      <h2 class="font-display text-2xl text-foreground flex items-center gap-2 mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+        Journeys
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {journeysWithAdviceCount.map(({ journey, adviceCount }) => (
+          <JourneyCard
+            journey={{ slug: journey.id, ...journey.data }}
+            person={person.data}
+            adviceCount={adviceCount}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Events -->
+  {eventsWithData.length > 0 && (
+    <section class="container mx-auto px-4 pb-12">
+      <h2 class="font-display text-2xl text-foreground flex items-center gap-2 mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+        Events
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+        {eventsWithData.map(({ event, presenters, adviceCount }) => (
+          <EventCard
+            event={{ slug: event.id, ...event.data }}
+            presenters={presenters}
+            adviceCount={adviceCount}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  <!-- Advice -->
+  {personAdvice.length > 0 && (
+    <section class="container mx-auto px-4 pb-20">
+      <h2 class="font-display text-2xl text-foreground flex items-center gap-2 mb-6">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/></svg>
+        Advice & Tips
+      </h2>
+      <div class="space-y-3">
+        {personAdvice.map((a) => {
+          const cat = categoryMap.get(a.category);
+          return (
+            <a href={`/advice/${a.slug}`}
+               class="group flex items-start gap-4 rounded-xl border border-border/80 bg-card p-5 hover:border-primary/30 hover:shadow-[var(--shadow-card)] transition-all">
+              <div class="flex-1">
+                <div class="flex items-center gap-2 mb-1">
+                  {cat && (
+                    <CategoryBadge category={cat.slug} label={cat.label} icon={cat.icon} />
+                  )}
+                </div>
+                <h3 class="font-display text-lg text-foreground group-hover:text-primary transition-colors">
+                  {a.title}
+                </h3>
+                <p class="text-sm text-muted-foreground mt-1 line-clamp-2">{a.content}</p>
+              </div>
+              <span class="text-muted-foreground group-hover:text-primary transition-colors mt-1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </span>
+            </a>
+          );
+        })}
+      </div>
+    </section>
+  )}
+</Base>

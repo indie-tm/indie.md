@@ -1,0 +1,48 @@
+---
+interface Props {
+  journey: {
+    slug: string;
+    title: string;
+    subtitle: string;
+    date: Date;
+    lessons: string[];
+  };
+  person: {
+    name: string;
+    avatar: string;
+    tagline: string;
+  };
+  adviceCount: number;
+}
+
+const { journey, person, adviceCount } = Astro.props;
+
+const formattedDate = journey.date.toLocaleDateString('en-US', {
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<a href={`/journeys/${journey.slug}`}
+   class="group block rounded-xl border border-border/80 bg-card p-6 hover:shadow-[var(--shadow-card-hover)] hover:border-primary/30 transition-all duration-300">
+  <div class="flex items-center gap-3 mb-4">
+    <img src={person.avatar} alt={person.name} class="w-10 h-10 rounded-full object-cover" />
+    <div>
+      <p class="font-semibold text-foreground">{person.name}</p>
+      <p class="text-xs text-muted-foreground italic">{person.tagline}</p>
+    </div>
+  </div>
+  <h3 class="font-display text-xl text-foreground group-hover:text-primary transition-colors mb-2 leading-snug">
+    {journey.title}
+  </h3>
+  <p class="text-sm text-muted-foreground leading-relaxed mb-3">
+    {journey.subtitle}
+  </p>
+  <div class="flex items-center gap-2">
+    <span class="text-xs text-muted-foreground">{formattedDate}</span>
+    <span class="text-muted-foreground/40">&middot;</span>
+    <span class="text-xs text-primary font-medium">
+      {adviceCount} tips extracted
+    </span>
+  </div>
+</a>

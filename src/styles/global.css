@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 33% 97%;
+    --foreground: 30 10% 12%;
+
+    --card: 40 30% 95%;
+    --card-foreground: 30 10% 12%;
+
+    --popover: 40 33% 97%;
+    --popover-foreground: 30 10% 12%;
+
+    --primary: 24 80% 50%;
+    --primary-foreground: 40 33% 97%;
+
+    --secondary: 40 20% 90%;
+    --secondary-foreground: 30 10% 20%;
+
+    --muted: 40 15% 92%;
+    --muted-foreground: 30 8% 46%;
+
+    --accent: 160 40% 45%;
+    --accent-foreground: 40 33% 97%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 35 20% 87%;
+    --input: 35 20% 87%;
+    --ring: 24 80% 50%;
+
+    --radius: 0.75rem;
+
+    --font-display: 'Instrument Serif', serif;
+    --font-body: 'DM Sans', sans-serif;
+    --surface-warm: 35 30% 93%;
+    --surface-highlight: 45 60% 92%;
+    --text-link: 24 80% 42%;
+    --shadow-card: 0 2px 20px -4px hsl(30 15% 50% / 0.12);
+    --shadow-card-hover: 0 8px 30px -6px hsl(30 15% 50% / 0.2);
+  }
+
+  .dark {
+    --background: 30 10% 8%;
+    --foreground: 40 20% 90%;
+
+    --card: 30 10% 12%;
+    --card-foreground: 40 20% 90%;
+
+    --popover: 30 10% 10%;
+    --popover-foreground: 40 20% 90%;
+
+    --primary: 24 80% 55%;
+    --primary-foreground: 30 10% 8%;
+
+    --secondary: 30 10% 16%;
+    --secondary-foreground: 40 20% 85%;
+
+    --muted: 30 8% 18%;
+    --muted-foreground: 40 10% 55%;
+
+    --accent: 160 40% 50%;
+    --accent-foreground: 30 10% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 8% 20%;
+    --input: 30 8% 20%;
+    --ring: 24 80% 55%;
+
+    --surface-warm: 30 8% 14%;
+    --surface-highlight: 30 15% 16%;
+    --text-link: 24 80% 60%;
+    --shadow-card: 0 2px 20px -4px hsl(0 0% 0% / 0.3);
+    --shadow-card-hover: 0 8px 30px -6px hsl(0 0% 0% / 0.4);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-body);
+  }
+
+  h1, h2, h3, h4 {
+    font-family: var(--font-display);
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display);
+  }
+  .font-body {
+    font-family: var(--font-body);
+  }
+}
+
+/* Advice callout blocks inside journey/event prose */
+.advice-callout {
+  @apply my-8 rounded-xl border border-primary/20 bg-primary/5 p-6;
+}
+
+.advice-callout-header {
+  @apply flex items-start gap-2 mb-3;
+}
+
+.advice-callout-category {
+  @apply inline-block px-2 py-0.5 rounded text-[11px] font-semibold uppercase tracking-wider text-primary bg-primary/10 mt-0.5;
+}
+
+.advice-callout-header strong {
+  @apply font-display text-base text-foreground;
+}
+
+.advice-callout-body {
+  @apply text-sm text-muted-foreground leading-relaxed mb-3;
+}
+
+.advice-callout-body p {
+  @apply m-0;
+}
+
+.advice-callout-link {
+  @apply text-sm font-medium text-primary hover:underline;
+}
