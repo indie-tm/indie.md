@@ -1,6 +1,6 @@
 ---
 name: "Raul"
 avatar: "/avatars/raul.png"
-tagline: "Designer who learned to ship"
-bio: "Product designer who taught himself to code. Launched a design resources marketplace that grew to $2k/mo through Twitter and SEO alone. No paid ads, ever."
+tagline: "Developer turned curator"
+bio: "Developer turned curator. After experiencing burnout at multiple startups, built Calm Companies Club to help others find sustainable work. Believes curation beats algorithms and simplicity beats features."
 ---
