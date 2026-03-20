@@ -1,6 +1,6 @@
 ---
 name: "Alex"
 avatar: "/avatars/alex.png"
-tagline: "Building in public, one side project at a time"
-bio: "Full-stack dev turned indie hacker. Shipped 3 products in 2 years, one of them actually makes money. Obsessed with SEO and organic growth."
+tagline: "Former CTO turned indie hacker"
+bio: "Former CTO turned indie hacker. Built production infrastructure for 15 years before going solo. Now building sisif.ai, an AI video generation API. Obsessed with distribution and platform-led growth."
 ---
