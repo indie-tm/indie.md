@@ -23,7 +23,7 @@ const formattedDate = event.date.toLocaleDateString('en-US', {
 ---
 
 <a href={href(`/events/${event.slug}`)}
-   class="group block rounded-xl border border-border/80 bg-card p-6 hover:shadow-[var(--shadow-card-hover)] hover:border-primary/30 transition-all duration-300">
+   class="card-hover group block rounded-xl border border-border/80 bg-card p-6 hover:shadow-[var(--shadow-card-hover)] hover:border-primary/30 transition-all duration-300">
   <div class="flex items-center gap-2 mb-4">
     <div class="flex -space-x-2">
       {presenters.map((p) => (

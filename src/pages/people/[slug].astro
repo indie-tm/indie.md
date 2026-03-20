@@ -66,7 +66,7 @@ const personAdvice = adviceIndex.filter(a => a.personSlug === person.id);
     <div class="flex items-start gap-5 mb-4">
       <img src={assetPath(person.data.avatar)} alt={person.data.name} class="w-20 h-20 rounded-full object-cover" />
       <div>
-        <h1 class="font-display text-3xl md:text-4xl tracking-tight text-foreground mb-1">
+        <h1 class="animate-fade-up font-display text-3xl md:text-4xl tracking-tight text-foreground mb-1">
           {person.data.name}
         </h1>
         <p class="text-lg text-muted-foreground italic">{person.data.tagline}</p>
