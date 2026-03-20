@@ -26,7 +26,7 @@ const formattedDate = journey.data.date.toLocaleDateString('en-US', {
   year: 'numeric',
 });
 ---
-<Base title={`${journey.data.title} | indie.md`} description={journey.data.subtitle}>
+<Base title={`${journey.data.title} | indie.md`} description={journey.data.subtitle} canonicalPath={`/journeys/${journey.id}`} ogType="article">
   <article class="container mx-auto px-4 pt-16 pb-20 md:pt-20">
     <!-- Back link -->
     <a href="/journeys" class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">

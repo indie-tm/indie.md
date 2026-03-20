@@ -29,6 +29,7 @@ export async function getStaticPaths() {
 }
 
 const props = Astro.props;
+const { slug } = Astro.params;
 const categories = getAllCategories();
 
 type AdviceWithPerson = { advice: AdviceEntry; person: CollectionEntry<'people'>; categoryLabel: string };
@@ -65,7 +66,7 @@ const pageDescription = isCategory
   ? `${category!.label} tips from indie hackers who've been there.`
   : advice!.content.slice(0, 160);
 ---
-<Base title={pageTitle} description={pageDescription}>
+<Base title={pageTitle} description={pageDescription} canonicalPath={`/advice/${slug}`}>
   {isCategory && category && (
     <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
       <div class="max-w-2xl">

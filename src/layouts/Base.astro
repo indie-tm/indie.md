@@ -6,9 +6,11 @@ import '../styles/global.css';
 interface Props {
   title: string;
   description?: string;
+  canonicalPath?: string;
+  ogType?: string;
 }
 
-const { title, description } = Astro.props;
+const { title, description, canonicalPath, ogType } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,6 +19,20 @@ const { title, description } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     {description && <meta name="description" content={description} />}
+    {canonicalPath && <link rel="canonical" href={`https://indie.md${canonicalPath}`} />}
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={title} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:type" content={ogType ?? "website"} />
+    {canonicalPath && <meta property="og:url" content={`https://indie.md${canonicalPath}`} />}
+    <meta property="og:site_name" content="indie.md" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={title} />
+    {description && <meta name="twitter:description" content={description} />}
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>{title}</title>

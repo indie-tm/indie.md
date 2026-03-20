@@ -32,7 +32,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
   year: 'numeric',
 });
 ---
-<Base title={`${event.data.title} | indie.md`} description={event.data.subtitle}>
+<Base title={`${event.data.title} | indie.md`} description={event.data.subtitle} canonicalPath={`/events/${event.id}`} ogType="article">
   <article class="container mx-auto px-4 pt-16 pb-20 md:pt-20">
     <!-- Back link -->
     <a href="/events" class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">
