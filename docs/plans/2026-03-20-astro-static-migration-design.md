@@ -82,7 +82,7 @@ Metadata-only, no body content needed.
 ```markdown
 ---
 name: "Alex"
-avatar: "🧑‍💻"
+avatar: "A"
 tagline: "Solo founder obsessed with organic growth"
 bio: "Started building side projects in 2023..."
 ---
