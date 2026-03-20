@@ -8,25 +8,24 @@ const Footer = () => {
               indie<span className="text-primary">.md</span>
             </span>
             <p className="text-sm text-muted-foreground mt-2 max-w-xs">
-              A community-driven wiki for indie hackers. Real knowledge from real builders helping each other grow.
+              Real stories, real advice, from a real community of indie hackers helping each other grow.
             </p>
           </div>
           <div className="flex gap-12 text-sm">
             <div>
-              <h4 className="font-display text-base mb-3 text-foreground">Topics</h4>
+              <h4 className="font-display text-base mb-3 text-foreground">Explore</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li>SEO Fundamentals</li>
-                <li>Business & Legal</li>
-                <li>Growth & Distribution</li>
-                <li>Product Strategy</li>
+                <li>Journeys</li>
+                <li>SEO Advice</li>
+                <li>Distribution</li>
+                <li>Product Tips</li>
               </ul>
             </div>
             <div>
               <h4 className="font-display text-base mb-3 text-foreground">Community</h4>
               <ul className="space-y-2 text-muted-foreground">
-                <li>Contribute</li>
-                <li>Stories</li>
-                <li>Resources</li>
+                <li>Share your story</li>
+                <li>Contributors</li>
               </ul>
             </div>
           </div>
