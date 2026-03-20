@@ -1,1 +1,1 @@
-npx biome check . && bash scripts/lint-writing.sh && npx tsc --noEmit
+npx biome check . && bash scripts/lint-writing.sh && npx astro sync && npx tsc --noEmit
