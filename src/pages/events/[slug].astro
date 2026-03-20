@@ -36,7 +36,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
   <article class="container mx-auto px-4 pt-16 pb-20 md:pt-20">
     <!-- Back link -->
     <a href="/events" class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">
-      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
       All events
     </a>
 
@@ -56,7 +56,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
       {presenters.map((p) => (
         <a href={`/people/${p.id}`}
            class="flex items-center gap-2 px-3 py-2 rounded-lg border border-border/60 bg-card hover:border-primary/30 transition-all">
-          <span class="text-xl">{p.data.avatar}</span>
+          <span class="text-xl" role="img" aria-label={`${p.data.name}'s avatar`}>{p.data.avatar}</span>
           <span class="text-sm font-medium text-foreground">{p.data.name}</span>
         </a>
       ))}
@@ -97,7 +97,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
                   <p class="text-sm text-muted-foreground mt-1 line-clamp-2">{a.content}</p>
                 </div>
                 <span class="text-muted-foreground group-hover:text-primary transition-colors mt-1">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                 </span>
               </a>
             );
