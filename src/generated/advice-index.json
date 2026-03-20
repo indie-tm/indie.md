@@ -36,6 +36,42 @@
     "personSlug": "alex"
   },
   {
+    "slug": "product-boring-business",
+    "category": "product",
+    "title": "Boring problems = less competition",
+    "content": "Nobody wants to build CSV converters or invoice formatters. That’s exactly why you should. Boring B2B tools have less competition, more willingness to pay, and lower churn. Mircea’s ‘boring’ SaaS hit $4k MRR while his AI todo app made $0.",
+    "journeySlug": "mircea-boring-saas",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "distribution-cold-email",
+    "category": "distribution",
+    "title": "Cold email works when targeting is specific",
+    "content": "Generic cold emails get deleted. But if you can say ‘I built a tool that imports invoices into [exact software they use]’, that’s not spam, that’s solving a problem. Mircea got his first 50 customers through targeted cold emails to accounting firms.",
+    "journeySlug": "mircea-boring-saas",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "business-b2b-pricing",
+    "category": "business",
+    "title": "B2B customers pay more and complain less",
+    "content": "Mircea charges €19/month for a tool that saves accountants 2 hours/week. Nobody blinks at that price. Compare that to trying to charge consumers $5/month for an app: they’ll demand a free tier and leave 1-star reviews. B2B is a different game.",
+    "journeySlug": "mircea-boring-saas",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "mindset-boring-wins",
+    "category": "mindset",
+    "title": "Stop chasing 'cool' and start chasing 'useful'",
+    "content": "Your AI-powered everything app won’t beat a simple tool that solves a specific pain point. The most successful indie hackers build unsexy products for people who gladly pay to save time. Cool ideas get Twitter likes. Useful products get MRR.",
+    "journeySlug": "mircea-boring-saas",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
     "slug": "faq-schema-markup",
     "category": "seo",
     "title": "Add FAQ sections with FAQPage schema",
@@ -124,41 +160,5 @@
     "journeySlug": "raul-twitter-seo",
     "eventSlug": null,
     "personSlug": "raul"
-  },
-  {
-    "slug": "product-boring-business",
-    "category": "product",
-    "title": "Boring problems = less competition",
-    "content": "Nobody wants to build CSV converters or invoice formatters. That’s exactly why you should. Boring B2B tools have less competition, more willingness to pay, and lower churn. Mircea’s ‘boring’ SaaS hit $4k MRR while his AI todo app made $0.",
-    "journeySlug": "mircea-boring-saas",
-    "eventSlug": null,
-    "personSlug": "mircea"
-  },
-  {
-    "slug": "distribution-cold-email",
-    "category": "distribution",
-    "title": "Cold email works when targeting is specific",
-    "content": "Generic cold emails get deleted. But if you can say ‘I built a tool that imports invoices into [exact software they use]’, that’s not spam, that’s solving a problem. Mircea got his first 50 customers through targeted cold emails to accounting firms.",
-    "journeySlug": "mircea-boring-saas",
-    "eventSlug": null,
-    "personSlug": "mircea"
-  },
-  {
-    "slug": "business-b2b-pricing",
-    "category": "business",
-    "title": "B2B customers pay more and complain less",
-    "content": "Mircea charges €19/month for a tool that saves accountants 2 hours/week. Nobody blinks at that price. Compare that to trying to charge consumers $5/month for an app: they’ll demand a free tier and leave 1-star reviews. B2B is a different game.",
-    "journeySlug": "mircea-boring-saas",
-    "eventSlug": null,
-    "personSlug": "mircea"
-  },
-  {
-    "slug": "mindset-boring-wins",
-    "category": "mindset",
-    "title": "Stop chasing 'cool' and start chasing 'useful'",
-    "content": "Your AI-powered everything app won’t beat a simple tool that solves a specific pain point. The most successful indie hackers build unsexy products for people who gladly pay to save time. Cool ideas get Twitter likes. Useful products get MRR.",
-    "journeySlug": "mircea-boring-saas",
-    "eventSlug": null,
-    "personSlug": "mircea"
   }
 ]
