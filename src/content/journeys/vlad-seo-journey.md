@@ -1,7 +1,7 @@
 ---
 title: "How I got 10k organic visitors with zero budget"
 subtitle: "6 months of SEO experiments on a side project: what actually moved the needle"
-person: "alex"
+person: "vlad"
 date: 2026-03-01
 lessons:
   - "Stop guessing what to write, use search data"
@@ -29,7 +29,7 @@ Stop guessing what to write about. Use Google Search Console (free), Ubersuggest
 I created invoice template pages for 30 countries. Each page had a free downloadable template, local tax info, and currency formatting. This was tedious but brain-dead simple.
 
 :::advice{slug="seo-programmatic" category="seo" title="Try programmatic SEO"}
-Create template pages that follow the same structure but target different keywords. Think 'invoice template for [country]' or '[tool] alternative.' It's tedious to set up but scales incredibly well. Alex got most of his 10k visitors from template pages.
+Create template pages that follow the same structure but target different keywords. Think 'invoice template for [country]' or '[tool] alternative.' It's tedious to set up but scales incredibly well. Vlad got most of his 10k visitors from template pages.
 :::
 
 ## Month 6: Results
@@ -43,5 +43,5 @@ Most indie hackers publish 5 posts, see no traffic after 2 weeks, and declare SE
 **The uncomfortable truth**: Most of my traffic came from 3 pages out of 45. The Pareto principle is brutally real in SEO.
 
 :::advice{slug="mindset-pareto" category="mindset" title="The Pareto principle is brutally real"}
-Alex wrote 45 pages. 3 of them drove 80% of his traffic. Raul posted 90 tweets. 5 of them brought most of his followers. Don't spread yourself thin. Find what works and double down ruthlessly.
+Vlad wrote 45 pages. 3 of them drove 80% of his traffic. Raul posted 90 tweets. 5 of them brought most of his followers. Don't spread yourself thin. Find what works and double down ruthlessly.
 :::

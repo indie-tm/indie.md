@@ -84,7 +84,7 @@ function buildCalloutHtml(attrs: {
 }
 
 const remarkExtractAdvice: Plugin<[], Root> = () => (tree: Root, file) => {
-  // Derive source slug from the file name (e.g. "alex-seo.md" -> "alex-seo")
+  // Derive source slug from the file name (e.g. "vlad-seo.md" -> "vlad-seo")
   const fileName = file.history[0]
     ? path.basename(file.history[0], path.extname(file.history[0]))
     : undefined;

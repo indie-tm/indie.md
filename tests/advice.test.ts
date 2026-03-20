@@ -62,10 +62,10 @@ describe("advice helpers", () => {
 
   describe("getAdviceForJourney", () => {
     it("returns advice for a specific journey", () => {
-      const advice = getAdviceForJourney("alex-seo-journey");
+      const advice = getAdviceForJourney("vlad-seo-journey");
       expect(advice.length).toBeGreaterThan(0);
       for (const entry of advice) {
-        expect(entry.journeySlug).toBe("alex-seo-journey");
+        expect(entry.journeySlug).toBe("vlad-seo-journey");
       }
     });
 

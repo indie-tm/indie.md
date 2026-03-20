@@ -1,47 +1,173 @@
 [
   {
-    "slug": "product-simplest-version",
-    "category": "product",
-    "title": "Build the simplest version first",
-    "content": "Mircea built SingleFax in a weekend by refusing to add anything beyond the core action: upload, enter a number, pay, send. No user accounts, no dashboards, no analytics. If your v1 takes longer than a week, you’re building too much. Strip it down until a complete stranger can use it in under 60 seconds.",
-    "journeySlug": "mircea-singlefax",
+    "slug": "distribution-build-in-public",
+    "category": "distribution",
+    "title": "Build in public: honesty wins",
+    "content": "Share your real numbers, real struggles, real screenshots. People are tired of polished success stories. Raul grew from 200 to 2,800 Twitter followers in 3 months just by posting raw, honest updates about his journey.",
+    "journeySlug": "raul-twitter-seo",
     "eventSlug": null,
-    "personSlug": "mircea"
+    "personSlug": "raul"
   },
   {
-    "slug": "product-remove-friction",
-    "category": "product",
-    "title": "Remove all friction: no signup, no subscription",
-    "content": "Every form field you add, every account creation step, every subscription commitment is a point where customers leave. Mircea removed all of them. No signup, no login, no monthly plan. Just pay and use. For occasional-use products, this is the difference between making money and making nothing.",
-    "journeySlug": "mircea-singlefax",
-    "eventSlug": null,
-    "personSlug": "mircea"
-  },
-  {
-    "slug": "seo-how-to-queries",
+    "slug": "seo-template-pages",
     "category": "seo",
-    "title": "SEO for 'how to' queries drives purchase-intent traffic",
-    "content": "Most indie hackers target broad keywords like “best fax service.” Instead, target the specific “how to” queries your customers actually search for. “How to fax documents to the IRS” attracts someone who needs to fax right now, not someone comparison-shopping. Mircea’s 9 blog posts drive nearly all of SingleFax’s organic traffic, and these visitors convert at a much higher rate than any other channel.",
-    "journeySlug": "mircea-singlefax",
+    "title": "Free resource pages rank well",
+    "content": "Pages offering something free (templates, tools, calculators) tend to rank better because they get more backlinks and longer time-on-page. Raul’s free Figma template pages drove the majority of his organic traffic.",
+    "journeySlug": "raul-twitter-seo",
     "eventSlug": null,
-    "personSlug": "mircea"
+    "personSlug": "raul"
   },
   {
-    "slug": "business-premium-tier",
-    "category": "business",
-    "title": "Add a premium tier based on what customers ask for",
-    "content": "Don’t guess what people will pay for. Wait for them to tell you. Mircea never planned SingleFax’s $99 lifetime tier. Customers asked for it by email, he built it in an afternoon, and it became a significant revenue stream. The best product roadmap is your inbox.",
-    "journeySlug": "mircea-singlefax",
+    "slug": "distribution-two-channels",
+    "category": "distribution",
+    "title": "Combine a spike channel with a compounding channel",
+    "content": "Twitter/social media gives you spikes around launches. SEO/content gives you steady baseline traffic. Together they create a growth flywheel. Don’t try to be everywhere. Master two channels first.",
+    "journeySlug": "raul-twitter-seo",
     "eventSlug": null,
-    "personSlug": "mircea"
+    "personSlug": "raul"
   },
   {
-    "slug": "mindset-agency-superpower",
+    "slug": "mindset-consistency",
     "category": "mindset",
-    "title": "Agency experience is a superpower for shipping fast",
-    "content": "If you’ve spent years building software for clients, you already have the hardest skill in indie hacking: the ability to ship. You know how to scope, build, deploy, and handle payments. Stop thinking of agency experience as a disadvantage. Mircea built SingleFax in a weekend because he’d already solved every technical problem it required, just for other people’s businesses.",
-    "journeySlug": "mircea-singlefax",
+    "title": "Consistency beats tactics",
+    "content": "There’s no secret growth hack. Raul posted every day for 3 months. Vlad published SEO content for 6 months. Mircea sent cold emails for 4 months. The common thread isn’t a tactic; it’s showing up consistently when results aren’t visible yet.",
+    "journeySlug": "raul-twitter-seo",
     "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "seo-keyword-research",
+    "category": "seo",
+    "title": "Use search data, not assumptions",
+    "content": "Stop guessing what to write about. Use Google Search Console (free), Ubersuggest free tier, or even Google’s ‘People also ask’ to find what people actually search for. One hour of keyword research saves you 10 hours of writing content nobody will find.",
+    "journeySlug": "vlad-seo-journey",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "seo-programmatic",
+    "category": "seo",
+    "title": "Try programmatic SEO",
+    "content": "Create template pages that follow the same structure but target different keywords. Think ‘invoice template for [country]’ or ‘[tool] alternative.’ It’s tedious to set up but scales incredibly well. Vlad got most of his 10k visitors from template pages.",
+    "journeySlug": "vlad-seo-journey",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "seo-patience",
+    "category": "seo",
+    "title": "SEO takes 3-6 months, so don't quit early",
+    "content": "Most indie hackers publish 5 posts, see no traffic after 2 weeks, and declare SEO dead. It takes Google 3-6 months to fully index and rank your content. Set a calendar reminder for 90 days and don’t check your rankings until then.",
+    "journeySlug": "vlad-seo-journey",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "mindset-pareto",
+    "category": "mindset",
+    "title": "The Pareto principle is brutally real",
+    "content": "Vlad wrote 45 pages. 3 of them drove 80% of his traffic. Raul posted 90 tweets. 5 of them brought most of his followers. Don’t spread yourself thin. Find what works and double down ruthlessly.",
+    "journeySlug": "vlad-seo-journey",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "mindset-unlearn-cto",
+    "category": "mindset",
+    "title": "Unlearn the CTO mindset",
+    "content": "After 15 years as a technical leader, your instinct is to keep improving the product. Resist it. A mediocre product with great distribution will outperform a great product with no distribution every single time. Vlad spent months polishing sisif.ai before realizing that nobody knew it existed. The hardest shift for technical founders is accepting that code quality doesn’t drive revenue.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "mindset-traditional-marketing-slow",
+    "category": "mindset",
+    "title": "Twitter and ProductHunt are slow for unknown founders",
+    "content": "Building in public, Twitter threads, and ProductHunt launches all share the same assumption: someone is already listening. If you have 12 followers, tweeting into the void won’t generate customers. Vlad tried the standard playbook for months and got nothing. These channels compound over time, but if you need traction now, you need to go where attention already exists.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "distribution-platform-led-growth",
+    "category": "distribution",
+    "title": "Ride existing waves with platform-led growth",
+    "content": "Instead of building your own audience from scratch, find platforms where your target users already gather. Vlad built n8n workflow templates (TikTok automation, Instagram Reels) that showcased sisif.ai’s API. The templates got thousands of views and drove real signups. The key is contributing genuine value to the platform’s ecosystem, not just dropping links.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "business-tiered-pricing",
+    "category": "business",
+    "title": "Tiered pricing unlocks hidden revenue",
+    "content": "Vlad’s single $9/month plan seemed simple and fair. Switching to three tiers ($10/$50/$200) increased his MRR by 4x. The lesson: different users get different amounts of value from your product. A hobbyist and a business running production workflows should not pay the same price. Start with tiers early. You can always simplify later, but you can’t recover the revenue you’ve been leaving on the table.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "distribution-beats-product",
+    "category": "distribution",
+    "title": "Distribution beats product, every time",
+    "content": "Vlad had a working AI video API and zero customers. The product didn’t change when he started getting signups. The distribution did. If you’re a technical founder, this is the hardest pill to swallow: the market doesn’t reward the best product. It rewards the product that shows up where buyers are looking. Spend at least half your time on distribution, especially in the early days.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "faq-schema-markup",
+    "category": "seo",
+    "title": "Add FAQ sections with FAQPage schema",
+    "content": "Add human-written FAQ sections to every page on your site. Use FAQPage structured data so Google can pull your answers into rich results. This is low effort and high impact for visibility. The key is writing real questions your users actually ask, not keyword-stuffed nonsense. Check Google Search Console for the queries people already use to find you, then answer those directly.",
+    "journeySlug": null,
+    "eventSlug": "bucharest-meetup-march-2026",
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "programmatic-seo-pages",
+    "category": "seo",
+    "title": "Create localized landing pages at scale",
+    "content": "Build pages targeting “[product/service] in [city/country]” combinations. Automate the structure but keep the content real. This is how you capture long-tail local search traffic with almost no competition. Vlad has 200+ city pages for his SaaS, and each one brings in a trickle of traffic that adds up to thousands of monthly visitors.",
+    "journeySlug": null,
+    "eventSlug": "bucharest-meetup-march-2026",
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "nocode-integration-backlinks",
+    "category": "distribution",
+    "title": "Get listed on no-code platforms for free backlinks",
+    "content": "Integrate with Zapier, Make.com, n8n, and other workflow tools. Each platform gives you a listing page with a backlink to your domain. This is free, permanent, and builds domain authority over time. The integration itself doesn’t need to be complex: even a simple webhook trigger is enough to get listed. Mircea’s Zapier listing alone drives 30+ clicks per month.",
+    "journeySlug": null,
+    "eventSlug": "bucharest-meetup-march-2026",
     "personSlug": "mircea"
+  },
+  {
+    "slug": "app-store-backlinks",
+    "category": "distribution",
+    "title": "Publish to app stores for authority backlinks",
+    "content": "Even if your product is primarily web-based, publish a simple mobile wrapper to the App Store and Google Play. The backlinks from apple.com and google.com are extremely high authority. A basic WebView wrapper with push notifications takes a weekend to build and gives you two of the strongest backlinks on the internet.",
+    "journeySlug": null,
+    "eventSlug": "bucharest-meetup-march-2026",
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "video-content-with-face",
+    "category": "product",
+    "title": "Record videos with your face in the corner",
+    "content": "Use tools like Lumen5 or Loom to record product walkthroughs with your face in the corner. People trust faces. These videos work as blog post embeds, YouTube content, and social proof simultaneously. Raul saw a 40% increase in trial signups on pages that included a face-in-corner walkthrough compared to text-only pages.",
+    "journeySlug": null,
+    "eventSlug": "bucharest-meetup-march-2026",
+    "personSlug": "raul"
+  },
+  {
+    "slug": "infographics-for-backlinks",
+    "category": "seo",
+    "title": "Create infographics for blog posts and backlinks",
+    "content": "Infographics get shared and linked to far more than plain text. Create one per major blog post. Other sites will embed them and link back to you. This is one of the most reliable backlink strategies. Use Canva or Figma to create simple data visualizations of your key points, then offer an embed code below the image so other bloggers can easily reuse it.",
+    "journeySlug": null,
+    "eventSlug": "bucharest-meetup-march-2026",
+    "personSlug": "raul"
   }
 ]

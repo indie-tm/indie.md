@@ -4,23 +4,23 @@ subtitle: "What we learned at our March meetup in Bucharest"
 date: 2026-03-19
 location: "Bucharest"
 presenters:
-  - alex
+  - vlad
   - mircea
   - raul
 ---
 
 We got together last night to talk about what's actually working for our projects. No theory, no fluff, just real numbers and real tactics. Here's what came out of it.
 
-## Alex: The SEO Checklist
+## Vlad: The SEO Checklist
 
-Alex kicked things off with a practical SEO checklist he's been refining across his projects.
+Vlad kicked things off with a practical SEO checklist he's been refining across his projects.
 
-:::advice{slug="faq-schema-markup" category="seo" title="Add FAQ sections with FAQPage schema" person="alex"}
+:::advice{slug="faq-schema-markup" category="seo" title="Add FAQ sections with FAQPage schema" person="vlad"}
 Add human-written FAQ sections to every page on your site. Use FAQPage structured data so Google can pull your answers into rich results. This is low effort and high impact for visibility. The key is writing real questions your users actually ask, not keyword-stuffed nonsense. Check Google Search Console for the queries people already use to find you, then answer those directly.
 :::
 
-:::advice{slug="programmatic-seo-pages" category="seo" title="Create localized landing pages at scale" person="alex"}
-Build pages targeting "[product/service] in [city/country]" combinations. Automate the structure but keep the content real. This is how you capture long-tail local search traffic with almost no competition. Alex has 200+ city pages for his SaaS, and each one brings in a trickle of traffic that adds up to thousands of monthly visitors.
+:::advice{slug="programmatic-seo-pages" category="seo" title="Create localized landing pages at scale" person="vlad"}
+Build pages targeting "[product/service] in [city/country]" combinations. Automate the structure but keep the content real. This is how you capture long-tail local search traffic with almost no competition. Vlad has 200+ city pages for his SaaS, and each one brings in a trickle of traffic that adds up to thousands of monthly visitors.
 :::
 
 ## Mircea: Distribution Beyond Cold Email

@@ -50,5 +50,5 @@ Twitter/social media gives you spikes around launches. SEO/content gives you ste
 :::
 
 :::advice{slug="mindset-consistency" category="mindset" title="Consistency beats tactics"}
-There's no secret growth hack. Raul posted every day for 3 months. Alex published SEO content for 6 months. Mircea sent cold emails for 4 months. The common thread isn't a tactic; it's showing up consistently when results aren't visible yet.
+There's no secret growth hack. Raul posted every day for 3 months. Vlad published SEO content for 6 months. Mircea sent cold emails for 4 months. The common thread isn't a tactic; it's showing up consistently when results aren't visible yet.
 :::

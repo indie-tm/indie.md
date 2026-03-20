@@ -34,11 +34,11 @@ src/
   content/
     config.ts                # Content collection schemas (Zod)
     people/
-      alex.md
+      vlad.md
       mircea.md
       raul.md
     journeys/
-      alex-seo.md
+      vlad-seo.md
       mircea-boring-saas.md
       raul-design-templates.md
   layouts/
@@ -81,7 +81,7 @@ Metadata-only, no body content needed.
 
 ```markdown
 ---
-name: "Alex"
+name: "Vlad"
 avatar: "A"
 tagline: "Solo founder obsessed with organic growth"
 bio: "Started building side projects in 2023..."
@@ -96,7 +96,7 @@ Full markdown body with embedded advice directives.
 ---
 title: "How I Got 10k Organic Visitors in 6 Months"
 subtitle: "From zero to 10k monthly visitors with pure SEO"
-person: "alex"
+person: "vlad"
 date: 2026-03-01
 lessons:
   - "Start with low-competition keywords"
@@ -191,12 +191,12 @@ dist/
   index.html
   people/
     index.html
-    alex/index.html
+    vlad/index.html
     mircea/index.html
     raul/index.html
   journeys/
     index.html
-    alex-seo/index.html
+    vlad-seo/index.html
     mircea-boring-saas/index.html
     raul-design-templates/index.html
   advice/

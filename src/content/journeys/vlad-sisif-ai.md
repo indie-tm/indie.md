@@ -1,7 +1,7 @@
 ---
 title: "From CTO to Indie Hacker: Building sisif.ai"
 subtitle: "How I went from 0 customers to growing MRR by abandoning traditional marketing"
-person: "alex"
+person: "vlad"
 date: 2026-01-22
 lessons:
   - "Distribution beats product: find where your users already hang out"
@@ -19,8 +19,8 @@ In December 2024, I started building sisif.ai: an AI video generation API that t
 
 By early 2025, I had a working product. Time to get customers, right?
 
-:::advice{slug="mindset-unlearn-cto" category="mindset" title="Unlearn the CTO mindset" person="alex"}
-After 15 years as a technical leader, your instinct is to keep improving the product. Resist it. A mediocre product with great distribution will outperform a great product with no distribution every single time. Alex spent months polishing sisif.ai before realizing that nobody knew it existed. The hardest shift for technical founders is accepting that code quality doesn't drive revenue.
+:::advice{slug="mindset-unlearn-cto" category="mindset" title="Unlearn the CTO mindset" person="vlad"}
+After 15 years as a technical leader, your instinct is to keep improving the product. Resist it. A mediocre product with great distribution will outperform a great product with no distribution every single time. Vlad spent months polishing sisif.ai before realizing that nobody knew it existed. The hardest shift for technical founders is accepting that code quality doesn't drive revenue.
 :::
 
 ## The zero-customer desert
@@ -31,8 +31,8 @@ The result? Zero paying customers. Eight Twitter followers. A perfectly function
 
 This wasn't a product problem. It was a distribution problem. And it forced me to confront something uncomfortable: all the marketing channels that work for founders with existing audiences are nearly useless when you're starting from zero.
 
-:::advice{slug="mindset-traditional-marketing-slow" category="mindset" title="Twitter and ProductHunt are slow for unknown founders" person="alex"}
-Building in public, Twitter threads, and ProductHunt launches all share the same assumption: someone is already listening. If you have 12 followers, tweeting into the void won't generate customers. Alex tried the standard playbook for months and got nothing. These channels compound over time, but if you need traction now, you need to go where attention already exists.
+:::advice{slug="mindset-traditional-marketing-slow" category="mindset" title="Twitter and ProductHunt are slow for unknown founders" person="vlad"}
+Building in public, Twitter threads, and ProductHunt launches all share the same assumption: someone is already listening. If you have 12 followers, tweeting into the void won't generate customers. Vlad tried the standard playbook for months and got nothing. These channels compound over time, but if you need traction now, you need to go where attention already exists.
 :::
 
 ## The n8n breakthrough
@@ -43,8 +43,8 @@ I built workflow templates. A TikTok automation workflow. An Instagram Reels gen
 
 The templates got thousands of views. Signups started flowing in. Not because I'd cracked some marketing code, but because I'd put my product where people were already looking for solutions.
 
-:::advice{slug="distribution-platform-led-growth" category="distribution" title="Ride existing waves with platform-led growth" person="alex"}
-Instead of building your own audience from scratch, find platforms where your target users already gather. Alex built n8n workflow templates (TikTok automation, Instagram Reels) that showcased sisif.ai's API. The templates got thousands of views and drove real signups. The key is contributing genuine value to the platform's ecosystem, not just dropping links.
+:::advice{slug="distribution-platform-led-growth" category="distribution" title="Ride existing waves with platform-led growth" person="vlad"}
+Instead of building your own audience from scratch, find platforms where your target users already gather. Vlad built n8n workflow templates (TikTok automation, Instagram Reels) that showcased sisif.ai's API. The templates got thousands of views and drove real signups. The key is contributing genuine value to the platform's ecosystem, not just dropping links.
 :::
 
 ## Pricing: the 4x MRR lesson
@@ -53,16 +53,16 @@ My first pricing was simple: $9/month, one plan. It felt "fair." It was also lea
 
 When I switched to tiered pricing ($10/$50/$200), MRR jumped 4x. Some users needed the basic tier. Others were running production workflows and happily paid $200/month for higher limits. A single price point forces everyone into the same box, and most of them don't fit.
 
-:::advice{slug="business-tiered-pricing" category="business" title="Tiered pricing unlocks hidden revenue" person="alex"}
-Alex's single $9/month plan seemed simple and fair. Switching to three tiers ($10/$50/$200) increased his MRR by 4x. The lesson: different users get different amounts of value from your product. A hobbyist and a business running production workflows should not pay the same price. Start with tiers early. You can always simplify later, but you can't recover the revenue you've been leaving on the table.
+:::advice{slug="business-tiered-pricing" category="business" title="Tiered pricing unlocks hidden revenue" person="vlad"}
+Vlad's single $9/month plan seemed simple and fair. Switching to three tiers ($10/$50/$200) increased his MRR by 4x. The lesson: different users get different amounts of value from your product. A hobbyist and a business running production workflows should not pay the same price. Start with tiers early. You can always simplify later, but you can't recover the revenue you've been leaving on the table.
 :::
 
 ## What I know now
 
 The CTO in me wanted to build the best AI video pipeline. The indie hacker I'm becoming knows that distribution is the whole game. A product that reaches the right people will always beat a product that's technically superior but invisible.
 
-:::advice{slug="distribution-beats-product" category="distribution" title="Distribution beats product, every time" person="alex"}
-Alex had a working AI video API and zero customers. The product didn't change when he started getting signups. The distribution did. If you're a technical founder, this is the hardest pill to swallow: the market doesn't reward the best product. It rewards the product that shows up where buyers are looking. Spend at least half your time on distribution, especially in the early days.
+:::advice{slug="distribution-beats-product" category="distribution" title="Distribution beats product, every time" person="vlad"}
+Vlad had a working AI video API and zero customers. The product didn't change when he started getting signups. The distribution did. If you're a technical founder, this is the hardest pill to swallow: the market doesn't reward the best product. It rewards the product that shows up where buyers are looking. Spend at least half your time on distribution, especially in the early days.
 :::
 
 The playbook that worked: stop shouting into the void. Find a platform where your users already live. Build something valuable for that community. Let the platform's existing traffic do the heavy lifting. Then price your product to capture the value you're actually delivering.
