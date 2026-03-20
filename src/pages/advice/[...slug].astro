@@ -71,7 +71,7 @@ const pageDescription = isCategory
     <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
       <div class="max-w-2xl">
         <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4 flex items-center gap-3">
-          <span class="text-4xl" role="img" aria-label={`${category.label} category`}>{category.icon}</span> {category.label}
+          <span class="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 text-primary font-bold text-sm">{category.icon}</span> {category.label}
         </h1>
         <p class="text-lg text-muted-foreground leading-relaxed">
           {category.count} tips from real indie hacker journeys.
@@ -141,7 +141,7 @@ const pageDescription = isCategory
       <!-- Author -->
       {advicePerson && (
         <div class="flex items-center gap-3 mb-8">
-          <span class="text-2xl" role="img" aria-label={`${advicePerson.data.name}'s avatar`}>{advicePerson.data.avatar}</span>
+          <span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary font-semibold text-sm">{advicePerson.data.avatar}</span>
           <div>
             <a href={`/people/${advice.personSlug}`} class="text-sm font-semibold text-foreground hover:text-primary transition-colors">
               {advicePerson.data.name}

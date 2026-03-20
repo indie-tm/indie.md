@@ -25,7 +25,7 @@ const { advice, person, categoryLabel } = Astro.props;
     </span>
     <span class="text-muted-foreground/40">&middot;</span>
     <span class="text-xs text-muted-foreground flex items-center gap-1">
-      <span role="img" aria-label={`${person.name}'s avatar`}>{person.avatar}</span> {person.name}
+      <span class="flex items-center justify-center w-5 h-5 rounded-full bg-primary/10 text-primary font-semibold text-[9px]">{person.avatar}</span> {person.name}
     </span>
   </div>
   <h3 class="font-display text-lg text-foreground group-hover:text-primary transition-colors">

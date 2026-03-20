@@ -52,7 +52,7 @@ const formattedDate = journey.data.date.toLocaleDateString('en-US', {
 
     <!-- Author card -->
     <div class="flex items-center gap-4 mb-8">
-      <span class="text-5xl" role="img" aria-label={`${person!.data.name}'s avatar`}>{person!.data.avatar}</span>
+      <span class="flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary font-bold text-xl">{person!.data.avatar}</span>
       <div>
         <a href={`/people/${journey.data.person}`} class="font-semibold text-foreground hover:text-primary transition-colors">
           {person!.data.name}

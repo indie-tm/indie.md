@@ -25,7 +25,7 @@ const formattedDate = event.date.toLocaleDateString('en-US', {
   <div class="flex items-center gap-2 mb-4">
     <div class="flex -space-x-2">
       {presenters.map((p) => (
-        <span class="text-2xl" title={p.name} role="img" aria-label={`${p.name}'s avatar`}>{p.avatar}</span>
+        <span class="flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary font-semibold text-xs" title={p.name}>{p.avatar}</span>
       ))}
     </div>
     <div class="ml-2">

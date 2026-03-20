@@ -127,7 +127,7 @@ const latestAdvice = await Promise.all(
       {categories.map((cat) => (
         <a href={`/advice/${cat.slug}`}
            class="group flex items-center gap-3 rounded-xl border border-border/80 bg-card px-5 py-4 hover:border-primary/30 hover:shadow-[var(--shadow-card)] transition-all">
-          <span class="text-2xl" role="img" aria-label={`${cat.label} category`}>{cat.icon}</span>
+          <span class="flex items-center justify-center w-10 h-10 rounded-lg bg-primary/10 text-primary font-bold text-xs">{cat.icon}</span>
           <div>
             <p class="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">{cat.label}</p>
             <p class="text-xs text-muted-foreground">{cat.count} tips</p>

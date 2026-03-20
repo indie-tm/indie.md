@@ -13,5 +13,5 @@ const { category, label, icon, active = false } = Astro.props;
   'inline-flex items-center gap-1 px-3 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider',
   active ? 'bg-primary text-primary-foreground' : 'bg-primary/10 text-primary',
 ]}>
-  <span aria-hidden="true">{icon}</span> {label}
+  <span>{icon}</span> {label}
 </span>
