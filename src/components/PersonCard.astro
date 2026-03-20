@@ -15,7 +15,7 @@ const { person } = Astro.props;
 <a href={`/people/${person.slug}`}
    class="group block rounded-xl border border-border/80 bg-card p-6 hover:shadow-[var(--shadow-card-hover)] hover:border-primary/30 transition-all duration-300">
   <div class="flex items-center gap-4 mb-3">
-    <span class="flex items-center justify-center w-14 h-14 rounded-full bg-primary/10 text-primary font-bold text-xl">{person.avatar}</span>
+    <img src={person.avatar} alt={person.name} class="w-14 h-14 rounded-full object-cover" />
     <div>
       <p class="font-semibold text-foreground group-hover:text-primary transition-colors">{person.name}</p>
       <p class="text-sm text-muted-foreground italic">{person.tagline}</p>

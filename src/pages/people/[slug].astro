@@ -63,7 +63,7 @@ const personAdvice = adviceIndex.filter(a => a.personSlug === person.id);
 
     <!-- Person header -->
     <div class="flex items-start gap-5 mb-4">
-      <span class="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 text-primary font-bold text-2xl">{person.data.avatar}</span>
+      <img src={person.data.avatar} alt={person.data.name} class="w-20 h-20 rounded-full object-cover" />
       <div>
         <h1 class="font-display text-3xl md:text-4xl tracking-tight text-foreground mb-1">
           {person.data.name}

@@ -141,7 +141,7 @@ const pageDescription = isCategory
       <!-- Author -->
       {advicePerson && (
         <div class="flex items-center gap-3 mb-8">
-          <span class="flex items-center justify-center w-10 h-10 rounded-full bg-primary/10 text-primary font-semibold text-sm">{advicePerson.data.avatar}</span>
+          <img src={advicePerson.data.avatar} alt={advicePerson.data.name} class="w-8 h-8 rounded-full object-cover" />
           <div>
             <a href={`/people/${advice.personSlug}`} class="text-sm font-semibold text-foreground hover:text-primary transition-colors">
               {advicePerson.data.name}
