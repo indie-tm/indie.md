@@ -155,17 +155,28 @@ const pageDescription = isCategory
         <p>{advice.content}</p>
       </div>
 
-      <!-- Source journey -->
+      <!-- Source -->
       <div class="mt-12 max-w-2xl">
         <p class="text-sm text-muted-foreground mb-3">Extracted from</p>
-        <a href={`/journeys/${advice.journeySlug}`}
-           class="group flex items-center gap-3 rounded-xl border border-border/80 bg-card p-5 hover:border-primary/30 hover:shadow-[var(--shadow-card)] transition-all">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground group-hover:text-primary transition-colors"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
-          <span class="font-display text-lg text-foreground group-hover:text-primary transition-colors">
-            View the full journey
-          </span>
-          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground group-hover:text-primary transition-colors ml-auto"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-        </a>
+        {advice.eventSlug ? (
+          <a href={`/events/${advice.eventSlug}`}
+             class="group flex items-center gap-3 rounded-xl border border-border/80 bg-card p-5 hover:border-primary/30 hover:shadow-[var(--shadow-card)] transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground group-hover:text-primary transition-colors"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+            <span class="font-display text-lg text-foreground group-hover:text-primary transition-colors">
+              View the full event
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground group-hover:text-primary transition-colors ml-auto"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        ) : (
+          <a href={`/journeys/${advice.journeySlug}`}
+             class="group flex items-center gap-3 rounded-xl border border-border/80 bg-card p-5 hover:border-primary/30 hover:shadow-[var(--shadow-card)] transition-all">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground group-hover:text-primary transition-colors"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+            <span class="font-display text-lg text-foreground group-hover:text-primary transition-colors">
+              View the full journey
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground group-hover:text-primary transition-colors ml-auto"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        )}
       </div>
     </article>
   )}
