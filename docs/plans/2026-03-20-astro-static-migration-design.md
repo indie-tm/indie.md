@@ -8,10 +8,10 @@ Convert the React SPA into a statically generated site using Astro. Zero JavaScr
 
 ### Tech Stack
 
-- **Astro** — static site generator, zero JS by default
-- **Tailwind CSS** — same design system, same config
-- **Markdown** — content authored in `.md` files with frontmatter
-- **Remark plugin** — custom plugin to extract advice from journey content
+- **Astro**: static site generator, zero JS by default
+- **Tailwind CSS**: same design system, same config
+- **Markdown**: content authored in `.md` files with frontmatter
+- **Remark plugin**: custom plugin to extract advice from journey content
 
 ### What Gets Removed
 
@@ -25,7 +25,7 @@ Convert the React SPA into a statically generated site using Astro. Zero JavaScr
 
 - `tailwind.config.ts` (same design tokens, fonts, colors)
 - CSS variables and Google Fonts from `index.css`
-- The visual design — rebuilt in Astro templates
+- The visual design (rebuilt in Astro templates)
 
 ## Project Structure
 
@@ -128,12 +128,12 @@ Each directive produces:
 - An inline callout in the journey page
 
 Extracted metadata per advice:
-- `slug` — URL-safe identifier
-- `category` — one of: seo, distribution, product, business, mindset
-- `title` — display title
-- `content` — the body text inside the directive
-- `journeySlug` — the parent journey (derived automatically)
-- `personSlug` — the author (derived from journey frontmatter)
+- `slug`: URL-safe identifier
+- `category`: one of: seo, distribution, product, business, mindset
+- `title`: display title
+- `content`: the body text inside the directive
+- `journeySlug`: the parent journey (derived automatically)
+- `personSlug`: the author (derived from journey frontmatter)
 
 ## Data Relationships
 
@@ -162,7 +162,7 @@ Each advice block becomes a standalone page and appears in category listings.
 
 ### Category Filtering
 
-Separate static pages per category — no JavaScript needed.
+Separate static pages per category, no JavaScript needed.
 
 Generated pages: `/advice`, `/advice/seo`, `/advice/product`, `/advice/business`, `/advice/distribution`, `/advice/mindset`
 
@@ -170,7 +170,7 @@ Navigation is plain `<a>` links between them.
 
 ### Routing Ambiguity: `/advice/[category]` vs `/advice/[slug]`
 
-Category slugs are a known set (seo, product, business, distribution, mindset). The `[category].astro` page uses `getStaticPaths()` with only these 5 values. The `[slug].astro` page generates paths for advice slugs which must not collide with category names — enforced by the remark plugin rejecting reserved slugs.
+Category slugs are a known set (seo, product, business, distribution, mindset). The `[category].astro` page uses `getStaticPaths()` with only these 5 values. The `[slug].astro` page generates paths for advice slugs which must not collide with category names (enforced by the remark plugin rejecting reserved slugs).
 
 ## Build Pipeline
 

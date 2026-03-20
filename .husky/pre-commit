@@ -1,1 +1,1 @@
-npx biome check . && npx tsc --noEmit
+npx biome check . && bash scripts/lint-writing.sh && npx tsc --noEmit

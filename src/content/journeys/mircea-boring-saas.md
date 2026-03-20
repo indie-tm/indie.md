@@ -10,7 +10,7 @@ lessons:
   - "B2B customers churn less and complain less than B2C"
 ---
 
-After 5 years in agencies, I was burnt out. I'd built beautiful apps for clients but had nothing of my own. So I did what every developer does — I started building a todo app with AI.
+After 5 years in agencies, I was burnt out. I'd built beautiful apps for clients but had nothing of my own. So I did what every developer does: I started building a todo app with AI.
 
 ## The failed cool idea
 
@@ -40,11 +40,11 @@ I hit it in month 11. Not through Product Hunt or Twitter threads. Through cold 
 The boring stuff is where the money is. Nobody tweets about CSV converters, but accountants will pay for them every single month without complaining.
 
 :::advice{slug="distribution-cold-email" category="distribution" title="Cold email works when targeting is specific"}
-Generic cold emails get deleted. But if you can say 'I built a tool that imports invoices into [exact software they use]' — that's not spam, that's solving a problem. Mircea got his first 50 customers through targeted cold emails to accounting firms.
+Generic cold emails get deleted. But if you can say 'I built a tool that imports invoices into [exact software they use]', that's not spam, that's solving a problem. Mircea got his first 50 customers through targeted cold emails to accounting firms.
 :::
 
 :::advice{slug="business-b2b-pricing" category="business" title="B2B customers pay more and complain less"}
-Mircea charges €19/month for a tool that saves accountants 2 hours/week. Nobody blinks at that price. Compare that to trying to charge consumers $5/month for an app — they'll demand a free tier and leave 1-star reviews. B2B is a different game.
+Mircea charges €19/month for a tool that saves accountants 2 hours/week. Nobody blinks at that price. Compare that to trying to charge consumers $5/month for an app: they'll demand a free tier and leave 1-star reviews. B2B is a different game.
 :::
 
 :::advice{slug="mindset-boring-wins" category="mindset" title="Stop chasing 'cool' and start chasing 'useful'"}

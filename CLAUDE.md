@@ -1,6 +1,6 @@
 # indie.md
 
-An indie hacker knowledge platform — real stories, extractable advice. Built with Astro, generates static HTML with zero JavaScript.
+An indie hacker knowledge platform: real stories, extractable advice. Built with Astro, generates static HTML with zero JavaScript.
 
 ## Commands
 
@@ -19,10 +19,10 @@ npm run test:watch   # Run tests in watch mode
 
 The quality gate is `npm run check`. It runs sequentially:
 
-1. `biome check .` — formatting + linting
-2. `tsc --noEmit` — type checking
-3. `vitest run` — tests
-4. `astro build` — full build (validates content schemas, remark plugins, all pages)
+1. `biome check .`: formatting + linting
+2. `tsc --noEmit`: type checking
+3. `vitest run`: tests
+4. `astro build`: full build (validates content schemas, remark plugins, all pages)
 
 Pre-commit hook runs: `biome check . && tsc --noEmit`
 
@@ -68,6 +68,11 @@ People and journeys are content collections. Advice is auto-extracted from journ
 3. Embed advice: use `:::advice{slug="..." category="..." title="..."}` directives in journey markdown
 
 Categories: seo, distribution, product, business, mindset
+
+## Writing
+
+- Never use em dashes. Use colons for definitions, commas or parentheses for asides, and restructure sentences that rely on em dashes
+- Never use emojis in code, content, comments, or commit messages
 
 ## Code Style
 
@@ -121,7 +126,7 @@ Categories: seo, distribution, product, business, mindset
 - Test real behavior, not mocked behavior
 - All public exports from `src/lib/` must have tests
 - All error paths must have tests
-- Test output must be pristine — no warnings or errors in passing tests
+- Test output must be pristine: no warnings or errors in passing tests
 - Place tests in `tests/*.test.ts` with behavior-focused `it(...)` names
 
 ## Engineering Principles

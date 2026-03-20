@@ -1,13 +1,13 @@
 ---
 title: "How I got 10k organic visitors with zero budget"
-subtitle: "6 months of SEO experiments on a side project — what actually moved the needle"
+subtitle: "6 months of SEO experiments on a side project: what actually moved the needle"
 person: "alex"
 date: 2026-03-01
 lessons:
-  - "Stop guessing what to write — use search data"
+  - "Stop guessing what to write, use search data"
   - "Programmatic SEO (template pages) is underrated for indie hackers"
   - "3 great pages > 45 mediocre ones"
-  - "SEO takes 3-6 months to show results — most people quit at month 2"
+  - "SEO takes 3-6 months to show results, and most people quit at month 2"
 ---
 
 I launched a simple tool for freelancers to track their invoices. No audience, no followers, no money for ads. Just me and a keyboard.
@@ -36,12 +36,12 @@ Create template pages that follow the same structure but target different keywor
 
 10,200 organic visitors/month. 340 signups. 12 paying customers. Not life-changing money but proof that SEO compounds.
 
-:::advice{slug="seo-patience" category="seo" title="SEO takes 3-6 months — don't quit early"}
+:::advice{slug="seo-patience" category="seo" title="SEO takes 3-6 months, so don't quit early"}
 Most indie hackers publish 5 posts, see no traffic after 2 weeks, and declare SEO dead. It takes Google 3-6 months to fully index and rank your content. Set a calendar reminder for 90 days and don't check your rankings until then.
 :::
 
 **The uncomfortable truth**: Most of my traffic came from 3 pages out of 45. The Pareto principle is brutally real in SEO.
 
 :::advice{slug="mindset-pareto" category="mindset" title="The Pareto principle is brutally real"}
-Alex wrote 45 pages. 3 of them drove 80% of his traffic. Raul posted 90 tweets. 5 of them brought most of his followers. Don't spread yourself thin — find what works and double down ruthlessly.
+Alex wrote 45 pages. 3 of them drove 80% of his traffic. Raul posted 90 tweets. 5 of them brought most of his followers. Don't spread yourself thin. Find what works and double down ruthlessly.
 :::
