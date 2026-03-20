@@ -1,0 +1,58 @@
+---
+import Base from '../../layouts/Base.astro';
+import AdviceCard from '../../components/AdviceCard.astro';
+import { getEntry } from 'astro:content';
+import { getAdviceIndex, getAllCategories } from '../../lib/advice';
+
+const adviceIndex = getAdviceIndex();
+const categories = getAllCategories();
+
+const adviceWithPeople = await Promise.all(
+  adviceIndex.map(async (a) => {
+    const person = await getEntry('people', a.personSlug);
+    const cat = categories.find(c => c.slug === a.category);
+    return { advice: a, person: person!, categoryLabel: cat?.label ?? a.category };
+  })
+);
+---
+<Base title="Advice — indie.md" description="Practical tips extracted from real indie hacker journeys. Browse by category or explore them all.">
+  <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
+    <div class="max-w-2xl">
+      <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4">
+        Advice
+      </h1>
+      <p class="text-lg text-muted-foreground leading-relaxed">
+        Practical tips extracted from real indie hacker journeys. Every piece of advice comes from someone who's actually done it.
+      </p>
+    </div>
+  </section>
+
+  <!-- Category filters -->
+  <section class="container mx-auto px-4 pb-8">
+    <div class="flex flex-wrap items-center gap-2">
+      <a href="/advice"
+         class="inline-flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium bg-primary text-primary-foreground">
+        All
+      </a>
+      {categories.map((cat) => (
+        <a href={`/advice/${cat.slug}`}
+           class="inline-flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium border border-border/80 text-muted-foreground hover:border-primary/30 hover:text-foreground transition-all">
+          {cat.icon} {cat.label}
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <!-- Advice list -->
+  <section class="container mx-auto px-4 pb-20">
+    <div class="divide-y divide-border/60">
+      {adviceWithPeople.map(({ advice, person, categoryLabel }) => (
+        <AdviceCard
+          advice={advice}
+          person={person.data}
+          categoryLabel={categoryLabel}
+        />
+      ))}
+    </div>
+  </section>
+</Base>

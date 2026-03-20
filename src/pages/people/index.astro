@@ -1,0 +1,27 @@
+---
+import Base from '../../layouts/Base.astro';
+import PersonCard from '../../components/PersonCard.astro';
+import { getCollection } from 'astro:content';
+
+const people = await getCollection('people');
+---
+<Base title="People — indie.md" description="Meet the indie hackers sharing their stories, lessons, and hard-won advice.">
+  <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
+    <div class="max-w-2xl">
+      <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4">
+        People
+      </h1>
+      <p class="text-lg text-muted-foreground leading-relaxed">
+        Meet the indie hackers sharing their stories, lessons, and hard-won advice.
+      </p>
+    </div>
+  </section>
+
+  <section class="container mx-auto px-4 pb-20">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+      {people.map((p) => (
+        <PersonCard person={{ slug: p.id, ...p.data }} />
+      ))}
+    </div>
+  </section>
+</Base>

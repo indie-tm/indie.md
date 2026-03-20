@@ -1,0 +1,35 @@
+---
+interface Props {
+  advice: {
+    slug: string;
+    title: string;
+    content: string;
+    category: string;
+    personSlug: string;
+  };
+  person: {
+    name: string;
+    avatar: string;
+  };
+  categoryLabel: string;
+}
+
+const { advice, person, categoryLabel } = Astro.props;
+---
+
+<a href={`/advice/${advice.slug}`}
+   class="group block py-5 hover:pl-2 transition-all duration-200">
+  <div class="flex items-center gap-2 mb-1.5">
+    <span class="text-[11px] font-semibold uppercase tracking-wider text-primary">
+      {categoryLabel}
+    </span>
+    <span class="text-muted-foreground/40">&middot;</span>
+    <span class="text-xs text-muted-foreground flex items-center gap-1">
+      {person.avatar} {person.name}
+    </span>
+  </div>
+  <h3 class="font-display text-lg text-foreground group-hover:text-primary transition-colors">
+    {advice.title}
+  </h3>
+  <p class="text-sm text-muted-foreground mt-1 line-clamp-2">{advice.content}</p>
+</a>

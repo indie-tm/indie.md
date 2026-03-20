@@ -1,0 +1,170 @@
+---
+import Base from '../../layouts/Base.astro';
+import AdviceCard from '../../components/AdviceCard.astro';
+import CategoryBadge from '../../components/CategoryBadge.astro';
+import { getEntry } from 'astro:content';
+import { getAdviceIndex, getAdviceByCategory, getAllCategories } from '../../lib/advice';
+import type { AdviceEntry, CategoryMeta } from '../../lib/advice';
+
+export async function getStaticPaths() {
+  const { getAdviceIndex, getAllCategories } = await import('../../lib/advice');
+  const adviceIndex = getAdviceIndex();
+  const categories = getAllCategories();
+
+  const categoryPaths = categories.map((cat) => ({
+    params: { slug: cat.slug },
+    props: { type: 'category' as const, category: cat, advice: undefined as unknown as AdviceEntry },
+  }));
+
+  const advicePaths = adviceIndex.map((a) => ({
+    params: { slug: a.slug },
+    props: { type: 'advice' as const, advice: a, category: undefined as unknown as CategoryMeta },
+  }));
+
+  return [...categoryPaths, ...advicePaths];
+}
+
+type Props = {
+  type: 'category' | 'advice';
+  category: CategoryMeta;
+  advice: AdviceEntry;
+};
+
+const { type, category, advice } = Astro.props;
+const categories = getAllCategories();
+
+// Data for category pages
+let filteredAdvice: { advice: AdviceEntry; person: any; categoryLabel: string }[] = [];
+if (type === 'category') {
+  const entries = getAdviceByCategory(category.slug);
+  filteredAdvice = await Promise.all(
+    entries.map(async (a) => {
+      const person = await getEntry('people', a.personSlug);
+      const cat = categories.find(c => c.slug === a.category);
+      return { advice: a, person: person!, categoryLabel: cat?.label ?? a.category };
+    })
+  );
+}
+
+// Data for individual advice pages
+let advicePerson: any = null;
+let adviceCategory: CategoryMeta | undefined;
+let journeyTitle = '';
+if (type === 'advice') {
+  advicePerson = await getEntry('people', advice.personSlug);
+  adviceCategory = categories.find(c => c.slug === advice.category);
+}
+
+const pageTitle = type === 'category'
+  ? `${category.label} Advice — indie.md`
+  : `${advice.title} — indie.md`;
+
+const pageDescription = type === 'category'
+  ? `${category.label} tips from indie hackers who've been there.`
+  : advice.content.slice(0, 160);
+---
+<Base title={pageTitle} description={pageDescription}>
+  {type === 'category' && (
+    <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
+      <div class="max-w-2xl">
+        <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4 flex items-center gap-3">
+          <span class="text-4xl">{category.icon}</span> {category.label}
+        </h1>
+        <p class="text-lg text-muted-foreground leading-relaxed">
+          {category.count} tips from real indie hacker journeys.
+        </p>
+      </div>
+    </section>
+  )}
+
+  {type === 'category' && (
+    <section class="container mx-auto px-4 pb-8">
+      <div class="flex flex-wrap items-center gap-2">
+        <a href="/advice"
+           class="inline-flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium border border-border/80 text-muted-foreground hover:border-primary/30 hover:text-foreground transition-all">
+          All
+        </a>
+        {categories.map((cat) => (
+          <a href={`/advice/${cat.slug}`}
+             class:list={[
+               'inline-flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium',
+               cat.slug === category.slug
+                 ? 'bg-primary text-primary-foreground'
+                 : 'border border-border/80 text-muted-foreground hover:border-primary/30 hover:text-foreground transition-all',
+             ]}>
+            {cat.icon} {cat.label}
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  {type === 'category' && (
+    <section class="container mx-auto px-4 pb-20">
+      <div class="divide-y divide-border/60">
+        {filteredAdvice.map(({ advice, person, categoryLabel }) => (
+          <AdviceCard
+            advice={advice}
+            person={person.data}
+            categoryLabel={categoryLabel}
+          />
+        ))}
+      </div>
+    </section>
+  )}
+
+  {type === 'advice' && (
+    <article class="container mx-auto px-4 pt-16 pb-20 md:pt-20">
+      <!-- Back link -->
+      <a href="/advice" class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">
+        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+        All advice
+      </a>
+
+      <!-- Category badge -->
+      {adviceCategory && (
+        <div class="mb-4">
+          <a href={`/advice/${adviceCategory.slug}`}>
+            <CategoryBadge category={adviceCategory.slug} label={adviceCategory.label} icon={adviceCategory.icon} />
+          </a>
+        </div>
+      )}
+
+      <!-- Title -->
+      <h1 class="font-display text-3xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-6">
+        {advice.title}
+      </h1>
+
+      <!-- Author -->
+      {advicePerson && (
+        <div class="flex items-center gap-3 mb-8">
+          <span class="text-2xl">{advicePerson.data.avatar}</span>
+          <div>
+            <a href={`/people/${advice.personSlug}`} class="text-sm font-semibold text-foreground hover:text-primary transition-colors">
+              {advicePerson.data.name}
+            </a>
+            <p class="text-xs text-muted-foreground italic">{advicePerson.data.tagline}</p>
+          </div>
+        </div>
+      )}
+
+      <!-- Content -->
+      <div class="prose prose-lg max-w-2xl prose-p:text-muted-foreground prose-p:leading-relaxed">
+        <p>{advice.content}</p>
+      </div>
+
+      <!-- Source journey -->
+      <div class="mt-12 max-w-2xl">
+        <p class="text-sm text-muted-foreground mb-3">Extracted from</p>
+        <a href={`/journeys/${advice.journeySlug}`}
+           class="group flex items-center gap-3 rounded-xl border border-border/80 bg-card p-5 hover:border-primary/30 hover:shadow-[var(--shadow-card)] transition-all">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground group-hover:text-primary transition-colors"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg>
+          <span class="font-display text-lg text-foreground group-hover:text-primary transition-colors">
+            View the full journey
+          </span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted-foreground group-hover:text-primary transition-colors ml-auto"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </div>
+    </article>
+  )}
+</Base>
