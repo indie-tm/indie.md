@@ -1,10 +1,11 @@
 ---
+import { assetPath } from "../lib/base-url";
 ---
 
 <header class="border-b border-border/60 bg-background/80 backdrop-blur-sm sticky top-0 z-50">
   <div class="container mx-auto flex items-center justify-between h-16 px-4">
     <a href="/" class="flex items-center gap-2">
-      <img src="/logo.png" alt="indie.md" class="h-10" />
+      <img src={assetPath("/logo.png")} alt="indie.md" class="h-10" />
     </a>
     <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
       <a href="/" class="text-foreground/70 hover:text-foreground transition-colors">Home</a>

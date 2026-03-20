@@ -11,6 +11,8 @@ interface Props {
   adviceCount: number;
 }
 
+import { assetPath } from "../lib/base-url";
+
 const { event, presenters, adviceCount } = Astro.props;
 
 const formattedDate = event.date.toLocaleDateString('en-US', {
@@ -25,7 +27,7 @@ const formattedDate = event.date.toLocaleDateString('en-US', {
   <div class="flex items-center gap-2 mb-4">
     <div class="flex -space-x-2">
       {presenters.map((p) => (
-        <img src={p.avatar} alt={p.name} class="w-8 h-8 rounded-full object-cover" />
+        <img src={assetPath(p.avatar)} alt={p.name} class="w-8 h-8 rounded-full object-cover" />
       ))}
     </div>
     <div class="ml-2">

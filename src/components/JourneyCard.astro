@@ -15,6 +15,8 @@ interface Props {
   adviceCount: number;
 }
 
+import { assetPath } from "../lib/base-url";
+
 const { journey, person, adviceCount } = Astro.props;
 
 const formattedDate = journey.date.toLocaleDateString('en-US', {
@@ -26,7 +28,7 @@ const formattedDate = journey.date.toLocaleDateString('en-US', {
 <a href={`/journeys/${journey.slug}`}
    class="group block rounded-xl border border-border/80 bg-card p-6 hover:shadow-[var(--shadow-card-hover)] hover:border-primary/30 transition-all duration-300">
   <div class="flex items-center gap-3 mb-4">
-    <img src={person.avatar} alt={person.name} class="w-10 h-10 rounded-full object-cover" />
+    <img src={assetPath(person.avatar)} alt={person.name} class="w-10 h-10 rounded-full object-cover" />
     <div>
       <p class="font-semibold text-foreground">{person.name}</p>
       <p class="text-xs text-muted-foreground italic">{person.tagline}</p>

@@ -5,6 +5,7 @@ import EventCard from '../../components/EventCard.astro';
 import CategoryBadge from '../../components/CategoryBadge.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { getAdviceIndex, getAdviceForEvent, getAllCategories } from '../../lib/advice';
+import { assetPath } from "../../lib/base-url";
 
 export async function getStaticPaths() {
   const people = await getCollection('people');
@@ -63,7 +64,7 @@ const personAdvice = adviceIndex.filter(a => a.personSlug === person.id);
 
     <!-- Person header -->
     <div class="flex items-start gap-5 mb-4">
-      <img src={person.data.avatar} alt={person.data.name} class="w-20 h-20 rounded-full object-cover" />
+      <img src={assetPath(person.data.avatar)} alt={person.data.name} class="w-20 h-20 rounded-full object-cover" />
       <div>
         <h1 class="font-display text-3xl md:text-4xl tracking-tight text-foreground mb-1">
           {person.data.name}

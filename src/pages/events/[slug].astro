@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import CategoryBadge from '../../components/CategoryBadge.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import { getAdviceForEvent, getAllCategories } from '../../lib/advice';
+import { assetPath } from "../../lib/base-url";
 
 export async function getStaticPaths() {
   const events = await getCollection('events');
@@ -81,7 +82,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
       {presenters.map((p) => (
         <a href={`/people/${p.id}`}
            class="flex items-center gap-2 px-3 py-2 rounded-lg border border-border/60 bg-card hover:border-primary/30 transition-all">
-          <img src={p.data.avatar} alt={p.data.name} class="w-8 h-8 rounded-full object-cover" />
+          <img src={assetPath(p.data.avatar)} alt={p.data.name} class="w-8 h-8 rounded-full object-cover" />
           <span class="text-sm font-medium text-foreground">{p.data.name}</span>
         </a>
       ))}

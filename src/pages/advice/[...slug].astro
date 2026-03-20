@@ -5,6 +5,7 @@ import CategoryBadge from '../../components/CategoryBadge.astro';
 import { getEntry, type CollectionEntry } from 'astro:content';
 import { getAdviceIndex, getAdviceByCategory, getAllCategories } from '../../lib/advice';
 import type { AdviceEntry, CategoryMeta } from '../../lib/advice';
+import { assetPath } from "../../lib/base-url";
 
 type CategoryProps = { type: 'category'; category: CategoryMeta };
 type AdviceProps = { type: 'advice'; advice: AdviceEntry };
@@ -141,7 +142,7 @@ const pageDescription = isCategory
       <!-- Author -->
       {advicePerson && (
         <div class="flex items-center gap-3 mb-8">
-          <img src={advicePerson.data.avatar} alt={advicePerson.data.name} class="w-8 h-8 rounded-full object-cover" />
+          <img src={assetPath(advicePerson.data.avatar)} alt={advicePerson.data.name} class="w-8 h-8 rounded-full object-cover" />
           <div>
             <a href={`/people/${advice.personSlug}`} class="text-sm font-semibold text-foreground hover:text-primary transition-colors">
               {advicePerson.data.name}

@@ -1,11 +1,12 @@
 ---
+import { assetPath } from "../lib/base-url";
 ---
 
 <footer class="border-t border-border/60 mt-20">
   <div class="container mx-auto px-4 py-12">
     <div class="flex flex-col md:flex-row items-start justify-between gap-8">
       <div>
-        <img src="/logo.png" alt="indie.md" class="h-8" />
+        <img src={assetPath("/logo.png")} alt="indie.md" class="h-8" />
         <p class="text-sm text-muted-foreground mt-2 max-w-xs">
           Real stories, real advice, from a real community of indie hackers helping each other grow.
         </p>

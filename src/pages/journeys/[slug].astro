@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import CategoryBadge from '../../components/CategoryBadge.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import { getAdviceForJourney, getAllCategories } from '../../lib/advice';
+import { assetPath } from "../../lib/base-url";
 
 export async function getStaticPaths() {
   const journeys = await getCollection('journeys');
@@ -52,7 +53,7 @@ const formattedDate = journey.data.date.toLocaleDateString('en-US', {
 
     <!-- Author card -->
     <div class="flex items-center gap-4 mb-8">
-      <img src={person!.data.avatar} alt={person!.data.name} class="w-16 h-16 rounded-full object-cover" />
+      <img src={assetPath(person!.data.avatar)} alt={person!.data.name} class="w-16 h-16 rounded-full object-cover" />
       <div>
         <a href={`/people/${journey.data.person}`} class="font-semibold text-foreground hover:text-primary transition-colors">
           {person!.data.name}

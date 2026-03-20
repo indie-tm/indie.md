@@ -1,140 +1,5 @@
 [
   {
-    "slug": "product-simplest-version",
-    "category": "product",
-    "title": "Build the simplest version first",
-    "content": "Mircea built SingleFax in a weekend by refusing to add anything beyond the core action: upload, enter a number, pay, send. No user accounts, no dashboards, no analytics. If your v1 takes longer than a week, you're building too much. Strip it down until a complete stranger can use it in under 60 seconds.",
-    "journeySlug": "mircea-singlefax",
-    "eventSlug": null,
-    "personSlug": "mircea"
-  },
-  {
-    "slug": "product-remove-friction",
-    "category": "product",
-    "title": "Remove all friction: no signup, no subscription",
-    "content": "Every form field you add, every account creation step, every subscription commitment is a point where customers leave. Mircea removed all of them. No signup, no login, no monthly plan. Just pay and use. For occasional-use products, this is the difference between making money and making nothing.",
-    "journeySlug": "mircea-singlefax",
-    "eventSlug": null,
-    "personSlug": "mircea"
-  },
-  {
-    "slug": "seo-how-to-queries",
-    "category": "seo",
-    "title": "SEO for 'how to' queries drives purchase-intent traffic",
-    "content": "Most indie hackers target broad keywords like \"best fax service.\" Instead, target the specific \"how to\" queries your customers actually search for. \"How to fax documents to the IRS\" attracts someone who needs to fax right now, not someone comparison-shopping. Mircea's 9 blog posts drive nearly all of SingleFax's organic traffic, and these visitors convert at a much higher rate than any other channel.",
-    "journeySlug": "mircea-singlefax",
-    "eventSlug": null,
-    "personSlug": "mircea"
-  },
-  {
-    "slug": "business-premium-tier",
-    "category": "business",
-    "title": "Add a premium tier based on what customers ask for",
-    "content": "Don't guess what people will pay for. Wait for them to tell you. Mircea never planned SingleFax's $99 lifetime tier. Customers asked for it by email, he built it in an afternoon, and it became a significant revenue stream. The best product roadmap is your inbox.",
-    "journeySlug": "mircea-singlefax",
-    "eventSlug": null,
-    "personSlug": "mircea"
-  },
-  {
-    "slug": "mindset-agency-superpower",
-    "category": "mindset",
-    "title": "Agency experience is a superpower for shipping fast",
-    "content": "If you've spent years building software for clients, you already have the hardest skill in indie hacking: the ability to ship. You know how to scope, build, deploy, and handle payments. Stop thinking of agency experience as a disadvantage. Mircea built SingleFax in a weekend because he'd already solved every technical problem it required, just for other people's businesses.",
-    "journeySlug": "mircea-singlefax",
-    "eventSlug": null,
-    "personSlug": "mircea"
-  },
-  {
-    "slug": "product-manual-curation",
-    "category": "product",
-    "title": "Manual curation is a moat, not a limitation",
-    "content": "Algorithms can scrape job boards. Nobody can automate the judgment call of \"is this company actually calm or just marketing itself as calm?\" Raul manually researches every company in his directory, checking employee tenure, real policies, and community feedback. That process is slow, but it's the entire value proposition. What feels like a bottleneck is actually what customers are paying for.",
-    "journeySlug": "raul-calm-companies",
-    "eventSlug": null,
-    "personSlug": "raul"
-  },
-  {
-    "slug": "mindset-personal-pain",
-    "category": "mindset",
-    "title": "Build from personal pain, not market research",
-    "content": "Raul didn't do market research or competitive analysis. He built exactly the thing he wished existed when he was burned out and job hunting. Personal pain gives you an unfair advantage: you know the problem deeply, you can tell real solutions from fake ones, and you won't lose motivation when growth is slow because you genuinely care about the problem.",
-    "journeySlug": "raul-calm-companies",
-    "eventSlug": null,
-    "personSlug": "raul"
-  },
-  {
-    "slug": "business-ultra-low-price",
-    "category": "business",
-    "title": "Price so low it removes all friction",
-    "content": "$5/year sounds like leaving money on the table. But consider the alternative: a $10/month subscription requires convincing someone your product is worth $120/year, handling cancellations, dealing with failed payments, and competing with every other subscription fighting for budget. At $5/year, the price is never the objection. Raul's conversion rate proves that removing friction can beat optimizing price.",
-    "journeySlug": "raul-calm-companies",
-    "eventSlug": null,
-    "personSlug": "raul"
-  },
-  {
-    "slug": "seo-pain-point-content",
-    "category": "seo",
-    "title": "SEO blog posts that solve real pain points drive organic growth",
-    "content": "Raul wrote 12 blog posts, all addressing problems he'd personally experienced. They rank well because they're genuinely helpful, not because they're optimized for keywords. \"Burnout recovery\" and \"interview red flags\" are searches people make when they're in pain, and content written by someone who's been through it resonates differently than generic advice. Write fewer posts, but write them from real experience.",
-    "journeySlug": "raul-calm-companies",
-    "eventSlug": null,
-    "personSlug": "raul"
-  },
-  {
-    "slug": "product-start-simple",
-    "category": "product",
-    "title": "Start with a spreadsheet, not a SaaS",
-    "content": "Raul's entire business started as a personal spreadsheet shared with friends. He didn't buy a domain, set up payments, or write a line of code until real people asked him to keep going. A spreadsheet forces you to do the work manually, which teaches you what the actual product is. If your idea can't survive as a spreadsheet first, it probably won't survive as a SaaS either.",
-    "journeySlug": "raul-calm-companies",
-    "eventSlug": null,
-    "personSlug": "raul"
-  },
-  {
-    "slug": "mindset-stop-polishing",
-    "category": "mindset",
-    "title": "Stop polishing code, start finding customers",
-    "content": "As an engineer, your instinct is to keep improving the product. Resist it. A mediocre product with great distribution will outperform a great product with no distribution every single time. Vlad spent months polishing sisif.ai before realizing that nobody knew it existed. The hardest shift for technical founders is accepting that code quality doesn't drive revenue.",
-    "journeySlug": "vlad-sisif-ai",
-    "eventSlug": null,
-    "personSlug": "vlad"
-  },
-  {
-    "slug": "mindset-traditional-marketing-slow",
-    "category": "mindset",
-    "title": "Twitter and ProductHunt are slow for unknown founders",
-    "content": "Building in public, Twitter threads, and ProductHunt launches all share the same assumption: someone is already listening. If you have 12 followers, tweeting into the void won't generate customers. Vlad tried the standard playbook for months and got nothing. These channels compound over time, but if you need traction now, you need to go where attention already exists.",
-    "journeySlug": "vlad-sisif-ai",
-    "eventSlug": null,
-    "personSlug": "vlad"
-  },
-  {
-    "slug": "distribution-platform-led-growth",
-    "category": "distribution",
-    "title": "Ride existing waves with platform-led growth",
-    "content": "Instead of building your own audience from scratch, find platforms where your target users already gather. Vlad built n8n workflow templates (TikTok automation, Instagram Reels) that showcased sisif.ai's API. The templates got thousands of views and drove real signups. The key is contributing genuine value to the platform's ecosystem, not just dropping links.",
-    "journeySlug": "vlad-sisif-ai",
-    "eventSlug": null,
-    "personSlug": "vlad"
-  },
-  {
-    "slug": "business-tiered-pricing",
-    "category": "business",
-    "title": "Tiered pricing unlocks hidden revenue",
-    "content": "Vlad's single $9/month plan seemed simple and fair. Switching to three tiers ($10/$50/$200) increased his MRR by 4x. The lesson: different users get different amounts of value from your product. A hobbyist and a business running production workflows should not pay the same price. Start with tiers early. You can always simplify later, but you can't recover the revenue you've been leaving on the table.",
-    "journeySlug": "vlad-sisif-ai",
-    "eventSlug": null,
-    "personSlug": "vlad"
-  },
-  {
-    "slug": "distribution-beats-product",
-    "category": "distribution",
-    "title": "Distribution beats product, every time",
-    "content": "Vlad had a working AI video API and zero customers. The product didn't change when he started getting signups. The distribution did. If you're a technical founder, this is the hardest pill to swallow: the market doesn't reward the best product. It rewards the product that shows up where buyers are looking. Spend at least half your time on distribution, especially in the early days.",
-    "journeySlug": "vlad-sisif-ai",
-    "eventSlug": null,
-    "personSlug": "vlad"
-  },
-  {
     "slug": "faq-schema-markup",
     "category": "seo",
     "title": "Add FAQ sections with FAQPage schema to every page",
@@ -165,7 +30,7 @@
     "slug": "programmatic-local-pages",
     "category": "seo",
     "title": "Create localized landing pages at scale",
-    "content": "Build pages targeting \"[product/service] in [city/country]\" and \"[integration] in [city/country]\" combinations. Automate the page structure but keep the content genuine. Each page should have real, location-specific information, not just a city name swapped in a template. This is how you capture long-tail local search traffic with almost no competition.",
+    "content": "Build pages targeting “[product/service] in [city/country]” and “[integration] in [city/country]” combinations. Automate the page structure but keep the content genuine. Each page should have real, location-specific information, not just a city name swapped in a template. This is how you capture long-tail local search traffic with almost no competition.",
     "journeySlug": null,
     "eventSlug": "indie-tm-5-timisoara-march-2026",
     "personSlug": "vlad"
@@ -174,7 +39,7 @@
     "slug": "internal-linking-seo",
     "category": "seo",
     "title": "Add internal links between every page",
-    "content": "Every page on your site should link to at least 2-3 other relevant pages. Internal linking helps Google discover your content, distributes page authority, and keeps visitors engaged longer. Audit your site for orphan pages (pages with zero internal links pointing to them) and fix them. Use descriptive anchor text, not \"click here.\"",
+    "content": "Every page on your site should link to at least 2-3 other relevant pages. Internal linking helps Google discover your content, distributes page authority, and keeps visitors engaged longer. Audit your site for orphan pages (pages with zero internal links pointing to them) and fix them. Use descriptive anchor text, not “click here.”",
     "journeySlug": null,
     "eventSlug": "indie-tm-5-timisoara-march-2026",
     "personSlug": "vlad"
@@ -183,7 +48,7 @@
     "slug": "nocode-platform-backlinks",
     "category": "distribution",
     "title": "Get listed on no-code platforms for free backlinks",
-    "content": "Integrate with Zapier, Make.com, n8n, and other workflow tools. Each platform gives you a listing page with a backlink to your domain. The integration itself doesn't need to be complex: even a simple webhook trigger is enough to get listed. This is free, permanent, and builds domain authority over time.",
+    "content": "Integrate with Zapier, Make.com, n8n, and other workflow tools. Each platform gives you a listing page with a backlink to your domain. The integration itself doesn’t need to be complex: even a simple webhook trigger is enough to get listed. This is free, permanent, and builds domain authority over time.",
     "journeySlug": null,
     "eventSlug": "indie-tm-5-timisoara-march-2026",
     "personSlug": "mircea"
@@ -223,5 +88,140 @@
     "journeySlug": null,
     "eventSlug": "indie-tm-5-timisoara-march-2026",
     "personSlug": "raul"
+  },
+  {
+    "slug": "product-simplest-version",
+    "category": "product",
+    "title": "Build the simplest version first",
+    "content": "Mircea built SingleFax in a weekend by refusing to add anything beyond the core action: upload, enter a number, pay, send. No user accounts, no dashboards, no analytics. If your v1 takes longer than a week, you’re building too much. Strip it down until a complete stranger can use it in under 60 seconds.",
+    "journeySlug": "mircea-singlefax",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "product-remove-friction",
+    "category": "product",
+    "title": "Remove all friction: no signup, no subscription",
+    "content": "Every form field you add, every account creation step, every subscription commitment is a point where customers leave. Mircea removed all of them. No signup, no login, no monthly plan. Just pay and use. For occasional-use products, this is the difference between making money and making nothing.",
+    "journeySlug": "mircea-singlefax",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "seo-how-to-queries",
+    "category": "seo",
+    "title": "SEO for 'how to' queries drives purchase-intent traffic",
+    "content": "Most indie hackers target broad keywords like “best fax service.” Instead, target the specific “how to” queries your customers actually search for. “How to fax documents to the IRS” attracts someone who needs to fax right now, not someone comparison-shopping. Mircea’s 9 blog posts drive nearly all of SingleFax’s organic traffic, and these visitors convert at a much higher rate than any other channel.",
+    "journeySlug": "mircea-singlefax",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "business-premium-tier",
+    "category": "business",
+    "title": "Add a premium tier based on what customers ask for",
+    "content": "Don’t guess what people will pay for. Wait for them to tell you. Mircea never planned SingleFax’s $99 lifetime tier. Customers asked for it by email, he built it in an afternoon, and it became a significant revenue stream. The best product roadmap is your inbox.",
+    "journeySlug": "mircea-singlefax",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "mindset-agency-superpower",
+    "category": "mindset",
+    "title": "Agency experience is a superpower for shipping fast",
+    "content": "If you’ve spent years building software for clients, you already have the hardest skill in indie hacking: the ability to ship. You know how to scope, build, deploy, and handle payments. Stop thinking of agency experience as a disadvantage. Mircea built SingleFax in a weekend because he’d already solved every technical problem it required, just for other people’s businesses.",
+    "journeySlug": "mircea-singlefax",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "product-manual-curation",
+    "category": "product",
+    "title": "Manual curation is a moat, not a limitation",
+    "content": "Algorithms can scrape job boards. Nobody can automate the judgment call of “is this company actually calm or just marketing itself as calm?” Raul manually researches every company in his directory, checking employee tenure, real policies, and community feedback. That process is slow, but it’s the entire value proposition. What feels like a bottleneck is actually what customers are paying for.",
+    "journeySlug": "raul-calm-companies",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "mindset-personal-pain",
+    "category": "mindset",
+    "title": "Build from personal pain, not market research",
+    "content": "Raul didn’t do market research or competitive analysis. He built exactly the thing he wished existed when he was burned out and job hunting. Personal pain gives you an unfair advantage: you know the problem deeply, you can tell real solutions from fake ones, and you won’t lose motivation when growth is slow because you genuinely care about the problem.",
+    "journeySlug": "raul-calm-companies",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "business-ultra-low-price",
+    "category": "business",
+    "title": "Price so low it removes all friction",
+    "content": "$5/year sounds like leaving money on the table. But consider the alternative: a $10/month subscription requires convincing someone your product is worth $120/year, handling cancellations, dealing with failed payments, and competing with every other subscription fighting for budget. At $5/year, the price is never the objection. Raul’s conversion rate proves that removing friction can beat optimizing price.",
+    "journeySlug": "raul-calm-companies",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "seo-pain-point-content",
+    "category": "seo",
+    "title": "SEO blog posts that solve real pain points drive organic growth",
+    "content": "Raul wrote 12 blog posts, all addressing problems he’d personally experienced. They rank well because they’re genuinely helpful, not because they’re optimized for keywords. “Burnout recovery” and “interview red flags” are searches people make when they’re in pain, and content written by someone who’s been through it resonates differently than generic advice. Write fewer posts, but write them from real experience.",
+    "journeySlug": "raul-calm-companies",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "product-start-simple",
+    "category": "product",
+    "title": "Start with a spreadsheet, not a SaaS",
+    "content": "Raul’s entire business started as a personal spreadsheet shared with friends. He didn’t buy a domain, set up payments, or write a line of code until real people asked him to keep going. A spreadsheet forces you to do the work manually, which teaches you what the actual product is. If your idea can’t survive as a spreadsheet first, it probably won’t survive as a SaaS either.",
+    "journeySlug": "raul-calm-companies",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "mindset-stop-polishing",
+    "category": "mindset",
+    "title": "Stop polishing code, start finding customers",
+    "content": "As an engineer, your instinct is to keep improving the product. Resist it. A mediocre product with great distribution will outperform a great product with no distribution every single time. Vlad spent months polishing sisif.ai before realizing that nobody knew it existed. The hardest shift for technical founders is accepting that code quality doesn’t drive revenue.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "mindset-traditional-marketing-slow",
+    "category": "mindset",
+    "title": "Twitter and ProductHunt are slow for unknown founders",
+    "content": "Building in public, Twitter threads, and ProductHunt launches all share the same assumption: someone is already listening. If you have 12 followers, tweeting into the void won’t generate customers. Vlad tried the standard playbook for months and got nothing. These channels compound over time, but if you need traction now, you need to go where attention already exists.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "distribution-platform-led-growth",
+    "category": "distribution",
+    "title": "Ride existing waves with platform-led growth",
+    "content": "Instead of building your own audience from scratch, find platforms where your target users already gather. Vlad built n8n workflow templates (TikTok automation, Instagram Reels) that showcased sisif.ai’s API. The templates got thousands of views and drove real signups. The key is contributing genuine value to the platform’s ecosystem, not just dropping links.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "business-tiered-pricing",
+    "category": "business",
+    "title": "Tiered pricing unlocks hidden revenue",
+    "content": "Vlad’s single $9/month plan seemed simple and fair. Switching to three tiers ($10/$50/$200) increased his MRR by 4x. The lesson: different users get different amounts of value from your product. A hobbyist and a business running production workflows should not pay the same price. Start with tiers early. You can always simplify later, but you can’t recover the revenue you’ve been leaving on the table.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "distribution-beats-product",
+    "category": "distribution",
+    "title": "Distribution beats product, every time",
+    "content": "Vlad had a working AI video API and zero customers. The product didn’t change when he started getting signups. The distribution did. If you’re a technical founder, this is the hardest pill to swallow: the market doesn’t reward the best product. It rewards the product that shows up where buyers are looking. Spend at least half your time on distribution, especially in the early days.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
   }
 ]
