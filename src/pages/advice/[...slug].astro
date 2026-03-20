@@ -2,9 +2,13 @@
 import Base from '../../layouts/Base.astro';
 import AdviceCard from '../../components/AdviceCard.astro';
 import CategoryBadge from '../../components/CategoryBadge.astro';
-import { getEntry } from 'astro:content';
+import { getEntry, type CollectionEntry } from 'astro:content';
 import { getAdviceIndex, getAdviceByCategory, getAllCategories } from '../../lib/advice';
 import type { AdviceEntry, CategoryMeta } from '../../lib/advice';
+
+type CategoryProps = { type: 'category'; category: CategoryMeta };
+type AdviceProps = { type: 'advice'; advice: AdviceEntry };
+type Props = CategoryProps | AdviceProps;
 
 export async function getStaticPaths() {
   const { getAdviceIndex, getAllCategories } = await import('../../lib/advice');
@@ -13,30 +17,28 @@ export async function getStaticPaths() {
 
   const categoryPaths = categories.map((cat) => ({
     params: { slug: cat.slug },
-    props: { type: 'category' as const, category: cat, advice: undefined as unknown as AdviceEntry },
+    props: { type: 'category' as const, category: cat },
   }));
 
   const advicePaths = adviceIndex.map((a) => ({
     params: { slug: a.slug },
-    props: { type: 'advice' as const, advice: a, category: undefined as unknown as CategoryMeta },
+    props: { type: 'advice' as const, advice: a },
   }));
 
   return [...categoryPaths, ...advicePaths];
 }
 
-type Props = {
-  type: 'category' | 'advice';
-  category: CategoryMeta;
-  advice: AdviceEntry;
-};
-
-const { type, category, advice } = Astro.props;
+const props = Astro.props;
 const categories = getAllCategories();
 
-// Data for category pages
-let filteredAdvice: { advice: AdviceEntry; person: any; categoryLabel: string }[] = [];
-if (type === 'category') {
-  const entries = getAdviceByCategory(category.slug);
+type AdviceWithPerson = { advice: AdviceEntry; person: CollectionEntry<'people'>; categoryLabel: string };
+
+let filteredAdvice: AdviceWithPerson[] = [];
+let advicePerson: CollectionEntry<'people'> | undefined;
+let adviceCategory: CategoryMeta | undefined;
+
+if (props.type === 'category') {
+  const entries = getAdviceByCategory(props.category.slug);
   filteredAdvice = await Promise.all(
     entries.map(async (a) => {
       const person = await getEntry('people', a.personSlug);
@@ -46,25 +48,25 @@ if (type === 'category') {
   );
 }
 
-// Data for individual advice pages
-let advicePerson: any = null;
-let adviceCategory: CategoryMeta | undefined;
-let journeyTitle = '';
-if (type === 'advice') {
-  advicePerson = await getEntry('people', advice.personSlug);
-  adviceCategory = categories.find(c => c.slug === advice.category);
+if (props.type === 'advice') {
+  advicePerson = await getEntry('people', props.advice.personSlug);
+  adviceCategory = categories.find(c => c.slug === props.advice.category);
 }
 
-const pageTitle = type === 'category'
-  ? `${category.label} Advice — indie.md`
-  : `${advice.title} — indie.md`;
+const isCategory = props.type === 'category';
+const category = isCategory ? props.category : undefined;
+const advice = isCategory ? undefined : props.advice;
 
-const pageDescription = type === 'category'
-  ? `${category.label} tips from indie hackers who've been there.`
-  : advice.content.slice(0, 160);
+const pageTitle = isCategory
+  ? `${category!.label} Advice — indie.md`
+  : `${advice!.title} — indie.md`;
+
+const pageDescription = isCategory
+  ? `${category!.label} tips from indie hackers who've been there.`
+  : advice!.content.slice(0, 160);
 ---
 <Base title={pageTitle} description={pageDescription}>
-  {type === 'category' && (
+  {isCategory && category && (
     <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
       <div class="max-w-2xl">
         <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4 flex items-center gap-3">
@@ -77,7 +79,7 @@ const pageDescription = type === 'category'
     </section>
   )}
 
-  {type === 'category' && (
+  {isCategory && category && (
     <section class="container mx-auto px-4 pb-8">
       <div class="flex flex-wrap items-center gap-2">
         <a href="/advice"
@@ -88,7 +90,7 @@ const pageDescription = type === 'category'
           <a href={`/advice/${cat.slug}`}
              class:list={[
                'inline-flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium',
-               cat.slug === category.slug
+               cat.slug === category!.slug
                  ? 'bg-primary text-primary-foreground'
                  : 'border border-border/80 text-muted-foreground hover:border-primary/30 hover:text-foreground transition-all',
              ]}>
@@ -99,7 +101,7 @@ const pageDescription = type === 'category'
     </section>
   )}
 
-  {type === 'category' && (
+  {isCategory && category && (
     <section class="container mx-auto px-4 pb-20">
       <div class="divide-y divide-border/60">
         {filteredAdvice.map(({ advice, person, categoryLabel }) => (
@@ -113,7 +115,7 @@ const pageDescription = type === 'category'
     </section>
   )}
 
-  {type === 'advice' && (
+  {!isCategory && advice && (
     <article class="container mx-auto px-4 pt-16 pb-20 md:pt-20">
       <!-- Back link -->
       <a href="/advice" class="inline-flex items-center gap-1 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">

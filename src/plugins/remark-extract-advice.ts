@@ -4,15 +4,7 @@ import type { Root, RootContent } from "mdast";
 import type { ContainerDirective } from "mdast-util-directive";
 import type { Plugin } from "unified";
 import { visit } from "unist-util-visit";
-
-export interface AdviceEntry {
-  slug: string;
-  category: string;
-  title: string;
-  content: string;
-  journeySlug: string;
-  personSlug: string;
-}
+import type { AdviceEntry } from "../lib/advice";
 
 const RESERVED_SLUGS = new Set(["seo", "distribution", "product", "business", "mindset"]);
 
