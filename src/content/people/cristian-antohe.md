@@ -1,5 +1,5 @@
 ---
-name: "Cristian Antohe"
+name: "Cristian"
 avatar: "/avatars/cristian-antohe.png"
 tagline: "WordPress product builder at Cozmoslabs"
 products:

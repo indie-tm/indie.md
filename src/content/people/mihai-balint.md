@@ -1,5 +1,5 @@
 ---
-name: "Mihai Balint"
+name: "Mihai"
 avatar: "/avatars/mihai-balint.png"
 tagline: "Building OCR tools for developers"
 products:

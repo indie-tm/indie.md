@@ -1,5 +1,5 @@
 ---
-name: "Petru Popa"
+name: "Petru"
 avatar: "/avatars/petru-popa.png"
 tagline: "SEO at scale"
 products:

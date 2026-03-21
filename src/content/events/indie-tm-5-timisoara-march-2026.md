@@ -33,30 +33,12 @@ Use Loom or similar tools to record product walkthroughs with your face visible 
 Infographics get shared and linked to far more than plain text. Create one per major blog post. Use Canva or Figma to visualize your key data points, then offer an embed code below the image so other bloggers can easily reuse it. This is one of the most reliable passive backlink strategies.
 :::
 
-## Vlad follows with SEO deep-dive
+## Vlad showcases sisif.ai and NanoClaw
 
-[Vlad](/people/vlad) was up next. He had been deep in the weeds optimizing [sisif.ai](https://sisif.ai) for search, and opened with the structural SEO work that most indie hackers skip because it feels tedious but compounds over months.
-
-:::advice{slug="faq-schema-markup" category="seo" title="Add FAQ sections with FAQPage schema to every page" person="vlad"}
-Write real, human-authored FAQ sections for every page on your site. Use FAQPage structured data so Google can surface your answers as rich results. The key is writing questions your users actually ask, not keyword-stuffed filler. Check Google Search Console for queries people already use to find you, then answer those directly on the page.
-:::
-
-:::advice{slug="trust-pages-seo" category="seo" title="Add Careers, Legal, Privacy, and Team pages for trust signals" person="vlad"}
-Google evaluates trust signals when ranking your site. Pages like Careers, Privacy Policy, Terms of Service, and an About/Team page all contribute. Include ESG elements where relevant: carbon neutrality commitments, diversity stats, team photos. These pages also attract backlinks from directories that list companies with public hiring or legal pages.
-:::
-
-:::advice{slug="translate-pages-slugs" category="seo" title="Translate every page including the URL slugs" person="vlad"}
-Full translation means translating the content AND the URL slugs. A page at /ro/servicii/ ranks better in Romanian search than /ro/services/. Use hreflang tags to tell Google which language version to show each user. Start with your highest-traffic pages and expand from there.
-:::
-
-Then he pulled up the programmatic SEO pages he had been building for sisif.ai: landing pages targeting specific platforms and locations, each with real content rather than just a swapped city name in a template.
+[Vlad](/people/vlad) was up next. He pulled up [sisif.ai](https://sisif.ai) and walked through the programmatic SEO pages he had been building: landing pages targeting specific platforms and locations, each with real content rather than just a swapped city name in a template.
 
 :::advice{slug="programmatic-local-pages" category="seo" title="Create localized landing pages at scale" person="vlad"}
 Build pages targeting "[product/service] in [city/country]" and "[integration] in [city/country]" combinations. Automate the page structure but keep the content genuine. Each page should have real, location-specific information, not just a city name swapped in a template. This is how you capture long-tail local search traffic with almost no competition.
-:::
-
-:::advice{slug="internal-linking-seo" category="seo" title="Add internal links between every page" person="vlad"}
-Every page on your site should link to at least 2-3 other relevant pages. Internal linking helps Google discover your content, distributes page authority, and keeps visitors engaged longer. Audit your site for orphan pages (pages with zero internal links pointing to them) and fix them. Use descriptive anchor text, not "click here."
 :::
 
 ### NanoClaw gets roasted
@@ -91,10 +73,18 @@ Create profiles and content on high-authority platforms. Write a Blogger post li
 
 ## Petru brings the big-domain perspective
 
-[Petru](/people/petru-popa) was next, and he brought a different kind of experience to the table. He works on [Kink.com](https://www.kink.com), one of the oldest domains on the web. The room was immediately curious about the SEO behind a site with that kind of domain age and authority. He walked through some of the strategies that work at scale, and two pieces of advice stuck with the group.
+[Petru](/people/petru-popa) was next, and he brought a different kind of experience to the table. He works on [Kink.com](https://www.kink.com), one of the oldest domains on the web. The room was immediately curious about the SEO behind a site with that kind of domain age and authority. Petru had the most SEO advice of the evening, walking through the structural work that compounds over time.
+
+:::advice{slug="faq-schema-markup" category="seo" title="Add FAQ sections with FAQPage schema to every page" person="petru-popa"}
+Write real, human-authored FAQ sections for every page on your site. Use FAQPage structured data so Google can surface your answers as rich results. The key is writing questions your users actually ask, not keyword-stuffed filler. Check Google Search Console for queries people already use to find you, then answer those directly on the page.
+:::
 
 :::advice{slug="trust-pages-careers-about" category="seo" title="Create Careers, About Us, and team pages to build trust" person="petru-popa"}
-A Careers page, an About Us page, and content showcasing team building experiences all signal to Google that there is a real organization behind the site. These pages build trust with both search engines and visitors. Include team photos, company culture, and hiring information even if you are not actively recruiting. Trust pages are one of the simplest ways to prove you are a legitimate business.
+Google evaluates trust signals when ranking your site. A Careers page, an About Us page, Privacy Policy, Terms of Service, and content showcasing team building experiences all signal that there is a real organization behind the site. Include team photos, company culture, and hiring information even if you are not actively recruiting. These pages build trust with both search engines and visitors, and attract backlinks from directories that list companies with public hiring or legal pages.
+:::
+
+:::advice{slug="internal-linking-seo" category="seo" title="Add internal links between every page" person="petru-popa"}
+Every page on your site should link to at least 2-3 other relevant pages. Internal linking helps Google discover your content, distributes page authority, and keeps visitors engaged longer. Audit your site for orphan pages (pages with zero internal links pointing to them) and fix them. Use descriptive anchor text, not "click here."
 :::
 
 :::advice{slug="publish-one-article-per-day" category="seo" title="Publish one article per day instead of batching" person="petru-popa"}
@@ -108,6 +98,10 @@ Publishing one article per day is far more effective than dropping a batch of ar
 In the early days, Cristian was writing programming tutorials on the [Cozmoslabs blog](https://www.cozmoslabs.com/blog/). No product to sell, no grand strategy. Just useful content. That content became the foundation for their SEO, and it still drives traffic today. The products came later, born from what their clients kept asking for. Every plugin Cozmoslabs builds starts with a real problem that clients have, because they know it will take about a year to execute properly. So they are picky. They do not chase trends or build features on speculation.
 
 The [full origin story](https://leveldo.com/finding-success-with-wordpress-interview-with-adrian-spiac-co-founder-of-cozmoslabs/) is worth reading: it is a case study in patience.
+
+:::advice{slug="translate-pages-slugs" category="seo" title="Translate every page including the URL slugs" person="cristian-antohe"}
+Full translation means translating the content AND the URL slugs. A page at /ro/servicii/ ranks better in Romanian search than /ro/services/. Use hreflang tags to tell Google which language version to show each user. Start with your highest-traffic pages and expand from there.
+:::
 
 :::advice{slug="content-before-product" category="seo" title="Write useful content before you have a product to sell" person="cristian-antohe"}
 Cozmoslabs started by publishing programming tutorials with no product behind them. That content built domain authority, attracted an audience, and created the SEO foundation that still drives traffic years later. If you start writing only after you have something to sell, you are already behind. The best time to build your content foundation is before you need it.

@@ -1,5 +1,5 @@
 ---
-name: "Bogdan Moldovean"
+name: "Bogdan"
 avatar: "/avatars/bogdan-moldovean.png"
 tagline: "Building Event Newsletter"
 products:

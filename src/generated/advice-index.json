@@ -153,46 +153,10 @@
     "personSlug": "raul"
   },
   {
-    "slug": "faq-schema-markup",
-    "category": "seo",
-    "title": "Add FAQ sections with FAQPage schema to every page",
-    "content": "Write real, human-authored FAQ sections for every page on your site. Use FAQPage structured data so Google can surface your answers as rich results. The key is writing questions your users actually ask, not keyword-stuffed filler. Check Google Search Console for queries people already use to find you, then answer those directly on the page.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-5-timisoara-march-2026",
-    "personSlug": "vlad"
-  },
-  {
-    "slug": "trust-pages-seo",
-    "category": "seo",
-    "title": "Add Careers, Legal, Privacy, and Team pages for trust signals",
-    "content": "Google evaluates trust signals when ranking your site. Pages like Careers, Privacy Policy, Terms of Service, and an About/Team page all contribute. Include ESG elements where relevant: carbon neutrality commitments, diversity stats, team photos. These pages also attract backlinks from directories that list companies with public hiring or legal pages.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-5-timisoara-march-2026",
-    "personSlug": "vlad"
-  },
-  {
-    "slug": "translate-pages-slugs",
-    "category": "seo",
-    "title": "Translate every page including the URL slugs",
-    "content": "Full translation means translating the content AND the URL slugs. A page at /ro/servicii/ ranks better in Romanian search than /ro/services/. Use hreflang tags to tell Google which language version to show each user. Start with your highest-traffic pages and expand from there.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-5-timisoara-march-2026",
-    "personSlug": "vlad"
-  },
-  {
     "slug": "programmatic-local-pages",
     "category": "seo",
     "title": "Create localized landing pages at scale",
     "content": "Build pages targeting \"[product/service] in [city/country]\" and \"[integration] in [city/country]\" combinations. Automate the page structure but keep the content genuine. Each page should have real, location-specific information, not just a city name swapped in a template. This is how you capture long-tail local search traffic with almost no competition.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-5-timisoara-march-2026",
-    "personSlug": "vlad"
-  },
-  {
-    "slug": "internal-linking-seo",
-    "category": "seo",
-    "title": "Add internal links between every page",
-    "content": "Every page on your site should link to at least 2-3 other relevant pages. Internal linking helps Google discover your content, distributes page authority, and keeps visitors engaged longer. Audit your site for orphan pages (pages with zero internal links pointing to them) and fix them. Use descriptive anchor text, not \"click here.\"",
     "journeySlug": null,
     "eventSlug": "indie-tm-5-timisoara-march-2026",
     "personSlug": "vlad"
@@ -225,10 +189,28 @@
     "personSlug": "mircea"
   },
   {
+    "slug": "faq-schema-markup",
+    "category": "seo",
+    "title": "Add FAQ sections with FAQPage schema to every page",
+    "content": "Write real, human-authored FAQ sections for every page on your site. Use FAQPage structured data so Google can surface your answers as rich results. The key is writing questions your users actually ask, not keyword-stuffed filler. Check Google Search Console for queries people already use to find you, then answer those directly on the page.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "petru-popa"
+  },
+  {
     "slug": "trust-pages-careers-about",
     "category": "seo",
     "title": "Create Careers, About Us, and team pages to build trust",
-    "content": "A Careers page, an About Us page, and content showcasing team building experiences all signal to Google that there is a real organization behind the site. These pages build trust with both search engines and visitors. Include team photos, company culture, and hiring information even if you are not actively recruiting. Trust pages are one of the simplest ways to prove you are a legitimate business.",
+    "content": "Google evaluates trust signals when ranking your site. A Careers page, an About Us page, Privacy Policy, Terms of Service, and content showcasing team building experiences all signal that there is a real organization behind the site. Include team photos, company culture, and hiring information even if you are not actively recruiting. These pages build trust with both search engines and visitors, and attract backlinks from directories that list companies with public hiring or legal pages.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "petru-popa"
+  },
+  {
+    "slug": "internal-linking-seo",
+    "category": "seo",
+    "title": "Add internal links between every page",
+    "content": "Every page on your site should link to at least 2-3 other relevant pages. Internal linking helps Google discover your content, distributes page authority, and keeps visitors engaged longer. Audit your site for orphan pages (pages with zero internal links pointing to them) and fix them. Use descriptive anchor text, not \"click here.\"",
     "journeySlug": null,
     "eventSlug": "indie-tm-5-timisoara-march-2026",
     "personSlug": "petru-popa"
@@ -241,6 +223,15 @@
     "journeySlug": null,
     "eventSlug": "indie-tm-5-timisoara-march-2026",
     "personSlug": "petru-popa"
+  },
+  {
+    "slug": "translate-pages-slugs",
+    "category": "seo",
+    "title": "Translate every page including the URL slugs",
+    "content": "Full translation means translating the content AND the URL slugs. A page at /ro/servicii/ ranks better in Romanian search than /ro/services/. Use hreflang tags to tell Google which language version to show each user. Start with your highest-traffic pages and expand from there.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "cristian-antohe"
   },
   {
     "slug": "content-before-product",
