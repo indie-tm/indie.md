@@ -144,6 +144,15 @@
     "personSlug": "raul"
   },
   {
+    "slug": "nocode-platform-backlinks",
+    "category": "distribution",
+    "title": "Get listed on no-code platforms for free backlinks",
+    "content": "Integrate with Zapier, Make.com, n8n, and other workflow tools. Each platform gives you a listing page with a backlink to your domain. The integration itself doesn't need to be complex: even a simple webhook trigger is enough to get listed. This is free, permanent, and builds domain authority over time.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "vlad"
+  },
+  {
     "slug": "programmatic-local-pages",
     "category": "seo",
     "title": "Create localized landing pages at scale",
@@ -151,15 +160,6 @@
     "journeySlug": null,
     "eventSlug": "indie-tm-5-timisoara-march-2026",
     "personSlug": "vlad"
-  },
-  {
-    "slug": "nocode-platform-backlinks",
-    "category": "distribution",
-    "title": "Get listed on no-code platforms for free backlinks",
-    "content": "Integrate with Zapier, Make.com, n8n, and other workflow tools. Each platform gives you a listing page with a backlink to your domain. The integration itself doesn't need to be complex: even a simple webhook trigger is enough to get listed. This is free, permanent, and builds domain authority over time.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-5-timisoara-march-2026",
-    "personSlug": "mircea"
   },
   {
     "slug": "app-store-backlinks",

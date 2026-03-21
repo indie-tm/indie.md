@@ -33,6 +33,10 @@ Infographics get shared and linked to far more than plain text. Create one per m
 
 [Vlad](/people/vlad) was up next. He pulled up [sisif.ai](https://sisif.ai) and walked through the programmatic SEO pages he had been building: landing pages targeting specific platforms and locations, each with real content rather than just a swapped city name in a template.
 
+:::advice{slug="nocode-platform-backlinks" category="distribution" title="Get listed on no-code platforms for free backlinks" person="vlad"}
+Integrate with Zapier, Make.com, n8n, and other workflow tools. Each platform gives you a listing page with a backlink to your domain. The integration itself doesn't need to be complex: even a simple webhook trigger is enough to get listed. This is free, permanent, and builds domain authority over time.
+:::
+
 :::advice{slug="programmatic-local-pages" category="seo" title="Create localized landing pages at scale" person="vlad"}
 Build pages targeting "[product/service] in [city/country]" and "[integration] in [city/country]" combinations. Automate the page structure but keep the content genuine. Each page should have real, location-specific information, not just a city name swapped in a template. This is how you capture long-tail local search traffic with almost no competition.
 :::
@@ -48,10 +52,6 @@ It was the kind of honest feedback that only comes when people aren't being poli
 [Mircea](/people/mircea) was next. He pulled up [Blahphone](https://blahphone.com), his browser-based international calling service, and gave the room a live demo. The product looked solid, and the programmatic SEO setup impressed the group: he had built out pages targeting specific calling routes and countries, each ranking well. The roasting focused on the same question that kept coming up all evening: who is actually using this? The group pushed [Mircea](/people/mircea) to get sharper on his user persona and figure out where those people already hang out.
 
 Beyond Blahphone, [Mircea](/people/mircea) had been methodically building backlinks for both [Blahphone](https://blahphone.com) and [SingleFax](https://singlefax.com). His approach was almost comically systematic: list every high-authority platform that lets you create a profile with a link back to your site, then work through them one by one.
-
-:::advice{slug="nocode-platform-backlinks" category="distribution" title="Get listed on no-code platforms for free backlinks" person="mircea"}
-Integrate with Zapier, Make.com, n8n, and other workflow tools. Each platform gives you a listing page with a backlink to your domain. The integration itself doesn't need to be complex: even a simple webhook trigger is enough to get listed. This is free, permanent, and builds domain authority over time.
-:::
 
 :::advice{slug="app-store-backlinks" category="distribution" title="Publish to app stores for authority backlinks" person="mircea"}
 Even if your product is primarily web-based, publish a simple mobile wrapper to the App Store and Google Play. The backlinks from apple.com and google.com are extremely high authority. A basic WebView wrapper with push notifications takes a weekend to build and gives you two of the strongest backlinks on the internet.
