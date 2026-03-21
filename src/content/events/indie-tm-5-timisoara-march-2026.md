@@ -19,7 +19,7 @@ Eleven people, one conference table, a Thursday evening in Timisoara. The format
 
 ## Raul goes first
 
-Raul pulled up [OG Pilot](https://ogpilot.com) on the big screen. He walked through the recent changes: a cleaner dashboard, a better template editor, and the thing he was most excited about, a brand-new [WordPress plugin](https://ogpilot.com/wordpress). One click to install, and every post on a WordPress site gets a branded Open Graph image automatically. No design skills needed. Cristian from [Cozmoslabs](https://www.cozmoslabs.com), who has been shipping WordPress plugins for over a decade, asked a few pointed questions about the plugin review process and distribution through the WordPress directory.
+Raul pulled up [OG Pilot](https://ogpilot.com) on the big screen. He walked through the recent changes: a cleaner dashboard, a better template editor, and the thing he was most excited about, a brand-new [WordPress plugin](https://ogpilot.com/wordpress). One click to install, and every post on a WordPress site gets a branded Open Graph image automatically. No design skills needed.
 
 Then Raul switched tabs to the [Calm Companies Club blog](https://calmcompanies.club/blog) and showed how he was using [NanoBanana](https://nanobanana.com) to generate featured images for his posts. Instead of spending 20 minutes in Canva per article, he described the post topic, NanoBanana generated an image, and he was done. The blog looked polished without the manual effort.
 
@@ -93,7 +93,7 @@ Mihai was up next with [OCRskill](https://ocrskill.com), his OCR API that extrac
 
 ## Petru brings the big-domain perspective
 
-Petru Popa went last, and he brought a different kind of experience to the table. He works on [Kink.com](https://www.kink.com), one of the oldest domains on the web. The room was immediately curious about the SEO behind a site with that kind of domain age and authority. Petru walked through some of the strategies that work at scale, and two pieces of advice stuck with the group.
+Petru Popa was next, and he brought a different kind of experience to the table. He works on [Kink.com](https://www.kink.com), one of the oldest domains on the web. The room was immediately curious about the SEO behind a site with that kind of domain age and authority. Petru walked through some of the strategies that work at scale, and two pieces of advice stuck with the group.
 
 :::advice{slug="trust-pages-careers-about" category="seo" title="Create Careers, About Us, and team pages to build trust" person="petru-popa"}
 A Careers page, an About Us page, and content showcasing team building experiences all signal to Google that there is a real organization behind the site. These pages build trust with both search engines and visitors. Include team photos, company culture, and hiring information even if you are not actively recruiting. Trust pages are one of the simplest ways to prove you are a legitimate business.
@@ -101,6 +101,26 @@ A Careers page, an About Us page, and content showcasing team building experienc
 
 :::advice{slug="publish-one-article-per-day" category="seo" title="Publish one article per day instead of batching" person="petru-popa"}
 Publishing one article per day is far more effective than dropping a batch of articles all at once. Search engines treat a sudden burst of content as suspicious, potentially flagging it as spam. A steady daily cadence signals consistent, genuine content production. It also gives each article time to get indexed and start ranking before the next one competes for attention.
+:::
+
+## Cristian on building slow and intentional
+
+Cristian Antohe closed the presentations. He brought [Cozmoslabs](https://www.cozmoslabs.com) and [TranslatePress](https://translatepress.com), over a decade of shipping WordPress plugins, and a story that started long before any product existed.
+
+In the early days, Cristian was writing programming tutorials on the [Cozmoslabs blog](https://www.cozmoslabs.com/blog/). No product to sell, no grand strategy. Just useful content. That content became the foundation for their SEO, and it still drives traffic today. The products came later, born from what their clients kept asking for. Every plugin Cozmoslabs builds starts with a real problem that clients have, because they know it will take about a year to execute properly. So they are picky. They do not chase trends or build features on speculation.
+
+The [full origin story](https://leveldo.com/finding-success-with-wordpress-interview-with-adrian-spiac-co-founder-of-cozmoslabs/) is worth reading: it is a case study in patience.
+
+:::advice{slug="content-before-product" category="seo" title="Write useful content before you have a product to sell" person="cristian-antohe"}
+Cozmoslabs started by publishing programming tutorials with no product behind them. That content built domain authority, attracted an audience, and created the SEO foundation that still drives traffic years later. If you start writing only after you have something to sell, you are already behind. The best time to build your content foundation is before you need it.
+:::
+
+:::advice{slug="high-quality-low-volume-content" category="seo" title="Publish high-quality articles at low volume" person="cristian-antohe"}
+Cozmoslabs still publishes articles, but they prioritize quality over quantity. Every piece is well-researched, genuinely useful, and built to last. High-quality, low-volume content builds trust with both readers and search engines. A single article that answers a real question thoroughly will outperform ten shallow posts competing for the same keywords.
+:::
+
+:::advice{slug="build-from-client-problems" category="product" title="Build products from real client problems, not speculation" person="cristian-antohe"}
+Every Cozmoslabs product started with a problem their clients kept running into. They do not build on speculation or trends. When you know a product will take a year to execute, you need to be certain the problem is real. Spot the pattern in client requests, validate that the pain is genuine, and only then commit to building. Being picky about what you build is a feature, not a limitation.
 :::
 
 The conversation kept going past 9 PM. Someone suggested the next meetup should focus on pricing strategies, someone else wanted to talk about cold outreach. The usual problem: too many good topics, not enough evenings.
