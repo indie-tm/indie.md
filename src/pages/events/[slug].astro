@@ -63,10 +63,14 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
 
     <!-- Event header -->
     <div class="mb-8">
-      <div class="flex items-center gap-2 text-sm text-muted-foreground mb-2">
+      <div class="flex items-center flex-wrap gap-x-3 gap-y-1 text-sm text-muted-foreground mb-2">
         <span>{formattedDate} &middot; {event.data.location}</span>
         {event.data.link && (
-          <a href={event.data.link} target="_blank" rel="noopener noreferrer" class="text-primary hover:underline">Event page</a>
+          <a href={event.data.link} target="_blank" rel="noopener noreferrer"
+             class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-primary text-primary-foreground text-xs font-medium hover:opacity-90 transition-opacity">
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            Join on Luma
+          </a>
         )}
       </div>
       <h1 class="animate-fade-up font-display text-3xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-3">
@@ -76,6 +80,17 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
         {event.data.subtitle}
       </p>
     </div>
+
+    <!-- Event image -->
+    {event.data.image && (
+      <div class="mb-10 max-w-2xl">
+        <img
+          src={assetPath(event.data.image)}
+          alt={event.data.title}
+          class="w-full rounded-xl border border-border/60"
+        />
+      </div>
+    )}
 
     <!-- Presenters -->
     <div class="flex flex-wrap gap-3 mb-10">
@@ -129,6 +144,23 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
             );
           })}
         </div>
+      </div>
+    )}
+
+    <!-- Join CTA -->
+    {event.data.link && (
+      <div class="mt-16 max-w-2xl rounded-xl border border-primary/20 bg-primary/5 p-8 text-center">
+        <h2 class="font-display text-2xl text-foreground mb-2">
+          Join the next meetup
+        </h2>
+        <p class="text-muted-foreground mb-6">
+          We meet regularly in Timisoara to share what we're building, swap tactics, and roast each other's products. Everyone is welcome.
+        </p>
+        <a href={event.data.link} target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Join us on Luma
+        </a>
       </div>
     )}
   </article>

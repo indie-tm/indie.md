@@ -135,6 +135,24 @@
     "personSlug": "vlad"
   },
   {
+    "slug": "video-content-face-in-corner",
+    "category": "product",
+    "title": "Record videos with your face in the corner",
+    "content": "Use Loom or similar tools to record product walkthroughs with your face visible in the corner. People trust faces. These videos work as blog post embeds, YouTube content, and social proof simultaneously. Pages with face-in-corner walkthroughs consistently convert better than text-only pages.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "raul"
+  },
+  {
+    "slug": "infographics-backlink-strategy",
+    "category": "seo",
+    "title": "Create infographics for blog posts and backlinks",
+    "content": "Infographics get shared and linked to far more than plain text. Create one per major blog post. Use Canva or Figma to visualize your key data points, then offer an embed code below the image so other bloggers can easily reuse it. This is one of the most reliable passive backlink strategies.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "raul"
+  },
+  {
     "slug": "faq-schema-markup",
     "category": "seo",
     "title": "Add FAQ sections with FAQPage schema to every page",
@@ -205,23 +223,5 @@
     "journeySlug": null,
     "eventSlug": "indie-tm-5-timisoara-march-2026",
     "personSlug": "mircea"
-  },
-  {
-    "slug": "video-content-face-in-corner",
-    "category": "product",
-    "title": "Record videos with your face in the corner",
-    "content": "Use Loom or similar tools to record product walkthroughs with your face visible in the corner. People trust faces. These videos work as blog post embeds, YouTube content, and social proof simultaneously. Pages with face-in-corner walkthroughs consistently convert better than text-only pages.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-5-timisoara-march-2026",
-    "personSlug": "raul"
-  },
-  {
-    "slug": "infographics-backlink-strategy",
-    "category": "seo",
-    "title": "Create infographics for blog posts and backlinks",
-    "content": "Infographics get shared and linked to far more than plain text. Create one per major blog post. Use Canva or Figma to visualize your key data points, then offer an embed code below the image so other bloggers can easily reuse it. This is one of the most reliable passive backlink strategies.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-5-timisoara-march-2026",
-    "personSlug": "raul"
   }
 ]
