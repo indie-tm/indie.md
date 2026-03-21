@@ -223,5 +223,23 @@
     "journeySlug": null,
     "eventSlug": "indie-tm-5-timisoara-march-2026",
     "personSlug": "mircea"
+  },
+  {
+    "slug": "trust-pages-careers-about",
+    "category": "seo",
+    "title": "Create Careers, About Us, and team pages to build trust",
+    "content": "A Careers page, an About Us page, and content showcasing team building experiences all signal to Google that there is a real organization behind the site. These pages build trust with both search engines and visitors. Include team photos, company culture, and hiring information even if you are not actively recruiting. Trust pages are one of the simplest ways to prove you are a legitimate business.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "petru-popa"
+  },
+  {
+    "slug": "publish-one-article-per-day",
+    "category": "seo",
+    "title": "Publish one article per day instead of batching",
+    "content": "Publishing one article per day is far more effective than dropping a batch of articles all at once. Search engines treat a sudden burst of content as suspicious, potentially flagging it as spam. A steady daily cadence signals consistent, genuine content production. It also gives each article time to get indexed and start ranking before the next one competes for attention.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "petru-popa"
   }
 ]

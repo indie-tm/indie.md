@@ -10,6 +10,7 @@ presenters:
   - mircea
   - raul
   - mihai-balint
+  - petru-popa
   - cristian-antohe
   - bogdan-moldovean
 ---
@@ -80,10 +81,26 @@ Integrate with Zapier, Make.com, n8n, and other workflow tools. Each platform gi
 Even if your product is primarily web-based, publish a simple mobile wrapper to the App Store and Google Play. The backlinks from apple.com and google.com are extremely high authority. A basic WebView wrapper with push notifications takes a weekend to build and gives you two of the strongest backlinks on the internet.
 :::
 
-Mihai from [OCRskill](https://ocrskill.com) pushed back on the app store wrapper idea, asking whether Google penalizes thin app listings. Mircea's answer: he had been doing it for over a year with no issues, and the domain authority lift was measurable.
+Someone pushed back on the app store wrapper idea, asking whether Google penalizes thin app listings. Mircea's answer: he had been doing it for over a year with no issues, and the domain authority lift was measurable.
 
 :::advice{slug="content-platform-backlinks" category="distribution" title="Get backlinks from Blogger, Wikipedia, and YouTube" person="mircea"}
 Create profiles and content on high-authority platforms. Write a Blogger post linking to your product. Add your tool to relevant Wikipedia lists (following their guidelines). Create a YouTube video and include your link in the description. Each of these platforms passes significant domain authority through their backlinks.
+:::
+
+## Mihai shows OCRskill
+
+Mihai was up next with [OCRskill](https://ocrskill.com), his OCR API that extracts structured data from images in under 500ms. The room was impressed. The product was sharp, the demo clean, and the questions quickly turned technical: what models are you using, how do you handle edge cases, what's the latency under load? Mihai had clearly been paying attention to the SEO discussion all evening. He took notes on every piece of advice, then started asking follow-up questions: how to apply programmatic pages to an API product, whether FAQ schema makes sense for developer tools, how to structure trust pages when your customers are other developers.
+
+## Petru brings the big-domain perspective
+
+Petru Popa went last, and he brought a different kind of experience to the table. He works on [Kink.com](https://www.kink.com), one of the oldest domains on the web. The room was immediately curious about the SEO behind a site with that kind of domain age and authority. Petru walked through some of the strategies that work at scale, and two pieces of advice stuck with the group.
+
+:::advice{slug="trust-pages-careers-about" category="seo" title="Create Careers, About Us, and team pages to build trust" person="petru-popa"}
+A Careers page, an About Us page, and content showcasing team building experiences all signal to Google that there is a real organization behind the site. These pages build trust with both search engines and visitors. Include team photos, company culture, and hiring information even if you are not actively recruiting. Trust pages are one of the simplest ways to prove you are a legitimate business.
+:::
+
+:::advice{slug="publish-one-article-per-day" category="seo" title="Publish one article per day instead of batching" person="petru-popa"}
+Publishing one article per day is far more effective than dropping a batch of articles all at once. Search engines treat a sudden burst of content as suspicious, potentially flagging it as spam. A steady daily cadence signals consistent, genuine content production. It also gives each article time to get indexed and start ranking before the next one competes for attention.
 :::
 
 The conversation kept going past 9 PM. Someone suggested the next meetup should focus on pricing strategies, someone else wanted to talk about cold outreach. The usual problem: too many good topics, not enough evenings.
