@@ -23,11 +23,9 @@ Eleven people, one conference table, a Thursday evening in Timisoara. The format
 
 [Raul](/people/raul) pulled up [OG Pilot](https://ogpilot.com) on the big screen. He walked through the recent changes: a cleaner dashboard, a better template editor, and the thing he was most excited about, a brand-new [WordPress plugin](https://ogpilot.com/wordpress).
 
-![OG Pilot WordPress plugin](/screenshots/ogpilot-wordpress.png) One click to install, and every post on a WordPress site gets a branded Open Graph image automatically. No design skills needed.
+One click to install, and every post on a WordPress site gets a branded Open Graph image automatically. No design skills needed.
 
 ![Calm Companies Club](/screenshots/calmcompanies.png)
-
-![Calm Companies Blog](/screenshots/calmcompanies-blog.png)
 
 Then [Raul](/people/raul) switched tabs to the [Calm Companies Club blog](https://calmcompanies.club/blog) and showed how he was using [NanoBanana](https://nanobanana.com) to generate featured images for his posts. Instead of spending 20 minutes in Canva per article, he described the post topic, NanoBanana generated an image, and he was done. The blog looked polished without the manual effort.
 
@@ -117,7 +115,7 @@ Publishing one article per day is far more effective than dropping a batch of ar
 
 ![TranslatePress](/screenshots/translatepress.png)
 
-![Profile Builder](/screenshots/profile-builder.png) for custom user registration, and [Paid Member Subscriptions](https://www.cozmoslabs.com/wordpress-paid-member-subscriptions/) for membership sites. Over a decade of shipping, and a story that started long before any product existed.
+for custom user registration, and [Paid Member Subscriptions](https://www.cozmoslabs.com/wordpress-paid-member-subscriptions/) for membership sites. Over a decade of shipping, and a story that started long before any product existed.
 
 In the early days, [Cristian](/people/cristian-antohe) was writing programming tutorials on the [Cozmoslabs blog](https://www.cozmoslabs.com/blog/). No product to sell, no grand strategy. Just useful content. That content became the foundation for their SEO, and it still drives traffic today. The products came later, born from what their clients kept asking for. Every plugin Cozmoslabs builds starts with a real problem that clients have, because they know it will take about a year to execute properly. So they are picky. They do not chase trends or build features on speculation.
 
