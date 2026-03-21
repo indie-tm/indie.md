@@ -19,7 +19,7 @@ Eleven people, one conference table, a Thursday evening in Timisoara. The format
 
 ## Raul goes first
 
-Raul pulled up [OG Pilot](https://ogpilot.com) on the big screen. He walked through the recent changes: a cleaner dashboard, a better template editor, and the thing he was most excited about, a brand-new [WordPress plugin](https://ogpilot.com/wordpress). One click to install, and every post on a WordPress site gets a branded Open Graph image automatically. No design skills needed.
+[Raul](/people/raul) pulled up [OG Pilot](https://ogpilot.com) on the big screen. He walked through the recent changes: a cleaner dashboard, a better template editor, and the thing he was most excited about, a brand-new [WordPress plugin](https://ogpilot.com/wordpress). One click to install, and every post on a WordPress site gets a branded Open Graph image automatically. No design skills needed.
 
 Then Raul switched tabs to the [Calm Companies Club blog](https://calmcompanies.club/blog) and showed how he was using [NanoBanana](https://nanobanana.com) to generate featured images for his posts. Instead of spending 20 minutes in Canva per article, he described the post topic, NanoBanana generated an image, and he was done. The blog looked polished without the manual effort.
 
@@ -35,7 +35,7 @@ Infographics get shared and linked to far more than plain text. Create one per m
 
 ## Vlad follows with SEO deep-dive
 
-Vlad was up next. He had been deep in the weeds optimizing [sisif.ai](https://sisif.ai) for search, and opened with the structural SEO work that most indie hackers skip because it feels tedious but compounds over months.
+[Vlad](/people/vlad) was up next. He had been deep in the weeds optimizing [sisif.ai](https://sisif.ai) for search, and opened with the structural SEO work that most indie hackers skip because it feels tedious but compounds over months.
 
 :::advice{slug="faq-schema-markup" category="seo" title="Add FAQ sections with FAQPage schema to every page" person="vlad"}
 Write real, human-authored FAQ sections for every page on your site. Use FAQPage structured data so Google can surface your answers as rich results. The key is writing questions your users actually ask, not keyword-stuffed filler. Check Google Search Console for queries people already use to find you, then answer those directly on the page.
@@ -67,7 +67,7 @@ It was the kind of honest feedback that only comes when people aren't being poli
 
 ## Mircea demos Blahphone
 
-Mircea was next. He pulled up [Blahphone](https://blahphone.com), his browser-based international calling service, and gave the room a live demo. The product looked solid, and the programmatic SEO setup impressed the group: he had built out pages targeting specific calling routes and countries, each ranking well. The roasting focused on the same question that kept coming up all evening: who is actually using this? The group pushed Mircea to get sharper on his user persona and figure out where those people already hang out.
+[Mircea](/people/mircea) was next. He pulled up [Blahphone](https://blahphone.com), his browser-based international calling service, and gave the room a live demo. The product looked solid, and the programmatic SEO setup impressed the group: he had built out pages targeting specific calling routes and countries, each ranking well. The roasting focused on the same question that kept coming up all evening: who is actually using this? The group pushed Mircea to get sharper on his user persona and figure out where those people already hang out.
 
 Beyond Blahphone, Mircea had been methodically building backlinks for both [Blahphone](https://blahphone.com) and [SingleFax](https://singlefax.com). His approach was almost comically systematic: list every high-authority platform that lets you create a profile with a link back to your site, then work through them one by one.
 
@@ -87,11 +87,11 @@ Create profiles and content on high-authority platforms. Write a Blogger post li
 
 ## Mihai shows OCRskill
 
-Mihai was up next with [OCRskill](https://ocrskill.com), his OCR API that extracts structured data from images in under 500ms. The room was impressed. The product was sharp, the demo clean, and the questions quickly turned technical: what models are you using, how do you handle edge cases, what's the latency under load? Mihai had clearly been paying attention to the SEO discussion all evening. He took notes on every piece of advice, then started asking follow-up questions: how to apply programmatic pages to an API product, whether FAQ schema makes sense for developer tools, how to structure trust pages when your customers are other developers.
+[Mihai](/people/mihai-balint) was up next with [OCRskill](https://ocrskill.com), his OCR API that extracts structured data from images in under 500ms. The room was impressed. The product was sharp, the demo clean, and the questions quickly turned technical: what models are you using, how do you handle edge cases, what's the latency under load? Mihai had clearly been paying attention to the SEO discussion all evening. He took notes on every piece of advice, then started asking follow-up questions: how to apply programmatic pages to an API product, whether FAQ schema makes sense for developer tools, how to structure trust pages when your customers are other developers.
 
 ## Petru brings the big-domain perspective
 
-Petru Popa was next, and he brought a different kind of experience to the table. He works on [Kink.com](https://www.kink.com), one of the oldest domains on the web. The room was immediately curious about the SEO behind a site with that kind of domain age and authority. Petru walked through some of the strategies that work at scale, and two pieces of advice stuck with the group.
+[Petru](/people/petru-popa) was next, and he brought a different kind of experience to the table. He works on [Kink.com](https://www.kink.com), one of the oldest domains on the web. The room was immediately curious about the SEO behind a site with that kind of domain age and authority. He walked through some of the strategies that work at scale, and two pieces of advice stuck with the group.
 
 :::advice{slug="trust-pages-careers-about" category="seo" title="Create Careers, About Us, and team pages to build trust" person="petru-popa"}
 A Careers page, an About Us page, and content showcasing team building experiences all signal to Google that there is a real organization behind the site. These pages build trust with both search engines and visitors. Include team photos, company culture, and hiring information even if you are not actively recruiting. Trust pages are one of the simplest ways to prove you are a legitimate business.
@@ -103,7 +103,7 @@ Publishing one article per day is far more effective than dropping a batch of ar
 
 ## Cristian on building slow and intentional
 
-Cristian Antohe closed the presentations. He brought [Cozmoslabs](https://www.cozmoslabs.com) and a portfolio of WordPress plugins: [TranslatePress](https://translatepress.com) for multilingual sites, [Profile Builder](https://www.cozmoslabs.com/wordpress-profile-builder/) for custom user registration, and [Paid Member Subscriptions](https://www.cozmoslabs.com/wordpress-paid-member-subscriptions/) for membership sites. Over a decade of shipping, and a story that started long before any product existed.
+[Cristian](/people/cristian-antohe) closed the presentations. He brought [Cozmoslabs](https://www.cozmoslabs.com) and a portfolio of WordPress plugins: [TranslatePress](https://translatepress.com) for multilingual sites, [Profile Builder](https://www.cozmoslabs.com/wordpress-profile-builder/) for custom user registration, and [Paid Member Subscriptions](https://www.cozmoslabs.com/wordpress-paid-member-subscriptions/) for membership sites. Over a decade of shipping, and a story that started long before any product existed.
 
 In the early days, Cristian was writing programming tutorials on the [Cozmoslabs blog](https://www.cozmoslabs.com/blog/). No product to sell, no grand strategy. Just useful content. That content became the foundation for their SEO, and it still drives traffic today. The products came later, born from what their clients kept asking for. Every plugin Cozmoslabs builds starts with a real problem that clients have, because they know it will take about a year to execute properly. So they are picky. They do not chase trends or build features on speculation.
 
@@ -123,6 +123,6 @@ Every Cozmoslabs product started with a problem their clients kept running into.
 
 ## Bogdan wraps up with Event Newsletter
 
-Bogdan closed the evening with [Event Newsletter](https://event-newsletter.com), his personalized weekly digest of local events. The room liked the retro design, and the niche felt right: event discovery is a real problem, and nobody is solving it well for smaller cities. Bogdan had been the most active questioner all night, asking about every SEO tactic that came up. He is not doing any SEO yet but wants to start, and the group gave him a crash course throughout the evening. The feedback also touched on the AI models he is using to curate and summarize events for the newsletter, with suggestions on which ones might work better for his use case.
+[Bogdan](/people/bogdan-moldovean) closed the evening with [Event Newsletter](https://event-newsletter.com), his personalized weekly digest of local events. The room liked the retro design, and the niche felt right: event discovery is a real problem, and nobody is solving it well for smaller cities. Bogdan had been the most active questioner all night, asking about every SEO tactic that came up. He is not doing any SEO yet but wants to start, and the group gave him a crash course throughout the evening. The feedback also touched on the AI models he is using to curate and summarize events for the newsletter, with suggestions on which ones might work better for his use case.
 
 The conversation kept going past 9 PM. Someone suggested the next meetup should focus on pricing strategies, someone else wanted to talk about cold outreach. The usual problem: too many good topics, not enough evenings.
