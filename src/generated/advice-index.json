@@ -135,15 +135,6 @@
     "personSlug": "vlad"
   },
   {
-    "slug": "video-content-face-in-corner",
-    "category": "product",
-    "title": "Record videos with your face in the corner",
-    "content": "Use Loom or similar tools to record product walkthroughs with your face visible in the corner. People trust faces. These videos work as blog post embeds, YouTube content, and social proof simultaneously. Pages with face-in-corner walkthroughs consistently convert better than text-only pages.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-5-timisoara-march-2026",
-    "personSlug": "raul"
-  },
-  {
     "slug": "infographics-backlink-strategy",
     "category": "seo",
     "title": "Create infographics for blog posts and backlinks",
@@ -180,10 +171,10 @@
     "personSlug": "mircea"
   },
   {
-    "slug": "content-platform-backlinks",
-    "category": "distribution",
-    "title": "Get backlinks from Blogger, Wikipedia, and YouTube",
-    "content": "Create profiles and content on high-authority platforms. Write a Blogger post linking to your product. Add your tool to relevant Wikipedia lists (following their guidelines). Create a YouTube video and include your link in the description. Each of these platforms passes significant domain authority through their backlinks.",
+    "slug": "internal-linking-seo",
+    "category": "seo",
+    "title": "Add internal links between every page",
+    "content": "Every page on your site should link to at least 2-3 other relevant pages. Internal linking helps Google discover your content, distributes page authority, and keeps visitors engaged longer. Audit your site for orphan pages (pages with zero internal links pointing to them) and fix them. Use descriptive anchor text, not \"click here.\"",
     "journeySlug": null,
     "eventSlug": "indie-tm-5-timisoara-march-2026",
     "personSlug": "mircea"
@@ -207,10 +198,19 @@
     "personSlug": "petru-popa"
   },
   {
-    "slug": "internal-linking-seo",
-    "category": "seo",
-    "title": "Add internal links between every page",
-    "content": "Every page on your site should link to at least 2-3 other relevant pages. Internal linking helps Google discover your content, distributes page authority, and keeps visitors engaged longer. Audit your site for orphan pages (pages with zero internal links pointing to them) and fix them. Use descriptive anchor text, not \"click here.\"",
+    "slug": "content-platform-backlinks",
+    "category": "distribution",
+    "title": "Get backlinks from Blogger, Wikipedia, and YouTube",
+    "content": "Create profiles and content on high-authority platforms. Write a Blogger post linking to your product. Add your tool to relevant Wikipedia lists (following their guidelines). Create a YouTube video and include your link in the description. Each of these platforms passes significant domain authority through their backlinks.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "petru-popa"
+  },
+  {
+    "slug": "video-content-face-in-corner",
+    "category": "product",
+    "title": "Record videos with your face in the corner",
+    "content": "Use Loom or similar tools to record product walkthroughs with your face visible in the corner. People trust faces. These videos work as blog post embeds, YouTube content, and social proof simultaneously. Pages with face-in-corner walkthroughs consistently convert better than text-only pages.",
     "journeySlug": null,
     "eventSlug": "indie-tm-5-timisoara-march-2026",
     "personSlug": "petru-popa"

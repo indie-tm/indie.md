@@ -25,10 +25,6 @@ Then [Raul](/people/raul) switched tabs to the [Calm Companies Club blog](https:
 
 The conversation shifted to content strategy more broadly. [Raul](/people/raul) had been experimenting with different formats beyond text-only blog posts, and shared what was actually moving the needle.
 
-:::advice{slug="video-content-face-in-corner" category="product" title="Record videos with your face in the corner" person="raul"}
-Use Loom or similar tools to record product walkthroughs with your face visible in the corner. People trust faces. These videos work as blog post embeds, YouTube content, and social proof simultaneously. Pages with face-in-corner walkthroughs consistently convert better than text-only pages.
-:::
-
 :::advice{slug="infographics-backlink-strategy" category="seo" title="Create infographics for blog posts and backlinks" person="raul"}
 Infographics get shared and linked to far more than plain text. Create one per major blog post. Use Canva or Figma to visualize your key data points, then offer an embed code below the image so other bloggers can easily reuse it. This is one of the most reliable passive backlink strategies.
 :::
@@ -63,8 +59,8 @@ Even if your product is primarily web-based, publish a simple mobile wrapper to 
 
 Someone pushed back on the app store wrapper idea, asking whether Google penalizes thin app listings. [Mircea](/people/mircea)'s answer: he had been doing it for over a year with no issues, and the domain authority lift was measurable.
 
-:::advice{slug="content-platform-backlinks" category="distribution" title="Get backlinks from Blogger, Wikipedia, and YouTube" person="mircea"}
-Create profiles and content on high-authority platforms. Write a Blogger post linking to your product. Add your tool to relevant Wikipedia lists (following their guidelines). Create a YouTube video and include your link in the description. Each of these platforms passes significant domain authority through their backlinks.
+:::advice{slug="internal-linking-seo" category="seo" title="Add internal links between every page" person="mircea"}
+Every page on your site should link to at least 2-3 other relevant pages. Internal linking helps Google discover your content, distributes page authority, and keeps visitors engaged longer. Audit your site for orphan pages (pages with zero internal links pointing to them) and fix them. Use descriptive anchor text, not "click here."
 :::
 
 ## Mihai shows OCRskill
@@ -83,8 +79,12 @@ Write real, human-authored FAQ sections for every page on your site. Use FAQPage
 Google evaluates trust signals when ranking your site. A Careers page, an About Us page, Privacy Policy, Terms of Service, and content showcasing team building experiences all signal that there is a real organization behind the site. Include team photos, company culture, and hiring information even if you are not actively recruiting. These pages build trust with both search engines and visitors, and attract backlinks from directories that list companies with public hiring or legal pages.
 :::
 
-:::advice{slug="internal-linking-seo" category="seo" title="Add internal links between every page" person="petru-popa"}
-Every page on your site should link to at least 2-3 other relevant pages. Internal linking helps Google discover your content, distributes page authority, and keeps visitors engaged longer. Audit your site for orphan pages (pages with zero internal links pointing to them) and fix them. Use descriptive anchor text, not "click here."
+:::advice{slug="content-platform-backlinks" category="distribution" title="Get backlinks from Blogger, Wikipedia, and YouTube" person="petru-popa"}
+Create profiles and content on high-authority platforms. Write a Blogger post linking to your product. Add your tool to relevant Wikipedia lists (following their guidelines). Create a YouTube video and include your link in the description. Each of these platforms passes significant domain authority through their backlinks.
+:::
+
+:::advice{slug="video-content-face-in-corner" category="product" title="Record videos with your face in the corner" person="petru-popa"}
+Use Loom or similar tools to record product walkthroughs with your face visible in the corner. People trust faces. These videos work as blog post embeds, YouTube content, and social proof simultaneously. Pages with face-in-corner walkthroughs consistently convert better than text-only pages.
 :::
 
 :::advice{slug="publish-one-article-per-day" category="seo" title="Publish one article per day instead of batching" person="petru-popa"}
