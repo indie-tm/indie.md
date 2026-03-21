@@ -33,6 +33,18 @@ const eventsWithData = await Promise.all(
   })
 );
 
+const CADENCE_DAYS = 14;
+const sortedEvents = [...events].sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const latestEvent = sortedEvents[0];
+const nextEventDate = new Date(latestEvent.data.date.getTime() + CADENCE_DAYS * 24 * 60 * 60 * 1000);
+const nextEventFormatted = nextEventDate.toLocaleDateString('en-US', {
+  weekday: 'long',
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+});
+const nextEventNumber = (sortedEvents.length + 1).toString();
+
 const categoryMap = new Map(categories.map(c => [c.slug, c]));
 
 const journeyDateMap = new Map(journeys.map(j => [j.id, j.data.date]));
@@ -103,13 +115,40 @@ const latestAdvice = await Promise.all(
     </div>
   </section>
 
-  <!-- Events -->
+  <!-- Upcoming Event -->
+  {latestEvent.data.link && (
+    <section class="container mx-auto px-4 pb-16">
+      <div class="flex items-center justify-between mb-8">
+        <h2 class="font-display text-2xl text-foreground flex items-center gap-2">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+          Next Meetup
+        </h2>
+      </div>
+      <div class="rounded-xl border border-primary/20 bg-primary/5 p-6 md:p-8 flex flex-col md:flex-row md:items-center gap-6 md:gap-10">
+        <div class="flex-1">
+          <p class="text-sm font-medium text-primary mb-1">Indie TM #{nextEventNumber}</p>
+          <p class="font-display text-2xl text-foreground mb-2">{nextEventFormatted}</p>
+          <p class="text-muted-foreground">{latestEvent.data.location}</p>
+          <p class="text-sm text-muted-foreground mt-3">
+            We meet every two weeks to share what we're building, swap tactics, and roast each other's products. Everyone is welcome.
+          </p>
+        </div>
+        <a href={latestEvent.data.link} target="_blank" rel="noopener noreferrer"
+           class="inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity shrink-0">
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          Join us on Luma
+        </a>
+      </div>
+    </section>
+  )}
+
+  <!-- Past Events -->
   {eventsWithData.length > 0 && (
     <section class="container mx-auto px-4 pb-16">
       <div class="flex items-center justify-between mb-8">
         <h2 class="font-display text-2xl text-foreground flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
-          Events
+          Past Events
         </h2>
         <a href={href("/events")} class="text-sm text-primary font-medium flex items-center gap-1 hover:gap-2 transition-all">
           View all
