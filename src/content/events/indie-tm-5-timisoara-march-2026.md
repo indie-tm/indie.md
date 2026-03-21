@@ -105,7 +105,7 @@ Publishing one article per day is far more effective than dropping a batch of ar
 
 ## Cristian on building slow and intentional
 
-Cristian Antohe closed the presentations. He brought [Cozmoslabs](https://www.cozmoslabs.com) and [TranslatePress](https://translatepress.com), over a decade of shipping WordPress plugins, and a story that started long before any product existed.
+Cristian Antohe closed the presentations. He brought [Cozmoslabs](https://www.cozmoslabs.com) and a portfolio of WordPress plugins: [TranslatePress](https://translatepress.com) for multilingual sites, [Profile Builder](https://www.cozmoslabs.com/wordpress-profile-builder/) for custom user registration, and [Paid Member Subscriptions](https://www.cozmoslabs.com/wordpress-paid-member-subscriptions/) for membership sites. Over a decade of shipping, and a story that started long before any product existed.
 
 In the early days, Cristian was writing programming tutorials on the [Cozmoslabs blog](https://www.cozmoslabs.com/blog/). No product to sell, no grand strategy. Just useful content. That content became the foundation for their SEO, and it still drives traffic today. The products came later, born from what their clients kept asking for. Every plugin Cozmoslabs builds starts with a real problem that clients have, because they know it will take about a year to execute properly. So they are picky. They do not chase trends or build features on speculation.
 
