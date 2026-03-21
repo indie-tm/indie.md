@@ -11,10 +11,11 @@
     "format": "biome format --write .",
     "lint": "biome lint --write .",
     "lint:writing": "bash scripts/lint-writing.sh",
+    "lint:seo": "bash scripts/lint-seo.sh",
     "typecheck": "astro sync && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "check": "biome check . && npm run lint:writing && npm run typecheck && npm run test && npm run build",
+    "check": "biome check . && npm run lint:writing && npm run typecheck && npm run test && npm run build && npm run lint:seo",
     "prepare": "husky"
   },
   "dependencies": {
