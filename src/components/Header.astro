@@ -7,6 +7,8 @@ import { assetPath, href } from "../lib/base-url";
     <a href={href("/")} class="flex items-center gap-2">
       <img src={assetPath("/logo.png")} alt="indie.md" class="h-10" />
     </a>
+
+    <!-- Desktop nav -->
     <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
       <a href={href("/")} class="nav-link text-foreground/70 hover:text-foreground transition-colors">Home</a>
       <a href={href("/journeys")} class="nav-link text-foreground/70 hover:text-foreground transition-colors">Journeys</a>
@@ -14,11 +16,51 @@ import { assetPath, href } from "../lib/base-url";
       <a href={href("/events")} class="nav-link text-foreground/70 hover:text-foreground transition-colors">Events</a>
       <a href={href("/people")} class="nav-link text-foreground/70 hover:text-foreground transition-colors">People</a>
     </nav>
-    <div class="flex items-center gap-3">
+
+    <div class="hidden md:flex items-center gap-3">
       <span class="text-xs text-muted-foreground flex items-center gap-1">
         <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
         From the community
       </span>
     </div>
+
+    <!-- Mobile hamburger button -->
+    <button
+      id="mobile-menu-btn"
+      class="md:hidden p-2"
+      aria-label="Toggle navigation"
+      aria-expanded="false"
+    >
+      <svg class="w-6 h-6 text-foreground" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path id="menu-icon" stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+      </svg>
+    </button>
   </div>
+
+  <!-- Mobile nav overlay -->
+  <nav id="mobile-nav" class="hidden md:hidden flex-col gap-1 px-4 pb-4 pt-2 border-t border-border/30 bg-background text-sm font-medium">
+    <a href={href("/")} class="text-foreground/70 hover:text-foreground transition-colors py-2">Home</a>
+    <a href={href("/journeys")} class="text-foreground/70 hover:text-foreground transition-colors py-2">Journeys</a>
+    <a href={href("/advice")} class="text-foreground/70 hover:text-foreground transition-colors py-2">Advice</a>
+    <a href={href("/events")} class="text-foreground/70 hover:text-foreground transition-colors py-2">Events</a>
+    <a href={href("/people")} class="text-foreground/70 hover:text-foreground transition-colors py-2">People</a>
+  </nav>
 </header>
+
+<script>
+  const btn = document.getElementById("mobile-menu-btn");
+  const nav = document.getElementById("mobile-nav");
+  const icon = document.getElementById("menu-icon");
+
+  btn?.addEventListener("click", () => {
+    const isOpen = nav?.classList.toggle("hidden") === false;
+    if (isOpen) {
+      nav?.classList.add("flex");
+      icon?.setAttribute("d", "M6 18L18 6M6 6l12 12");
+    } else {
+      nav?.classList.remove("flex");
+      icon?.setAttribute("d", "M4 6h16M4 12h16M4 18h16");
+    }
+    btn?.setAttribute("aria-expanded", String(isOpen));
+  });
+</script>
