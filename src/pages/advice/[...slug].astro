@@ -2,7 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import AdviceCard from '../../components/AdviceCard.astro';
 import CategoryBadge from '../../components/CategoryBadge.astro';
-import { getEntry, type CollectionEntry } from 'astro:content';
+import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
 import { getAdviceIndex, getAdviceByCategory, getAllCategories } from '../../lib/advice';
 import type { AdviceEntry, CategoryMeta } from '../../lib/advice';
 import { assetPath, href } from "../../lib/base-url";
@@ -40,9 +40,24 @@ let advicePerson: CollectionEntry<'people'> | undefined;
 let adviceCategory: CategoryMeta | undefined;
 
 if (props.type === 'category') {
+  const journeys = await getCollection('journeys');
+  const events = await getCollection('events');
+  const journeyDateMap = new Map(journeys.map(j => [j.id, j.data.date]));
+  const eventDateMap = new Map(events.map(e => [e.id, e.data.date]));
+
   const entries = getAdviceByCategory(props.category.slug);
+  const sorted = [...entries].sort((a, b) => {
+    const dateA = (a.eventSlug ? eventDateMap.get(a.eventSlug) : null)
+      ?? (a.journeySlug ? journeyDateMap.get(a.journeySlug) : null)
+      ?? new Date(0);
+    const dateB = (b.eventSlug ? eventDateMap.get(b.eventSlug) : null)
+      ?? (b.journeySlug ? journeyDateMap.get(b.journeySlug) : null)
+      ?? new Date(0);
+    return dateB.getTime() - dateA.getTime();
+  });
+
   filteredAdvice = await Promise.all(
-    entries.map(async (a) => {
+    sorted.map(async (a) => {
       const person = await getEntry('people', a.personSlug);
       const cat = categories.find(c => c.slug === a.category);
       return { advice: a, person: person!, categoryLabel: cat?.label ?? a.category };

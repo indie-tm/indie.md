@@ -1,15 +1,30 @@
 ---
 import Base from '../../layouts/Base.astro';
 import AdviceCard from '../../components/AdviceCard.astro';
-import { getEntry } from 'astro:content';
+import { getCollection, getEntry } from 'astro:content';
 import { getAdviceIndex, getAllCategories } from '../../lib/advice';
 import { href } from '../../lib/base-url';
 
 const adviceIndex = getAdviceIndex();
 const categories = getAllCategories();
 
+const journeys = await getCollection('journeys');
+const events = await getCollection('events');
+const journeyDateMap = new Map(journeys.map(j => [j.id, j.data.date]));
+const eventDateMap = new Map(events.map(e => [e.id, e.data.date]));
+
+const sortedAdvice = [...adviceIndex].sort((a, b) => {
+  const dateA = (a.eventSlug ? eventDateMap.get(a.eventSlug) : null)
+    ?? (a.journeySlug ? journeyDateMap.get(a.journeySlug) : null)
+    ?? new Date(0);
+  const dateB = (b.eventSlug ? eventDateMap.get(b.eventSlug) : null)
+    ?? (b.journeySlug ? journeyDateMap.get(b.journeySlug) : null)
+    ?? new Date(0);
+  return dateB.getTime() - dateA.getTime();
+});
+
 const adviceWithPeople = await Promise.all(
-  adviceIndex.map(async (a) => {
+  sortedAdvice.map(async (a) => {
     const person = await getEntry('people', a.personSlug);
     const cat = categories.find(c => c.slug === a.category);
     return { advice: a, person: person!, categoryLabel: cat?.label ?? a.category };

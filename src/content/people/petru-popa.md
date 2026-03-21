@@ -1,7 +1,7 @@
 ---
 name: "Petru"
 avatar: "/avatars/petru-popa.png"
-tagline: "SEO at scale"
+tagline: "SEO veteran at Kink.com"
 products:
   - name: "Kink.com"
     url: "https://www.kink.com"

@@ -29,7 +29,7 @@ The conversation shifted to content strategy more broadly. [Raul](/people/raul) 
 Infographics get shared and linked to far more than plain text. Create one per major blog post. Use Canva or Figma to visualize your key data points, then offer an embed code below the image so other bloggers can easily reuse it. This is one of the most reliable passive backlink strategies.
 :::
 
-## Vlad showcases sisif.ai and NanoClaw
+## Vlad showcases sisif.ai and getnanoclaw
 
 [Vlad](/people/vlad) was up next. He pulled up [sisif.ai](https://sisif.ai) and walked through the programmatic SEO pages he had been building: landing pages targeting specific platforms and locations, each with real content rather than just a swapped city name in a template.
 
@@ -41,9 +41,9 @@ Integrate with Zapier, Make.com, n8n, and other workflow tools. Each platform gi
 Build pages targeting "[product/service] in [city/country]" and "[integration] in [city/country]" combinations. Automate the page structure but keep the content genuine. Each page should have real, location-specific information, not just a city name swapped in a template. This is how you capture long-tail local search traffic with almost no competition.
 :::
 
-### NanoClaw gets roasted
+### getnanoclaw gets roasted
 
-For his second product, [Vlad](/people/vlad) showed [NanoClaw](https://getnanoclaw.com/), a personal AI assistant that runs on WhatsApp. The pitch: deploy a Claude-powered chatbot in under two minutes, no servers, no terminal. The room had questions. Lots of questions. Who is this for? Who are the actual users? Small businesses? But it requires an Anthropic API key, which is not something a small business owner knows how to get. The interface felt too programmatic, too developer-friendly for the audience it was trying to reach. If the target is non-technical people, the onboarding needs to meet them where they are, not where a developer would be comfortable.
+For his second product, [Vlad](/people/vlad) showed [getnanoclaw](https://getnanoclaw.com/), a personal AI assistant that runs on WhatsApp. The pitch: deploy a Claude-powered chatbot in under two minutes, no servers, no terminal. The room had questions. Lots of questions. Who is this for? Who are the actual users? Small businesses? But it requires an Anthropic API key, which is not something a small business owner knows how to get. The interface felt too programmatic, too developer-friendly for the audience it was trying to reach. If the target is non-technical people, the onboarding needs to meet them where they are, not where a developer would be comfortable.
 
 It was the kind of honest feedback that only comes when people aren't being polite.
 
