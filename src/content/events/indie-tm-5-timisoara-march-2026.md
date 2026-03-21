@@ -19,13 +19,13 @@ Eleven people, one conference table, a Thursday evening in Timisoara. The format
 
 ## Raul goes first
 
-![OG Pilot homepage](/screenshots/ogpilot.png)
+![OG Pilot WordPress plugin](/screenshots/ogpilot-wordpress.png)
 
 [Raul](/people/raul) pulled up [OG Pilot](https://ogpilot.com) on the big screen. He walked through the recent changes: a cleaner dashboard, a better template editor, and the thing he was most excited about, a brand-new [WordPress plugin](https://ogpilot.com/wordpress).
 
 One click to install, and every post on a WordPress site gets a branded Open Graph image automatically. No design skills needed.
 
-![Calm Companies Club](/screenshots/calmcompanies.png)
+![Calm Companies Blog](/screenshots/calmcompanies-blog.png)
 
 Then [Raul](/people/raul) switched tabs to the [Calm Companies Club blog](https://calmcompanies.club/blog) and showed how he was using [NanoBanana](https://nanobanana.com) to generate featured images for his posts. Instead of spending 20 minutes in Canva per article, he described the post topic, NanoBanana generated an image, and he was done. The blog looked polished without the manual effort.
 
