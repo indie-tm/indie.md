@@ -15,7 +15,7 @@
     "typecheck": "astro sync && tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "check": "biome check . && npm run lint:writing && npm run typecheck && npm run test && npm run build && npm run lint:seo",
+    "check": "biome check . && npm run lint:writing && npm run typecheck && npm run extract-advice && npm run test && npm run build && npm run lint:seo",
     "prepare": "husky"
   },
   "dependencies": {
@@ -30,6 +30,7 @@
     "@biomejs/biome": "^2.4.8",
     "@types/node": "^25.5.0",
     "husky": "^9.1.7",
+    "playwright": "^1.58.2",
     "tsx": "^4.21.0",
     "typescript": "^5.9.3",
     "vitest": "^4.1.0"

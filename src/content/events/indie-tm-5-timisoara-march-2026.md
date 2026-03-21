@@ -19,7 +19,15 @@ Eleven people, one conference table, a Thursday evening in Timisoara. The format
 
 ## Raul goes first
 
-[Raul](/people/raul) pulled up [OG Pilot](https://ogpilot.com) on the big screen. He walked through the recent changes: a cleaner dashboard, a better template editor, and the thing he was most excited about, a brand-new [WordPress plugin](https://ogpilot.com/wordpress). One click to install, and every post on a WordPress site gets a branded Open Graph image automatically. No design skills needed.
+![OG Pilot homepage](/screenshots/ogpilot.png)
+
+[Raul](/people/raul) pulled up [OG Pilot](https://ogpilot.com) on the big screen. He walked through the recent changes: a cleaner dashboard, a better template editor, and the thing he was most excited about, a brand-new [WordPress plugin](https://ogpilot.com/wordpress).
+
+![OG Pilot WordPress plugin](/screenshots/ogpilot-wordpress.png) One click to install, and every post on a WordPress site gets a branded Open Graph image automatically. No design skills needed.
+
+![Calm Companies Club](/screenshots/calmcompanies.png)
+
+![Calm Companies Blog](/screenshots/calmcompanies-blog.png)
 
 Then [Raul](/people/raul) switched tabs to the [Calm Companies Club blog](https://calmcompanies.club/blog) and showed how he was using [NanoBanana](https://nanobanana.com) to generate featured images for his posts. Instead of spending 20 minutes in Canva per article, he described the post topic, NanoBanana generated an image, and he was done. The blog looked polished without the manual effort.
 
@@ -39,6 +47,8 @@ Create profiles and content on high-authority platforms. Write a Blogger post li
 
 ## Vlad showcases sisif.ai and getnanoclaw
 
+![sisif.ai homepage](/screenshots/sisif-ai.png)
+
 [Vlad](/people/vlad) was up next. He pulled up [sisif.ai](https://sisif.ai) and walked through the programmatic SEO pages he had been building: landing pages targeting specific platforms and locations, each with real content rather than just a swapped city name in a template.
 
 :::advice{slug="nocode-platform-backlinks" category="distribution" title="Get listed on no-code platforms for free backlinks" person="vlad"}
@@ -51,13 +61,19 @@ Build pages targeting "[product/service] in [city/country]" and "[integration] i
 
 ### getnanoclaw gets roasted
 
+![getnanoclaw homepage](/screenshots/getnanoclaw.png)
+
 For his second product, [Vlad](/people/vlad) showed [getnanoclaw](https://getnanoclaw.com/), a personal AI assistant that runs on WhatsApp. The pitch: deploy a Claude-powered chatbot in under two minutes, no servers, no terminal. The room had questions. Lots of questions. Who is this for? Who are the actual users? Small businesses? But it requires an Anthropic API key, which is not something a small business owner knows how to get. The interface felt too programmatic, too developer-friendly for the audience it was trying to reach. If the target is non-technical people, the onboarding needs to meet them where they are, not where a developer would be comfortable.
 
 It was the kind of honest feedback that only comes when people aren't being polite.
 
 ## Mircea demos Blahphone
 
+![Blahphone homepage](/screenshots/blahphone.png)
+
 [Mircea](/people/mircea) was next. He pulled up [Blahphone](https://blahphone.com), his browser-based international calling service, and gave the room a live demo. The product looked solid, and the programmatic SEO setup impressed the group: he had built out pages targeting specific calling routes and countries, each ranking well. The roasting focused on the same question that kept coming up all evening: who is actually using this? The group pushed [Mircea](/people/mircea) to get sharper on his user persona and figure out where those people already hang out.
+
+![SingleFax homepage](/screenshots/singlefax.png)
 
 Beyond Blahphone, [Mircea](/people/mircea) had been methodically building backlinks for both [Blahphone](https://blahphone.com) and [SingleFax](https://singlefax.com). His approach was almost comically systematic: list every high-authority platform that lets you create a profile with a link back to your site, then work through them one by one.
 
@@ -72,6 +88,8 @@ Every page on your site should link to at least 2-3 other relevant pages. Intern
 :::
 
 ## Mihai shows OCRskill
+
+![OCRskill homepage](/screenshots/ocrskill.png)
 
 [Mihai](/people/mihai-balint) was up next with [OCRskill](https://ocrskill.com), his OCR API that extracts structured data from images in under 500ms. The room was impressed. The product was sharp, the demo clean, and the questions quickly turned technical: what models are you using, how do you handle edge cases, what's the latency under load? [Mihai](/people/mihai-balint) had clearly been paying attention to the SEO discussion all evening. He took notes on every piece of advice, then started asking follow-up questions: how to apply programmatic pages to an API product, whether FAQ schema makes sense for developer tools, how to structure trust pages when your customers are other developers.
 
@@ -93,7 +111,13 @@ Publishing one article per day is far more effective than dropping a batch of ar
 
 ## Cristian on building slow and intentional
 
-[Cristian](/people/cristian-antohe) closed the presentations. He brought [Cozmoslabs](https://www.cozmoslabs.com) and a portfolio of WordPress plugins: [TranslatePress](https://translatepress.com) for multilingual sites, [Profile Builder](https://www.cozmoslabs.com/wordpress-profile-builder/) for custom user registration, and [Paid Member Subscriptions](https://www.cozmoslabs.com/wordpress-paid-member-subscriptions/) for membership sites. Over a decade of shipping, and a story that started long before any product existed.
+![Cozmoslabs homepage](/screenshots/cozmoslabs.png)
+
+[Cristian](/people/cristian-antohe) closed the presentations. He brought [Cozmoslabs](https://www.cozmoslabs.com) and a portfolio of WordPress plugins: [TranslatePress](https://translatepress.com) for multilingual sites, [Profile Builder](https://www.cozmoslabs.com/wordpress-profile-builder/)
+
+![TranslatePress](/screenshots/translatepress.png)
+
+![Profile Builder](/screenshots/profile-builder.png) for custom user registration, and [Paid Member Subscriptions](https://www.cozmoslabs.com/wordpress-paid-member-subscriptions/) for membership sites. Over a decade of shipping, and a story that started long before any product existed.
 
 In the early days, [Cristian](/people/cristian-antohe) was writing programming tutorials on the [Cozmoslabs blog](https://www.cozmoslabs.com/blog/). No product to sell, no grand strategy. Just useful content. That content became the foundation for their SEO, and it still drives traffic today. The products came later, born from what their clients kept asking for. Every plugin Cozmoslabs builds starts with a real problem that clients have, because they know it will take about a year to execute properly. So they are picky. They do not chase trends or build features on speculation.
 
@@ -116,6 +140,8 @@ Every Cozmoslabs product started with a problem their clients kept running into.
 :::
 
 ## Bogdan wraps up with Event Newsletter
+
+![Event Newsletter homepage](/screenshots/event-newsletter.png)
 
 [Bogdan](/people/bogdan-moldovean) closed the evening with [Event Newsletter](https://event-newsletter.com), his personalized weekly digest of local events. The room liked the retro design, and the niche felt right: event discovery is a real problem, and nobody is solving it well for smaller cities. [Bogdan](/people/bogdan-moldovean) had been the most active questioner all night, asking about every SEO tactic that came up. He is not doing any SEO yet but wants to start, and the group gave him a crash course throughout the evening. The feedback also touched on the AI models he is using to curate and summarize events for the newsletter, with suggestions on which ones might work better for his use case.
 
