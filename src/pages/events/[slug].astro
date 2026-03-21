@@ -39,6 +39,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
     "@type": "Event",
     "name": event.data.title,
     "description": event.data.subtitle,
+    ...(event.data.image ? { "image": `https://indie.tm${event.data.image}` } : {}),
     "startDate": event.data.date.toISOString(),
     "location": {
       "@type": "Place",

@@ -18,6 +18,18 @@ const eventsWithData = await Promise.all(
     return { event: e, presenters, adviceCount };
   })
 );
+
+const CADENCE_DAYS = 14;
+const sortedEvents = [...events].sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+const latestEvent = sortedEvents[0];
+const nextEventDate = new Date(latestEvent.data.date.getTime() + CADENCE_DAYS * 24 * 60 * 60 * 1000);
+const nextEventFormatted = nextEventDate.toLocaleDateString('en-US', {
+  weekday: 'long',
+  month: 'long',
+  day: 'numeric',
+  year: 'numeric',
+});
+const nextEventNumber = (sortedEvents.length + 1).toString();
 ---
 <Base title="Events | indie.md" description="Recaps from our IRL meetups. Real conversations, real advice." canonicalPath="/events">
   <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
@@ -33,6 +45,33 @@ const eventsWithData = await Promise.all(
 
   <section class="container mx-auto px-4 pb-20">
     <div class="animate-stagger grid grid-cols-1 md:grid-cols-2 gap-5">
+      {/* Upcoming event card */}
+      {latestEvent.data.link && (
+        <a href={latestEvent.data.link} target="_blank" rel="noopener noreferrer"
+           class="card-hover group block rounded-xl border border-primary/30 bg-primary/5 p-6 hover:shadow-[var(--shadow-card-hover)] transition-all duration-300">
+          <div class="flex items-center gap-2 mb-4">
+            <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary text-primary-foreground text-xs font-medium">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
+              Up next
+            </span>
+            <div class="ml-auto">
+              <p class="text-xs text-muted-foreground">{nextEventFormatted}</p>
+              <p class="text-xs text-muted-foreground">{latestEvent.data.location}</p>
+            </div>
+          </div>
+          <h3 class="font-display text-xl text-foreground group-hover:text-primary transition-colors mb-2 leading-snug">
+            Indie TM #{nextEventNumber}
+          </h3>
+          <p class="text-sm text-muted-foreground leading-relaxed mb-4">
+            We meet every two weeks to share what we're building, swap tactics, and roast each other's products.
+          </p>
+          <span class="inline-flex items-center gap-2 text-sm text-primary font-medium group-hover:gap-3 transition-all">
+            Join us on Luma
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </span>
+        </a>
+      )}
+      {/* Past event cards */}
       {eventsWithData.map(({ event, presenters, adviceCount }) => (
         <EventCard
           event={{ slug: event.id, ...event.data }}
