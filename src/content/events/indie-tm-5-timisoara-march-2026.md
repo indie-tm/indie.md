@@ -59,8 +59,6 @@ Build pages targeting "[product/service] in [city/country]" and "[integration] i
 Every page on your site should link to at least 2-3 other relevant pages. Internal linking helps Google discover your content, distributes page authority, and keeps visitors engaged longer. Audit your site for orphan pages (pages with zero internal links pointing to them) and fix them. Use descriptive anchor text, not "click here."
 :::
 
-Bogdan from [Event Newsletter](https://event-newsletter.com) perked up at the programmatic pages idea. His product aggregates local events by city, which means he already had the data for hundreds of "[event type] in [city]" pages. He just hadn't thought of it as an SEO strategy.
-
 ### NanoClaw gets roasted
 
 For his second product, Vlad showed [NanoClaw](https://getnanoclaw.com/), a personal AI assistant that runs on WhatsApp. The pitch: deploy a Claude-powered chatbot in under two minutes, no servers, no terminal. The room had questions. Lots of questions. Who is this for? Who are the actual users? Small businesses? But it requires an Anthropic API key, which is not something a small business owner knows how to get. The interface felt too programmatic, too developer-friendly for the audience it was trying to reach. If the target is non-technical people, the onboarding needs to meet them where they are, not where a developer would be comfortable.
@@ -122,5 +120,9 @@ Cozmoslabs still publishes articles, but they prioritize quality over quantity. 
 :::advice{slug="build-from-client-problems" category="product" title="Build products from real client problems, not speculation" person="cristian-antohe"}
 Every Cozmoslabs product started with a problem their clients kept running into. They do not build on speculation or trends. When you know a product will take a year to execute, you need to be certain the problem is real. Spot the pattern in client requests, validate that the pain is genuine, and only then commit to building. Being picky about what you build is a feature, not a limitation.
 :::
+
+## Bogdan wraps up with Event Newsletter
+
+Bogdan closed the evening with [Event Newsletter](https://event-newsletter.com), his personalized weekly digest of local events. The room liked the retro design, and the niche felt right: event discovery is a real problem, and nobody is solving it well for smaller cities. Bogdan had been the most active questioner all night, asking about every SEO tactic that came up. He is not doing any SEO yet but wants to start, and the group gave him a crash course throughout the evening. The feedback also touched on the AI models he is using to curate and summarize events for the newsletter, with suggestions on which ones might work better for his use case.
 
 The conversation kept going past 9 PM. Someone suggested the next meetup should focus on pricing strategies, someone else wanted to talk about cold outreach. The usual problem: too many good topics, not enough evenings.
