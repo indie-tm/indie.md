@@ -72,7 +72,7 @@ const pageDescription = isCategory
     <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
       <div class="max-w-2xl">
         <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4 flex items-center gap-3">
-          <span class="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 text-primary font-bold text-sm">{category.icon}</span> {category.label}
+          <img src={category.icon} alt={category.label} class="w-12 h-12 rounded-lg" /> {category.label}
         </h1>
         <p class="text-lg text-muted-foreground leading-relaxed">
           {category.count} tips from real indie hacker journeys.
@@ -96,7 +96,7 @@ const pageDescription = isCategory
                  ? 'bg-primary text-primary-foreground'
                  : 'border border-border/80 text-muted-foreground hover:border-primary/30 hover:text-foreground transition-all',
              ]}>
-            {cat.icon} {cat.label}
+            <img src={cat.icon} alt={cat.label} class="w-4 h-4" /> {cat.label}
           </a>
         ))}
       </div>

@@ -19,11 +19,11 @@ export interface CategoryMeta {
 }
 
 const CATEGORY_META: Record<string, { label: string; icon: string }> = {
-  seo: { label: "SEO", icon: "SEO" },
-  distribution: { label: "Distribution", icon: "DST" },
-  product: { label: "Product", icon: "PRD" },
-  business: { label: "Business & Legal", icon: "BIZ" },
-  mindset: { label: "Mindset", icon: "MND" },
+  seo: { label: "SEO", icon: "/categories/seo.png" },
+  distribution: { label: "Distribution", icon: "/categories/distribution.png" },
+  product: { label: "Product", icon: "/categories/product.png" },
+  business: { label: "Business & Legal", icon: "/categories/business.png" },
+  mindset: { label: "Mindset", icon: "/categories/mindset.png" },
 };
 
 const INDEX_PATH = path.resolve("src/generated/advice-index.json");
