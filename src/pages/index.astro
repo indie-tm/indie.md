@@ -35,8 +35,21 @@ const eventsWithData = await Promise.all(
 
 const categoryMap = new Map(categories.map(c => [c.slug, c]));
 
+const journeyDateMap = new Map(journeys.map(j => [j.id, j.data.date]));
+const eventDateMap = new Map(events.map(e => [e.id, e.data.date]));
+
+const sortedAdvice = [...adviceIndex].sort((a, b) => {
+  const dateA = (a.eventSlug ? eventDateMap.get(a.eventSlug) : null)
+    ?? (a.journeySlug ? journeyDateMap.get(a.journeySlug) : null)
+    ?? new Date(0);
+  const dateB = (b.eventSlug ? eventDateMap.get(b.eventSlug) : null)
+    ?? (b.journeySlug ? journeyDateMap.get(b.journeySlug) : null)
+    ?? new Date(0);
+  return dateB.getTime() - dateA.getTime();
+});
+
 const latestAdvice = await Promise.all(
-  adviceIndex.slice(0, 5).map(async (a) => {
+  sortedAdvice.slice(0, 5).map(async (a) => {
     const person = await getEntry('people', a.personSlug);
     return { advice: a, person: person!, categoryLabel: categoryMap.get(a.category)?.label ?? a.category };
   })
