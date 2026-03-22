@@ -93,6 +93,28 @@ const pageDescription = isCategory
 ---
 <Base title={pageTitle} description={pageDescription} canonicalPath={`/advice/${slug}`}>
   {isCategory && category && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": `${category.label} Advice`,
+      "description": `${category.label} tips from indie hackers who've been there.`,
+      "url": `https://indie.tm/advice/${category.slug}`,
+      "publisher": { "@type": "Organization", "name": "indie.md", "url": "https://indie.tm" },
+      "numberOfItems": category.count,
+    })} />
+  )}
+  {!isCategory && advice && advicePerson && (
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": advice.title,
+      "description": advice.content.slice(0, 160),
+      "url": `https://indie.tm/advice/${advice.slug}`,
+      "author": { "@type": "Person", "name": advicePerson.data.name },
+      "publisher": { "@type": "Organization", "name": "indie.md", "url": "https://indie.tm" },
+    })} />
+  )}
+  {isCategory && category && (
     <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
       <div class="max-w-2xl">
         <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4 flex items-center gap-3">

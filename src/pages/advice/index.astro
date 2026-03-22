@@ -32,6 +32,15 @@ const adviceWithPeople = await Promise.all(
 );
 ---
 <Base title="Advice | indie.md" description="Practical tips extracted from real indie hacker journeys. Browse by category or explore them all." canonicalPath="/advice">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Advice",
+    "description": "Practical tips extracted from real indie hacker journeys.",
+    "url": "https://indie.tm/advice",
+    "publisher": { "@type": "Organization", "name": "indie.md", "url": "https://indie.tm" },
+    "numberOfItems": adviceIndex.length,
+  })} />
   <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
     <div class="max-w-2xl">
       <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4">
