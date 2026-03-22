@@ -1,17 +1,15 @@
 import sitemap from "@astrojs/sitemap";
-import tailwind from "@astrojs/tailwind";
+import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import remarkDirective from "remark-directive";
 import remarkExtractAdvice from "./src/plugins/remark-extract-advice.ts";
 
 export default defineConfig({
   site: "https://indie.tm",
-  integrations: [
-    sitemap(),
-    tailwind({
-      configFile: "./tailwind.config.ts",
-    }),
-  ],
+  vite: {
+    plugins: [tailwindcss()],
+  },
+  integrations: [sitemap()],
   output: "static",
   markdown: {
     remarkPlugins: [remarkDirective, remarkExtractAdvice],

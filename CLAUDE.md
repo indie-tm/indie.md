@@ -31,7 +31,7 @@ Run `npm run check` after substantive changes. If content or remark plugin chang
 ## Architecture
 
 - **Framework:** Astro 6 (static output, zero JS shipped)
-- **Styling:** Tailwind CSS 3 with custom design tokens (CSS variables)
+- **Styling:** Tailwind CSS 4 via `@tailwindcss/vite` (see [Astro Tailwind styling guide](https://docs.astro.build/en/guides/styling/#tailwind)); custom design tokens (CSS variables)
 - **Content:** Markdown files in `src/content/` with Astro Content Collections
 - **Advice extraction:** Custom remark plugin parses `:::advice{...}` directives from journey markdown, auto-generates advice pages
 
