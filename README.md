@@ -2,7 +2,7 @@
 
 A community-driven knowledge platform for indie hackers. Real stories, extractable advice, and IRL event recaps from builders who share their journeys openly.
 
-**Live at:** [indie-tm.github.io/indie.md](https://indie-tm.github.io/indie.md)
+**Live at:** [indie.md](https://indie.md)
 
 ## What is this?
 
