@@ -54,13 +54,12 @@ for file in $(find "$DIST" -name "*.html" -not -name "404.html"); do
   fi
 done
 
-# Check URLs use indie.tm domain (not https://indie.md as a URL)
-# Note: "indie.md" as a brand name in text/titles is fine, only flag it as a URL
-wrong_domain=$(grep -rlP 'https?://indie\.md' "$DIST" --include="*.html" 2>/dev/null | head -5 || true)
+# Check URLs use indie.md domain (not https://indie.tm as a URL)
+wrong_domain=$(grep -rlP 'https?://indie\.tm' "$DIST" --include="*.html" 2>/dev/null | head -5 || true)
 if [ -n "$wrong_domain" ]; then
-  echo "ERROR: Found 'https://indie.md' URL in HTML (should be https://indie.tm):"
+  echo "ERROR: Found 'https://indie.tm' URL in HTML (should be https://indie.md):"
   echo "$wrong_domain" | while read -r f; do
-    grep -nP 'https?://indie\.md' "$f" | head -3 | sed "s|^|  $f:|"
+    grep -nP 'https?://indie\.tm' "$f" | head -3 | sed "s|^|  $f:|"
   done
   errors=$((errors + 1))
 fi

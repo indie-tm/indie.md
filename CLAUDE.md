@@ -136,18 +136,18 @@ Categories: seo, distribution, product, business, mindset
 ## SEO Rules
 
 - Every page MUST have a unique `<title>` and `<meta name="description">`
-- Every page MUST have `<link rel="canonical">` with the full `https://indie.tm/` URL
+- Every page MUST have `<link rel="canonical">` with the full `https://indie.md/` URL
 - Every page MUST have Open Graph tags: og:title, og:description, og:type, og:url, og:site_name, og:image
 - Every page MUST have Twitter Card tags: twitter:card, twitter:title, twitter:description, twitter:image
 - Every page MUST have exactly one `<h1>`. Heading levels must be sequential (no skipping h2)
 - All images MUST have descriptive `alt` attributes
 - All internal links MUST use the `href()` helper from `src/lib/base-url.ts`
 - All image sources MUST use the `assetPath()` helper from `src/lib/base-url.ts`
-- All JSON-LD structured data MUST use `https://indie.tm` as the domain (never `indie.md`)
+- All JSON-LD structured data MUST use `https://indie.md` as the domain (never `indie.md`)
 - Journey pages MUST have Article schema. Person pages MUST have Person schema. Event pages MUST have Event schema
 - All external product links MUST be dofollow (no `rel="nofollow"`)
 - Avatar images MUST be 400x400 PNG, under 50KB
-- `robots.txt` MUST include `Sitemap: https://indie.tm/sitemap-index.xml`
+- `robots.txt` MUST include `Sitemap: https://indie.md/sitemap-index.xml`
 - Content MUST link to products on first mention with proper `<a href>` tags
 
 ## Engineering Principles

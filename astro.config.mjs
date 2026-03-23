@@ -5,7 +5,7 @@ import remarkDirective from "remark-directive";
 import remarkExtractAdvice from "./src/plugins/remark-extract-advice.ts";
 
 export default defineConfig({
-  site: "https://indie.tm",
+  site: "https://indie.md",
   vite: {
     plugins: [tailwindcss()],
   },

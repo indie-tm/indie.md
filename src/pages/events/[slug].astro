@@ -39,7 +39,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
     "@type": "Event",
     "name": event.data.title,
     "description": event.data.subtitle,
-    ...(event.data.image ? { "image": `https://indie.tm${event.data.image}` } : {}),
+    ...(event.data.image ? { "image": `https://indie.md${event.data.image}` } : {}),
     "startDate": event.data.date.toISOString(),
     "location": {
       "@type": "Place",
@@ -48,7 +48,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
     "organizer": {
       "@type": "Organization",
       "name": "indie.md",
-      "url": "https://indie.tm"
+      "url": "https://indie.md"
     },
     "performer": presenters.map(p => ({
       "@type": "Person",

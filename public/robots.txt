@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://indie.tm/sitemap-index.xml
+Sitemap: https://indie.md/sitemap-index.xml
