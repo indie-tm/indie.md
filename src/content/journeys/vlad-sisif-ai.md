@@ -15,6 +15,8 @@ I spent 15 years as a backend and DevOps engineer, building production infrastru
 
 ## Starting from scratch
 
+![sisif.ai homepage](/screenshots/sisif-ai.png)
+
 In December 2024, I started building [sisif.ai](https://sisif.ai): an AI video generation API that turns a text prompt into a video in 2-5 minutes. The tech was solid. I used SaaS Pegasus (a Django boilerplate) to move fast on the product side and focused my energy on the AI pipeline.
 
 By early 2025, I had a working product. Time to get customers, right?
@@ -39,7 +41,11 @@ Building in public, Twitter threads, and ProductHunt launches all share the same
 
 The turning point came when I stopped trying to build my own audience and started borrowing someone else's. I discovered [n8n](https://n8n.io), the workflow automation platform, and realized its community was full of people who needed exactly what sisif.ai offered: a simple API to generate videos programmatically.
 
-I built workflow templates. A TikTok automation workflow. An Instagram Reels generator. Each template showed how sisif.ai plugged into a workflow people already wanted to build.
+I built workflow templates. A TikTok automation workflow. An Instagram Reels generator.
+
+![n8n TikTok workflow template](/screenshots/n8n-tiktok-workflow.png) Each template showed how sisif.ai plugged into a workflow people already wanted to build.
+
+![n8n creator profile with 14,860 views](/screenshots/n8n-creator-profile.png)
 
 The templates got thousands of views. Signups started flowing in. Not because I'd cracked some marketing code, but because I'd put my product where people were already looking for solutions.
 
@@ -50,6 +56,8 @@ Instead of building your own audience from scratch, find platforms where your ta
 ## Pricing: the 4x MRR lesson
 
 My first pricing was simple: $9/month, one plan. It felt "fair." It was also leaving money on the table.
+
+![Sisif.ai MRR growth after pricing change](/screenshots/sisif-revenue.png)
 
 When I switched to tiered pricing ($10/$50/$200), MRR jumped 4x. Some users needed the basic tier. Others were running production workflows and happily paid $200/month for higher limits. A single price point forces everyone into the same box, and most of them don't fit.
 

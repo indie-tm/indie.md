@@ -26,8 +26,8 @@
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
-    "@tailwindcss/vite": "^4.2.2",
     "@biomejs/biome": "^2.4.8",
+    "@tailwindcss/vite": "^4.2.2",
     "@types/node": "^25.5.0",
     "husky": "^9.1.7",
     "playwright": "^1.58.2",
