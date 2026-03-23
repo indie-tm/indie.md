@@ -1,5 +1,5 @@
 ---
-title: "Building the Anti-Job-Board: $5/year for Calm Companies"
+title: "Building the Anti-Hustle Job Board: $5/year for Calm Companies"
 subtitle: "How getting fired for caring about culture led to a curated community of sustainable workplaces"
 person: "raul"
 date: 2026-01-10
