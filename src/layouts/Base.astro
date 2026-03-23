@@ -30,11 +30,15 @@ const site = "https://indie.md";
     <meta property="og:type" content={ogType ?? "website"} />
     {canonicalPath && <meta property="og:url" content={`${site}${canonicalPath}`} />}
     <meta property="og:site_name" content="indie.md" />
-    <meta property="og:image" content={`${site}/logo.png`} />
-    <meta name="twitter:image" content={`${site}/logo.png`} />
+    <meta property="og:image" content={`${site}/og-image.png`} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
 
     <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@vtemian" />
+    <meta name="twitter:image" content={`${site}/og-image.png`} />
+    <meta name="twitter:image:alt" content="indie.md: Real Stories. Real Advice. A knowledge platform for indie hackers." />
     <meta name="twitter:title" content={title} />
     {description && <meta name="twitter:description" content={description} />}
 
