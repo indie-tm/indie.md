@@ -11,7 +11,7 @@ lessons:
   - "Twenty years of agency work is the best product bootcamp you'll ever get"
 ---
 
-After 20 years of running Monocube, our dev agency, I thought I'd seen every client request imaginable. Then I noticed a pattern: half our clients needed to fax documents. IRS forms, legal filings, signed contracts. They all complained about the same thing. Every fax service wanted them to create an account, pick a monthly plan, and commit to a subscription they'd use twice a year.
+After 20+ years of running Monocube, my dev agency, I thought I'd seen every client request imaginable. Then I noticed a pattern: half our clients needed to fax documents. IRS forms, legal filings, signed contracts. They all complained about the same thing. Every fax service wanted them to create an account, pick a monthly plan, and commit to a subscription they'd use twice a year.
 
 ## The problem nobody wanted to solve
 
@@ -21,7 +21,7 @@ The existing solutions all assumed you were a power user: sign up, pick a plan, 
 
 ## The weekend MVP
 
-I already had our agency's SaaS template (Nuxt 3, TypeScript, PostgreSQL, Stripe) ready to go. On a Friday evening, I stripped it down to the absolute minimum: upload a file, enter a fax number, pay $5, send. No signup. No account creation. No subscription.
+I already had our agency's SaaS template (Nuxt 4, TypeScript, PostgreSQL, Stripe) ready to go. On a Friday evening, I stripped it down to the absolute minimum: upload a file, enter a fax number, pay $5, send. No signup. No account creation. No subscription.
 
 By Sunday night, it worked. [singlefax.com](https://singlefax.com) was live.
 
@@ -36,7 +36,7 @@ This was the key decision that made everything else work. I'd watched agency cli
 SingleFax asks for nothing except a file and a fax number. You pay $5, the fax goes out. Want to receive faxes? Same deal: $5 per received fax, or grab a lifetime fax number for $99 (one-time, no recurring).
 
 :::advice{slug="product-remove-friction" category="product" person="mircea" title="Remove all friction: no signup, no subscription"}
-Every form field you add, every account creation step, every subscription commitment is a point where customers leave. Mircea removed all of them. No signup, no login, no monthly plan. Just pay and use. For occasional-use products, this is the difference between making money and making nothing.
+Every form field you add, every account creation step, every subscription commitment is a point where customers leave. I removed all of them. No signup, no login, no monthly plan. Just pay and use. For occasional-use products, this is the difference between making money and making nothing.
 :::
 
 ## Letting SEO do the selling

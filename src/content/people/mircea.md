@@ -7,5 +7,7 @@ products:
     url: "https://singlefax.com"
   - name: "Blahphone"
     url: "https://blahphone.com"
-bio: "Developer with 20 years of agency experience who turned client-work expertise into micro-SaaS products. Built SingleFax (no-signup online fax service) and Blahphone (browser-based international calling). Believes the best products solve one problem extremely well."
+  - name: "MicroSaaS Directory"
+    url: "https://microsaas.directory"
+bio: "Developer with 25+ years of software engineering experience who turned client-work expertise into micro-SaaS products. Built SingleFax (no-signup online fax service) and Blahphone (browser-based international calling). Believes the best products solve one problem extremely well."
 ---

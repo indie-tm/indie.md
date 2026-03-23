@@ -20,13 +20,13 @@
   },
   "dependencies": {
     "@astrojs/sitemap": "^3.7.1",
-    "@astrojs/tailwind": "^6.0.2",
     "@tailwindcss/typography": "^0.5.19",
     "astro": "^6.0.7",
     "remark-directive": "^4.0.0",
-    "tailwindcss": "^3.4.19"
+    "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
+    "@tailwindcss/vite": "^4.2.2",
     "@biomejs/biome": "^2.4.8",
     "@types/node": "^25.5.0",
     "husky": "^9.1.7",

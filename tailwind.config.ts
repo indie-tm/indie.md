@@ -1,7 +1,6 @@
 import type { Config } from "tailwindcss";
 
 export default {
-  darkMode: ["class"],
   content: ["./src/**/*.{astro,html,md,ts}"],
   theme: {
     container: {
@@ -61,5 +60,4 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/typography")],
 } satisfies Config;
