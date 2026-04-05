@@ -20,6 +20,8 @@ const eventsWithData = await Promise.all(
   })
 );
 
+eventsWithData.sort((a, b) => b.event.data.date.getTime() - a.event.data.date.getTime());
+
 ---
 <Base title="Events | indie.md" description="Recaps from our IRL meetups. Real conversations, real advice." canonicalPath="/events">
   <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">

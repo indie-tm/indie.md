@@ -34,6 +34,8 @@ const eventsWithData = await Promise.all(
   })
 );
 
+eventsWithData.sort((a, b) => b.event.data.date.getTime() - a.event.data.date.getTime());
+
 const sortedEvents = [...events].sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
 
 const categoryMap = new Map(categories.map(c => [c.slug, c]));
