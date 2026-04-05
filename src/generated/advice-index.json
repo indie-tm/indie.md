@@ -259,5 +259,59 @@
     "journeySlug": null,
     "eventSlug": "indie-tm-5-timisoara-march-2026",
     "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "keyword-demand-before-features",
+    "category": "product",
+    "title": "Use search demand to decide what features to build",
+    "content": "Before building a new feature or component, check what people are actually searching for. Use tools like Semrush to find keywords with real demand. When Flowbite saw search volume for \"avatar tailwind\" and \"datepicker tailwind,\" they built those components and captured the traffic. Let search data guide your roadmap instead of guessing what users want.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-6-timisoara-april-2026",
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "influencer-over-ads",
+    "category": "distribution",
+    "title": "Spend on influencers instead of ads",
+    "content": "If your product has any traction, skip paid ads and invest in influencer marketing instead. Pay 1,000 to 2,000 euros per influencer, feature them on your homepage hero section, and prefer American or Australian creators for the English-speaking market. One influencer creates social proof that attracts others. The ROI on a single well-placed creator video outperforms most ad campaigns for developer tools.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-6-timisoara-april-2026",
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "never-discount-prices",
+    "category": "business",
+    "title": "Never discount your prices",
+    "content": "Resist the urge to compete on price or offer discounts. Low prices scare away serious clients who associate cost with quality. Once you start discounting, customers learn to wait for sales instead of buying at full price. In the digital products space, maintaining premium pricing attracts better customers and builds a more sustainable business. Flowbite never discounts, and it has not hurt growth.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-6-timisoara-april-2026",
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "story-driven-reddit",
+    "category": "distribution",
+    "title": "Post stories on Reddit, not sales pitches",
+    "content": "Reddit rewards authenticity and punishes promotion. When Flowbite launched a new datepicker component, they posted the story of building it, not a sales pitch. Share the journey, the technical decisions, the problems you solved. On X/Twitter, sharing MRR numbers gets engagement. On Reddit, the same post gets buried. Each platform has its own language. Learn to speak it.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-6-timisoara-april-2026",
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "canonical-links-medium-devto",
+    "category": "seo",
+    "title": "Write on Medium and dev.to with canonical links to your site",
+    "content": "Publish articles on Medium and dev.to to reach their built-in audiences, but always set the canonical URL to point back to your own blog. This way you get distribution from the platform while search engines credit your domain as the original source. The content should genuinely help the reader, not be a thinly disguised ad. Spammy content gets flagged on both platforms.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-6-timisoara-april-2026",
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "analytics-before-scaling",
+    "category": "product",
+    "title": "Set up analytics before you start scaling traffic",
+    "content": "Do not invest in scaling traffic until you have analytics running. Use Microsoft Clarity (free) or Hotjar for heatmaps, rage click detection, and session replays. Watch your bounce rate and average time on site (one minute is a reasonable benchmark to start). If users leave immediately, more traffic just means more people leaving. Fix the experience first, then scale.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-6-timisoara-april-2026",
+    "personSlug": "zoltan"
   }
 ]
