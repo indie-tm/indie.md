@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import EventCard from '../../components/EventCard.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { getAdviceForEvent } from '../../lib/advice';
+import { NEXT_EVENT } from '../../lib/next-event';
 
 const events = await getCollection('events');
 
@@ -19,17 +20,6 @@ const eventsWithData = await Promise.all(
   })
 );
 
-const CADENCE_DAYS = 14;
-const sortedEvents = [...events].sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
-const latestEvent = sortedEvents[0];
-const nextEventDate = new Date(latestEvent.data.date.getTime() + CADENCE_DAYS * 24 * 60 * 60 * 1000);
-const nextEventFormatted = nextEventDate.toLocaleDateString('en-US', {
-  weekday: 'long',
-  month: 'long',
-  day: 'numeric',
-  year: 'numeric',
-});
-const nextEventNumber = (sortedEvents.length + 1).toString();
 ---
 <Base title="Events | indie.md" description="Recaps from our IRL meetups. Real conversations, real advice." canonicalPath="/events">
   <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
@@ -46,8 +36,8 @@ const nextEventNumber = (sortedEvents.length + 1).toString();
   <section class="container mx-auto px-4 pb-20">
     <div class="animate-stagger grid grid-cols-1 md:grid-cols-2 gap-5">
       {/* Upcoming event card */}
-      {latestEvent.data.link && (
-        <a href={latestEvent.data.link} target="_blank" rel="noopener noreferrer"
+      {NEXT_EVENT.link && (
+        <a href={NEXT_EVENT.link} target="_blank" rel="noopener noreferrer"
            class="card-hover group block rounded-xl border border-primary/30 bg-primary/5 p-6 hover:shadow-[var(--shadow-card-hover)] transition-all duration-300">
           <div class="flex items-center gap-2 mb-4">
             <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-primary text-primary-foreground text-xs font-medium">
@@ -55,12 +45,12 @@ const nextEventNumber = (sortedEvents.length + 1).toString();
               Up next
             </span>
             <div class="ml-auto">
-              <p class="text-xs text-muted-foreground">{nextEventFormatted}</p>
-              <p class="text-xs text-muted-foreground">{latestEvent.data.location}</p>
+              <p class="text-xs text-muted-foreground">{NEXT_EVENT.date}</p>
+              <p class="text-xs text-muted-foreground">{NEXT_EVENT.location}</p>
             </div>
           </div>
           <h3 class="font-display text-xl text-foreground group-hover:text-primary transition-colors mb-2 leading-snug">
-            Indie TM #{nextEventNumber}
+            Indie TM #{NEXT_EVENT.edition}
           </h3>
           <p class="text-sm text-muted-foreground leading-relaxed mb-4">
             We meet every two weeks to share what we're building, swap tactics, and roast each other's products.
