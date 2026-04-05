@@ -110,6 +110,6 @@ The distribution advice was practical: find a friendly church contact and co-des
 
 ## The conversation keeps going
 
-The evening ran past the scheduled 8:30 end time. [Zoltan](/people/zoltan)'s story sparked a longer discussion about pricing strategies for digital products, with [Cristian](/people/cristian-antohe) sharing how Cozmoslabs handles annual licensing for WordPress plugins. The contrast was instructive: Flowbite makes 70k/month without recurring revenue, while the WordPress ecosystem lives on yearly renewals. Different markets, different models, both working.
+The evening ran past nine. [Zoltan](/people/zoltan)'s story sparked a longer discussion about pricing strategies for digital products, with [Cristian](/people/cristian-antohe) sharing how Cozmoslabs handles annual licensing for WordPress plugins. The contrast was instructive: Flowbite makes 70k/month without recurring revenue, while the WordPress ecosystem lives on yearly renewals. Different markets, different models, both working.
 
 Someone suggested the next meetup should go deeper on pricing. Someone else wanted to talk about building for enterprise versus indie markets. The usual problem: too many good topics, too few Friday evenings.
