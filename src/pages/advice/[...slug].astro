@@ -91,7 +91,7 @@ const pageDescription = isCategory
   ? `${category!.label} tips from indie hackers who've been there.`
   : advice!.content.slice(0, 160);
 ---
-<Base title={pageTitle} description={pageDescription} canonicalPath={`/advice/${slug}`}>
+<Base title={pageTitle} description={pageDescription} canonicalPath={`/advice/${slug}`} ogImage={isCategory ? undefined : `/og/advice/${slug}.png`}>
   {isCategory && category && (
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",

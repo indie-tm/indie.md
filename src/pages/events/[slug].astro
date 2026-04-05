@@ -33,7 +33,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
   year: 'numeric',
 });
 ---
-<Base title={`${event.data.title} | indie.md`} description={event.data.subtitle} canonicalPath={`/events/${event.id}`} ogType="article">
+<Base title={`${event.data.title} | indie.md`} description={event.data.subtitle} canonicalPath={`/events/${event.id}`} ogType="article" ogImage={`/og/events/${event.id}.png`}>
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Event",

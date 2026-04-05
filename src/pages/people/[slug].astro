@@ -47,7 +47,7 @@ const journeysWithAdviceCount = await Promise.all(
 
 const personAdvice = adviceIndex.filter(a => a.personSlug === person.id);
 ---
-<Base title={`${person.data.name} | indie.md`} description={person.data.tagline} canonicalPath={`/people/${person.id}`}>
+<Base title={`${person.data.name} | indie.md`} description={person.data.tagline} canonicalPath={`/people/${person.id}`} ogImage={`/og/people/${person.id}.png`}>
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Person",
