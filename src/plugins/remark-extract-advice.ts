@@ -18,10 +18,8 @@ const collectedAdvice: AdviceEntry[] = [];
 function writeIndex() {
   const outDir = path.resolve("src/generated");
   fs.mkdirSync(outDir, { recursive: true });
-  fs.writeFileSync(
-    path.join(outDir, "advice-index.json"),
-    `${JSON.stringify(collectedAdvice, null, 2)}\n`,
-  );
+  const sorted = [...collectedAdvice].sort((a, b) => a.slug.localeCompare(b.slug));
+  fs.writeFileSync(path.join(outDir, "advice-index.json"), `${JSON.stringify(sorted, null, 2)}\n`);
 }
 
 function extractTextContent(node: ContainerDirective): string {
