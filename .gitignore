@@ -13,6 +13,9 @@ dist-ssr
 .astro
 *.local
 
+# Generated at build time by scripts/gen_og.py
+public/og/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
