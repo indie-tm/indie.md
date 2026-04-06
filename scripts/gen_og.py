@@ -11,6 +11,7 @@ import math
 import os
 import re
 import textwrap
+from datetime import datetime
 
 from PIL import Image, ImageDraw, ImageFont
 
@@ -127,10 +128,14 @@ def generate_event_og(meta, output_path):
     y += 24
 
     # Date and location
-    date = meta.get("date", "")
+    raw_date = meta.get("date", "")
     location = meta.get("location", "")
-    if date:
-        draw.text((left, y), date, font=font_meta, fill=MUTED_COLOR)
+    if raw_date:
+        try:
+            date_str = datetime.strptime(raw_date, "%Y-%m-%d").strftime("%B %d, %Y")
+        except ValueError:
+            date_str = raw_date
+        draw.text((left, y), date_str, font=font_meta, fill=MUTED_COLOR)
         y += 28
     if location:
         draw.text((left, y), location, font=font_meta, fill=MUTED_COLOR)
