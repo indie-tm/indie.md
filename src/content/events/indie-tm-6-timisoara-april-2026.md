@@ -4,6 +4,7 @@ subtitle: "What we learned at our sixth meetup at Cowork Timisoara"
 date: 2026-04-03
 location: "Cowork Timisoara - The Office, Timisoara"
 link: "https://luma.com/f4sq2y3y?tk=6ThRTK"
+image: "/images/events/indie-tm-6.jpeg"
 presenters:
   - zoltan
   - vlad
