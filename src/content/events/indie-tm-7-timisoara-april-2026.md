@@ -3,6 +3,7 @@ title: "Indie TM #7: News as a Traffic Locomotive"
 subtitle: "What we learned at our seventh meetup at Cowork Timisoara"
 date: 2026-04-22
 location: "Cowork Timisoara - The Office, Timisoara"
+image: "/images/events/indie-tm-7.jpeg"
 presenters:
   - raul
   - flavius
@@ -11,6 +12,8 @@ presenters:
 ---
 
 A smaller Wednesday evening than usual, but a denser one. Four presenters: one SEO story with a surprise news-cycle twist, one early-stage AI hiring product looking for its wedge, one security founder pulling the room into a pricing debate, and one small-but-opinionated developer tool that the room quickly started projecting new use cases onto. [Raul](/people/raul) opened with a traffic spike he could not explain at first. [Flavius](/people/flavius) followed with a pitch that turned into a conversation about what "structured" even means in a hiring interview. [Fineas](/people/fineas-silaghi) brought the kind of question that only people shipping to enterprise customers ever get to ask out loud. [Vlad](/people/vlad) closed with a personal side project that doubled as an argument for building your own tools.
+
+![Attendees around the conference table at Cowork Timisoara listening to a presentation during Indie TM #7](/images/events/indie-tm-7-room.jpeg)
 
 ## Raul unpacks epolita.ro
 
