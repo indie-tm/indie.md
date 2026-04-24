@@ -66,7 +66,7 @@
     "slug": "business-ultra-low-price",
     "category": "business",
     "title": "Price so low it removes all friction",
-    "content": "$5/year sounds like leaving money on the table. But consider the alternative: a $10/month subscription requires convincing someone your product is worth $120/year, handling cancellations, dealing with failed payments, and competing with every other subscription fighting for budget. At $5/year, the price is never the objection. Raul's conversion rate proves that removing friction can beat optimizing price.",
+    "content": "$19/year sounds like leaving money on the table. But consider the alternative: a $19/month subscription requires convincing someone your product is worth $228/year, handling cancellations, dealing with failed payments, and competing with every other subscription fighting for budget. At $19/year, the price is never the objection. Raul's conversion rate proves that removing friction can beat optimizing price.",
     "journeySlug": "raul-calm-companies",
     "eventSlug": null,
     "personSlug": "raul"
@@ -75,7 +75,7 @@
     "slug": "seo-pain-point-content",
     "category": "seo",
     "title": "SEO blog posts that solve real pain points drive organic growth",
-    "content": "Raul wrote 12 blog posts, all addressing problems he'd personally experienced. They rank well because they're genuinely helpful, not because they're optimized for keywords. \"Interview red flags\" and \"toxic work culture signs\" are searches people make when they're frustrated, and content written by someone who's been through it resonates differently than generic advice. Write fewer posts, but write them from real experience.",
+    "content": "Raul wrote 25 blog posts, all addressing problems he'd personally experienced. They rank well because they're genuinely helpful, not because they're optimized for keywords. \"Signs of a toxic workplace\" and \"how to recover from burnout\" are searches people make when they're frustrated, and content written by someone who's been through it resonates differently than generic advice. Write fewer posts, but write them from real experience.",
     "journeySlug": "raul-calm-companies",
     "eventSlug": null,
     "personSlug": "raul"
@@ -313,5 +313,59 @@
     "journeySlug": null,
     "eventSlug": "indie-tm-6-timisoara-april-2026",
     "personSlug": "zoltan"
+  },
+  {
+    "slug": "news-driven-seo-spikes",
+    "category": "seo",
+    "title": "Ride news cycles for organic traffic spikes",
+    "content": "When a news story drives sudden search demand for a topic, pages that genuinely answer the underlying question capture a disproportionate share of the traffic. If you see an unexplained spike in analytics, open Google Trends and look for a matching jump in search volume on related terms, then confirm with recent news. Once you know a news cycle is driving the traffic, publish more supporting content while the cycle is still hot. News stories are locomotives: the trick is having something already on the tracks when one arrives.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "raul"
+  },
+  {
+    "slug": "dont-let-users-return-to-search",
+    "category": "seo",
+    "title": "Optimize for users not returning to search",
+    "content": "The most important SEO signal in modern search is whether a user returns to the results page after clicking your link. If they do, Google reads it as \"this page did not answer the query\" and your ranking erodes. If they do not, it reads as \"problem solved\" and your ranking compounds. This reframes SEO from \"rank for keywords\" to \"fully resolve the intent behind each query.\" Audit your top pages: does the reader actually get what they came for above the fold, or do they have to scroll through filler and ads? Fix the ones that force users back to search.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "raul"
+  },
+  {
+    "slug": "product-build-for-known-gap",
+    "category": "product",
+    "title": "Build for a practice everyone agrees is right but nobody does",
+    "content": "The richest product territory is the gap between \"known best practice\" and \"what people actually do.\" Structured interviews are universally accepted as the strongest predictor of job performance, and almost nobody runs them. Double-entry bookkeeping, security key logins, automated tests, pre-commit hooks: same pattern. Look for a practice that experts in your industry agree is correct and operators skip because it is inconvenient, then build the tool that makes the right thing the easy thing. The onboarding pitch writes itself.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "flavius"
+  },
+  {
+    "slug": "interview-specific-questions",
+    "category": "mindset",
+    "title": "Ask specific questions that reveal the real role",
+    "content": "Generic interview questions (\"tell me about yourself,\" \"what are your weaknesses\") produce rehearsed answers and almost no signal. Two questions that consistently produce the opposite are \"What does a typical day look like in this role?\" and \"What separates a great hire from an average one?\" The first forces the hiring manager to describe the real job instead of the job description. The second forces them to articulate the dimension on which people actually succeed or fail. Use the answers to design the rest of the interview. If a hiring manager cannot answer either clearly, the role is not ready to be filled.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "flavius"
+  },
+  {
+    "slug": "benchmark-against-cost-of-mistake",
+    "category": "business",
+    "title": "Price against the cost of the mistake, not your competitors",
+    "content": "For tools that sit on top of high-stakes decisions (hiring, compliance, security, legal), the wrong benchmark is competitor pricing. The right benchmark is the cost of one bad outcome. Pace is built for hiring, where a single bad hire typically costs one to two times the annual salary once you factor in ramp, opportunity cost, severance, and team drag. A tool that prevents one bad hire a year is paying for itself many times over at almost any price. Teach your prospects to do that math in the first five minutes of the demo, and pricing objections mostly go away.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "flavius"
+  },
+  {
+    "slug": "build-your-own-agent-harness",
+    "category": "mindset",
+    "title": "Build your own agent harness, even as a side project",
+    "content": "Most developers assume an agent harness is something you buy or install. In practice, a working harness for your own workflow is a weekend project, not a quarter-long one. The payoff is that every future agentic feature you build sits on primitives you actually control: your own prompt format, your own tool interface, your own logging and trajectory replay. Even if you never ship it as a product, the harness compounds: it is the thing that makes every downstream experiment cheap. And as [Vlad](/people/vlad) put it at the end of his demo, it is genuinely fun to build, which is a signal in itself.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "vlad"
   }
 ]
