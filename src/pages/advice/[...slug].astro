@@ -6,6 +6,8 @@ import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
 import { getAdviceIndex, getAdviceByCategory, getAllCategories } from '../../lib/advice';
 import type { AdviceEntry, CategoryMeta } from '../../lib/advice';
 import { assetPath, href } from "../../lib/base-url";
+import { canonicalUrl } from "../../lib/canonical";
+import { summarize } from "../../lib/summarize";
 
 type CategoryProps = { type: 'category'; category: CategoryMeta };
 type AdviceProps = { type: 'advice'; advice: AdviceEntry };
@@ -89,36 +91,124 @@ const pageTitle = isCategory
 
 const pageDescription = isCategory
   ? `${category!.label} tips from indie hackers who've been there.`
-  : advice!.content.slice(0, 160);
+  : summarize(advice!.content);
+
+const journeyDateLookup = await getCollection('journeys');
+const eventDateLookup = await getCollection('events');
+const adviceDate = advice
+  ? (advice.eventSlug
+      ? eventDateLookup.find(e => e.id === advice.eventSlug)?.data.date
+      : advice.journeySlug
+        ? journeyDateLookup.find(j => j.id === advice.journeySlug)?.data.date
+        : undefined)
+  : undefined;
+
+const relatedAdvice: AdviceEntry[] = advice
+  ? getAdviceIndex()
+      .filter(a => a.slug !== advice.slug && (a.personSlug === advice.personSlug || a.category === advice.category))
+      .sort((a, b) => {
+        const aScore = (a.personSlug === advice.personSlug ? 2 : 0) + (a.category === advice.category ? 1 : 0);
+        const bScore = (b.personSlug === advice.personSlug ? 2 : 0) + (b.category === advice.category ? 1 : 0);
+        return bScore - aScore;
+      })
+      .slice(0, 4)
+  : [];
+
+const relatedWithPeople = await Promise.all(
+  relatedAdvice.map(async (a) => {
+    const person = await getEntry('people', a.personSlug);
+    const cat = categories.find(c => c.slug === a.category);
+    return { advice: a, person: person!, categoryLabel: cat?.label ?? a.category };
+  }),
+);
 ---
 <Base title={pageTitle} description={pageDescription} canonicalPath={`/advice/${slug}`} ogImage={isCategory ? undefined : `/og/advice/${slug}.png`}>
   {isCategory && category && (
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": `${category.label} Advice`,
-      "description": `${category.label} tips from indie hackers who've been there.`,
-      "url": `https://indie.md/advice/${category.slug}`,
-      "publisher": { "@type": "Organization", "name": "indie.md", "url": "https://indie.md" },
-      "numberOfItems": category.count,
-    })} />
+    <>
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": `${category.label} Advice`,
+        "description": `${category.label} tips from indie hackers who've been there.`,
+        "url": canonicalUrl(`/advice/${category.slug}`),
+        "publisher": { "@type": "Organization", "name": "indie.md", "url": "https://indie.md/" },
+        "numberOfItems": category.count,
+      })} />
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://indie.md/" },
+          { "@type": "ListItem", "position": 2, "name": "Advice", "item": canonicalUrl("/advice") },
+          { "@type": "ListItem", "position": 3, "name": category.label, "item": canonicalUrl(`/advice/${category.slug}`) },
+        ],
+      })} />
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "itemListOrder": "https://schema.org/ItemListOrderDescending",
+        "numberOfItems": filteredAdvice.length,
+        "itemListElement": filteredAdvice.map((entry, idx) => ({
+          "@type": "ListItem",
+          "position": idx + 1,
+          "url": canonicalUrl(`/advice/${entry.advice.slug}`),
+          "name": entry.advice.title,
+        })),
+      })} />
+    </>
   )}
   {!isCategory && advice && advicePerson && (
-    <script type="application/ld+json" set:html={JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "Article",
-      "headline": advice.title,
-      "description": advice.content.slice(0, 160),
-      "url": `https://indie.md/advice/${advice.slug}`,
-      "author": { "@type": "Person", "name": advicePerson.data.name },
-      "publisher": { "@type": "Organization", "name": "indie.md", "url": "https://indie.md" },
-    })} />
+    <>
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": advice.title,
+        "description": summarize(advice.content),
+        "url": canonicalUrl(`/advice/${advice.slug}`),
+        "mainEntityOfPage": canonicalUrl(`/advice/${advice.slug}`),
+        "articleSection": adviceCategory?.label ?? advice.category,
+        ...(adviceDate
+          ? {
+              "datePublished": adviceDate.toISOString(),
+              "dateModified": adviceDate.toISOString(),
+            }
+          : {}),
+        "author": {
+          "@type": "Person",
+          "name": advicePerson.data.name,
+          "url": canonicalUrl(`/people/${advice.personSlug}`),
+        },
+        "publisher": { "@type": "Organization", "name": "indie.md", "url": "https://indie.md/" },
+      })} />
+      <script type="application/ld+json" set:html={JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://indie.md/" },
+          { "@type": "ListItem", "position": 2, "name": "Advice", "item": canonicalUrl("/advice") },
+          ...(adviceCategory
+            ? [{
+                "@type": "ListItem",
+                "position": 3,
+                "name": adviceCategory.label,
+                "item": canonicalUrl(`/advice/${adviceCategory.slug}`),
+              }]
+            : []),
+          {
+            "@type": "ListItem",
+            "position": adviceCategory ? 4 : 3,
+            "name": advice.title,
+            "item": canonicalUrl(`/advice/${advice.slug}`),
+          },
+        ],
+      })} />
+    </>
   )}
   {isCategory && category && (
     <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
       <div class="max-w-2xl">
         <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4 flex items-center gap-3">
-          <img src={category.icon} alt={category.label} class="w-12 h-12 rounded-lg" /> {category.label}
+          <img src={category.icon} alt={category.label} width="48" height="48" decoding="async" class="w-12 h-12 rounded-lg" /> {category.label}
         </h1>
         <p class="text-lg text-muted-foreground leading-relaxed">
           {category.count} tips from real indie hacker journeys.
@@ -142,7 +232,7 @@ const pageDescription = isCategory
                  ? 'bg-primary text-primary-foreground'
                  : 'border border-border/80 text-muted-foreground hover:border-primary/30 hover:text-foreground transition-all',
              ]}>
-            <img src={cat.icon} alt={cat.label} class="w-4 h-4" /> {cat.label}
+            <img src={cat.icon} alt={cat.label} width="16" height="16" loading="lazy" decoding="async" class="w-4 h-4" /> {cat.label}
           </a>
         ))}
       </div>
@@ -188,7 +278,7 @@ const pageDescription = isCategory
       <!-- Author -->
       {advicePerson && (
         <div class="flex items-center gap-3 mb-8">
-          <img src={assetPath(advicePerson.data.avatar)} alt={advicePerson.data.name} class="w-8 h-8 rounded-full object-cover" />
+          <img src={assetPath(advicePerson.data.avatar)} alt={advicePerson.data.name} width="400" height="400" loading="lazy" decoding="async" class="w-8 h-8 rounded-full object-cover" />
           <div>
             <a href={href(`/people/${advice.personSlug}`)} class="text-sm font-semibold text-foreground hover:text-primary transition-colors">
               {advicePerson.data.name}
@@ -202,6 +292,22 @@ const pageDescription = isCategory
       <div class="prose prose-lg max-w-2xl prose-p:text-muted-foreground prose-p:leading-relaxed">
         <p>{advice.content}</p>
       </div>
+
+      <!-- Related advice -->
+      {relatedWithPeople.length > 0 && (
+        <div class="mt-16 max-w-2xl">
+          <h2 class="font-display text-2xl text-foreground mb-6">Related advice</h2>
+          <div class="divide-y divide-border/60">
+            {relatedWithPeople.map(({ advice: related, person: relatedPerson, categoryLabel }) => (
+              <AdviceCard
+                advice={related}
+                person={relatedPerson.data}
+                categoryLabel={categoryLabel}
+              />
+            ))}
+          </div>
+        </div>
+      )}
 
       <!-- Source -->
       <div class="mt-12 max-w-2xl">

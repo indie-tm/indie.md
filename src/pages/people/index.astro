@@ -2,10 +2,39 @@
 import Base from '../../layouts/Base.astro';
 import PersonCard from '../../components/PersonCard.astro';
 import { getCollection } from 'astro:content';
+import { canonicalUrl } from '../../lib/canonical';
 
 const people = await getCollection('people');
 ---
 <Base title="People | indie.md" description="Meet the indie hackers sharing their stories, lessons, and hard-won advice." canonicalPath="/people">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "People",
+    "description": "Meet the indie hackers sharing their stories, lessons, and hard-won advice.",
+    "url": canonicalUrl("/people"),
+    "publisher": { "@type": "Organization", "name": "indie.md", "url": "https://indie.md/" },
+    "numberOfItems": people.length,
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://indie.md/" },
+      { "@type": "ListItem", "position": 2, "name": "People", "item": canonicalUrl("/people") },
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "numberOfItems": people.length,
+    "itemListElement": people.map((p, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "url": canonicalUrl(`/people/${p.id}`),
+      "name": p.data.name,
+    })),
+  })} />
   <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
     <div class="max-w-2xl">
       <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4">

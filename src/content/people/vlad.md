@@ -1,7 +1,16 @@
 ---
 name: "Vlad"
 avatar: "/avatars/vlad.png"
+role: "Founder, sisif.ai"
 tagline: "Backend engineer turned indie hacker"
+twitter: "vtemian"
+github: "vtemian"
+website: "https://sisif.ai"
+sameAs:
+  - "https://github.com/vtemian"
+  - "https://x.com/vtemian"
+  - "https://sisif.ai"
+  - "https://indie.md/"
 products:
   - name: "sisif.ai"
     url: "https://sisif.ai"

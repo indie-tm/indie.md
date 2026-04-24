@@ -52,6 +52,14 @@ for file in $(find "$DIST" -name "*.html" -not -name "404.html"); do
     echo "ERROR: Missing lang=\"en\" in $relpath"
     errors=$((errors + 1))
   fi
+
+  # Canonical must end with a trailing slash (matches sitemap + Astro directory format)
+  if grep -q 'rel="canonical"' "$file"; then
+    if ! grep -oE 'rel="canonical" href="[^"]+"' "$file" | head -1 | grep -q '/"'; then
+      echo "ERROR: Canonical must end with trailing slash in $relpath"
+      errors=$((errors + 1))
+    fi
+  fi
 done
 
 # Check URLs use indie.md domain (not https://indie.tm as a URL)
@@ -99,6 +107,48 @@ for img in "$DIST"/avatars/*.png; do
       echo "ERROR: Avatar $(basename "$img") is $(( size / 1024 ))KB (must be under 50KB)"
       errors=$((errors + 1))
     fi
+  fi
+done
+
+# Every content page that advertises an /og/... card must actually have it generated.
+# Skipped when dist/og/ does not exist -- that means gen_og.py was not run locally,
+# and CI always runs it before the quality gate, so production deploys are still enforced.
+if [ -d "$DIST/og" ]; then
+  missing_og=0
+  for file in $(find "$DIST" -name "*.html" -not -name "404.html"); do
+    og_match=$(grep -oE 'property="og:image" content="https://indie\.md/og/[^"]+"' "$file" || true)
+    og_path=$(echo "$og_match" | head -1 | sed -E 's|.*content="https://indie\.md||;s|"$||')
+    if [ -n "$og_path" ] && [ ! -f "$DIST$og_path" ]; then
+      echo "ERROR: Referenced OG image missing: $og_path (from ${file#$DIST/})"
+      missing_og=$((missing_og + 1))
+    fi
+  done
+  if [ "$missing_og" -gt 0 ]; then
+    errors=$((errors + missing_og))
+  fi
+else
+  echo "SEO lint: skipping OG image existence check (dist/og not built)"
+fi
+
+# Canonical URLs in HTML must match the URLs advertised in the sitemap.
+if [ -f "$DIST/sitemap-0.xml" ]; then
+  sitemap_urls=$(grep -oE '<loc>[^<]+</loc>' "$DIST/sitemap-0.xml" | sed -E 's|</?loc>||g' | sort)
+  canonical_urls=$(find "$DIST" -name "*.html" -not -name "404.html" \
+    -exec grep -oE 'rel="canonical" href="[^"]+"' {} \; \
+    | sed -E 's|rel="canonical" href="||;s|"$||' | sort -u)
+  drift=$(comm -23 <(echo "$canonical_urls") <(echo "$sitemap_urls"))
+  if [ -n "$drift" ]; then
+    echo "ERROR: Canonical URLs not present in sitemap:"
+    echo "$drift" | sed 's/^/  /'
+    errors=$((errors + 1))
+  fi
+fi
+
+# apple-touch-icon + manifest must ship
+for asset in apple-touch-icon.png site.webmanifest; do
+  if [ ! -f "$DIST/$asset" ]; then
+    echo "ERROR: Missing $asset in dist/"
+    errors=$((errors + 1))
   fi
 done
 

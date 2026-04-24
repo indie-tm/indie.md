@@ -4,6 +4,7 @@ import CategoryBadge from '../../components/CategoryBadge.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import { getAdviceForJourney, getAllCategories } from '../../lib/advice';
 import { assetPath, href } from "../../lib/base-url";
+import { canonicalUrl } from "../../lib/canonical";
 
 export async function getStaticPaths() {
   const journeys = await getCollection('journeys');
@@ -33,16 +34,30 @@ const formattedDate = journey.data.date.toLocaleDateString('en-US', {
     "@type": "Article",
     "headline": journey.data.title,
     "description": journey.data.subtitle,
+    "url": canonicalUrl(`/journeys/${journey.id}`),
+    "mainEntityOfPage": canonicalUrl(`/journeys/${journey.id}`),
     "datePublished": journey.data.date.toISOString(),
+    "dateModified": journey.data.date.toISOString(),
     "author": {
       "@type": "Person",
-      "name": person!.data.name
+      "name": person!.data.name,
+      "url": canonicalUrl(`/people/${journey.data.person}`),
     },
     "publisher": {
       "@type": "Organization",
       "name": "indie.md",
-      "url": "https://indie.md"
-    }
+      "url": "https://indie.md/",
+    },
+    "image": `https://indie.md/og/journeys/${journey.id}.png`,
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://indie.md/" },
+      { "@type": "ListItem", "position": 2, "name": "Journeys", "item": canonicalUrl("/journeys") },
+      { "@type": "ListItem", "position": 3, "name": journey.data.title, "item": canonicalUrl(`/journeys/${journey.id}`) },
+    ],
   })} />
   <article class="container mx-auto px-4 pt-16 pb-20 md:pt-20">
     <!-- Back link -->
@@ -53,7 +68,7 @@ const formattedDate = journey.data.date.toLocaleDateString('en-US', {
 
     <!-- Author card -->
     <div class="flex items-center gap-4 mb-8">
-      <img src={assetPath(person!.data.avatar)} alt={person!.data.name} class="w-16 h-16 rounded-full object-cover" />
+      <img src={assetPath(person!.data.avatar)} alt={person!.data.name} width="400" height="400" decoding="async" class="w-16 h-16 rounded-full object-cover" />
       <div>
         <a href={href(`/people/${journey.data.person}`)} class="font-semibold text-foreground hover:text-primary transition-colors">
           {person!.data.name}

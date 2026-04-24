@@ -1,0 +1,23 @@
+{
+  "name": "indie.md",
+  "short_name": "indie.md",
+  "description": "A knowledge platform for indie hackers: real stories, extractable advice.",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "theme_color": "#e66b1a",
+  "background_color": "#faf8f5",
+  "display": "standalone",
+  "start_url": "/"
+}

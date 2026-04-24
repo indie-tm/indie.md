@@ -8,6 +8,16 @@ const people = defineCollection({
     avatar: z.string(),
     tagline: z.string(),
     bio: z.string(),
+    role: z.string().optional(),
+    twitter: z.string().optional(),
+    github: z.string().optional(),
+    linkedin: z.string().optional(),
+    website: z.string().url().optional(),
+    // Free-form list of canonical external profile URLs emitted as Person
+    // JSON-LD `sameAs`. Keep this as the source of truth for entity-level SEO;
+    // the shortcut handle fields above (twitter/github/linkedin) feed into it
+    // at render time.
+    sameAs: z.array(z.string().url()).optional(),
     products: z
       .array(
         z.object({

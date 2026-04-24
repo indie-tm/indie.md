@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import JourneyCard from '../../components/JourneyCard.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { getAdviceIndex } from '../../lib/advice';
+import { canonicalUrl } from '../../lib/canonical';
 
 const journeys = await getCollection('journeys');
 const adviceIndex = getAdviceIndex();
@@ -14,8 +15,38 @@ const journeysWithPeople = await Promise.all(
     return { journey: j, person: person!, adviceCount };
   })
 );
+journeysWithPeople.sort((a, b) => b.journey.data.date.getTime() - a.journey.data.date.getTime());
 ---
 <Base title="Journeys | indie.md" description="Case studies from indie hackers: the full story behind every product, every pivot, every lesson learned." canonicalPath="/journeys">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Journeys",
+    "description": "Case studies from indie hackers: the full story behind every product, every pivot, every lesson learned.",
+    "url": canonicalUrl("/journeys"),
+    "publisher": { "@type": "Organization", "name": "indie.md", "url": "https://indie.md/" },
+    "numberOfItems": journeysWithPeople.length,
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://indie.md/" },
+      { "@type": "ListItem", "position": 2, "name": "Journeys", "item": canonicalUrl("/journeys") },
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "numberOfItems": journeysWithPeople.length,
+    "itemListElement": journeysWithPeople.map((entry, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "url": canonicalUrl(`/journeys/${entry.journey.id}`),
+      "name": entry.journey.data.title,
+    })),
+  })} />
   <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
     <div class="max-w-2xl">
       <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4">

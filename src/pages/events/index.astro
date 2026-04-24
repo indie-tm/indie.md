@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import EventCard from '../../components/EventCard.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { getAdviceForEvent } from '../../lib/advice';
+import { canonicalUrl } from '../../lib/canonical';
 import { NEXT_EVENT } from '../../lib/next-event';
 
 const events = await getCollection('events');
@@ -24,6 +25,35 @@ eventsWithData.sort((a, b) => b.event.data.date.getTime() - a.event.data.date.ge
 
 ---
 <Base title="Events | indie.md" description="Recaps from our IRL meetups. Real conversations, real advice." canonicalPath="/events">
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Events",
+    "description": "Recaps from our IRL meetups. Real conversations, real advice.",
+    "url": canonicalUrl("/events"),
+    "publisher": { "@type": "Organization", "name": "indie.md", "url": "https://indie.md/" },
+    "numberOfItems": eventsWithData.length,
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://indie.md/" },
+      { "@type": "ListItem", "position": 2, "name": "Events", "item": canonicalUrl("/events") },
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "numberOfItems": eventsWithData.length,
+    "itemListElement": eventsWithData.map((entry, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "url": canonicalUrl(`/events/${entry.event.id}`),
+      "name": entry.event.data.title,
+    })),
+  })} />
   <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
     <div class="max-w-2xl">
       <h1 class="font-display text-4xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-4">

@@ -4,6 +4,7 @@ import AdviceCard from '../../components/AdviceCard.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { getAdviceIndex, getAllCategories } from '../../lib/advice';
 import { href } from '../../lib/base-url';
+import { canonicalUrl } from '../../lib/canonical';
 
 const adviceIndex = getAdviceIndex();
 const categories = getAllCategories();
@@ -37,9 +38,29 @@ const adviceWithPeople = await Promise.all(
     "@type": "CollectionPage",
     "name": "Advice",
     "description": "Practical tips extracted from real indie hacker journeys.",
-    "url": "https://indie.md/advice",
-    "publisher": { "@type": "Organization", "name": "indie.md", "url": "https://indie.md" },
+    "url": canonicalUrl("/advice"),
+    "publisher": { "@type": "Organization", "name": "indie.md", "url": "https://indie.md/" },
     "numberOfItems": adviceIndex.length,
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://indie.md/" },
+      { "@type": "ListItem", "position": 2, "name": "Advice", "item": canonicalUrl("/advice") },
+    ],
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "itemListOrder": "https://schema.org/ItemListOrderDescending",
+    "numberOfItems": adviceWithPeople.length,
+    "itemListElement": adviceWithPeople.map((entry, idx) => ({
+      "@type": "ListItem",
+      "position": idx + 1,
+      "url": canonicalUrl(`/advice/${entry.advice.slug}`),
+      "name": entry.advice.title,
+    })),
   })} />
   <section class="container mx-auto px-4 pt-16 pb-8 md:pt-20">
     <div class="max-w-2xl">
@@ -62,7 +83,7 @@ const adviceWithPeople = await Promise.all(
       {categories.map((cat) => (
         <a href={href(`/advice/${cat.slug}`)}
            class="inline-flex items-center gap-1 px-4 py-2 rounded-full text-sm font-medium border border-border/80 text-muted-foreground hover:border-primary/30 hover:text-foreground transition-all">
-          <img src={cat.icon} alt={cat.label} class="w-4 h-4" /> {cat.label}
+          <img src={cat.icon} alt={cat.label} width="16" height="16" loading="lazy" decoding="async" class="w-4 h-4" /> {cat.label}
         </a>
       ))}
     </div>

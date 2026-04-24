@@ -44,6 +44,13 @@ jobs:
         with:
           path: dist/
 
+      - name: Upload sitemap for IndexNow
+        uses: actions/upload-artifact@v4
+        with:
+          name: sitemap
+          path: dist/sitemap-0.xml
+          retention-days: 1
+
   deploy:
     name: Deploy
     needs: build
@@ -55,3 +62,25 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+  indexnow:
+    name: Ping IndexNow
+    needs: deploy
+    runs-on: ubuntu-latest
+    # IndexNow submission is best-effort; a network hiccup on the Bing side
+    # must not mark the deploy as failed.
+    continue-on-error: true
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Fetch sitemap artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: sitemap
+          path: dist/
+      - name: Submit to IndexNow
+        run: node scripts/ping-indexnow.mjs

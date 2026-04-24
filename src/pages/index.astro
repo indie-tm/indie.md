@@ -65,8 +65,22 @@ const latestAdvice = await Promise.all(
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "indie.md",
-    "url": "https://indie.md",
-    "description": "Real stories, hard-won lessons, and practical advice from indie hackers."
+    "url": "https://indie.md/",
+    "description": "Real stories, hard-won lessons, and practical advice from indie hackers.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "indie.md",
+      "url": "https://indie.md/",
+      "logo": { "@type": "ImageObject", "url": "https://indie.md/logo.png" },
+    },
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "indie.md",
+    "url": "https://indie.md/",
+    "logo": "https://indie.md/logo.png",
+    "description": "A knowledge platform for indie hackers: real stories, extractable advice.",
   })} />
   <!-- Hero -->
   <section class="container mx-auto px-4 pt-16 pb-14 md:pt-24 md:pb-20">
@@ -173,7 +187,7 @@ const latestAdvice = await Promise.all(
       {categories.map((cat) => (
         <a href={href(`/advice/${cat.slug}`)}
            class="group flex items-center gap-3 rounded-xl border border-border/80 bg-card px-5 py-4 hover:border-primary/30 hover:shadow-[var(--shadow-card)] transition-all">
-          <img src={assetPath(cat.icon)} alt={cat.label} class="w-10 h-10 rounded-lg" />
+          <img src={assetPath(cat.icon)} alt={cat.label} width="40" height="40" loading="lazy" decoding="async" class="w-10 h-10 rounded-lg" />
           <div>
             <p class="text-sm font-semibold text-foreground group-hover:text-primary transition-colors">{cat.label}</p>
             <p class="text-xs text-muted-foreground">{cat.count} tips</p>

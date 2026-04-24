@@ -6,6 +6,9 @@ import CategoryBadge from '../../components/CategoryBadge.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { getAdviceIndex, getAdviceForEvent, getAllCategories } from '../../lib/advice';
 import { assetPath, href } from "../../lib/base-url";
+import { canonicalUrl } from "../../lib/canonical";
+import { buildPersonSameAs } from "../../lib/person-sameas";
+import { summarize } from "../../lib/summarize";
 
 export async function getStaticPaths() {
   const people = await getCollection('people');
@@ -46,14 +49,43 @@ const journeysWithAdviceCount = await Promise.all(
 );
 
 const personAdvice = adviceIndex.filter(a => a.personSlug === person.id);
+const sameAs = buildPersonSameAs(person.data);
+
+const productPhrase = person.data.products && person.data.products.length > 0
+  ? ` Building ${person.data.products.map(p => p.name).join(", ")}.`
+  : "";
+const pageTitle = `${person.data.name}: ${person.data.tagline} | indie.md`;
+const pageDescription = summarize(`${person.data.bio}${productPhrase}`, 160);
+const twitterCreator = person.data.twitter
+  ? `@${person.data.twitter.replace(/^@/, "")}`
+  : undefined;
 ---
-<Base title={`${person.data.name} | indie.md`} description={person.data.tagline} canonicalPath={`/people/${person.id}`} ogImage={`/og/people/${person.id}.png`}>
+<Base
+  title={pageTitle}
+  description={pageDescription}
+  canonicalPath={`/people/${person.id}`}
+  ogImage={`/og/people/${person.id}.png`}
+  ogImageAlt={`${person.data.name}: ${person.data.tagline}`}
+  twitterCreator={twitterCreator}
+>
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Person",
     "name": person.data.name,
     "description": person.data.bio,
-    "url": `https://indie.md/people/${person.id}`
+    "url": canonicalUrl(`/people/${person.id}`),
+    "image": `https://indie.md${person.data.avatar}`,
+    ...(person.data.role ? { "jobTitle": person.data.role } : {}),
+    ...(sameAs.length > 0 ? { "sameAs": sameAs } : {}),
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://indie.md/" },
+      { "@type": "ListItem", "position": 2, "name": "People", "item": canonicalUrl("/people") },
+      { "@type": "ListItem", "position": 3, "name": person.data.name, "item": canonicalUrl(`/people/${person.id}`) },
+    ],
   })} />
   <section class="container mx-auto px-4 pt-16 pb-10 md:pt-20">
     <!-- Back link -->
@@ -64,7 +96,7 @@ const personAdvice = adviceIndex.filter(a => a.personSlug === person.id);
 
     <!-- Person header -->
     <div class="flex items-start gap-5 mb-4">
-      <img src={assetPath(person.data.avatar)} alt={person.data.name} class="w-20 h-20 rounded-full object-cover" />
+      <img src={assetPath(person.data.avatar)} alt={person.data.name} width="400" height="400" decoding="async" class="w-20 h-20 rounded-full object-cover" />
       <div>
         <h1 class="animate-fade-up font-display text-3xl md:text-4xl tracking-tight text-foreground mb-1">
           {person.data.name}
@@ -78,7 +110,7 @@ const personAdvice = adviceIndex.filter(a => a.personSlug === person.id);
     {person.data.products && person.data.products.length > 0 && (
       <div class="flex flex-wrap gap-2 mt-4">
         {person.data.products.map((p) => (
-          <a href={p.url} target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-primary/20 bg-primary/5 text-sm font-medium text-primary hover:bg-primary/10 transition-colors">
+          <a href={p.url} target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg border border-primary/20 bg-primary/5 text-sm font-medium text-primary hover:bg-primary/10 transition-colors">
             {p.name}
             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
           </a>

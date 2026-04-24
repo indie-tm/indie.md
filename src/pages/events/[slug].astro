@@ -4,6 +4,8 @@ import CategoryBadge from '../../components/CategoryBadge.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import { getAdviceForEvent, getAllCategories } from '../../lib/advice';
 import { assetPath, href } from "../../lib/base-url";
+import { canonicalUrl } from "../../lib/canonical";
+import { measurePublicImage } from "../../lib/image-dimensions";
 
 export async function getStaticPaths() {
   const events = await getCollection('events');
@@ -32,6 +34,8 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
   day: 'numeric',
   year: 'numeric',
 });
+
+const heroDims = event.data.image ? measurePublicImage(event.data.image) : null;
 ---
 <Base title={`${event.data.title} | indie.md`} description={event.data.subtitle} canonicalPath={`/events/${event.id}`} ogType="article" ogImage={`/og/events/${event.id}.png`}>
   <script type="application/ld+json" set:html={JSON.stringify({
@@ -39,21 +43,36 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
     "@type": "Event",
     "name": event.data.title,
     "description": event.data.subtitle,
+    "url": canonicalUrl(`/events/${event.id}`),
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     ...(event.data.image ? { "image": `https://indie.md${event.data.image}` } : {}),
     "startDate": event.data.date.toISOString(),
+    "endDate": event.data.date.toISOString(),
     "location": {
       "@type": "Place",
-      "name": event.data.location
+      "name": event.data.location,
+      "address": event.data.location,
     },
     "organizer": {
       "@type": "Organization",
       "name": "indie.md",
-      "url": "https://indie.md"
+      "url": "https://indie.md/",
     },
     "performer": presenters.map(p => ({
       "@type": "Person",
-      "name": p.data.name
-    }))
+      "name": p.data.name,
+      "url": canonicalUrl(`/people/${p.id}`),
+    })),
+  })} />
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://indie.md/" },
+      { "@type": "ListItem", "position": 2, "name": "Events", "item": canonicalUrl("/events") },
+      { "@type": "ListItem", "position": 3, "name": event.data.title, "item": canonicalUrl(`/events/${event.id}`) },
+    ],
   })} />
   <article class="container mx-auto px-4 pt-16 pb-20 md:pt-20">
     <!-- Back link -->
@@ -88,7 +107,11 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
         <img
           src={assetPath(event.data.image)}
           alt={event.data.title}
-          class="w-full rounded-xl border border-border/60"
+          width={heroDims?.width ?? 1200}
+          height={heroDims?.height ?? 900}
+          fetchpriority="high"
+          decoding="async"
+          class="w-full h-auto rounded-xl border border-border/60"
         />
       </div>
     )}
@@ -98,7 +121,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
       {presenters.map((p) => (
         <a href={href(`/people/${p.id}`)}
            class="flex items-center gap-2 px-3 py-2 rounded-lg border border-border/60 bg-card hover:border-primary/30 transition-all">
-          <img src={assetPath(p.data.avatar)} alt={p.data.name} class="w-8 h-8 rounded-full object-cover" />
+          <img src={assetPath(p.data.avatar)} alt={p.data.name} width="400" height="400" loading="lazy" decoding="async" class="w-8 h-8 rounded-full object-cover" />
           <span class="text-sm font-medium text-foreground">{p.data.name}</span>
         </a>
       ))}
