@@ -3,6 +3,7 @@ title: "Indie TM #7: News as a Traffic Locomotive"
 subtitle: "What we learned at our seventh meetup at Cowork Timisoara"
 date: 2026-04-22
 location: "Cowork Timisoara - The Office, Timisoara"
+link: "https://luma.com/wj7wv5bg"
 image: "/images/events/indie-tm-7.jpeg"
 presenters:
   - raul
@@ -114,7 +115,15 @@ The room converged on two answers.
 
 The first was to price against the existing budget, not against competitors or gut feel. Corporations of a certain size already have a budget line for tools in your category: security, compliance, developer tooling, whatever the shelf is called internally. That budget exists, the procurement team is used to spending it, and your job is less "convince them to pay" and more "discover the number." Someone suggested that on discovery calls, you ask what the team already spends on adjacent tools, or what last year's budget for this category was. The literal price tag matters less than landing inside the familiar range so the buyer does not have to fight finance.
 
+:::advice{slug="discover-the-enterprise-budget" category="business" title="Discover the enterprise budget instead of inventing a price" person="fineas-silaghi"}
+Corporations of a certain size already run a budget line for your category: security, compliance, developer tooling, whatever the shelf is called internally. The money exists and procurement is used to spending it, so the pricing call is less "convince them to pay" and more "discover the number." On discovery, ask what the team already spends on adjacent tools or what last year's budget for the category was, and land inside the familiar range. The absolute number matters less than being in a bucket finance does not have to fight for. Founders who invent a price from scratch almost always land below the budget the buyer was ready to spend.
+:::
+
 The second was to factor the real cost of on-prem maintenance into the price before naming a number. Unlike SaaS, on-prem means limited access to the deployment: no live logs without a ticket, no hotfixes without the customer's change window, no telemetry unless you negotiated it into the contract. Support engineers will spend materially more time per customer on debugging, upgrades, and escalations than a pure SaaS model would ever model. The people in the room who had shipped enterprise software were blunt about this one: if you price on-prem like SaaS, the first production incident eats the margin on the account.
+
+:::advice{slug="price-on-prem-for-support-cost" category="business" title="Price on-prem for the support reality, not the demo" person="fineas-silaghi"}
+On-prem is not SaaS with a different installer. Once the software lives inside a customer network you lose live logs, hotfix freedom, and telemetry unless you explicitly negotiated for them. Support engineers spend materially more time per customer on debugging, upgrades, and escalations than any SaaS cost model captures, and that time has to be priced in before you name a number. If on-prem is priced like SaaS, the first production incident eats the margin on the account. The safe heuristic is to model a realistic support load per customer per year, multiply by a loaded engineering rate, and treat that number as the floor, not a contingency.
+:::
 
 [Fineas](/people/fineas-silaghi) took both in: the "discover the budget, do not invent it" side, and the "price for the support reality, not the demo" side. The short version for the rest of the room: on-prem pricing is a two-axis problem, and most founders solve only one of the two.
 

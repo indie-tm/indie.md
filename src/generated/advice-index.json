@@ -360,6 +360,24 @@
     "personSlug": "flavius"
   },
   {
+    "slug": "discover-the-enterprise-budget",
+    "category": "business",
+    "title": "Discover the enterprise budget instead of inventing a price",
+    "content": "Corporations of a certain size already run a budget line for your category: security, compliance, developer tooling, whatever the shelf is called internally. The money exists and procurement is used to spending it, so the pricing call is less \"convince them to pay\" and more \"discover the number.\" On discovery, ask what the team already spends on adjacent tools or what last year's budget for the category was, and land inside the familiar range. The absolute number matters less than being in a bucket finance does not have to fight for. Founders who invent a price from scratch almost always land below the budget the buyer was ready to spend.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "fineas-silaghi"
+  },
+  {
+    "slug": "price-on-prem-for-support-cost",
+    "category": "business",
+    "title": "Price on-prem for the support reality, not the demo",
+    "content": "On-prem is not SaaS with a different installer. Once the software lives inside a customer network you lose live logs, hotfix freedom, and telemetry unless you explicitly negotiated for them. Support engineers spend materially more time per customer on debugging, upgrades, and escalations than any SaaS cost model captures, and that time has to be priced in before you name a number. If on-prem is priced like SaaS, the first production incident eats the margin on the account. The safe heuristic is to model a realistic support load per customer per year, multiply by a loaded engineering rate, and treat that number as the floor, not a contingency.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "fineas-silaghi"
+  },
+  {
     "slug": "build-your-own-agent-harness",
     "category": "mindset",
     "title": "Build your own agent harness, even as a side project",
