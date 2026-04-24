@@ -37,7 +37,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
 
 const heroDims = event.data.image ? measurePublicImage(event.data.image) : null;
 ---
-<Base title={`${event.data.title} | indie.md`} description={event.data.subtitle} canonicalPath={`/events/${event.id}`} ogType="article" ogImage={`/og/events/${event.id}.png`}>
+<Base title={`${event.data.title} | indie.md`} description={event.data.subtitle} canonicalPath={`/events/${event.id}`} ogType="article" ogImage={`/og/events/${event.id}.png`} markdownMirror>
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "Event",

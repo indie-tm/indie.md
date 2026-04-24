@@ -67,6 +67,7 @@ const twitterCreator = person.data.twitter
   ogImage={`/og/people/${person.id}.png`}
   ogImageAlt={`${person.data.name}: ${person.data.tagline}`}
   twitterCreator={twitterCreator}
+  markdownMirror
 >
   <script type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",

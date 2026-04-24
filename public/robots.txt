@@ -1,7 +1,11 @@
+# Classic search crawlers
 User-agent: Googlebot
 Allow: /
 
 User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
 Allow: /
 
 User-agent: Twitterbot
@@ -10,6 +14,117 @@ Allow: /
 User-agent: facebookexternalhit
 Allow: /
 
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: Slackbot
+Allow: /
+
+# AI training + AI search crawlers -- explicitly allowed because indie.md
+# wants to be cited in ChatGPT, Claude, Perplexity, Gemini, and Copilot
+# answers. A blanket User-agent: * allow is not enough for some operators
+# (OpenAI treats missing rules as disallowed for GPTBot).
+
+# OpenAI -- GPTBot is training, OAI-SearchBot powers ChatGPT Search,
+# ChatGPT-User is fired when a human asks ChatGPT to visit a URL.
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Anthropic -- ClaudeBot is the unified crawler, anthropic-ai and
+# Claude-Web are legacy names still used on some CDN fingerprinting lists.
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# Perplexity -- two agents: the crawler and the per-question fetcher.
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Google AI signals (separate opt-in from classic Googlebot).
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GoogleOther
+Allow: /
+
+# Apple Intelligence + Siri summaries.
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+# Meta AI (used in Meta AI answers across Instagram/WhatsApp/Facebook).
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Meta-ExternalFetcher
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+# ByteDance / TikTok AI.
+User-agent: Bytespider
+Allow: /
+
+# Cohere training + retrieval.
+User-agent: cohere-ai
+Allow: /
+
+User-agent: cohere-training-data-crawler
+Allow: /
+
+# DuckDuckGo AI answers.
+User-agent: DuckAssistBot
+Allow: /
+
+# Mistral search/retrieval.
+User-agent: MistralAI-User
+Allow: /
+
+# Amazon (Alexa + Rufus).
+User-agent: Amazonbot
+Allow: /
+
+# xAI / Grok.
+User-agent: Grok
+Allow: /
+
+# Yandex (CIS-region LLMs + search).
+User-agent: YandexBot
+Allow: /
+
+# Common Crawl -- upstream corpus for dozens of open-source LLMs.
+User-agent: CCBot
+Allow: /
+
+# Diffbot (used by Perplexity and various enterprise RAG stacks).
+User-agent: Diffbot
+Allow: /
+
+# Default: everything else allowed too, but keep the explicit list above
+# so CDN operators and bot-fingerprint products see the intent.
 User-agent: *
 Allow: /
 

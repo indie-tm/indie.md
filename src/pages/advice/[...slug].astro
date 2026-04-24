@@ -122,7 +122,7 @@ const relatedWithPeople = await Promise.all(
   }),
 );
 ---
-<Base title={pageTitle} description={pageDescription} canonicalPath={`/advice/${slug}`} ogImage={isCategory ? undefined : `/og/advice/${slug}.png`}>
+<Base title={pageTitle} description={pageDescription} canonicalPath={`/advice/${slug}`} ogImage={isCategory ? undefined : `/og/advice/${slug}.png`} markdownMirror={!isCategory}>
   {isCategory && category && (
     <>
       <script type="application/ld+json" set:html={JSON.stringify({
@@ -155,6 +155,27 @@ const relatedWithPeople = await Promise.all(
           "name": entry.advice.title,
         })),
       })} />
+      {filteredAdvice.length > 0 && (
+        <script type="application/ld+json" set:html={JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": filteredAdvice.map((entry) => ({
+            "@type": "Question",
+            "name": entry.advice.title,
+            "url": canonicalUrl(`/advice/${entry.advice.slug}`),
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": entry.advice.content,
+              "author": {
+                "@type": "Person",
+                "name": entry.person.data.name,
+                "url": canonicalUrl(`/people/${entry.person.id}`),
+              },
+              "url": canonicalUrl(`/advice/${entry.advice.slug}`),
+            },
+          })),
+        })} />
+      )}
     </>
   )}
   {!isCategory && advice && advicePerson && (
@@ -179,6 +200,10 @@ const relatedWithPeople = await Promise.all(
           "url": canonicalUrl(`/people/${advice.personSlug}`),
         },
         "publisher": { "@type": "Organization", "name": "indie.md", "url": "https://indie.md/" },
+        "speakable": {
+          "@type": "SpeakableSpecification",
+          "cssSelector": ["[data-speakable]"],
+        },
       })} />
       <script type="application/ld+json" set:html={JSON.stringify({
         "@context": "https://schema.org",
@@ -271,7 +296,7 @@ const relatedWithPeople = await Promise.all(
       )}
 
       <!-- Title -->
-      <h1 class="font-display text-3xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-6">
+      <h1 data-speakable="true" class="font-display text-3xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-6">
         {advice.title}
       </h1>
 
@@ -290,7 +315,7 @@ const relatedWithPeople = await Promise.all(
 
       <!-- Content -->
       <div class="prose prose-lg max-w-2xl prose-p:text-muted-foreground prose-p:leading-relaxed">
-        <p>{advice.content}</p>
+        <p data-speakable="true">{advice.content}</p>
       </div>
 
       <!-- Related advice -->
