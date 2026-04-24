@@ -16,6 +16,9 @@ dist-ssr
 # Generated at build time by scripts/gen_og.py
 public/og/
 
+# Scratch space for scripts/url-to-gif.mjs (intermediate .webm + palette)
+.tmp/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

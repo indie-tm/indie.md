@@ -6,6 +6,8 @@
   "scripts": {
     "dev": "astro dev",
     "extract-advice": "npx tsx scripts/extract-advice.ts",
+    "screenshot": "node scripts/screenshot-products.mjs",
+    "gif": "node scripts/url-to-gif.mjs",
     "build": "npm run extract-advice && astro build",
     "preview": "astro preview",
     "format": "biome format --write .",
