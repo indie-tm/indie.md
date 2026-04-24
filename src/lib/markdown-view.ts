@@ -175,6 +175,7 @@ export async function siteIndexMarkdown(): Promise<string> {
     "- Canonical domain: https://indie.md/",
     "- Every HTML page has a Markdown twin at the same URL with a `.md` suffix (for example `/advice/discover-the-enterprise-budget.md`).",
     "- Full concatenated corpus for LLM ingestion: https://indie.md/llms-full.txt",
+    "- Structured export for RAG pipelines (JSON Lines, one document per row with stable IDs): https://indie.md/llms.jsonl",
     "- RSS feed: https://indie.md/rss.xml",
     "- Sitemap: https://indie.md/sitemap-index.xml",
     "",
