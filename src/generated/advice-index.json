@@ -385,5 +385,77 @@
     "journeySlug": null,
     "eventSlug": "indie-tm-7-timisoara-april-2026",
     "personSlug": "vlad"
+  },
+  {
+    "slug": "ocr-upload-cuts-onboarding-friction",
+    "category": "product",
+    "title": "Let users upload a photo instead of filling a form",
+    "content": "When your onboarding asks for data the user is already holding on a card or a document, do not make them transcribe it. Let them photograph it and run OCR to pre-fill the fields. Raul's RCA flow replaces a dozen manual inputs with a single photo of the car registration and the current policy, and every field removed before the user sees value is a measurable lift in completion. The pattern generalizes to anything printed: an invoice, an ID, a label, a receipt. The cost of an OCR pass is now low enough that asking the user to type what a camera could read is a friction you are choosing to keep.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "raul"
+  },
+  {
+    "slug": "anchor-price-on-the-pain",
+    "category": "business",
+    "title": "Anchor your price against the cost of the problem",
+    "content": "When your product removes a specific, expensive risk, price it against that risk, not against competitors or hours saved. Renzi's homepage leads with \"one ANAF fine costs as much as two years of the app.\" The honest version of that math is not the modest statutory fine but the full exposure it stands in for: retroactive tax on undeclared rent, daily interest and penalties, and the tax authority's own estimate of what you owe. Against a number that large, a subscription of a few tens of lei a month is a rounding error, and the pricing objection mostly disappears. Find the worst outcome your product prevents, do that math out loud on your landing page, and let it dwarf your price.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "mine-search-console-for-content-gaps",
+    "category": "seo",
+    "title": "Mine your own Search Console data for content gaps",
+    "content": "Your Google Search Console data already tells you what Google thinks you rank for, in your users' real words, for free. Pull the full query-and-page table from the Search Console API (it returns up to 25,000 rows per call against the dashboard's thousand or so), then look for two signals. First, striking-distance keywords: queries where you sit in positions four to twenty with plenty of impressions but a weak click-through rate. Google already considers you relevant, and nudging one of those pages from position twelve to position six can multiply its traffic. Second, content gaps: cluster the queries under their shared parent term, and any cluster with real impressions but no dedicated page is a pre-validated brief for an article you have not written yet. It is the cheapest, highest-signal SEO loop there is, and it needs no paid keyword tool.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "diacritics-in-content-not-urls",
+    "category": "seo",
+    "title": "Keep diacritics in your content, strip them from your URLs",
+    "content": "On a Romanian site, the diacritics question has a practical answer. Google treats \"programari\" and \"programări\" as equivalent, so writing correct Romanian with diacritics in your body copy, headings, and titles carries no ranking penalty and reads as more credible to a human. Where diacritics genuinely cause trouble is in URL slugs, file names, and image alt text, where encoding breaks links and tooling. So the rule most Romanian practitioners settle on: diacritics in the content the reader sees, none in the identifiers the machine parses. The same logic applies to any language with accented characters.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "doru-bota"
+  },
+  {
+    "slug": "health-data-compliance-is-engineering",
+    "category": "product",
+    "title": "For health data, compliance is an engineering posture, not a badge",
+    "content": "The moment your product stores diagnoses, treatments, or medical images, you are processing special-category health data under Article 9 of the GDPR, which is prohibited by default and allowed only on a specific lawful basis such as the provision of health care or explicit consent. That triggers a higher bar than ordinary personal data: a data protection impact assessment, encryption and pseudonymization, access limited to staff bound by confidentiality, and a signed data-processing agreement that makes you the processor to each clinic's controller. A \"GDPR Compliant\" badge on the landing page is marketing; for health data it has to be a documented engineering and legal reality. When you build a vertical SaaS that touches a regulated data class, the binding constraint is not your feature set, it is the data class, and you should design for it from the first table you create.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "doru-bota"
+  },
+  {
+    "slug": "free-tool-as-top-of-funnel",
+    "category": "distribution",
+    "title": "Ship a free tool as the top of your funnel",
+    "content": "A narrow, free, no-signup tool that solves one frequently-Googled problem is not charity, it is a lead magnet. The whole email-deliverability category (mail-tester, GlockApps, Warmy) gives away the check because running it is itself an admission of a problem the same vendor sells the fix for: it self-qualifies warm prospects and ranks for high-intent queries like \"does my email go to spam.\" The indie sequence is to ship the magnet first, let it accumulate search traffic and word of mouth, and only then bolt on the paid layer (monitoring, a plugin, a done-for-you fix). The catch the room raised: a magnet only works if activation is effortless, so the single most important screen is the one where the user gets their answer.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "vali"
+  },
+  {
+    "slug": "escape-per-unit-cloud-pricing",
+    "category": "business",
+    "title": "Cut a runaway cloud bill by escaping per-unit pricing",
+    "content": "A dramatic cloud-cost cut is almost never one trick; it is killing the pricing model that punishes your specific workload. Read your bill by line item and find the charge that scales per unit for something a fixed box gives away: per-request serverless invocations (you also pay for cold starts), per-gigabyte egress (hyperscalers charge nine to fifteen cents a gigabyte while a Hetzner box bundles tens of terabytes and Cloudflare R2 charges nothing to serve), an over-provisioned serverless database, or control-plane and NAT-gateway fees that no savings plan covers. Move just that line onto a fixed box you rent whole, front it with a CDN, and the bill collapses. The honest caveat: you trade dollars for operational hours and you lose autoscaling, so the move only pays off when your load is predictable enough that you were buying idle serverless headroom anyway.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "petru-popa"
+  },
+  {
+    "slug": "niche-audio-plugin-as-a-product",
+    "category": "product",
+    "title": "A niche audio plugin is a textbook solo product",
+    "content": "Audio plugins are an underrated indie category. A single technical builder can ship one well-scoped effect or instrument on a standard framework like JUCE, which handles the brutal cross-format, cross-platform plumbing (VST3, AU, AAX across Windows, macOS, and Linux) so you can focus on the sound. The economics fit one person: you sell perpetual licenses for 30 to 100 dollars directly to producers, the distribution channels already exist (KVR Audio, Plugin Boutique, YouTube and producer communities), and a perpetual framework license covers six figures of revenue before it costs you recurring money. The moat is not raw engineering, it is taste and DSP craft: a recognizable sound and a brand producers trust. Small, focused, and durable, which is exactly the kind of product that outlasts trends.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "ionut"
   }
 ]
