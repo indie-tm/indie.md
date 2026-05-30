@@ -4,6 +4,7 @@ subtitle: "What we learned at our ninth meetup at Cowork Timisoara"
 date: 2026-05-28
 location: "Cowork Timisoara - The Office, Timisoara"
 link: "https://luma.com/0u8o9k9b"
+image: "/images/events/indie-tm-9.jpeg"
 presenters:
   - raul
   - mircea
