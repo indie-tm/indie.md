@@ -1,5 +1,455 @@
 [
   {
+    "slug": "build-in-the-margins-of-a-busy-life",
+    "category": "mindset",
+    "title": "Scope a side project to fit the life you already have",
+    "content": "Bogdan has a consulting career and two kids, so he deliberately scoped Event Newsletter to something he could run in the gaps rather than something that demands his full attention. The trick is to choose the product around your real available time, not around an imagined version of yourself with empty evenings. A tightly-scoped tool with a narrow job survives the busy weeks that would kill a more ambitious build. For a dabbler, the right size of project is the one that still gets shipped when life gets loud.",
+    "journeySlug": "bogdan-event-newsletter",
+    "eventSlug": null,
+    "personSlug": "bogdan-moldovean"
+  },
+  {
+    "slug": "let-ai-curate-the-event-firehose",
+    "category": "product",
+    "title": "Let AI curate and summarize the firehose into something personal",
+    "content": "Event Newsletter works because AI handles the part a solo builder cannot: reading the constant flood of local events and turning it into a short, personal digest. Bogdan uses AI to find, curate, and summarize, matching events against each user's preferences so the output feels hand-picked rather than dumped. The leverage is not the AI by itself, it is pointing it at a firehose of information that a human could never process at the cadence the product needs. At Indie TM #5 the room also weighed in on which models might suit this job better, which is the kind of input he went looking for.",
+    "journeySlug": "bogdan-event-newsletter",
+    "eventSlug": null,
+    "personSlug": "bogdan-moldovean"
+  },
+  {
+    "slug": "serve-the-smaller-cities-aggregators-skip",
+    "category": "product",
+    "title": "Serve the smaller cities the big aggregators ignore",
+    "content": "Big event aggregators cover major cities and leave smaller ones thin or empty, and that ignored geography is the niche Bogdan is aiming Event Newsletter at. Picking the segment the incumbents skip means you are not fighting them where they are strong, you are serving people they have written off. The room at Indie TM #5 agreed this was the right wedge: a real problem that nobody handles well for smaller places. He also leans on the retro design as a cheap form of differentiation, since personality costs little and stands out when you cannot win on scale.",
+    "journeySlug": "bogdan-event-newsletter",
+    "eventSlug": null,
+    "personSlug": "bogdan-moldovean"
+  },
+  {
+    "slug": "weekly-newsletter-as-low-maintenance-format",
+    "category": "distribution",
+    "title": "Use a weekly newsletter as a low-maintenance product format",
+    "content": "Bogdan chose a weekly newsletter for Event Newsletter partly because the format itself is forgiving: a once-a-week cadence sets honest expectations and removes the pressure of anything real-time. Email reaches people in a place they already check rather than competing for attention as one more app to open. For a project run in the margins, the delivery format can do real work to keep maintenance low. The cadence you promise is a product decision, so pick one your life can actually sustain.",
+    "journeySlug": "bogdan-event-newsletter",
+    "eventSlug": null,
+    "personSlug": "bogdan-moldovean"
+  },
+  {
+    "slug": "be-the-loudest-learner-in-the-room",
+    "category": "mindset",
+    "title": "Be the loudest learner in the room",
+    "content": "Bogdan was the most active questioner at Indie TM #5, and being the loudest learner is exactly how he walked out with a crash course in the SEO he had not started yet. A room full of builders is a free education, but only for the person willing to keep asking instead of nodding along to protect their ego. He has no SEO results to show, only a list of things to try, and that is the honest output of an evening spent learning out loud. When you are early and behind on something, the fastest way to catch up is to stop pretending you already know it.",
+    "journeySlug": "bogdan-event-newsletter",
+    "eventSlug": null,
+    "personSlug": "bogdan-moldovean"
+  },
+  {
+    "slug": "from-personal-fix-to-product",
+    "category": "product",
+    "title": "A personal fix becomes a product when others share the pain",
+    "content": "SoundScrub began as a script Camil wrote to clean the background noise out of his own holiday footage. The leap to a product came from one question: do enough other people have this exact pain? Scratching your own itch is a great way to start, but it only becomes a business when you confirm the itch is widely shared and worth paying to scratch. Build the thing that solves your problem first, because you understand it deeply, then go check that travelers and videographers are loudly describing the same problem before you commit to productizing it.",
+    "journeySlug": "camil-soundscrub",
+    "eventSlug": null,
+    "personSlug": "camil"
+  },
+  {
+    "slug": "wrap-your-script-in-an-app",
+    "category": "product",
+    "title": "Wrap your script in an app for the people who fear the terminal",
+    "content": "Camil's noise-removal script already worked; the product was wrapping it in a desktop app for everyone who would never touch a terminal. The market for a command-line tool is other developers; the market for the same capability behind a clean interface is everyone. If you have a script that genuinely solves a problem, the productizing work is mostly removing the technical barriers around it, not adding features. A good interface over a working script reaches an audience an order of magnitude larger than the script ever could.",
+    "journeySlug": "camil-soundscrub",
+    "eventSlug": null,
+    "personSlug": "camil"
+  },
+  {
+    "slug": "build-on-open-models",
+    "category": "mindset",
+    "title": "Stand on an open model and build the experience around it",
+    "content": "SoundScrub's audio separation is powered by Meta's open-source SAM Audio, not a model Camil trained. The leverage for a solo builder in 2026 is enormous: the hardest research is published and free, so your job is the product around it (the interface, the workflow, the trust). Do not try to out-research a frontier lab. Find the capable open model that does the hard part, and compete on the experience, the focus, and the polish that the raw model will never have on its own.",
+    "journeySlug": "camil-soundscrub",
+    "eventSlug": null,
+    "personSlug": "camil"
+  },
+  {
+    "slug": "turn-architecture-into-a-promise",
+    "category": "product",
+    "title": "Let your architecture hand you a feature worth selling",
+    "content": "SoundScrub uploads only the extracted audio, never the video, and deletes it right after, so users get a real privacy guarantee that fell out of the technical design rather than a marketing decision. When a property of your architecture happens to answer a fear your users have (privacy, speed, offline use), name it and put it on the page. The most credible selling points are the ones that are simply true because of how the thing is built. Look at your own stack for promises you can already make and are not yet making.",
+    "journeySlug": "camil-soundscrub",
+    "eventSlug": null,
+    "personSlug": "camil"
+  },
+  {
+    "slug": "name-your-tools-limits",
+    "category": "mindset",
+    "title": "Be honest about the limits of your tool",
+    "content": "Camil told the room exactly where SoundScrub breaks down (no spatial selection, a practical clip-length limit) and it made his strong claim, that it beats DaVinci Resolve at isolating a named sound, more believable, not less. Naming your limits signals that you understand your own product and are not overselling, which is precisely what makes your genuine advantages credible. Buyers trust a founder who volunteers the edges. Hiding the limits only means the user discovers them later, at the worst possible moment, and stops trusting everything else you said.",
+    "journeySlug": "camil-soundscrub",
+    "eventSlug": null,
+    "personSlug": "camil"
+  },
+  {
+    "slug": "one-product-per-year-forces-no",
+    "category": "mindset",
+    "title": "A one-product-per-year cadence forces you to say no to almost everything",
+    "content": "Every Cozmoslabs plugin takes about a year to ship properly, which means Cristian gets very few product decisions in a working lifetime. He treats that scarcity as the real filter: the question is never whether an idea is good, because plenty of good ideas appear, it is whether this one is worth giving up a whole year of everything else. That opportunity cost makes saying no the default and saying yes a rare, deliberate act. When each commitment costs a year, the discipline is not picking winners, it is refusing the merely-good in favor of the truly worth it.",
+    "journeySlug": "cristian-cozmoslabs",
+    "eventSlug": null,
+    "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "annual-licensing-is-a-durable-model",
+    "category": "business",
+    "title": "Annual licensing and renewals fund the long game",
+    "content": "Cozmoslabs runs on the WordPress ecosystem's standard model: customers buy an annual license and renew it for ongoing updates and support. At Indie TM #6 Cristian contrasted this with one-time pricing, noting that the WordPress economy lives on yearly renewals rather than launch-day spikes. The recurring base is exactly what makes a year-long build cycle affordable, because the business is not betting everything on a single sale. When your model rewards the steady renewal instead of the one-off purchase, you can afford to build slowly and think in decades.",
+    "journeySlug": "cristian-cozmoslabs",
+    "eventSlug": null,
+    "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "build-on-an-existing-platform-ecosystem",
+    "category": "distribution",
+    "title": "Build inside an existing platform ecosystem, not standalone",
+    "content": "Cozmoslabs builds plugins on top of WordPress rather than launching standalone software, and that decision is itself a distribution strategy. The platform already carries the users, the install base, and the demand, so a plugin meets people inside a tool they have already chosen instead of asking them to adopt something new. Cristian's products solve specific problems for an audience that is already present, which removes the hardest part of distribution. When a large ecosystem already holds your buyers, building inside it can beat building beside it.",
+    "journeySlug": "cristian-cozmoslabs",
+    "eventSlug": null,
+    "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "one-brand-many-plugins",
+    "category": "business",
+    "title": "Run a multi-product portfolio under one trusted brand",
+    "content": "Cozmoslabs ships several distinct plugins (TranslatePress, Profile Builder, Paid Member Subscriptions) under one brand rather than spinning up a separate identity for each. The shared brand, audience, and content foundation mean a new product inherits the trust and SEO authority the earlier ones built, instead of starting from zero. A customer who already relies on one Cozmoslabs plugin is a warm prospect for the next. When your products serve the same broad audience, keeping them under one roof compounds every audience and trust asset you have already earned.",
+    "journeySlug": "cristian-cozmoslabs",
+    "eventSlug": null,
+    "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "decade-of-shipping-is-the-moat",
+    "category": "mindset",
+    "title": "Longevity across a decade is the real moat",
+    "content": "After more than ten years of shipping, the thing that defends Cozmoslabs is not a single feature but its sheer durability. Content has aged into authority, plugins have aged into reliability, and the brand has aged into trust, and none of that can be cloned by a competitor launching something flashier next month. Cristian's pickiness and slow pace look like handicaps in a market obsessed with speed, yet across a decade they are precisely what made the business hard to displace. Longevity is not a byproduct of the strategy, it is the moat the strategy was built to create.",
+    "journeySlug": "cristian-cozmoslabs",
+    "eventSlug": null,
+    "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "design-for-the-data-class-from-day-one",
+    "category": "product",
+    "title": "In a regulated vertical, the data class is the product spec",
+    "content": "When Dentor stores diagnoses and dental images, it is handling special-category health data under Article 9 of the GDPR, which is prohibited by default and allowed only under strict conditions. For a vertical SaaS in a regulated space, that data class dictates the architecture before a single feature does: encryption, pseudonymization, access control, a DPIA, and a processor agreement are not add-ons, they are the schema. Find out which regulated data class you are touching before you design the first table, and let it shape the product from day one. Retrofitting compliance onto a finished app is far more expensive than building for it from the start.",
+    "journeySlug": "doru-dentor",
+    "eventSlug": null,
+    "personSlug": "doru-bota"
+  },
+  {
+    "slug": "sell-the-relief-not-the-feature-list",
+    "category": "product",
+    "title": "Sell the operational relief, not the feature list",
+    "content": "Dentor's feature list (booking link, reminders, patient records, auto-generated site) means nothing to a dentist until it is translated into relief: fewer interrupting phone calls and fewer empty chairs from no-shows. Buyers do not purchase capabilities, they purchase the removal of a daily pain. Lead with the specific operational misery your product ends, in the buyer's own words, and keep the feature list for the spec page. The clinic owner does not care how it works; they care that Monday stops being chaos.",
+    "journeySlug": "doru-dentor",
+    "eventSlug": null,
+    "personSlug": "doru-bota"
+  },
+  {
+    "slug": "match-the-channel-to-the-buyer",
+    "category": "distribution",
+    "title": "Match the channel to the buyer, even when it does not scale",
+    "content": "Doru's cold email campaign for Dentor produced nothing; walking into clinics and pitching owners in person produced customers. Cold email is the default because it scales from a laptop, but it assumes a buyer who reads cold email and trusts links from strangers. A local, high-trust, offline buyer like a dentist is the opposite of that. The channel has to match where the buyer's trust actually lives, not your preference for staying behind a screen. Early on, the unscalable channel is often the only one that converts, so do it until you have proof and a reference list.",
+    "journeySlug": "doru-dentor",
+    "eventSlug": null,
+    "personSlug": "doru-bota"
+  },
+  {
+    "slug": "turn-compliance-into-a-selling-point",
+    "category": "business",
+    "title": "Turn compliance from a burden into a selling point",
+    "content": "The Article 9 requirements that make Dentor expensive to build are the same requirements clinics are quietly anxious about for their own data handling. Done properly and shown honestly (not a \"GDPR Compliant\" badge, but a real, explained posture on consent and data protection), compliance becomes a reason to choose you over the informal setup a clinic uses today. In a regulated market, the burden everyone else avoids is the differentiator. Do the hard work, then let prospects see that you did it, because their fear of getting it wrong is part of why they will pay you.",
+    "journeySlug": "doru-dentor",
+    "eventSlug": null,
+    "personSlug": "doru-bota"
+  },
+  {
+    "slug": "a-regulated-niche-is-a-moat",
+    "category": "mindset",
+    "title": "A hard-to-serve, regulated niche is a moat",
+    "content": "Everything that makes Dentor hard (health-data compliance, slow offline buyers, in-person selling) is also what keeps casual competitors out. A market that punishes shortcuts and rewards patience is one where a committed builder can win and then defend the position. The difficulty is not a reason to avoid the niche, it is the reason the niche is worth owning. When you find a vertical where the barriers are real (regulation, trust, an unglamorous sales motion), the same walls that slow you down will keep the next person out once you are inside.",
+    "journeySlug": "doru-dentor",
+    "eventSlug": null,
+    "personSlug": "doru-bota"
+  },
+  {
+    "slug": "the-constraint-is-the-moat",
+    "category": "business",
+    "title": "Choose the market where SaaS competitors cannot follow",
+    "content": "AISafe sells into corporate networks, regulated industries, and air-gapped deployments, environments where running as a SaaS is simply not an option. Most security competitors are SaaS-only because it is cheaper and faster to build, which means they physically cannot serve a buyer who needs the tool inside their own network and compliance boundary. Fineas treats that requirement not as a limitation to apologize for but as the moat itself: the constraint that makes the product harder to ship is the same constraint that locks the convenient competitors out. When a market punishes the lazy approach everyone else takes, being the one who does the hard version is the whole advantage.",
+    "journeySlug": "fineas-aisafe",
+    "eventSlug": null,
+    "personSlug": "fineas-silaghi"
+  },
+  {
+    "slug": "build-security-from-an-attackers-eye",
+    "category": "product",
+    "title": "Build the security product from an attacker's eye",
+    "content": "Fineas came to AISafe from offensive security: a researcher and CTF player whose habit was to dive into hard systems and find ways to exploit them. Building a security product on top of that background is an advantage, because the person designing it already knows which assumptions break under a real attack and which ones an attacker walks straight through. Founders who only ever read the documentation tend to protect against the threats they can imagine; founders who spent years attacking understand the threats that actually get used. If your edge is knowing how to break something, the strongest product you can build is the one shaped by that exact knowledge.",
+    "journeySlug": "fineas-aisafe",
+    "eventSlug": null,
+    "personSlug": "fineas-silaghi"
+  },
+  {
+    "slug": "the-buyer-is-procurement-and-compliance",
+    "category": "distribution",
+    "title": "Sell to procurement and compliance, not just the end user",
+    "content": "For AISafe, the people who decide are not only the engineers who would run the tool; they are the procurement and compliance functions that sign off on it. The room made the point concrete on pricing: a corporation of a certain size already has a budget line for your category and a procurement team used to spending it, and those gatekeepers care that the software stays inside their network, respects their compliance boundary, and produces a clean audit trail. Fineas treats them as the actual customer, which means the pitch has to satisfy people who never touch the product but control whether it ships. When you sell into the enterprise, design the demo for the user and the paperwork for procurement, because both have to say yes.",
+    "journeySlug": "fineas-aisafe",
+    "eventSlug": null,
+    "personSlug": "fineas-silaghi"
+  },
+  {
+    "slug": "let-on-prem-support-reshape-the-company",
+    "category": "business",
+    "title": "Let the on-prem support reality reshape the whole company",
+    "content": "When AISafe runs inside a customer network, Fineas loses live logs, the freedom to hotfix, and any telemetry he did not contractually negotiate. Beyond what that does to the price, it reshapes how the company is built: support has to be staffed for blind debugging, the software has to be written to be diagnosable without a live connection, and the whole engineering culture has to absorb slower, more deliberate releases. Founders selling on-prem should treat the support model as an architectural and organizational decision, not only a pricing input. The way you will have to support the product after the sale should influence how you build the product and the team long before the first contract is signed.",
+    "journeySlug": "fineas-aisafe",
+    "eventSlug": null,
+    "personSlug": "fineas-silaghi"
+  },
+  {
+    "slug": "bring-your-hardest-question-to-the-room",
+    "category": "mindset",
+    "title": "Bring your hardest unanswered question, not a polished pitch",
+    "content": "At Indie TM #7, Fineas took the floor with a question rather than a pitch: how do you price an on-prem deployment when the product already works? Because he led with the thing he had genuinely not solved, the room full of people who had shipped enterprise software handed him two concrete answers instead of polite applause for a demo. The reflex to present only the finished, impressive parts wastes the room, because the finished parts do not need help. Walk in with the single hardest open question you have, and let the people who have already been where you are going do the part you cannot do alone.",
+    "journeySlug": "fineas-aisafe",
+    "eventSlug": null,
+    "personSlug": "fineas-silaghi"
+  },
+  {
+    "slug": "make-the-right-thing-the-default",
+    "category": "product",
+    "title": "Encode the best practice so the right path is the easy one",
+    "content": "Everyone agrees structured interviews work, and almost nobody runs them, because doing it right is inconvenient under pressure. Pace closes that gap by building the framework into the workflow, so the structured interview becomes the path of least resistance instead of a discipline you have to summon. The richest product territory is any practice that experts endorse and operators skip because it is annoying: automated tests, double-entry bookkeeping, security keys, structured interviews. Build the tool that makes the correct thing the easy thing, and the onboarding pitch writes itself.",
+    "journeySlug": "flavius-pace",
+    "eventSlug": null,
+    "personSlug": "flavius"
+  },
+  {
+    "slug": "automate-the-tax-keep-the-judgment",
+    "category": "product",
+    "title": "Automate the operational tax, not the human judgment",
+    "content": "Pace does not decide who gets hired; it removes the 40 minutes of note-taking, write-ups, and scorecard wrangling around each interview so the human can focus on judgment. For tools that sit on high-stakes human decisions, that line matters: automate the busywork that surrounds the decision, and leave the decision to the person. Buyers trust a tool that makes them faster far more than one that tries to replace their judgment, and the busywork is where the real time is lost anyway. Find the operational tax around the decision and kill it, but keep your hands off the decision itself.",
+    "journeySlug": "flavius-pace",
+    "eventSlug": null,
+    "personSlug": "flavius"
+  },
+  {
+    "slug": "separate-performance-from-fit",
+    "category": "mindset",
+    "title": "Score interview performance and job fit as separate axes",
+    "content": "Pace scores every candidate on two independent axes: how they performed in the interview, and how well they fit the role. A strong performer who is a poor fit and a weak performer who is a great fit are different decisions, and averaging them into one number erases exactly the information you need. Whenever you are evaluating something multi-dimensional (a hire, a feature, a deal), resist the single composite score. Keep the axes separate so you can see the trade-off you are actually making instead of hiding it inside an average.",
+    "journeySlug": "flavius-pace",
+    "eventSlug": null,
+    "personSlug": "flavius"
+  },
+  {
+    "slug": "finish-product-one-first",
+    "category": "product",
+    "title": "Finish the first product before chasing the adjacent one",
+    "content": "Mid-demo, Flavius floated an exciting second product (automated code assessment) and the room told him to bury it until Pace has paying customers. The adjacent idea always looks more appealing than the one in front of you, because it is unspoiled by the boring work of actually closing customers. That appeal is the trap: every hour on product two is an hour product one does not get, and product one is the one that has to pay the bills. Write the second idea down, then go back to making the first one sell.",
+    "journeySlug": "flavius-pace",
+    "eventSlug": null,
+    "personSlug": "flavius"
+  },
+  {
+    "slug": "win-one-vertical-not-all-roles",
+    "category": "business",
+    "title": "Be the best tool for one vertical, not an acceptable one for all",
+    "content": "Pace could try to serve every kind of hiring, or it could be the unmistakably best tool for technical interviews and own that vertical completely. A horizontal tool that is acceptable everywhere loses to a vertical tool that is excellent in one place, because the buyer in that place feels it was built for them. Narrowing the target sharpens the features, the copy, and the demo all at once. Pick the one vertical where you can be the obvious best choice, win it, and expand from a position of strength rather than spreading thin from the start.",
+    "journeySlug": "flavius-pace",
+    "eventSlug": null,
+    "personSlug": "flavius"
+  },
+  {
+    "slug": "let-the-framework-do-the-plumbing",
+    "category": "product",
+    "title": "Let the standard framework handle the cross-platform plumbing",
+    "content": "Laura ships in every major plugin format on macOS and Windows because JUCE, the standard audio framework, handles the brutal cross-format, cross-platform export. Ionut writes the sound once and lets the framework do the part that would otherwise consume a solo developer's whole timeline. In any domain with a mature standard framework, the leverage is to stand on it for the undifferentiated plumbing and spend your scarce time on the part that is actually yours. Do not hand-roll what a battle-tested framework already solves for everyone.",
+    "journeySlug": "ionut-laura",
+    "eventSlug": null,
+    "personSlug": "ionut"
+  },
+  {
+    "slug": "sell-a-promise-subscriptions-cant-make",
+    "category": "business",
+    "title": "A perpetual license is a promise no subscription can match",
+    "content": "Laura is a one-time 69 dollar purchase with lifetime updates and no telemetry, and that perpetual license is itself the pitch: own it once, every future build is free, forever. A subscription product cannot structurally make that promise, which means it is a differentiator you get for free by choosing the model. When your audience is tired of renting (creative tools, developer tools, anything with subscription fatigue), perpetual ownership is not money left on the table, it is a competitive weapon. Sometimes the pricing model is the marketing.",
+    "journeySlug": "ionut-laura",
+    "eventSlug": null,
+    "personSlug": "ionut"
+  },
+  {
+    "slug": "compete-on-taste-not-tech",
+    "category": "mindset",
+    "title": "In a craft market, the moat is taste, not engineering",
+    "content": "The defensible part of Laura is not the code, it is the sound: a recognizable character and the trust producers place in the Lost Synapse name. In creative tools, taste and craft are the moat, because the underlying engineering is increasingly available to everyone. If you compete in a market where the output is judged by feel (audio, design, writing tools), invest in developing a recognizable point of view, not just shipping features. The taste is the part that compounds and the part nobody can fork.",
+    "journeySlug": "ionut-laura",
+    "eventSlug": null,
+    "personSlug": "ionut"
+  },
+  {
+    "slug": "scope-one-well-made-thing",
+    "category": "product",
+    "title": "Scope one well-made instrument, not a do-everything synth",
+    "content": "Laura is four oscillator engines, one signal path, a mod matrix, and one delightful \"roll the dice\" feature, aimed at a specific kind of sound designer. It is deliberately not a synth that tries to do everything. A single, well-scoped product that one type of user reaches for instinctively beats a feature-maximal one that serves no one in particular. Decide exactly who the tool is for and what the one delightful thing is, then resist the urge to add everything. Focus is what makes a solo product feel finished instead of thin.",
+    "journeySlug": "ionut-laura",
+    "eventSlug": null,
+    "personSlug": "ionut"
+  },
+  {
+    "slug": "use-the-channels-that-already-exist",
+    "category": "distribution",
+    "title": "Use the distribution channels that already exist",
+    "content": "Ionut does not need to build an audience for Laura from zero, because the audio-plugin world already has its gathering places: KVR Audio, Plugin Boutique, YouTube demos, and active producer communities. The distribution work is showing up where the buyers already are, not manufacturing a new channel. Before you assume you have to grow your own audience the slow way, check whether your niche already has established marketplaces and communities. Plugging into existing demand is far faster than creating it, and most mature niches have more of it than newcomers expect.",
+    "journeySlug": "ionut-laura",
+    "eventSlug": null,
+    "personSlug": "ionut"
+  },
+  {
+    "slug": "the-boring-niche-is-the-moat",
+    "category": "mindset",
+    "title": "The boring, narrow niche is the moat",
+    "content": "OCRskill extracts structured data from procurement documents. It is not glamorous, and that is exactly why it is defensible. A narrow, unsexy, high-volume job is one most founders skip while looking for something more exciting, which leaves the field open to whoever is willing to go deep on it. Mihai out-specializes general LLMs on document extraction precisely because he only does that one thing. Boring problems with real, repeated demand are where a solo builder can build something a frontier lab will never bother to beat.",
+    "journeySlug": "mihai-ocrskill",
+    "eventSlug": null,
+    "personSlug": "mihai-balint"
+  },
+  {
+    "slug": "own-your-compute-for-margin",
+    "category": "business",
+    "title": "Own your compute to keep a high-volume API profitable",
+    "content": "OCRskill runs on owned bare-metal hardware instead of rented per-call GPUs, and that is the reason the margins hold at volume. Per-call cloud inference is convenient at the start and brutal at scale: your cost grows in lockstep with every request, forever. For a product whose whole job is to be cheap per call and run constantly, owning the compute converts an unbounded variable cost into a fixed one. If your product's economics depend on doing one expensive operation millions of times, model the bare-metal version before you assume the cloud is cheaper.",
+    "journeySlug": "mihai-ocrskill",
+    "eventSlug": null,
+    "personSlug": "mihai-balint"
+  },
+  {
+    "slug": "developer-experience-is-the-product",
+    "category": "product",
+    "title": "For a developer tool, the integration is the product",
+    "content": "OCRskill's customers are developers, and what they buy is not the OCR model, it is never having to write brittle string parsing again. The API takes a schema and returns a typed object that matches it. For a developer tool, the quality of the integration (how few steps it takes to go from request to usable data) is the actual product, and the underlying technology is just how you deliver it. Spend disproportionate effort on the API surface, the docs, and the first five minutes. That is the part your buyer experiences and the part they tell other developers about.",
+    "journeySlug": "mihai-ocrskill",
+    "eventSlug": null,
+    "personSlug": "mihai-balint"
+  },
+  {
+    "slug": "programmatic-pages-for-developer-tools",
+    "category": "seo",
+    "title": "Programmatic SEO works for developer tools too",
+    "content": "SEO advice is usually framed around consumer products, which makes technical founders assume it does not apply to an API. It does. Build a page per document type, per use case, per integration, each answering a real question a developer searches before they commit to a tool. Add FAQ schema for the specific technical questions they ask. Developers Google their problems exactly like everyone else, and a tool that ranks for \"extract structured data from a PDF\" gets found at the moment of intent. Do not skip programmatic SEO just because your buyer writes code.",
+    "journeySlug": "mihai-ocrskill",
+    "eventSlug": null,
+    "personSlug": "mihai-balint"
+  },
+  {
+    "slug": "let-price-do-the-selling",
+    "category": "business",
+    "title": "When you are far cheaper than the alternative, price sells itself",
+    "content": "OCRskill is so much cheaper per call than the general-LLM alternative that the price tag does part of the selling on its own. When you have a real structural cost advantage (a specialized model, owned hardware, a narrower problem), put the comparison front and centre instead of hiding it. A prospect who can see that you cost a fraction of the obvious alternative for the same or better result has most of the buying decision made already. A genuine cost advantage is a marketing asset, not just an accounting one.",
+    "journeySlug": "mihai-ocrskill",
+    "eventSlug": null,
+    "personSlug": "mihai-balint"
+  },
+  {
+    "slug": "choose-the-unglamorous-offline-niche",
+    "category": "mindset",
+    "title": "Choose a hard, offline, unglamorous niche on purpose",
+    "content": "Mile deliberately picked church management software, an offline, slow-moving, decidedly unglamorous niche, because that is precisely what keeps casual competitors away. Nobody is racing to pitch a church admin tool at a demo day, which leaves the field open to whoever is patient enough to learn the domain. A transaction-heavy organization with no software built for it is a genuine opportunity hiding behind a boring label. The unglamorous niche is not the consolation prize, it is the one a committed builder can own while everyone else chases something shinier.",
+    "journeySlug": "mile-church-software",
+    "eventSlug": null,
+    "personSlug": "mile-rosu"
+  },
+  {
+    "slug": "distribution-before-code-for-slow-buyers",
+    "category": "distribution",
+    "title": "When the buyer is slow and offline, solve distribution before you write code",
+    "content": "For Mile's church software, the hard problem is not building it, it is reaching buyers who move slowly, decide over long cycles, and are nowhere near Product Hunt. When the buyer is that offline, distribution cannot be an afterthought you bolt on at launch, because there is no quick launch channel waiting for you. Map the path to the buyer (who decides, how long it takes, which channel they trust) while the product is still a concept, and let that path shape what you build. Writing all the code first and discovering you cannot reach anyone is the most expensive order to do it in.",
+    "journeySlug": "mile-church-software",
+    "eventSlug": null,
+    "personSlug": "mile-rosu"
+  },
+  {
+    "slug": "narrow-to-one-pain-before-the-suite",
+    "category": "product",
+    "title": "Nail one specific pain before you build the full suite",
+    "content": "Mile's instinct was the full church management suite (scheduling, memberships, donations, communications) and the room talked him down to one pain point first: billing, or scheduling, or member communication, solved completely. The biggest risk in a specific niche is building something too generic to be worth switching to, a vague all-in-one that fixes nobody's actual Monday. A narrow tool that ends one real misery gives a buyer a concrete reason to say yes, and a wedge you can expand from later. Decide which single pain you will own, finish that, and earn the right to the suite instead of assuming it.",
+    "journeySlug": "mile-church-software",
+    "eventSlug": null,
+    "personSlug": "mile-rosu"
+  },
+  {
+    "slug": "recruit-a-design-partner-to-co-build",
+    "category": "product",
+    "title": "Recruit a friendly customer as a design partner and co-build",
+    "content": "Rather than guess at church workflows from the outside, Mile's plan is to recruit one friendly church as a design partner and build the product alongside them. A design partner who lives the problem corrects your wrong assumptions before they become wrong code: the donation flow that does not match how the treasurer works, the schedule you never thought to model. For early feedback, meet the buyer where they already are, in WhatsApp groups and local community channels, and target the people who handle the tech, the church IT contact or the volunteer keeping the spreadsheets alive. Co-building with one real customer beats a polished product designed for an imaginary one.",
+    "journeySlug": "mile-church-software",
+    "eventSlug": null,
+    "personSlug": "mile-rosu"
+  },
+  {
+    "slug": "sell-on-the-buyers-timeline-not-yours",
+    "category": "distribution",
+    "title": "Sell into slow buyers on their timeline, not yours",
+    "content": "Churches buy slowly, so Mile's sale runs on the church's clock, not his own preference for a fast close. In a slow-moving, relationship-driven market, pushing for speed reads as not understanding the buyer, while patient, in-person presence reads as someone worth working with. The long buying cycle is not a bug to fight, it is the texture of the relationship, and accepting it is part of the qualification. Show up, build the relationship the organization needs, and let the deal close when the buyer is ready instead of when your roadmap wants it to.",
+    "journeySlug": "mile-church-software",
+    "eventSlug": null,
+    "personSlug": "mile-rosu"
+  },
+  {
+    "slug": "lead-with-the-painkiller-feature",
+    "category": "product",
+    "title": "Lead with the one feature that sells, not the feature list",
+    "content": "Renzi tracks rent, invoices, contracts, and documents, but it sells because it pre-fills the annual tax declaration for Romanian landlords. Mircea leads with that one painkiller feature and lets everything else be supporting cast. Most products bury their single most compelling feature inside an even list of ten, which dilutes the one thing that actually drives the purchase. Find the feature that closes the sale, put it in the headline, and let the rest live on the spec page. Lead with the painkiller, not the inventory.",
+    "journeySlug": "mircea-renzi",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "sell-relief-from-the-deadline",
+    "category": "business",
+    "title": "Sell relief from a specific, escalating, dated risk",
+    "content": "Renzi's buyers are not shopping for software, they are afraid of ANAF, and the product sells relief from that fear. A specific, escalating, time-bound risk (a tax deadline with growing penalties and a tax authority that now sees your bank and your Airbnb income) is one of the strongest reasons a person ever buys anything. When your product removes a concrete, dated consequence, make that consequence the center of the pitch. People act on a clear, looming risk far faster than on a list of conveniences, and the more real and imminent the risk, the smaller the price feels.",
+    "journeySlug": "mircea-renzi",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "fix-bounce-before-you-scale-traffic",
+    "category": "seo",
+    "title": "Fix the bounce rate before you pour traffic into a page",
+    "content": "Mircea worked on Renzi's bounce rate before working on growing its traffic, because sending more visitors to a page people abandon just scales the waste. A high bounce rate means the page is failing the visitors it already has, and more traffic only multiplies that failure. Diagnose and fix why people leave (slow load, unclear value, a mismatch with the query that brought them) before you invest in bringing more of them. Growth poured into a leaky page is money spent to lose users faster. Patch the bucket, then turn up the tap.",
+    "journeySlug": "mircea-renzi",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "run-the-same-playbook-again",
+    "category": "mindset",
+    "title": "Run the same proven playbook on a new boring market",
+    "content": "Renzi is Mircea running the SingleFax playbook again: a boring market, a narrow product that kills one specific pain, sharp positioning, and SEO that catches people already searching for the problem. Once you have a repeatable way to find and ship these, the playbook itself becomes the asset, not any single product. Indie builders often treat every new product as a blank page; the faster path is to codify what worked last time and point it at the next boring, underserved market. The second product is easier than the first because you are no longer inventing the method, only the application.",
+    "journeySlug": "mircea-renzi",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "local-regulation-is-a-moat",
+    "category": "business",
+    "title": "Local regulatory knowledge is a moat competitors lack",
+    "content": "Renzi is hard to clone from outside Romania because its value is wired to local tax rules, deduction rates, and the quirks of ANAF's portal. Deep, country-specific regulatory knowledge is a real barrier: a larger foreign competitor cannot easily acquire it, and a generic global tool cannot match the precision. A market that looks too small or too local to bother with is often exactly the one a solo builder can own, because the same narrowness that caps the size keeps the giants out. Local and regulated is not a limitation, it is a moat.",
+    "journeySlug": "mircea-renzi",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
     "slug": "product-simplest-version",
     "category": "product",
     "title": "Build the simplest version first",
@@ -43,6 +493,51 @@
     "journeySlug": "mircea-singlefax",
     "eventSlug": null,
     "personSlug": "mircea"
+  },
+  {
+    "slug": "productize-a-rendering-technique-for-one-vertical",
+    "category": "product",
+    "title": "Productize a cutting-edge rendering technique for one concrete vertical",
+    "content": "Oria takes Gaussian Splatting, a rendering technique already proven in research, and aims it at exactly one vertical: real estate. Petru did not build a general 3D-capture platform that could serve a dozen markets, because a technique that does everything for no one in particular is hard to sell and harder to demo. The leverage for an indie builder in 2026 is to find the cutting-edge capability that is already available, then pick the single market where it solves an obvious, expensive problem and build only for that. A focused product on top of a strong technique beats a generic platform that buries the same technique under too many use cases.",
+    "journeySlug": "petru-oria",
+    "eventSlug": null,
+    "personSlug": "petru-popa"
+  },
+  {
+    "slug": "browser-delivery-removes-the-install",
+    "category": "product",
+    "title": "Deliver in the browser so a tour is just a link that opens",
+    "content": "Oria's tours run in any browser with nothing to install, so sharing a property is as simple as pasting a link that opens instantly on any device. Petru treats that frictionlessness as a core product decision, not a detail, because every install or download step is a place where a low-commitment viewer drops out. When your audience is casual and easily distracted, like someone half-interested in a listing, the value has to arrive in one tap or it does not arrive at all. Look at every step between a user and the payoff and ask which ones you can delete, because the install is often the softest, most expensive friction you are choosing to keep.",
+    "journeySlug": "petru-oria",
+    "eventSlug": null,
+    "personSlug": "petru-popa"
+  },
+  {
+    "slug": "studio-service-before-self-serve",
+    "category": "business",
+    "title": "Start as a done-for-you studio before you ship a self-serve product",
+    "content": "Oria launched as a studio service (Petru's team films the property and delivers a finished tour in 48 to 72 hours, starting at 350 euros) with a self-serve, film-it-yourself version planned for later. Starting done-for-you is deliberate: the service lets him guarantee quality, watch exactly where the capture-and-render pipeline fails, and learn what a good tour requires before automating it. Self-serve built too early ships all of that uncertainty straight to the customer, who then blames the product for a tour they filmed badly. Earn the right to automate by doing the work manually first, because the service teaches you the playbook the self-serve product will have to encode.",
+    "journeySlug": "petru-oria",
+    "eventSlug": null,
+    "personSlug": "petru-popa"
+  },
+  {
+    "slug": "bring-big-domain-seo-patience-to-zero-authority",
+    "category": "seo",
+    "title": "Bring big-domain SEO patience to a brand-new domain",
+    "content": "Petru's day job is SEO on Kink.com, one of the oldest and highest-authority domains on the web, and Oria is the opposite: a new site with zero authority and no search history. The discipline he carries over is patience, because a fresh domain cannot be shortcut into authority no matter how novel the product is. Treat a new domain as a multi-month project of consistent, genuine content and trust-building rather than a launch that should rank immediately, and resist the urge to chase one viral moment in place of steady work. The same compounding that built the big domain over years is the only thing that builds the small one, just from a standing start. Founders who expect a new domain to behave like an aged one tend to abandon the effort right before it would have started paying off.",
+    "journeySlug": "petru-oria",
+    "eventSlug": null,
+    "personSlug": "petru-popa"
+  },
+  {
+    "slug": "specialist-depth-lends-launch-credibility",
+    "category": "mindset",
+    "title": "Deep specialist expertise lends credibility to a fresh launch",
+    "content": "Oria is a brand-new product with no track record, and the credibility Petru brings to it comes from years of deep SEO work on one of the web's most demanding domains. That specialist depth does not directly build the product, but it earns a fresh launch a hearing it would not otherwise get, because people read demonstrated mastery in one hard area as a signal of seriousness in another. If you have gone genuinely deep on a specialty, that expertise is launch capital you can carry into a new venture, so name it openly rather than presenting yourself as a first-time founder starting from nothing. Depth is transferable as trust even when the underlying skills do not directly transfer.",
+    "journeySlug": "petru-oria",
+    "eventSlug": null,
+    "personSlug": "petru-popa"
   },
   {
     "slug": "product-manual-curation",
@@ -90,6 +585,96 @@
     "personSlug": "raul"
   },
   {
+    "slug": "let-domains-age-into-authority",
+    "category": "mindset",
+    "title": "Buy relevant domains early and let their authority age",
+    "content": "Raul bought epolita.ro and several other Romanian domains four years before they earned a cent, and the quiet accumulation of domain age and authority is part of why they rank now. A relevant domain is a cheap, asymmetric bet: small holding cost, and a real payoff if the market or a news cycle eventually heats up around it. You cannot manufacture domain age later, so the time to acquire the domains for markets you believe in is now, even if you will not build on them for years. Patience is a legitimate SEO strategy when the asset is appreciating in the background.",
+    "journeySlug": "raul-epolita",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "build-the-product-where-traffic-already-lives",
+    "category": "business",
+    "title": "Build the product where the traffic already lives",
+    "content": "epolita.ro was already pulling high-intent insurance traffic, so Raul built the RCA quote flow onto that same domain instead of launching a fresh site that would start from zero. The hardest part of most products is getting in front of people who want them; if you already have an audience or ranking pages in an adjacent space, the fastest path to revenue is to put the product where that attention already lands. Look at the traffic you already have before you go chasing new traffic. Monetizing an existing audience beats building a new one almost every time.",
+    "journeySlug": "raul-epolita",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "internal-linking-is-the-first-move",
+    "category": "seo",
+    "title": "Internal linking is the first lever when a page starts ranking",
+    "content": "The moment epolita.ro started ranking, Raul's first optimization was internal linking: connecting related pages with descriptive anchor text. It is the cheapest, fastest SEO lever there is, and it works precisely when a page has authority worth distributing. A ranking page is a source of link equity you can route to the pages you want to lift next, and descriptive anchors tell Google what those pages are about. Before chasing new backlinks, make sure the authority you already have is flowing through your own site. Internal linking is the first move, not an afterthought.",
+    "journeySlug": "raul-epolita",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "make-the-cta-tell-the-truth",
+    "category": "product",
+    "title": "Never let a call to action lie about what it does",
+    "content": "Raul's RCA flow had a button that promised to \"see the price\" and then, on click, just pushed the user deeper into the funnel instead of showing a price. That gap between what the button says and what it does is a small dishonesty, and each one teaches the user to distrust the next button you ask them to press. In a flow where trust is the currency, a CTA must do exactly what it claims. Either deliver what the label promises right there, or rewrite the label to match reality. A misleading button buys one extra click and costs you the user's belief in everything after it.",
+    "journeySlug": "raul-epolita",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "marketplace-backlinks-beat-content-backlinks",
+    "category": "seo",
+    "title": "For apps, a marketplace listing beats most content backlinks",
+    "content": "For an app, a backlink from a relevant marketplace or directory is worth more than most content-driven backlink tactics, because the marketplace's entire purpose is to send qualified, ready-to-buy traffic to tools like yours. That link carries authority and high intent at the same time, while a generic guest-post link carries neither. If your product is an app, prioritize getting listed where your buyers already shop over grinding out articles purely for links. The best backlinks come from pages whose job is to route buyers to you, not from content you wrote to game a ranking.",
+    "journeySlug": "raul-epolita",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "translate-jargon-into-plain-english",
+    "category": "product",
+    "title": "Translate an invisible technical problem into plain English",
+    "content": "doesmyemail.work could have reported \"SPF: softfail, DKIM: none\" like every other tool and helped no one. Instead it says \"does your domain say yes, I sent this.\" Turning opaque jargon into a sentence a non-expert understands is not decoration, it is the product, because the user's real problem is that they cannot tell what is wrong. When your tool surfaces a technical diagnosis, spend the effort to say it in the user's language. The translation is often worth more than the diagnosis itself.",
+    "journeySlug": "vali-doesmyemail",
+    "eventSlug": null,
+    "personSlug": "vali"
+  },
+  {
+    "slug": "obsess-over-the-activation-screen",
+    "category": "product",
+    "title": "For a free tool, the answer screen is the whole product",
+    "content": "A free, no-signup tool has exactly one moment that matters: the screen where the user gets their result. Everything before it is setup and everything after it is upsell, but that one screen is where the user decides whether the tool was worth their time. For doesmyemail.work, the diagnosis screen is the product. Pour disproportionate care into that single moment (speed, clarity, zero friction) because a lead magnet that fumbles its activation screen never gets to the lead part.",
+    "journeySlug": "vali-doesmyemail",
+    "eventSlug": null,
+    "personSlug": "vali"
+  },
+  {
+    "slug": "remove-the-app-handoff",
+    "category": "product",
+    "title": "Never make a mobile user switch apps and come back",
+    "content": "doesmyemail.work asked mobile users to copy an address, switch to their mail app, paste, and send, and that hand-off is exactly where people abandoned the flow. The fix was a single mailto link that pre-fills everything, turning four steps into one tap. Every time you ask a user to leave your app, do something elsewhere, and return, you are betting they make it back, and on mobile many do not. Collapse cross-app hand-offs into one action wherever you can. The smoothest flow is the one that never leaves the screen.",
+    "journeySlug": "vali-doesmyemail",
+    "eventSlug": null,
+    "personSlug": "vali"
+  },
+  {
+    "slug": "one-playbook-many-products",
+    "category": "distribution",
+    "title": "Reuse one top-of-funnel playbook across products",
+    "content": "Valentin runs the same move twice: a free diagnostic tool fronts a business email product, and free short-form video fronts a consumer psychology app. Both start with something genuinely useful and free that earns attention, then attach the paid layer behind it. A distribution playbook that works is not single-use; once you have one that reliably earns attention, it transfers across very different products. Find your repeatable top-of-funnel motion, then apply it again instead of reinventing distribution for every launch.",
+    "journeySlug": "vali-doesmyemail",
+    "eventSlug": null,
+    "personSlug": "vali"
+  },
+  {
+    "slug": "share-the-real-numbers",
+    "category": "mindset",
+    "title": "Share real numbers; honesty earns trust and feedback",
+    "content": "Valentin will tell you Dr. Ursula has about 50 paying users on top of roughly 620 free ones, the exact ratio most founders hide. Sharing real numbers, including the ones that are not impressive yet, earns a kind of trust and a quality of feedback that polished vanity metrics never will. People can only help you with the real situation, and an audience that watches you build honestly becomes the audience that roots for you. Round numbers up in your head, not on the slide.",
+    "journeySlug": "vali-doesmyemail",
+    "eventSlug": null,
+    "personSlug": "vali"
+  },
+  {
     "slug": "mindset-stop-polishing",
     "category": "mindset",
     "title": "Stop polishing code, start finding customers",
@@ -133,6 +718,51 @@
     "journeySlug": "vlad-sisif-ai",
     "eventSlug": null,
     "personSlug": "vlad"
+  },
+  {
+    "slug": "persist-through-early-rejection",
+    "category": "mindset",
+    "title": "A rejection is a data point, not a verdict",
+    "content": "Bergside's first ThemeForest template was rejected, and the company that grew out of it now does 70k a month. The rejection was information about one submission, not a judgment on the whole idea. Most founders treat an early no as proof the plan is wrong and quit one iteration before the thing that works. Zoltan and his co-founder treated it as feedback, shipped the next version, and kept shipping. Separate the verdict on a single attempt from the verdict on the direction, and keep going.",
+    "journeySlug": "zoltan-flowbite",
+    "eventSlug": null,
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "follow-the-spike-to-the-market",
+    "category": "product",
+    "title": "Let one big spike tell you where the market is",
+    "content": "Bergside sold one Tailwind and Figma kit for 3,000 euros in a single Black Friday night, and that one spike redirected the entire company toward Tailwind components. A sudden, sharp sales response is the market telling you where the demand actually lives, in a way no survey or roadmap meeting ever will. When something you ship spikes far beyond the rest, do not treat it as a lucky one-off. Treat it as a map. Drop what is flat and pour your effort into the thing the market just voted for with its wallet.",
+    "journeySlug": "zoltan-flowbite",
+    "eventSlug": null,
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "open-source-as-distribution",
+    "category": "distribution",
+    "title": "Open source can be your distribution channel",
+    "content": "Flowbite's free open-source library has over 30 million npm downloads, and those downloads are the marketing. Instead of buying attention, Bergside gives away a genuinely useful core and lets adoption carry the brand into millions of projects. The developers who already build with the free components are the warm audience for the paid pro components and framework integrations. If your product can have a free core that people install and depend on, the open-source version is not lost revenue, it is the cheapest and most durable distribution you will ever own.",
+    "journeySlug": "zoltan-flowbite",
+    "eventSlug": null,
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "free-core-paid-extras",
+    "category": "business",
+    "title": "Give away the core and sell the extras once",
+    "content": "Flowbite reaches 70k a month with no recurring revenue at all: the library is free, and pro components, sections, and framework integrations are one-time purchases. A free core removes the adoption decision, and one-time pricing removes the renewal anxiety that makes buyers hesitate. Bergside proves you do not need a subscription to build a real business. Pick the smallest valuable thing to charge for, sell it once at a fair price, and let a large free top-of-funnel feed it.",
+    "journeySlug": "zoltan-flowbite",
+    "eventSlug": null,
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "bet-on-the-layer-ai-cant-replace",
+    "category": "mindset",
+    "title": "Own the layer AI coding tools still leave missing",
+    "content": "TypeUI is a bet that as AI generates more of the code, the scarce thing becomes the consistent design layer on top of it. The general pattern for founders in 2026: do not compete with the AI on the work it does well, find the adjacent layer it leaves missing and own that. AI can generate a hundred components; it cannot yet make them feel like one designed product. Look at where the new tools are strong, then build for the gap they create rather than the one they fill.",
+    "journeySlug": "zoltan-flowbite",
+    "eventSlug": null,
+    "personSlug": "zoltan"
   },
   {
     "slug": "specialized-model-beats-general-llm",
