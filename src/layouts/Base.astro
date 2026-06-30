@@ -32,6 +32,7 @@ const {
   markdownMirror,
 } = Astro.props;
 const site = "https://indie.md";
+const displayTitle = title.replace(/'/g, "’");
 const resolvedOgImage = `${site}${ogImage ?? "/og-image.png"}`;
 const resolvedCanonical = canonicalPath ? canonicalUrl(canonicalPath) : undefined;
 const resolvedImageAlt =
@@ -59,7 +60,7 @@ const markdownMirrorUrl =
     {resolvedCanonical && <link rel="canonical" href={resolvedCanonical} />}
 
     <!-- Open Graph -->
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={displayTitle} />
     {description && <meta property="og:description" content={description} />}
     <meta property="og:type" content={ogType ?? "website"} />
     {resolvedCanonical && <meta property="og:url" content={resolvedCanonical} />}
@@ -76,14 +77,14 @@ const markdownMirrorUrl =
     {twitterCreator && <meta name="twitter:creator" content={twitterCreator} />}
     <meta name="twitter:image" content={resolvedOgImage} />
     <meta name="twitter:image:alt" content={resolvedImageAlt} />
-    <meta name="twitter:title" content={title} />
+    <meta name="twitter:title" content={displayTitle} />
     {description && <meta name="twitter:description" content={description} />}
 
     <link rel="alternate" type="application/rss+xml" title="indie.md" href="/rss.xml" />
     {markdownMirrorUrl && (
       <link rel="alternate" type="text/markdown" title={`${title} (Markdown)`} href={markdownMirrorUrl} />
     )}
-    <title>{title}</title>
+    <title>{displayTitle}</title>
   </head>
   <body>
     <div class="min-h-screen flex flex-col">
