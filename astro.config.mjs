@@ -1,5 +1,6 @@
 import { readFileSync } from "node:fs";
 import { fileURLToPath } from "node:url";
+import { unified } from "@astrojs/markdown-remark";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
@@ -71,7 +72,9 @@ export default defineConfig({
     format: "directory",
   },
   markdown: {
-    remarkPlugins: [remarkDirective, remarkExtractAdvice],
-    rehypePlugins: [rehypeImageDimensions],
+    processor: unified({
+      remarkPlugins: [remarkDirective, remarkExtractAdvice],
+      rehypePlugins: [rehypeImageDimensions],
+    }),
   },
 });

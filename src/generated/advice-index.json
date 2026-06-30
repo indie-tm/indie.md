@@ -9,6 +9,24 @@
     "personSlug": "doru-bota"
   },
   {
+    "slug": "analytics-before-scaling",
+    "category": "product",
+    "title": "Set up analytics before you start scaling traffic",
+    "content": "Do not invest in scaling traffic until you have analytics running. Use Microsoft Clarity (free) or Hotjar for heatmaps, rage click detection, and session replays. Watch your bounce rate and average time on site (one minute is a reasonable benchmark to start). If users leave immediately, more traffic just means more people leaving. Fix the experience first, then scale.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-6-timisoara-april-2026",
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "anchor-price-on-the-pain",
+    "category": "business",
+    "title": "Anchor your price against the cost of the problem",
+    "content": "When your product removes a specific, expensive risk, price it against that risk, not against competitors or hours saved. Renzi’s homepage leads with “one ANAF fine costs as much as two years of the app.” The honest version of that math is not the modest statutory fine but the full exposure it stands in for: retroactive tax on undeclared rent, daily interest and penalties, and the tax authority’s own estimate of what you owe. Against a number that large, a subscription of a few tens of lei a month is a rounding error, and the pricing objection mostly disappears. Find the worst outcome your product prevents, do that math out loud on your landing page, and let it dwarf your price.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "mircea"
+  },
+  {
     "slug": "annual-licensing-is-a-durable-model",
     "category": "business",
     "title": "Annual licensing and renewals fund the long game",
@@ -16,6 +34,15 @@
     "journeySlug": "cristian-cozmoslabs",
     "eventSlug": null,
     "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "app-store-backlinks",
+    "category": "distribution",
+    "title": "Publish to app stores for authority backlinks",
+    "content": "Even if your product is primarily web-based, publish a simple mobile wrapper to the App Store and Google Play. The backlinks from apple.com and google.com are extremely high authority. A basic WebView wrapper with push notifications takes a weekend to build and gives you two of the strongest backlinks on the internet.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "mircea"
   },
   {
     "slug": "automate-the-tax-keep-the-judgment",
@@ -34,6 +61,15 @@
     "journeySlug": "bogdan-event-newsletter",
     "eventSlug": null,
     "personSlug": "bogdan-moldovean"
+  },
+  {
+    "slug": "benchmark-against-cost-of-mistake",
+    "category": "business",
+    "title": "Price against the cost of the mistake, not your competitors",
+    "content": "For tools that sit on top of high-stakes decisions (hiring, compliance, security, legal), the wrong benchmark is competitor pricing. The right benchmark is the cost of one bad outcome. Pace is built for hiring, where a single bad hire typically costs one to two times the annual salary once you factor in ramp, opportunity cost, severance, and team drag. A tool that prevents one bad hire a year is paying for itself many times over at almost any price. Teach your prospects to do that math in the first five minutes of the demo, and pricing objections mostly go away.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "flavius"
   },
   {
     "slug": "bet-on-the-layer-ai-cant-replace",
@@ -70,6 +106,15 @@
     "journeySlug": "petru-oria",
     "eventSlug": null,
     "personSlug": "petru-popa"
+  },
+  {
+    "slug": "build-from-client-problems",
+    "category": "product",
+    "title": "Build products from real client problems, not speculation",
+    "content": "Every Cozmoslabs product started with a problem their clients kept running into. They do not build on speculation or trends. When you know a product will take a year to execute, you need to be certain the problem is real. Spot the pattern in client requests, validate that the pain is genuine, and only then commit to building. Being picky about what you build is a feature, not a limitation.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "cristian-antohe"
   },
   {
     "slug": "build-in-the-margins-of-a-busy-life",
@@ -117,6 +162,51 @@
     "personSlug": "raul"
   },
   {
+    "slug": "build-your-own-agent-harness",
+    "category": "mindset",
+    "title": "Build your own agent harness, even as a side project",
+    "content": "Most developers assume an agent harness is something you buy or install. In practice, a working harness for your own workflow is a weekend project, not a quarter-long one. The payoff is that every future agentic feature you build sits on primitives you actually control: your own prompt format, your own tool interface, your own logging and trajectory replay. Even if you never ship it as a product, the harness compounds: it is the thing that makes every downstream experiment cheap. And as   put it at the end of his demo, it is genuinely fun to build, which is a signal in itself.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "business-premium-tier",
+    "category": "business",
+    "title": "Add a premium tier based on what customers ask for",
+    "content": "Don’t guess what people will pay for. Wait for them to tell you. Mircea never planned SingleFax’s $99 lifetime tier. Customers asked for it by email, he built it in an afternoon, and it became a significant revenue stream. The best product roadmap is your inbox.",
+    "journeySlug": "mircea-singlefax",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "business-tiered-pricing",
+    "category": "business",
+    "title": "Tiered pricing unlocks hidden revenue",
+    "content": "Vlad’s single $9/month plan seemed simple and fair. Switching to three tiers ($10/$50/$200) increased his MRR by 4x. The lesson: different users get different amounts of value from your product. A hobbyist and a business running production workflows should not pay the same price. Start with tiers early. You can always simplify later, but you can’t recover the revenue you’ve been leaving on the table.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "business-ultra-low-price",
+    "category": "business",
+    "title": "Price so low it removes all friction",
+    "content": "$19/year sounds like leaving money on the table. But consider the alternative: a $19/month subscription requires convincing someone your product is worth $228/year, handling cancellations, dealing with failed payments, and competing with every other subscription fighting for budget. At $19/year, the price is never the objection. Raul’s conversion rate proves that removing friction can beat optimizing price.",
+    "journeySlug": "raul-calm-companies",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "canonical-links-medium-devto",
+    "category": "seo",
+    "title": "Write on Medium and dev.to with canonical links to your site",
+    "content": "Publish articles on Medium and dev.to to reach their built-in audiences, but always set the canonical URL to point back to your own blog. This way you get distribution from the platform while search engines credit your domain as the original source. The content should genuinely help the reader, not be a thinly disguised ad. Spammy content gets flagged on both platforms.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-6-timisoara-april-2026",
+    "personSlug": "zoltan"
+  },
+  {
     "slug": "choose-the-unglamorous-offline-niche",
     "category": "mindset",
     "title": "Choose a hard, offline, unglamorous niche on purpose",
@@ -142,6 +232,24 @@
     "journeySlug": null,
     "eventSlug": "indie-tm-10-timisoara-june-2026",
     "personSlug": "vali"
+  },
+  {
+    "slug": "content-before-product",
+    "category": "seo",
+    "title": "Write useful content before you have a product to sell",
+    "content": "Cozmoslabs started by publishing programming tutorials with no product behind them. That content built domain authority, attracted an audience, and created the SEO foundation that still drives traffic years later. If you start writing only after you have something to sell, you are already behind. The best time to build your content foundation is before you need it.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "content-platform-backlinks",
+    "category": "distribution",
+    "title": "Get backlinks from Blogger, Wikipedia, and YouTube",
+    "content": "Create profiles and content on high-authority platforms. Write a Blogger post linking to your product. Add your tool to relevant Wikipedia lists (following their guidelines). Create a YouTube video and include your link in the description. Each of these platforms passes significant domain authority through their backlinks.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "raul"
   },
   {
     "slug": "decade-of-shipping-is-the-moat",
@@ -171,6 +279,33 @@
     "personSlug": "mihai-balint"
   },
   {
+    "slug": "diacritics-in-content-not-urls",
+    "category": "seo",
+    "title": "Keep diacritics in your content, strip them from your URLs",
+    "content": "On a Romanian site, the diacritics question has a practical answer. Google treats “programari” and “programări” as equivalent, so writing correct Romanian with diacritics in your body copy, headings, and titles carries no ranking penalty and reads as more credible to a human. Where diacritics genuinely cause trouble is in URL slugs, file names, and image alt text, where encoding breaks links and tooling. So the rule most Romanian practitioners settle on: diacritics in the content the reader sees, none in the identifiers the machine parses. The same logic applies to any language with accented characters.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "doru-bota"
+  },
+  {
+    "slug": "discover-the-enterprise-budget",
+    "category": "business",
+    "title": "Discover the enterprise budget instead of inventing a price",
+    "content": "Corporations of a certain size already run a budget line for your category: security, compliance, developer tooling, whatever the shelf is called internally. The money exists and procurement is used to spending it, so the pricing call is less “convince them to pay” and more “discover the number.” On discovery, ask what the team already spends on adjacent tools or what last year’s budget for the category was, and land inside the familiar range. The absolute number matters less than being in a bucket finance does not have to fight for. Founders who invent a price from scratch almost always land below the budget the buyer was ready to spend.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "fineas-silaghi"
+  },
+  {
+    "slug": "distribution-beats-product",
+    "category": "distribution",
+    "title": "Distribution beats product, every time",
+    "content": "Vlad had a working AI video API and zero customers. The product didn’t change when he started getting signups. The distribution did. If you’re a technical founder, this is the hardest pill to swallow: the market doesn’t reward the best product. It rewards the product that shows up where buyers are looking. Spend at least half your time on distribution, especially in the early days.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
     "slug": "distribution-before-code-for-slow-buyers",
     "category": "distribution",
     "title": "When the buyer is slow and offline, solve distribution before you write code",
@@ -178,6 +313,33 @@
     "journeySlug": "mile-church-software",
     "eventSlug": null,
     "personSlug": "mile-rosu"
+  },
+  {
+    "slug": "distribution-platform-led-growth",
+    "category": "distribution",
+    "title": "Ride existing waves with platform-led growth",
+    "content": "Instead of building your own audience from scratch, find platforms where your target users already gather. Vlad built n8n workflow templates (TikTok automation, Instagram Reels) that showcased sisif.ai’s API. The templates got thousands of views and drove real signups. The key is contributing genuine value to the platform’s ecosystem, not just dropping links.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "dont-let-users-return-to-search",
+    "category": "seo",
+    "title": "Optimize for users not returning to search",
+    "content": "The most important SEO signal in modern search is whether a user returns to the results page after clicking your link. If they do, Google reads it as “this page did not answer the query” and your ranking erodes. If they do not, it reads as “problem solved” and your ranking compounds. This reframes SEO from “rank for keywords” to “fully resolve the intent behind each query.” Audit your top pages: does the reader actually get what they came for above the fold, or do they have to scroll through filler and ads? Fix the ones that force users back to search.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "raul"
+  },
+  {
+    "slug": "faq-schema-markup",
+    "category": "seo",
+    "title": "Add FAQ sections with FAQPage schema to every page",
+    "content": "Write real, human-authored FAQ sections for every page on your site. Use FAQPage structured data so Google can surface your answers as rich results. The key is writing questions your users actually ask, not keyword-stuffed filler. Check Google Search Console for queries people already use to find you, then answer those directly on the page.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "petru-popa"
   },
   {
     "slug": "finish-product-one-first",
@@ -216,6 +378,15 @@
     "personSlug": "zoltan"
   },
   {
+    "slug": "free-tool-as-top-of-funnel",
+    "category": "distribution",
+    "title": "Ship a free tool as the top of your funnel",
+    "content": "A narrow, free, no-signup tool that solves one frequently-Googled problem is not charity, it is a lead magnet. The whole email-deliverability category (mail-tester, GlockApps, Warmy) gives away the check because running it is itself an admission of a problem the same vendor sells the fix for: it self-qualifies warm prospects and ranks for high-intent queries like “does my email go to spam.” The indie sequence is to ship the magnet first, let it accumulate search traffic and word of mouth, and only then bolt on the paid layer (monitoring, a plugin, a done-for-you fix). The catch the room raised: a magnet only works if activation is effortless, so the single most important screen is the one where the user gets their answer.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "vali"
+  },
+  {
     "slug": "from-personal-fix-to-product",
     "category": "product",
     "title": "A personal fix becomes a product when others share the pain",
@@ -234,6 +405,42 @@
     "personSlug": "doru-bota"
   },
   {
+    "slug": "health-data-compliance-is-engineering",
+    "category": "product",
+    "title": "For health data, compliance is an engineering posture, not a badge",
+    "content": "The moment your product stores diagnoses, treatments, or medical images, you are processing special-category health data under Article 9 of the GDPR, which is prohibited by default and allowed only on a specific lawful basis such as the provision of health care or explicit consent. That triggers a higher bar than ordinary personal data: a data protection impact assessment, encryption and pseudonymization, access limited to staff bound by confidentiality, and a signed data-processing agreement that makes you the processor to each clinic’s controller. A “GDPR Compliant” badge on the landing page is marketing; for health data it has to be a documented engineering and legal reality. When you build a vertical SaaS that touches a regulated data class, the binding constraint is not your feature set, it is the data class, and you should design for it from the first table you create.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "doru-bota"
+  },
+  {
+    "slug": "high-quality-low-volume-content",
+    "category": "seo",
+    "title": "Publish high-quality articles at low volume",
+    "content": "Cozmoslabs still publishes articles, but they prioritize quality over quantity. Every piece is well-researched, genuinely useful, and built to last. High-quality, low-volume content builds trust with both readers and search engines. A single article that answers a real question thoroughly will outperform ten shallow posts competing for the same keywords.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "influencer-over-ads",
+    "category": "distribution",
+    "title": "Spend on influencers instead of ads",
+    "content": "If your product has any traction, skip paid ads and invest in influencer marketing instead. Pay 1,000 to 2,000 euros per influencer, feature them on your homepage hero section, and prefer American or Australian creators for the English-speaking market. One influencer creates social proof that attracts others. The ROI on a single well-placed creator video outperforms most ad campaigns for developer tools.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-6-timisoara-april-2026",
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "infographics-backlink-strategy",
+    "category": "seo",
+    "title": "Create infographics for blog posts and backlinks",
+    "content": "Infographics get shared and linked to far more than plain text. Create one per major blog post. Use Canva or Figma to visualize your key data points, then offer an embed code below the image so other bloggers can easily reuse it. This is one of the most reliable passive backlink strategies.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "raul"
+  },
+  {
     "slug": "internal-linking-is-the-first-move",
     "category": "seo",
     "title": "Internal linking is the first lever when a page starts ranking",
@@ -241,6 +448,33 @@
     "journeySlug": "raul-epolita",
     "eventSlug": null,
     "personSlug": "raul"
+  },
+  {
+    "slug": "internal-linking-seo",
+    "category": "seo",
+    "title": "Add internal links between every page",
+    "content": "Every page on your site should link to at least 2-3 other relevant pages. Internal linking helps Google discover your content, distributes page authority, and keeps visitors engaged longer. Audit your site for orphan pages (pages with zero internal links pointing to them) and fix them. Use descriptive anchor text, not “click here.”",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "interview-specific-questions",
+    "category": "mindset",
+    "title": "Ask specific questions that reveal the real role",
+    "content": "Generic interview questions (“tell me about yourself,” “what are your weaknesses”) produce rehearsed answers and almost no signal. Two questions that consistently produce the opposite are “What does a typical day look like in this role?” and “What separates a great hire from an average one?” The first forces the hiring manager to describe the real job instead of the job description. The second forces them to articulate the dimension on which people actually succeed or fail. Use the answers to design the rest of the interview. If a hiring manager cannot answer either clearly, the role is not ready to be filled.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "flavius"
+  },
+  {
+    "slug": "keyword-demand-before-features",
+    "category": "product",
+    "title": "Use search demand to decide what features to build",
+    "content": "Before building a new feature or component, check what people are actually searching for. Use tools like Semrush to find keywords with real demand. When Flowbite saw search volume for “avatar tailwind” and “datepicker tailwind,” they built those components and captured the traffic. Let search data guide your roadmap instead of guessing what users want.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-6-timisoara-april-2026",
+    "personSlug": "zoltan"
   },
   {
     "slug": "lead-with-the-painkiller-feature",
@@ -342,6 +576,51 @@
     "personSlug": "doru-bota"
   },
   {
+    "slug": "mindset-agency-superpower",
+    "category": "mindset",
+    "title": "Agency experience is a superpower for shipping fast",
+    "content": "If you’ve spent years building software for clients, you already have the hardest skill in indie hacking: the ability to ship. You know how to scope, build, deploy, and handle payments. Stop thinking of agency experience as a disadvantage. Mircea built SingleFax in a weekend because he’d already solved every technical problem it required, just for other people’s businesses.",
+    "journeySlug": "mircea-singlefax",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "mindset-personal-pain",
+    "category": "mindset",
+    "title": "Build from personal pain, not market research",
+    "content": "Raul didn’t do market research or competitive analysis. He built exactly the thing he wished existed when he was fired and job hunting. Personal pain gives you an unfair advantage: you know the problem deeply, you can tell real solutions from fake ones, and you won’t lose motivation when growth is slow because you genuinely care about the problem.",
+    "journeySlug": "raul-calm-companies",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "mindset-stop-polishing",
+    "category": "mindset",
+    "title": "Stop polishing code, start finding customers",
+    "content": "As an engineer, your instinct is to keep improving the product. Resist it. A mediocre product with great distribution will outperform a great product with no distribution every single time. Vlad spent months polishing sisif.ai before realizing that nobody knew it existed. The hardest shift for technical founders is accepting that code quality doesn’t drive revenue.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "mindset-traditional-marketing-slow",
+    "category": "mindset",
+    "title": "Twitter and ProductHunt are slow for unknown founders",
+    "content": "Building in public, Twitter threads, and ProductHunt launches all share the same assumption: someone is already listening. If you have 12 followers, tweeting into the void won’t generate customers. Vlad tried the standard playbook for months and got nothing. These channels compound over time, but if you need traction now, you need to go where attention already exists.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "mine-search-console-for-content-gaps",
+    "category": "seo",
+    "title": "Mine your own Search Console data for content gaps",
+    "content": "Your Google Search Console data already tells you what Google thinks you rank for, in your users’ real words, for free. Pull the full query-and-page table from the Search Console API (it returns up to 25,000 rows per call against the dashboard’s thousand or so), then look for two signals. First, striking-distance keywords: queries where you sit in positions four to twenty with plenty of impressions but a weak click-through rate. Google already considers you relevant, and nudging one of those pages from position twelve to position six can multiply its traffic. Second, content gaps: cluster the queries under their shared parent term, and any cluster with real impressions but no dedicated page is a pre-validated brief for an article you have not written yet. It is the cheapest, highest-signal SEO loop there is, and it needs no paid keyword tool.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "mircea"
+  },
+  {
     "slug": "name-your-tools-limits",
     "category": "mindset",
     "title": "Be honest about the limits of your tool",
@@ -360,6 +639,42 @@
     "personSlug": "mile-rosu"
   },
   {
+    "slug": "never-discount-prices",
+    "category": "business",
+    "title": "Never discount your prices",
+    "content": "Resist the urge to compete on price or offer discounts. Low prices scare away serious clients who associate cost with quality. Once you start discounting, customers learn to wait for sales instead of buying at full price. In the digital products space, maintaining premium pricing attracts better customers and builds a more sustainable business. Flowbite never discounts, and it has not hurt growth.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-6-timisoara-april-2026",
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "news-driven-seo-spikes",
+    "category": "seo",
+    "title": "Ride news cycles for organic traffic spikes",
+    "content": "When a news story drives sudden search demand for a topic, pages that genuinely answer the underlying question capture a disproportionate share of the traffic. If you see an unexplained spike in analytics, open Google Trends and look for a matching jump in search volume on related terms, then confirm with recent news. Once you know a news cycle is driving the traffic, publish more supporting content while the cycle is still hot. News stories are locomotives: the trick is having something already on the tracks when one arrives.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "raul"
+  },
+  {
+    "slug": "niche-audio-plugin-as-a-product",
+    "category": "product",
+    "title": "A niche audio plugin is a textbook solo product",
+    "content": "Audio plugins are an underrated indie category. A single technical builder can ship one well-scoped effect or instrument on a standard framework like JUCE, which handles the brutal cross-format, cross-platform plumbing (VST3, AU, AAX across Windows, macOS, and Linux) so you can focus on the sound. The economics fit one person: you sell perpetual licenses for 30 to 100 dollars directly to producers, the distribution channels already exist (KVR Audio, Plugin Boutique, YouTube and producer communities), and a perpetual framework license covers six figures of revenue before it costs you recurring money. The moat is not raw engineering, it is taste and DSP craft: a recognizable sound and a brand producers trust. Small, focused, and durable, which is exactly the kind of product that outlasts trends.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "ionut"
+  },
+  {
+    "slug": "nocode-platform-backlinks",
+    "category": "distribution",
+    "title": "Get listed on no-code platforms for free backlinks",
+    "content": "Integrate with Zapier, Make.com, n8n, and other workflow tools. Each platform gives you a listing page with a backlink to your domain. The integration itself doesn’t need to be complex: even a simple webhook trigger is enough to get listed. This is free, permanent, and builds domain authority over time.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "vlad"
+  },
+  {
     "slug": "obsess-over-the-activation-screen",
     "category": "product",
     "title": "For a free tool, the answer screen is the whole product",
@@ -367,6 +682,15 @@
     "journeySlug": "vali-doesmyemail",
     "eventSlug": null,
     "personSlug": "vali"
+  },
+  {
+    "slug": "ocr-upload-cuts-onboarding-friction",
+    "category": "product",
+    "title": "Let users upload a photo instead of filling a form",
+    "content": "When your onboarding asks for data the user is already holding on a card or a document, do not make them transcribe it. Let them photograph it and run OCR to pre-fill the fields. Raul’s RCA flow replaces a dozen manual inputs with a single photo of the car registration and the current policy, and every field removed before the user sees value is a measurable lift in completion. The pattern generalizes to anything printed: an invoice, an ID, a label, a receipt. The cost of an OCR pass is now low enough that asking the user to type what a camera could read is a friction you are choosing to keep.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-9-timisoara-may-2026",
+    "personSlug": "raul"
   },
   {
     "slug": "one-brand-many-plugins",
@@ -423,6 +747,60 @@
     "personSlug": "zoltan"
   },
   {
+    "slug": "price-on-prem-for-support-cost",
+    "category": "business",
+    "title": "Price on-prem for the support reality, not the demo",
+    "content": "On-prem is not SaaS with a different installer. Once the software lives inside a customer network you lose live logs, hotfix freedom, and telemetry unless you explicitly negotiated for them. Support engineers spend materially more time per customer on debugging, upgrades, and escalations than any SaaS cost model captures, and that time has to be priced in before you name a number. If on-prem is priced like SaaS, the first production incident eats the margin on the account. The safe heuristic is to model a realistic support load per customer per year, multiply by a loaded engineering rate, and treat that number as the floor, not a contingency.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "fineas-silaghi"
+  },
+  {
+    "slug": "product-build-for-known-gap",
+    "category": "product",
+    "title": "Build for a practice everyone agrees is right but nobody does",
+    "content": "The richest product territory is the gap between “known best practice” and “what people actually do.” Structured interviews are universally accepted as the strongest predictor of job performance, and almost nobody runs them. Double-entry bookkeeping, security key logins, automated tests, pre-commit hooks: same pattern. Look for a practice that experts in your industry agree is correct and operators skip because it is inconvenient, then build the tool that makes the right thing the easy thing. The onboarding pitch writes itself.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-7-timisoara-april-2026",
+    "personSlug": "flavius"
+  },
+  {
+    "slug": "product-manual-curation",
+    "category": "product",
+    "title": "Manual curation is a moat, not a limitation",
+    "content": "Algorithms can scrape job boards. Nobody can automate the judgment call of “is this company actually calm or just marketing itself as calm?” Raul manually researches every company in his directory, checking employee tenure, real policies, and community feedback. That process is slow, but it’s the entire value proposition. What feels like a bottleneck is actually what customers are paying for.",
+    "journeySlug": "raul-calm-companies",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
+    "slug": "product-remove-friction",
+    "category": "product",
+    "title": "Remove all friction: no signup, no subscription",
+    "content": "Every form field you add, every account creation step, every subscription commitment is a point where customers leave. I removed all of them. No signup, no login, no monthly plan. Just pay and use. For occasional-use products, this is the difference between making money and making nothing.",
+    "journeySlug": "mircea-singlefax",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "product-simplest-version",
+    "category": "product",
+    "title": "Build the simplest version first",
+    "content": "Mircea built SingleFax in a weekend by refusing to add anything beyond the core action: upload, enter a number, pay, send. No user accounts, no dashboards, no analytics. If your v1 takes longer than a week, you’re building too much. Strip it down until a complete stranger can use it in under 60 seconds.",
+    "journeySlug": "mircea-singlefax",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "product-start-simple",
+    "category": "product",
+    "title": "Start with a spreadsheet, not a SaaS",
+    "content": "Raul’s entire business started as a personal spreadsheet shared with friends. He didn’t buy a domain, set up payments, or write a line of code until real people asked him to keep going. A spreadsheet forces you to do the work manually, which teaches you what the actual product is. If your idea can’t survive as a spreadsheet first, it probably won’t survive as a SaaS either.",
+    "journeySlug": "raul-calm-companies",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
     "slug": "productize-a-rendering-technique-for-one-vertical",
     "category": "product",
     "title": "Productize a cutting-edge rendering technique for one concrete vertical",
@@ -432,6 +810,15 @@
     "personSlug": "petru-popa"
   },
   {
+    "slug": "programmatic-local-pages",
+    "category": "seo",
+    "title": "Create localized landing pages at scale",
+    "content": "Build pages targeting “[product/service] in [city/country]” and “[integration] in [city/country]” combinations. Automate the page structure but keep the content genuine. Each page should have real, location-specific information, not just a city name swapped in a template. This is how you capture long-tail local search traffic with almost no competition.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "vlad"
+  },
+  {
     "slug": "programmatic-pages-for-developer-tools",
     "category": "seo",
     "title": "Programmatic SEO works for developer tools too",
@@ -439,6 +826,15 @@
     "journeySlug": "mihai-ocrskill",
     "eventSlug": null,
     "personSlug": "mihai-balint"
+  },
+  {
+    "slug": "publish-one-article-per-day",
+    "category": "seo",
+    "title": "Publish one article per day instead of batching",
+    "content": "Publishing one article per day is far more effective than dropping a batch of articles all at once. Search engines treat a sudden burst of content as suspicious, potentially flagging it as spam. A steady daily cadence signals consistent, genuine content production. It also gives each article time to get indexed and start ranking before the next one competes for attention.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "petru-popa"
   },
   {
     "slug": "recruit-a-design-partner-to-co-build",
@@ -531,6 +927,24 @@
     "personSlug": "camil"
   },
   {
+    "slug": "seo-how-to-queries",
+    "category": "seo",
+    "title": "SEO for 'how to' queries drives purchase-intent traffic",
+    "content": "Most indie hackers target broad keywords like “best fax service.” Instead, target the specific “how to” queries your customers actually search for. “How to fax documents to the IRS” attracts someone who needs to fax right now, not someone comparison-shopping. Mircea’s 9 blog posts drive nearly all of SingleFax’s organic traffic, and these visitors convert at a much higher rate than any other channel.",
+    "journeySlug": "mircea-singlefax",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "seo-pain-point-content",
+    "category": "seo",
+    "title": "SEO blog posts that solve real pain points drive organic growth",
+    "content": "Raul wrote 25 blog posts, all addressing problems he’d personally experienced. They rank well because they’re genuinely helpful, not because they’re optimized for keywords. “Signs of a toxic workplace” and “how to recover from burnout” are searches people make when they’re frustrated, and content written by someone who’s been through it resonates differently than generic advice. Write fewer posts, but write them from real experience.",
+    "journeySlug": "raul-calm-companies",
+    "eventSlug": null,
+    "personSlug": "raul"
+  },
+  {
     "slug": "separate-performance-from-fit",
     "category": "mindset",
     "title": "Score interview performance and job fit as separate axes",
@@ -594,6 +1008,15 @@
     "personSlug": "mihai-balint"
   },
   {
+    "slug": "story-driven-reddit",
+    "category": "distribution",
+    "title": "Post stories on Reddit, not sales pitches",
+    "content": "Reddit rewards authenticity and punishes promotion. When Flowbite launched a new datepicker component, they posted the story of building it, not a sales pitch. Share the journey, the technical decisions, the problems you solved. On X/Twitter, sharing MRR numbers gets engagement. On Reddit, the same post gets buried. Each platform has its own language. Learn to speak it.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-6-timisoara-april-2026",
+    "personSlug": "zoltan"
+  },
+  {
     "slug": "studio-service-before-self-serve",
     "category": "business",
     "title": "Start as a done-for-you studio before you ship a self-serve product",
@@ -639,6 +1062,24 @@
     "personSlug": "vali"
   },
   {
+    "slug": "translate-pages-slugs",
+    "category": "seo",
+    "title": "Translate every page including the URL slugs",
+    "content": "Full translation means translating the content AND the URL slugs. A page at /ro/servicii/ ranks better in Romanian search than /ro/services/. Use hreflang tags to tell Google which language version to show each user. Start with your highest-traffic pages and expand from there.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "trust-pages-careers-about",
+    "category": "seo",
+    "title": "Create Careers, About Us, and team pages to build trust",
+    "content": "Google evaluates trust signals when ranking your site. A Careers page, an About Us page, Privacy Policy, Terms of Service, and content showcasing team building experiences all signal that there is a real organization behind the site. Include team photos, company culture, and hiring information even if you are not actively recruiting. These pages build trust with both search engines and visitors, and attract backlinks from directories that list companies with public hiring or legal pages.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "petru-popa"
+  },
+  {
     "slug": "turn-architecture-into-a-promise",
     "category": "product",
     "title": "Let your architecture hand you a feature worth selling",
@@ -664,6 +1105,15 @@
     "journeySlug": "ionut-laura",
     "eventSlug": null,
     "personSlug": "ionut"
+  },
+  {
+    "slug": "video-content-face-in-corner",
+    "category": "product",
+    "title": "Record videos with your face in the corner",
+    "content": "Use Loom or similar tools to record product walkthroughs with your face visible in the corner. People trust faces. These videos work as blog post embeds, YouTube content, and social proof simultaneously. Pages with face-in-corner walkthroughs consistently convert better than text-only pages.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-5-timisoara-march-2026",
+    "personSlug": "raul"
   },
   {
     "slug": "weekly-newsletter-as-low-maintenance-format",
