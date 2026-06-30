@@ -3,6 +3,8 @@ name: "Raul"
 avatar: "/avatars/raul.png"
 tagline: "Software engineer turned curator and community builder"
 products:
+  - name: "ePolița"
+    url: "https://epolita.ro"
   - name: "Calm Companies"
     url: "https://calmcompanies.club"
   - name: "OG Pilot"
