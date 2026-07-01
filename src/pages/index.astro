@@ -93,8 +93,8 @@ const latestAdvice = await Promise.all(
         Learn from indie hackers<br />
         <span class="text-primary italic">who've been there.</span>
       </h1>
-      <p class="text-lg text-muted-foreground leading-relaxed max-w-lg">
-        Case studies, hard-won lessons, and practical advice from our community. Every tip is extracted from a real journey, no generic fluff.
+      <p class="text-lg text-muted-foreground leading-relaxed max-w-xl">
+        Indie hackers build and grow their own software products, solo or in tiny teams, without outside funding. This is where they share what actually worked: case studies, hard-won lessons, and practical advice pulled from real journeys, no generic fluff.
       </p>
     </div>
   </section>
@@ -125,7 +125,7 @@ const latestAdvice = await Promise.all(
   <!-- Events -->
   {eventsWithData.length > 0 && (
     <section class="container mx-auto px-4 pb-16">
-      <div class="flex items-center justify-between mb-8">
+      <div class="flex items-center justify-between mb-4">
         <h2 class="font-display text-2xl text-foreground flex items-center gap-2">
           <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="18" height="18" x="3" y="4" rx="2" ry="2"/><line x1="16" x2="16" y1="2" y2="6"/><line x1="8" x2="8" y1="2" y2="6"/><line x1="3" x2="21" y1="10" y2="10"/></svg>
           Events
@@ -135,6 +135,9 @@ const latestAdvice = await Promise.all(
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
         </a>
       </div>
+      <p class="text-muted-foreground leading-relaxed max-w-2xl mb-8">
+        Behind the site is a real, in-person community: Indie TM. Builders in Timișoara meet up every two weeks to demo what they're shipping, trade tactics, and give each other honest feedback. Each recap below turns those conversations into advice anyone can use.
+      </p>
       <div class="animate-stagger grid grid-cols-1 md:grid-cols-2 gap-5">
         {/* Upcoming event card */}
         {NEXT_EVENT.link && (
@@ -217,16 +220,26 @@ const latestAdvice = await Promise.all(
   <section class="container mx-auto px-4 pb-20">
     <div class="rounded-2xl bg-primary/5 border border-primary/20 p-10 md:p-14 text-center">
       <h2 class="font-display text-3xl md:text-4xl text-foreground mb-4">
-        Have a story to share?
+        Open source, built by indie hackers
       </h2>
-      <p class="text-muted-foreground max-w-md mx-auto mb-6">
-        indie.md is built by the community. If you've learned something the hard way, your experience could save someone else months of struggle.
+      <p class="text-muted-foreground max-w-xl mx-auto mb-6">
+        indie.md is a free, open-source project. Every journey and every piece of advice here was contributed by a builder who learned it the hard way. Add your own story, suggest an edit, or help improve the site: it all happens in the open on GitHub.
       </p>
-      <a href="https://github.com/indie-tm/indie.md"
-         class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity">
-        Share your journey
-        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
-      </a>
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <a href="https://github.com/indie-tm/indie.md"
+           class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.95 0-1.31.47-2.39 1.24-3.23-.12-.31-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23.96-.27 1.98-.4 3-.41 1.02.01 2.04.14 3 .41 2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.24 2.87.12 3.18.77.84 1.24 1.92 1.24 3.23 0 4.62-2.81 5.64-5.49 5.94.43.37.81 1.1.81 2.22 0 1.61-.01 2.9-.01 3.29 0 .32.22.7.83.58C20.56 22.29 24 17.8 24 12.5 24 5.87 18.63.5 12 .5z"/></svg>
+          Share your journey
+        </a>
+        <a href="https://github.com/indie-tm/indie.md"
+           class="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-primary/30 text-foreground font-medium hover:bg-primary/5 transition-colors">
+          Browse the code
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+      <p class="text-xs text-muted-foreground mt-5">
+        Free and open source. No account needed to read, anyone can contribute.
+      </p>
     </div>
   </section>
 </Base>
