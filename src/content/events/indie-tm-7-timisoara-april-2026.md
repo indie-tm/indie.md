@@ -16,11 +16,11 @@ A smaller Wednesday evening than usual, but a denser one. Four presenters: one S
 
 ![Attendees around the conference table at Cowork Timisoara listening to a presentation during Indie TM #7](/images/events/indie-tm-7-room.jpeg)
 
-## Raul unpacks epolita.ro
+## Raul unpacks ebaza.ro
 
-![epolita.ro homepage](/screenshots/epolita.png)
+![ebaza.ro homepage](/screenshots/ebaza.png)
 
-[Raul](/people/raul) pulled up [epolita.ro](https://epolita.ro), a Romanian domain in the home insurance space. He bought it, along with a few other `.ro` domains, about four years ago and sat on them. Nothing happened for a long time. Then over the last few months the Domain Rating climbed, organic traffic followed, and he started seeing conversions.
+[Raul](/people/raul) pulled up [ebaza.ro](https://ebaza.ro), a Romanian domain in the home insurance space. He bought it, along with a few other `.ro` domains, about four years ago and sat on them. Nothing happened for a long time. Then over the last few months the Domain Rating climbed, organic traffic followed, and he started seeing conversions.
 
 The first thing he did once traffic arrived was internal linking: rewiring related pages so they point at each other with descriptive anchors. That alone moved the needle. But there was something else going on.
 

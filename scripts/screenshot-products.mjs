@@ -26,7 +26,7 @@ const ALL_PRODUCTS = [
   { slug: "ocrskill", url: "https://ocrskill.com" },
   { slug: "cozmoslabs", url: "https://www.cozmoslabs.com" },
   { slug: "event-newsletter", url: "https://event-newsletter.com" },
-  { slug: "epolita", url: "https://epolita.ro" },
+  { slug: "ebaza", url: "https://ebaza.ro" },
   { slug: "pace", url: "https://hirewithpace.com" },
   { slug: "aisafe", url: "https://aisafe.io" },
   { slug: "zag", url: "https://github.com/vtemian/zag" },

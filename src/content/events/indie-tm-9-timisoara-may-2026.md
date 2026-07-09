@@ -18,11 +18,11 @@ A Thursday evening built as a show and roast: six builders, each putting a live 
 
 The thread running under all of it was quieter. The products that landed hardest were the ones selling relief from a specific, expensive pain, and almost every roast was a variation on one question: how much friction are you allowed to put between a user and that relief?
 
-## Raul adds an RCA flow to epolita.ro
+## Raul adds an RCA flow to ebaza.ro
 
-![epolita.ro homepage](/screenshots/epolita.png)
+![ebaza.ro homepage](/screenshots/ebaza.png)
 
-[Raul](/people/raul) opened by going back to [epolita.ro](https://epolita.ro), the Romanian insurance domain he walked the room through last time. The story then was traffic. This time it was a product: he had built a full RCA quote flow into the site. RCA (Raspundere Civila Auto) is Romania's mandatory car-liability insurance, a renew-on-a-schedule purchase every driver in the country has to make, which makes it a steady, high-intent search market sitting right next to his existing pages.
+[Raul](/people/raul) opened by going back to [ebaza.ro](https://ebaza.ro), the Romanian insurance domain he walked the room through last time. The story then was traffic. This time it was a product: he had built a full RCA quote flow into the site. RCA (Raspundere Civila Auto) is Romania's mandatory car-liability insurance, a renew-on-a-schedule purchase every driver in the country has to make, which makes it a steady, high-intent search market sitting right next to his existing pages.
 
 The clever part was the onboarding. Instead of asking a driver to transcribe a dozen fields from their car registration and current policy, [Raul](/people/raul) lets them upload a photo. OCR reads the document and pre-fills the form. He had also leaned on [TypeUI](https://typeui.sh), the design-skill CLI [Zoltan](/people/zoltan) demoed back at the sixth meetup, to make the flow look finished, and he mentioned updating one of his AI skills to stop adding emojis to generated copy, because the stray emoji is the fastest tell that a page was written by a machine.
 
