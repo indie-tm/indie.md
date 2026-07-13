@@ -360,6 +360,78 @@
     "personSlug": "ionut"
   },
   {
+    "slug": "solo-founder-by-design",
+    "category": "mindset",
+    "title": "Design the company around the life you need, even if that means no cofounders",
+    "content": "Mihai came out of a burnout at Microsoft with a hard constraint: he needed to remove obligatory human contact from his working life for a while. So he designed the company around that constraint, no cofounders, no employees, full control over every product decision. The standard advice says find a cofounder, split the load, hire early, but standard advice optimizes for growth, not for the founder staying functional. A company shaped around your actual capacity is one you can run for years; a company shaped around a template is one you abandon. Constraints like health, energy, and tolerance for people are real inputs to company design, not weaknesses to overcome. Decide what you need to stay in the game, then build the business that fits inside it.",
+    "journeySlug": "mihai-datadriven",
+    "eventSlug": null,
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "replace-the-bookmark-folder-workflow",
+    "category": "business",
+    "title": "Price against the manual workflow you replace, not the software you wrote",
+    "content": "Mihai's first serious customer was a security firm whose tender discovery process was a bookmark folder organized by county and an employee who opened town hall websites every single day. They happily paid 2,000 lei per month for complete automated coverage, a hundred times his 19 lei list price at the time, because the alternative was a salary. The lesson is that software is not priced against its build cost or against other software, it is priced against the manual grind it replaces. Find the customer who is already paying a human to do the thing badly, and the budget already exists; you are not creating a line item, you are shrinking one. Before setting a price, ask what the current workflow costs in hours and salaries, and anchor there.",
+    "journeySlug": "mihai-datadriven",
+    "eventSlug": null,
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "read-the-documents-not-the-labels",
+    "category": "product",
+    "title": "Read the source documents, because official classifications lie",
+    "content": "Public tenders in Romania carry official CPV codes, a taxonomy of roughly 10,000 subcategories, and Mihai found the labels wrong often enough to be dangerous, including food accessories classified under laptops. So DataDriven ignores the metadata and reads the actual tender documentation, OCRing PDFs and scans, then classifies everything against a hand-built taxonomy of about 180 categories that mirrors how companies really describe their work. That is the product's core advantage: competitors who filter on the official codes inherit the errors, and their users miss winnable contracts. Whenever your product sits on top of someone else's data, ask whether the labels are trustworthy or just convenient. Going to the primary source is expensive, which is exactly why doing it becomes a moat.",
+    "journeySlug": "mihai-datadriven",
+    "eventSlug": null,
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "cold-email-runs-on-public-data",
+    "category": "distribution",
+    "title": "In a niche B2B market, public data plus cold email beats paid ads",
+    "content": "Google Ads sent Mihai visitors who could never buy: public tenders have eligibility requirements around revenue, staff, and certifications that an ad click cannot filter for. Cold email inverted the problem, because Romania's procurement system publishes exactly who participates in tenders, who wins them, and how to reach them. A firm that already bids on public contracts is pre-qualified by its own history, so the public record becomes the lead list. With a market of roughly 20,000 firms, a modest cold email setup beats an ad budget: the targeting information ads cannot access is sitting in the open data. Before paying platforms to guess at your buyer, check whether a public registry, license list, or procurement record already names every one of them.",
+    "journeySlug": "mihai-datadriven",
+    "eventSlug": null,
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "use-ai-to-derisk-a-database-migration",
+    "category": "product",
+    "title": "An AI translation layer can shrink a database migration from months to days",
+    "content": "Migrating from Cosmos DB to MongoDB is the kind of project that haunts a solo founder, so Mihai turned it into a verification problem instead of a rewrite. He had Claude build a translation layer for his queries, then ran the old Cosmos path and the new Mongo path in parallel, with automated validation comparing outputs until the two systems agreed on everything. Once parity held, the cutover was boring, and the whole thing took two to three days. The pattern generalizes beyond databases: when replacing a load-bearing component, do not aim for a heroic big-bang rewrite, aim for a shim that lets old and new run side by side while machines check the diff. AI assistants are unusually good at generating exactly this kind of mechanical translation code that nobody wants to write by hand.",
+    "journeySlug": "mihai-datadriven",
+    "eventSlug": null,
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "watch-the-egress-not-the-compute",
+    "category": "business",
+    "title": "Cloud egress, not compute, is what eats a data-heavy product's margin",
+    "content": "Mihai's Azure bill was not dominated by the compute he had planned for, but by data movement he had never priced: documents flowing from the procurement system into processing, into storage, back out to jobs and users, culminating in a 700 EUR ingress charge in a single month. Hyperscaler pricing makes exactly this traffic expensive while keeping headline compute prices attractive, which is why his migration to Hetzner dedicated servers and S3-compatible storage, plus a self-hosted OCR pipeline on a local GPU, cut a 2,500 to 3,000 EUR monthly burn to a fraction. If your product's core loop is moving files around, model the traffic before choosing infrastructure, because the cloud's convenience premium applies to every gigabyte, every direction, forever. Data-heavy products are precisely the ones where owning the pipes pays.",
+    "journeySlug": "mihai-datadriven",
+    "eventSlug": null,
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "ask-for-thirty-characters-then-do-the-setup",
+    "category": "product",
+    "title": "Ask for thirty characters at signup and do the setup for the user",
+    "content": "DataDriven's onboarding asks one thing: at least 30 characters describing the tenders you care about. AI converts that sentence into monitoring criteria, so the first login shows relevant results instead of an empty dashboard and a configuration wizard. Behavior then tunes the filters automatically, thumbs up and down, saves, navigation. Some users resist even that single question and want to see the app first, but Mihai holds the line, because without the sentence the first session shows noise, and the first session is where churn is decided. The general principle: do not make users configure your product, make them describe their problem in their own words, then configure it for them. One honest question plus AI setup beats a five-step wizard that gets skipped.",
+    "journeySlug": "mihai-datadriven",
+    "eventSlug": null,
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "publish-prices-in-a-contact-us-market",
+    "category": "business",
+    "title": "Publish your prices in a market that hides behind contact forms",
+    "content": "Every plan on DataDriven has a public price, topping out at 290 lei per month, in a category where the incumbent reflex is \"contact us for pricing.\" For small firms deciding whether to try a tool, the hidden price is a wall: it signals enterprise sales calls, negotiation, and wasted time, exactly what a two-person catering company will not endure. Transparent pricing lets the product sell itself to the long tail the incumbents ignore, and it filters out nobody who was actually going to pay. Mihai treats it as strategy, not cosmetics: his revenue is built from hundreds of small subscriptions rather than a handful of negotiated contracts, and that model only works when the price is on the page. If your competitors hide their prices, publishing yours is free positioning.",
+    "journeySlug": "mihai-datadriven",
+    "eventSlug": null,
+    "personSlug": "mihai-negrea"
+  },
+  {
     "slug": "the-boring-niche-is-the-moat",
     "category": "mindset",
     "title": "The boring, narrow niche is the moat",
@@ -934,6 +1006,87 @@
     "journeySlug": null,
     "eventSlug": "indie-tm-11-timisoara-june-2026",
     "personSlug": "vali"
+  },
+  {
+    "slug": "ocr-on-a-gaming-gpu",
+    "category": "business",
+    "title": "A gaming GPU on solar power can replace a cloud AI service",
+    "content": "DataDriven needs industrial OCR, every tender document in Romania, scans included, and cloud pricing made that a luxury: Azure Document Intelligence billed per page, and GPU instances rent at rates designed for venture budgets. Mihai's replacement is a single RTX 3090 in his office running Tesseract plus his own quality-validation classifiers, processing about 1,500 pages per hour, powered by the solar panels on the roof, so the marginal cost per page is approximately zero. A consumer GPU is not a data center, but a solo founder's workload rarely needs one; it needs sustained, predictable throughput on a task that tolerates batch processing. When an AI API is your biggest variable cost, price out the unfashionable alternative of one good machine you own, because the payback period is often measured in weeks.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-12-timisoara-july-2026",
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "ads-cant-qualify-an-eligibility-market",
+    "category": "distribution",
+    "title": "Paid ads fail when your buyer must meet requirements a click cannot check",
+    "content": "Google Ads sent DataDriven a steady stream of visitors who could never become customers: they searched for construction tenders, clicked, and only then discovered that public procurement demands revenue thresholds, staff counts, and certifications they did not have. The ad platform had no way to target eligibility, so the budget bought branding at best and noise at worst. This failure mode generalizes to every market where the buyer must hold a license, a certification, or a track record: regulated industries, government suppliers, professional services. In those markets the qualifying attribute is invisible to ad targeting but often visible in public registries, which is where the marketing budget should go instead. Before spending on ads, ask whether a click can even in principle identify your qualified buyer; if not, the channel is structurally wrong regardless of how well you run it.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-12-timisoara-july-2026",
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "warm-up-a-fleet-of-sending-domains",
+    "category": "distribution",
+    "title": "Cold email at scale is an infrastructure problem before it is a copywriting problem",
+    "content": "Mihai's cold email machine is mostly plumbing: multiple sending addresses spread across several domains, each warmed up automatically by Instantly.ai, which has the accounts send, open, reply to, and click each other's messages until mailbox providers trust them. The whole fleet costs about $150 per month plus $5 per Google Workspace address, and throughput stays deliberately limited to protect deliverability. The insight indie hackers miss is the ordering: before subject lines and personalization matter at all, the message has to land in an inbox, and that is determined by sender reputation built over weeks. Blasting from your main domain both fails and burns the domain your business runs on. Treat cold email like infrastructure, warmed domains you can afford to lose, low volume, patience, and only then start optimizing the words.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-12-timisoara-july-2026",
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "build-a-fallback-before-you-leave-the-cloud",
+    "category": "business",
+    "title": "Leave the cloud with a fallback, not a farewell",
+    "content": "DataDriven's infrastructure now lives on Hetzner dedicated servers and an office GPU, but Mihai kept an escape hatch in the other direction: when his local hardware has downtime, backend tasks overflow to Azure Batch Low Priority instances for a few hours at modest cost, and a Starlink connection is under consideration as network fallback. That design is what makes self-hosting responsible instead of reckless for a company of one. The cloud's real product was never compute, it was the promise that failures are someone else's pager, and when you take that back you must replace it with something: an overflow path, a degraded mode, a documented recovery. Price the fallback into the migration math from the start, because the savings of leaving the cloud are only real if one hardware failure cannot take the product down for a week.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-12-timisoara-july-2026",
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "invoice-first-is-a-market-reality",
+    "category": "business",
+    "title": "In invoice-first markets, churn is operational, not emotional",
+    "content": "DataDriven's churn is high, and almost none of it means the product failed: cards run out of funds, payments get forgotten, and firms that fully intend to continue simply lapse. Romanian B2B buyers want the fiscal invoice before money moves, prefer direct human contact, and distrust automatic card billing on principle, so the frictionless self-serve subscription that SaaS playbooks assume does not exist here. Mihai's response is to treat payment recovery as a standing operational process, reminders, follow-up calls, re-onboarding, rather than reading every lapse as a verdict on the product. The lesson for anyone selling outside the Silicon Valley payment bubble is to learn how your market actually pays before designing the billing, and to budget real recurring effort for collection. A lapsed card in an invoice-first culture is a to-do item, not a goodbye.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-12-timisoara-july-2026",
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "refuse-the-percentage-of-public-money",
+    "category": "business",
+    "title": "Some revenue models are traps: know why you refuse a success fee",
+    "content": "Customers keep offering Mihai a seductive model: charge nothing up front, take a percentage when the tender is won. He refuses, and his reasoning is worth copying. The contract values are public money, and a private platform skimming a percentage of state contracts invites legal scrutiny, reputational damage, and misaligned incentives to push clients toward the biggest tenders rather than the right ones. If he ever prices on outcomes it will be a fixed fee per successful assisted tender bundled into a subscription, never a percentage. The general discipline is to stress-test a revenue model against the source of the money and the behavior it rewards, not just against revenue potential, and to be able to articulate exactly why you turned down the model everyone suggests. A pricing structure is a position you have to defend for years.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-12-timisoara-july-2026",
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "interview-the-workflow-not-the-wishlist",
+    "category": "mindset",
+    "title": "Interview customers about their workflow, never their wishlist",
+    "content": "Of the thirty or so customer interviews Mihai scheduled, ten to twelve happened, and in every one he refuses the founder's favorite question. He never asks what features people want; he asks what they do: walk me through the process, how many hours does it take, who on the team touches it. Feature requests are guesses filtered through what the customer imagines software can do, while workflow descriptions are facts, and the product opportunities sit visibly inside them, the daily bookmark-folder patrol, the hours lost to six SEAP menus. The show-up rate is also part of the lesson: schedule three times the interviews you need, because most will evaporate. Treat customer conversations as ethnography rather than requirements gathering, and the roadmap writes itself from the pain you observed instead of the wishlist you collected.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-12-timisoara-july-2026",
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "guide-the-llm-through-the-table-of-contents",
+    "category": "product",
+    "title": "Give an LLM the table of contents before you give it embeddings",
+    "content": "DataDriven serves tender documentation to AI assistants as structured markdown with an explicit table of contents and chapter hierarchy, and retrieval walks that structure first, using semantic search as a supplement rather than the foundation. Mihai distrusts embeddings-only RAG for long official documents, where a naive similarity search returns fragments stripped of the context that gives them legal meaning. Guided navigation, find the right chapter, then read it properly, mirrors how a careful human reads a contract, costs fewer tokens, and fails more predictably. The broader point for anyone building on LLMs is that documents already contain an information architecture, headings, sections, numbering, and throwing it away to chunk-and-embed is destroying signal you paid to OCR. Preserve structure, navigate it explicitly, and reserve embeddings for the queries structure cannot answer.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-12-timisoara-july-2026",
+    "personSlug": "mihai-negrea"
+  },
+  {
+    "slug": "let-copycats-chase-the-wrapper",
+    "category": "mindset",
+    "title": "Copycats clone your pitch, not your pipeline",
+    "content": "When Romanian copycats started advertising \"AI agents for public tenders,\" Mihai did not panic, because he could see what they actually shipped: a GPT wrapper over the same misclassified official data everyone can access. What they cannot clone from his landing page is the part that took years, a crawler covering ten thousand sources, an OCR pipeline reading every document, a hand-built taxonomy, and a retrieval stack that makes the data usable. Even the funded European competitor with fourteen people concentrates on sales rather than technology, which is precisely why he declined to join forces. The reassurance for any founder watching lookalikes appear is that marketing copy is the only layer that copies cheaply; if your advantage lives in accumulated data and infrastructure, every copycat validates the market while inheriting none of the moat. Fear the competitor who rebuilds your pipeline, not the one who rewrites your homepage.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-12-timisoara-july-2026",
+    "personSlug": "mihai-negrea"
   },
   {
     "slug": "video-content-face-in-corner",
