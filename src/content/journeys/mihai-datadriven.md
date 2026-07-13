@@ -14,7 +14,7 @@ lessons:
   - "Publish your prices in a market that hides behind contact forms"
 ---
 
-I spent twelve years as a developer at Microsoft, two of them in the US on the Bing team. In 2021 I burned out and quit. In 2023, with zero experience as an entrepreneur, I founded a company and launched [DataDriven](https://datadriven.ro), a platform that monitors public tenders across Romania. Today it crawls more than 10,000 sources daily, reads the actual tender documentation with an OCR pipeline I run on a gaming GPU in my office, and serves over 300 paying firms at around 27,000 lei in monthly recurring revenue. I still work alone, and that is not an accident.
+I spent twelve years as a developer at Microsoft, two of them in the US on the Bing team. In 2021 I burned out and quit. In 2023, with zero experience as an entrepreneur, I founded a company and launched [DataDriven](https://www.datadriven.ro), a platform that monitors public tenders across Romania. Today it crawls more than 10,000 sources daily, reads the actual tender documentation with an OCR pipeline I run on a gaming GPU in my office, and serves over 300 paying firms at around 27,000 lei in monthly recurring revenue. I still work alone, and that is not an accident.
 
 ![datadriven.ro homepage](/screenshots/datadriven.png)
 
