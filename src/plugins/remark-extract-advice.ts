@@ -9,17 +9,30 @@ import type { AdviceEntry } from "../lib/advice";
 const RESERVED_SLUGS = new Set(["seo", "distribution", "product", "business", "mindset"]);
 
 /**
- * Module-level accumulator. Remark processes each markdown file independently,
- * so we collect advice entries across all files here and flush them to disk
- * once processing is complete.
+ * Module-level map of source file -> its advice entries. Remark processes each
+ * markdown file independently, and incremental builds only re-process changed
+ * files, so the on-disk index must be merged rather than overwritten: entries
+ * from files this build never saw have to survive the write.
  */
-const collectedAdvice: AdviceEntry[] = [];
+const adviceBySource = new Map<string, AdviceEntry[]>();
+
+function sourceKey(journeySlug: string | null, eventSlug: string | null): string {
+  return journeySlug === null ? `event:${eventSlug ?? "unknown"}` : `journey:${journeySlug}`;
+}
 
 function writeIndex() {
   const outDir = path.resolve("src/generated");
   fs.mkdirSync(outDir, { recursive: true });
-  const sorted = [...collectedAdvice].sort((a, b) => a.slug.localeCompare(b.slug));
-  fs.writeFileSync(path.join(outDir, "advice-index.json"), `${JSON.stringify(sorted, null, 2)}\n`);
+  const indexPath = path.join(outDir, "advice-index.json");
+  const previous: AdviceEntry[] = fs.existsSync(indexPath)
+    ? JSON.parse(fs.readFileSync(indexPath, "utf8"))
+    : [];
+  const untouched = previous.filter(
+    (entry) => !adviceBySource.has(sourceKey(entry.journeySlug, entry.eventSlug)),
+  );
+  const merged = [...untouched, ...[...adviceBySource.values()].flat()];
+  const sorted = merged.sort((a, b) => a.slug.localeCompare(b.slug));
+  fs.writeFileSync(indexPath, `${JSON.stringify(sorted, null, 2)}\n`);
 }
 
 function extractTextContent(node: ContainerDirective): string {
@@ -95,6 +108,11 @@ const remarkExtractAdvice: Plugin<[], Root> = () => (tree: Root, file) => {
     : (file.data as Record<string, unknown>);
   const personSlug = typeof frontmatter?.person === "string" ? frontmatter.person : "unknown";
 
+  // Rebuilt from scratch on every (re-)process of this file, so edits and
+  // deletions of directives replace the file's previous entries instead of
+  // accumulating alongside them.
+  const fileEntries: AdviceEntry[] = [];
+
   visit(tree, "containerDirective", (node, index, parent) => {
     const directive = node as unknown as ContainerDirective;
     if (directive.name !== "advice") return;
@@ -131,13 +149,7 @@ const remarkExtractAdvice: Plugin<[], Root> = () => (tree: Root, file) => {
       personSlug: resolvedPerson,
     };
 
-    // Avoid duplicates if the same file is processed more than once (HMR)
-    const exists = collectedAdvice.some(
-      (a) => a.slug === slug && (a.journeySlug === sourceSlug || a.eventSlug === sourceSlug),
-    );
-    if (!exists) {
-      collectedAdvice.push(entry);
-    }
+    fileEntries.push(entry);
 
     // Replace the directive node with a styled callout div
     if (parent && typeof index === "number") {
@@ -146,6 +158,7 @@ const remarkExtractAdvice: Plugin<[], Root> = () => (tree: Root, file) => {
     }
   });
 
+  adviceBySource.set(isJourney ? `journey:${sourceSlug}` : `event:${sourceSlug}`, fileEntries);
   writeIndex();
 };
 
