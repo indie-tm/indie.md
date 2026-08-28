@@ -1,5 +1,68 @@
 [
   {
+    "slug": "encode-the-counter-as-procedure-plus-scenario",
+    "category": "product",
+    "title": "Encode the counter as procedure plus scenario, not as a blog post",
+    "content": "Andrei did not start from a CMS article about \"how to register a car.\" He started from a physical board that already grouped cases, then noticed that nine to fourteen requirements collapsed to seven shared ones. That observation produced a compiler. A procedure plus a scenario creates a versioned JSON plan of questions, steps, fees, and documents. Each requirement records whether the user needs a copy, an original, or a legalized copy. A blog post goes stale when the counter reprints the board. A recipe can be cloned, versioned, and asked a new question. If you are digitizing a bureaucracy, model the counter's own categories before you write marketing copy. The panel is the schema. The article is the residue.",
+    "journeySlug": "andrei-acte123",
+    "eventSlug": null,
+    "personSlug": "andrei-gudiu"
+  },
+  {
+    "slug": "clone-the-ninety-percent-then-override",
+    "category": "product",
+    "title": "Clone the ninety percent that is already the same",
+    "content": "Andrei's builder treats transfer-of-registration and first-registration as cousins, not as two products. He clones the shared questions, steps, and fees, then overrides the labels and the required flags that actually differ, parents' IDs at kindergarten, motorcycle plates at 22 lei versus car plates at 56. That is cheaper than maintaining two trees that drift, and it is more honest than a single checklist that lies to half the room. The rule for any procedure product is to find the seven common requirements before you design the fourteenth unique one. Clone first. Override second. If a change to a question does not propagate, you do not have a system. You have a pile of copies.",
+    "journeySlug": "andrei-acte123",
+    "eventSlug": null,
+    "personSlug": "andrei-gudiu"
+  },
+  {
+    "slug": "ask-the-question-that-saves-the-trip",
+    "category": "product",
+    "title": "Ask the question that prevents the wasted trip",
+    "content": "The Dumbrăvița contract taught Andrei a cheaper product rule than another page of explanation. The town hall stamped a machine translation. The next counter wanted an authorized translation and the English original. The missing question was not \"what is a translation.\" It was \"did you already get this stamped,\" because that answer changes the bag you take tomorrow. Bureaucracy products fail by listing every document in the universe. They work by asking the fork that would have sent you home. If your checklist cannot change after a yes, it is a brochure. Put the expensive mistake, the fourth visit, the rejected copy, into a single required question and let the plan rewrite itself.",
+    "journeySlug": "andrei-acte123",
+    "eventSlug": null,
+    "personSlug": "andrei-gudiu"
+  },
+  {
+    "slug": "ask-for-exact-value-not-category",
+    "category": "product",
+    "title": "Ask for the exact value, not a category",
+    "content": "Ask for the precise fact that deletes later questions. Exact age removes a tree of \"under 14\" follow-ups. A typed date is faster than a set of dropdowns for many people. The same rule applies to contextual requiredness. Ask for the raw value and let the plan hide the branches that do not apply.",
+    "journeySlug": "andrei-acte123",
+    "eventSlug": null,
+    "personSlug": "andrei-gudiu"
+  },
+  {
+    "slug": "store-the-document-once-reuse-the-plan",
+    "category": "product",
+    "title": "Store the document once and let the next plan find it",
+    "content": "ACTE123's vault is not a drive with nicer icons. It remembers which requirement a document fulfilled. The next procedure that needs the same file can offer it instead of sending the person back through email. Profiles can reuse personal data across plans and fill mapped form fields. Consumer document products fail when they become folders. They work when the next checklist can see what the user already proved. If you ask for the same scan twice, you are not a guide. You are another counter.",
+    "journeySlug": "andrei-acte123",
+    "eventSlug": null,
+    "personSlug": "andrei-gudiu"
+  },
+  {
+    "slug": "let-the-model-draft-then-finish",
+    "category": "product",
+    "title": "Let the model draft the procedure, then make a human finish it",
+    "content": "Give the model the sources and the schema, then treat its 60-70% draft as a starting point. The remaining work contains the detail that decides whether a person completes the procedure or goes home. A practitioner must check the sources, add the missing forks, and maintain the result when the procedure changes. Generative admin tools fail when they publish the draft. They work when a human who has stood in the queue finishes it.",
+    "journeySlug": "andrei-acte123",
+    "eventSlug": null,
+    "personSlug": "andrei-gudiu"
+  },
+  {
+    "slug": "fifty-thousand-users-is-a-civic-argument",
+    "category": "mindset",
+    "title": "Fifty thousand users is a civic argument, not a vanity chart",
+    "content": "Fifty thousand completed guides would show that the problem is shared. That evidence can support a public case for clearer procedures and fewer wasted trips. Treat the number as civic evidence, not as proof that the product has found a paying customer.",
+    "journeySlug": "andrei-acte123",
+    "eventSlug": null,
+    "personSlug": "andrei-gudiu"
+  },
+  {
     "slug": "design-for-the-starter-you-are",
     "category": "mindset",
     "title": "Know whether you are a starter, and stop designing companies for a finisher",
@@ -1321,6 +1384,42 @@
     "journeySlug": null,
     "eventSlug": "indie-tm-14-timisoara-august-2026",
     "personSlug": "titus-nicolae"
+  },
+  {
+    "slug": "do-not-sell-ten-products-as-one-homepage",
+    "category": "business",
+    "title": "Do not sell ten products as one homepage",
+    "content": "The room looked at ACTE123's vault, org SOP builder, shareable profiles, marketplace, swipe mode, counter chatbot, PDF mapper, and civic traffic goal, and heard several companies sharing a compiler. That compiler is an asset. The homepage is not allowed to list every asset. A buyer cannot tell whether they are paying for storage, for a kindergarten enrollment sheet, or for a movement to simplify the state. Split the pitch until one job is left, usually the org that already runs a procedure, and let the other jobs become modules once someone has paid. If you need a breath to explain what you sell, you are not selling yet. You are touring the architecture.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-15-timisoara-august-2026",
+    "personSlug": "andrei-gudiu"
+  },
+  {
+    "slug": "charge-the-firm-that-already-keeps-the-file",
+    "category": "business",
+    "title": "Charge the firm that already keeps the file",
+    "content": "ACTE123 had 63 users and none paid. The room's preferred customer was not \"everyone who hates bureaucracy.\" It was the registration firm, the kindergarten, the administrator, or another office that already collects documents and cares when a file is wrong. Those buyers define their own procedures. They can import an existing procedure with a model and spend less time building. The consumer vault can stay free while the organization pays for the workflow. Roviniete.ro turning over 69 million lei proves paperwork budgets exist. It does not prove a consumer will pay for Plus. Price the person who fails an inspection when the folder is incomplete.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-15-timisoara-august-2026",
+    "personSlug": "andrei-gudiu"
+  },
+  {
+    "slug": "call-fifty-kindergartens-before-another-mode",
+    "category": "distribution",
+    "title": "Call fifty kindergartens before you add another mode",
+    "content": "Faced with Tinder swipe, a rude counter bot, guest sessions, and a civic traffic goal, the room prescribed a smaller loop. Make a two-minute video for one type of organization, then call fifty of them in Timiș. The kindergarten that prefers a paper dossier for inspectors is not a UX nit. It is the buying criterion. If printing from the system costs her time, she will not pay to save parents time. That answer only shows up on the phone. Shipping another navigation mode postpones the only number that matters, how many of those fifty ask for a second conversation. Pick one customer that owns a procedure and exhaust the list before you invent a new way to tick a checkbox.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-15-timisoara-august-2026",
+    "personSlug": "andrei-gudiu"
+  },
+  {
+    "slug": "write-the-sardinia-article",
+    "category": "seo",
+    "title": "Write the Sardinia article, not the generic registration guide",
+    "content": "Andrei's SEO sketch was specific enough to steal. People do not search \"Romanian administrative compiler.\" They search a situation, a car brought from Italy, from Sardinia, a child passport, a rent declaration they cannot find in the ANAF menu. A page that names that situation can win a long-tail query the ministry page is too generic to take. The same logic extends to publishing a guide when an institution is in the news, while the index is still moving, and to becoming the citation ChatGPT repeats. Programmatic SEO is not a thousand thin pages. It is one honest plan per messy case, generated from the same JSON the user would walk. If your product is a recipe, the URL should be the recipe. If the URL is a category, you are competing with the ministry.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-15-timisoara-august-2026",
+    "personSlug": "andrei-gudiu"
   },
   {
     "slug": "video-content-face-in-corner",

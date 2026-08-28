@@ -27,6 +27,7 @@ const ALL_PRODUCTS = [
   { slug: "cozmoslabs", url: "https://www.cozmoslabs.com" },
   { slug: "event-newsletter", url: "https://event-newsletter.com" },
   { slug: "ebaza", url: "https://ebaza.ro" },
+  { slug: "acte123", url: "https://www.acte123.ro" },
   { slug: "pace", url: "https://hirewithpace.com" },
   { slug: "aisafe", url: "https://aisafe.io" },
   { slug: "zag", url: "https://github.com/vtemian/zag" },
