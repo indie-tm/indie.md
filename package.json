@@ -21,23 +21,23 @@
     "prepare": "husky"
   },
   "dependencies": {
-    "@astrojs/markdown-remark": "^7.2.0",
-    "@astrojs/rss": "^4.0.18",
+    "@astrojs/markdown-remark": "^7.2.4",
+    "@astrojs/rss": "^4.0.19",
     "@astrojs/sitemap": "^3.7.3",
-    "@tailwindcss/typography": "^0.5.19",
-    "astro": "^7.0.3",
+    "@tailwindcss/typography": "^0.5.20",
+    "astro": "^7.2.9",
     "remark-directive": "^4.0.0",
-    "tailwindcss": "^4.3.2"
+    "tailwindcss": "^4.3.3"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.8",
-    "@tailwindcss/vite": "^4.3.2",
-    "@types/node": "^25.5.0",
+    "@biomejs/biome": "^2.5.11",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^26.4.0",
     "husky": "^9.1.7",
     "image-size": "^2.0.2",
-    "playwright": "^1.58.2",
-    "tsx": "^4.21.0",
+    "playwright": "^1.62.1",
+    "tsx": "^4.23.12",
     "typescript": "^5.9.3",
-    "vitest": "^4.1.0"
+    "vitest": "^4.1.11"
   }
 }
