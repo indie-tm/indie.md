@@ -35,7 +35,7 @@ Mircea built SingleFax in a weekend by refusing to add anything beyond the core 
 
 This was the key decision that made everything else work. I'd watched agency clients abandon fax services at the signup wall. They didn't want another account, another password, another monthly charge showing up on their credit card statement.
 
-SingleFax asks for nothing except a file and a fax number. You pay $5, the fax goes out. Want to receive faxes? Same deal: $5 per received fax, or grab a lifetime fax number for $99 (one-time, no recurring).
+Guest send still asks for almost nothing: an email for the receipt, a file, and a fax number. No account. The price dropped from that first $5 to $0.99 for up to 10 billable pages (about +$0.08 after that, cap 50). Want to receive faxes? $4.99 for a 30-day number (first inbound included, extras $4.99), or a lifetime number at $97 Basic / $147 Pro. Incoming faxes after starter credit are $4.99 each. If the wallet is empty, the fax is held until you top up.
 
 :::advice{slug="product-remove-friction" category="product" person="mircea" title="Remove all friction: no signup, no subscription"}
 Every form field you add, every account creation step, every subscription commitment is a point where customers leave. I removed all of them. No signup, no login, no monthly plan. Just pay and use. For occasional-use products, this is the difference between making money and making nothing.
@@ -45,7 +45,7 @@ Every form field you add, every account creation step, every subscription commit
 
 I had zero marketing budget and zero audience. But I knew something useful: people don't search for "online fax service." They search for "how to fax documents to the IRS" and "send fax online without subscription." These are purchase-intent queries. The person searching already has a document in hand and a deadline.
 
-I wrote 9 blog posts targeting exactly these searches. How to fax IRS Form 2848. How to send a fax without a fax machine. Small business fax solutions. Each post ended with a simple call to action: send your fax now for $5.
+I wrote 9 blog posts targeting exactly these searches. How to fax IRS Form 2848. How to send a fax without a fax machine. Small business fax solutions. Each post ended with a simple call to action: send your fax now.
 
 The posts took a few months to rank, but when they did, the traffic was incredibly high-quality. These weren't tire-kickers. They were people holding a document, looking for the fastest way to fax it.
 
@@ -53,14 +53,14 @@ The posts took a few months to rank, but when they did, the traffic was incredib
 Most indie hackers target broad keywords like "best fax service." Instead, target the specific "how to" queries your customers actually search for. "How to fax documents to the IRS" attracts someone who needs to fax right now, not someone comparison-shopping. Mircea's 9 blog posts drive nearly all of SingleFax's organic traffic, and these visitors convert at a much higher rate than any other channel.
 :::
 
-## The $99 tier that customers asked for
+## The lifetime number that customers asked for
 
-I didn't plan the lifetime fax number. Customers emailed asking for it. Small businesses and solo practitioners who received faxes regularly didn't want to pay $5 per incoming fax, but they also didn't want a subscription. "Can I just buy a number and keep it forever?"
+I didn't plan the lifetime fax number. Customers emailed asking for it. Small businesses and solo practitioners who received faxes regularly didn't want to pay per incoming fax, but they also didn't want a subscription. "Can I just buy a number and keep it forever?"
 
-So I added it: $99, one-time payment, your fax number for life. It took an afternoon to implement. Now it accounts for a meaningful chunk of revenue, and those customers require essentially zero support.
+So I added it. It started at $99. It is $97 Basic or $147 Pro now: one-time payment, starter inbound credit, no yearly keep-alive. Incoming faxes after credit are still $4.99. It took an afternoon to implement. Now it accounts for a meaningful chunk of revenue, and those customers require essentially zero support.
 
 :::advice{slug="business-premium-tier" category="business" person="mircea" title="Add a premium tier based on what customers ask for"}
-Don't guess what people will pay for. Wait for them to tell you. Mircea never planned SingleFax's $99 lifetime tier. Customers asked for it by email, he built it in an afternoon, and it became a significant revenue stream. The best product roadmap is your inbox.
+Don't guess what people will pay for. Wait for them to tell you. Mircea never planned SingleFax's lifetime number. Customers asked for it by email, he built it in an afternoon (first at $99, now $97 Basic / $147 Pro), and it became a significant revenue stream. The best product roadmap is your inbox.
 :::
 
 ## Agency experience is the real unfair advantage
@@ -83,20 +83,22 @@ After 20 years of building complex systems for clients, the simplest product I'v
 
 ## Then the channels arrived
 
-That was true in February. By [Indie TM #16](/events/indie-tm-16-timisoara-september-2026) the $5 action was still the product, and the rest of the surface had grown.
+That was true in February. By [Indie TM #16](/events/indie-tm-16-timisoara-september-2026) the guest send was still the product (now $0.99, not $5), and the rest of the surface had grown.
 
-HIPAA is a paid extra. Medical faxes cannot ride in email. The customer opens them in the account. That is the point of the fee: the procedure, not a badge on the homepage.
+[HIPAA Secure](https://singlefax.com/hipaa-fax) is a paid extra on the website, with an electronic BAA. Pay-as-you-go is $6.50 for 1 to 10 pages or $10 for 11 to 50. Clinics that want a dedicated number add it to a subscription for +$20/mo. Medical faxes cannot ride in email, and they cannot go through MCP, WhatsApp, or email-to-fax. The customer opens them in the account. That is the point of the fee: the procedure, not a badge on the homepage.
 
-People also wanted to send a fax from the tools they already live in. Email-to-fax and WhatsApp-to-fax are those pipes. A flow that faxes the IRS for an EIN is the same idea pointed at a form. [ChatGPT](https://chatgpt.com) and micropayments on [Stripe](https://stripe.com) showed up in the same conversation. Credits and inactivity rules sit next to the lifetime number: you can keep the number, and you can still lose it if you go dark.
+People also wanted to send a fax from the tools they already live in. [Email-to-fax](https://singlefax.com/email-to-fax) (PDF to send@fax.delivery, number in the subject) and [WhatsApp-to-fax](https://singlefax.com/whatsapp-to-fax) are those pipes. [EIN by fax](https://singlefax.com/get-ein) is $9.99, the same idea pointed at Form SS-4. [ChatGPT](https://chatgpt.com), Cursor, and Claude talk to [SingleFax MCP](https://singlefax.com/agents). Autonomous agents can pay through [Stripe](https://stripe.com)'s Machine Payments Protocol. Credits sit next to the [lifetime number](https://singlefax.com/lifetime-fax-number): you keep the number, and an inbound fax stays locked until you top up. There is no inactivity fee. You do not lose the number if you go dark.
 
-The newest money idea is the inbound page. Send stays $5. A received fax can sit locked until someone pays to open it.
+Companies can buy a monthly number if they want a page pool: $9.99 Standard or $29.99 Business. The stranger who needs one IRS form never has to open that door.
+
+The inbound hold is live. Send is $0.99. A received fax with no credit sits locked until the owner pays $4.99 (or spends credit) to open it.
 
 :::advice{slug="sell-hipaa-as-a-lane" category="product" person="mircea" title="Sell HIPAA as a paid lane, not a badge"}
-Mircea does not print HIPAA on the SingleFax homepage and hope it covers every fax. He sells it as an extra lane with a real procedure: the fax is read in the account, not forwarded to email. Health data that lands in an inbox is a compliance story you cannot walk back. A badge is marketing. A paid lane is a door, an access rule, and a reason to charge. If your product touches a regulated class of document, split that traffic from the $5 casual send. The occasional IRS form and the clinic fax are not the same customer, and they should not share a delivery path.
+Mircea does not print HIPAA on the SingleFax homepage and hope it covers every fax. He sells HIPAA Secure as an extra lane on the website, with an electronic BAA and a real procedure: the fax is read in the account, not forwarded to email, and never sent through MCP, WhatsApp, or email-to-fax. Health data that lands in an inbox is a compliance story you cannot walk back. A badge is marketing. A paid lane is a door, an access rule, and a reason to charge. If your product touches a regulated class of document, split that traffic from the $0.99 casual send. The occasional IRS form and the clinic fax are not the same customer, and they should not share a delivery path.
 :::
 
 :::advice{slug="charge-to-unlock-the-inbound-fax" category="business" person="mircea" title="Charge to unlock a received fax"}
-SingleFax already charges $5 to send. The newer idea is to let an inbound page sit locked until someone pays to open it. That keeps the no-subscription promise and still monetizes the receive side, where a lifetime number would otherwise become a free mailbox. Occasional-use products die when receive is either free forever or hidden behind a monthly plan. A one-time unlock is the same shape as the original send: a document, a deadline, a card. Price the page that holds the file, not a seat that lasts all year.
+SingleFax charges $0.99 to send. On the receive side, a lifetime or 30-day number is not a free mailbox. If the wallet cannot cover $4.99, the inbound fax is stored as held: the owner gets an envelope email with no PDF, and the dashboard locks the file until they top up or pay the $4.99 release. That keeps the no-subscription promise and still monetizes receive. Occasional-use products die when receive is either free forever or hidden behind a monthly plan. A one-time unlock is the same shape as the original send: a document, a deadline, a card. Price the page that holds the file, not a seat that lasts all year.
 :::
 
 The room had a view on all of this. [The #16 recap](/events/indie-tm-16-timisoara-september-2026) is what they said when the simple product started looking like a suite.

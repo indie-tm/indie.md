@@ -1,6 +1,6 @@
 ---
 title: "Indie TM #16: An Army of Bots and a Fax That Must Stay Simple"
-subtitle: "What we learned at our sixteenth meetup, where Raul opened eBaza's automations and Mircea walked SingleFax into HIPAA, WhatsApp, and a roast about staying simple"
+subtitle: "What we learned at our sixteenth meetup, where Raul opened eBaza's automations and Mircea walked SingleFax into HIPAA Secure, WhatsApp, and a roast about staying simple"
 date: 2026-09-03
 location: "DevPlant Cowork, Timisoara"
 link: "https://luma.com/hjcqdpof"
@@ -24,12 +24,12 @@ He still wants to mount a giant binder on a car. The room laughed. The WhatsApp 
 
 ![SingleFax homepage](/screenshots/singlefax.png)
 
-[Mircea](/people/mircea) took the other half of the night. [SingleFax](https://singlefax.com) is still the $5 send: upload a file, enter a number, pay, done. Around that action he has added a lifetime number with credits and inactivity rules, a paid HIPAA lane that keeps medical faxes in the account instead of email, email-to-fax and WhatsApp-to-fax, a flow that faxes the IRS for an EIN, and a plan to charge for unlocking a received page. [ChatGPT](https://chatgpt.com) and micropayments on [Stripe](https://stripe.com) came up in the same stretch.
+[Mircea](/people/mircea) took the other half of the night. [SingleFax](https://singlefax.com) is still the guest send: upload a file, enter a number, pay $0.99, done. Around that action he has added a lifetime number ($97 Basic / $147 Pro) with inbound credits and a hold-until-you-pay inbox, a paid [HIPAA Secure](https://singlefax.com/hipaa-fax) lane that keeps medical faxes in the account instead of email, [email-to-fax](https://singlefax.com/email-to-fax) and [WhatsApp-to-fax](https://singlefax.com/whatsapp-to-fax), a $9.99 flow that faxes the IRS for an [EIN](https://singlefax.com/get-ein), company subscriptions, and agent pipes ([MCP](https://singlefax.com/agents), [Stripe](https://stripe.com) machine payments).
 
 Someone in the room said the quiet part. The product used to be simple. It was getting complicated.
 
-:::advice{slug="do-not-grow-past-the-five-dollar-action" category="product" person="mircea" title="Do not bury the five-dollar action under a suite"}
-The room looked at email-to-fax, WhatsApp-to-fax, ChatGPT, HIPAA, an EIN flow, and a pay-to-unlock inbox, and heard a suite growing on top of upload, number, pay, send. Someone said it was getting complicated, that the product used to be simple. HIPAA can be a paid lane. A received page can sit behind a charge. Those are still one job. A pile of pipes is not. If a stranger cannot finish a fax in sixty seconds, you have left the weekend MVP. Keep the $5 action on the first screen. Put the rest behind a door the occasional sender never has to open.
+:::advice{slug="do-not-grow-past-the-five-dollar-action" category="product" person="mircea" title="Do not bury the pay-per-send action under a suite"}
+The room looked at email-to-fax, WhatsApp-to-fax, MCP, HIPAA Secure, an EIN flow, company subscriptions, and a pay-to-unlock inbox, and heard a suite growing on top of upload, number, pay, send. Someone said it was getting complicated, that the product used to be simple. HIPAA Secure can be a paid lane. A received fax can sit behind a $4.99 hold. Those are still one job. A pile of pipes is not. If a stranger cannot finish a fax in sixty seconds, you have left the weekend MVP. Keep the $0.99 action on the first screen. Put the rest behind a door the occasional sender never has to open.
 :::
 
 ## Notes from the back of the room
