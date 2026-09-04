@@ -10,7 +10,7 @@ presenters:
   - mircea
 ---
 
-Two weeks after [Indie TM #15](/events/indie-tm-15-timisoara-august-2026) asked who pays for a compiler of Romanian bureaucracy, we went back to DevPlant. The sixteenth edition was a technical session: two builders, a long table, and a screen that spent the night on automations and a fax. [Raul](/people/raul) brought [eBaza](https://ebaza.ro). [Mircea](/people/mircea) brought [SingleFax](https://singlefax.com). The full first-person stories are in [Raul's eBaza journey](/journeys/raul-ebaza) and [Mircea's SingleFax journey](/journeys/mircea-singlefax). This recap is what the room did.
+Two weeks after [Indie TM #15](/events/indie-tm-15-timisoara-august-2026) where we talked about a compiler of Romanian bureaucracy, we went back to DevPlant. The sixteenth edition was a technical session: two builders, a long table, and a screen that spent the night on automations and a fax. [Raul](/people/raul) brought [eBaza](https://ebaza.ro). [Mircea](/people/mircea) brought [SingleFax](https://singlefax.com). The full first-person stories are in [Raul's eBaza journey](/journeys/raul-ebaza) and [Mircea's SingleFax journey](/journeys/mircea-singlefax). This recap is what the room did.
 
 ## Raul runs eBaza with an army of bots
 
@@ -34,7 +34,7 @@ The room looked at email-to-fax, WhatsApp-to-fax, ChatGPT, HIPAA, an EIN flow, a
 
 ## Notes from the back of the room
 
-The last half-hour was a pile of tools, not another demo. [Telnyx](https://telnyx.com) for bulk email at about 30 cents per thousand. [Typing Mind](https://www.typingmind.com), Tony Dinh's front end, for trying language models without marrying a chat app. Drogbot, an in-house writer that drafts a daily post across more than one site. None of that needed a new product page. It needed a notebook.
+The last half-hour was a pile of tools, not another demo. [Telnyx](https://telnyx.com) for bulk email at about 30 cents per thousand. [Typing Mind](https://www.typingmind.com), Tony Dinh's front end, for trying language models without marrying a chat app. Grok Bot, an in-house writer that drafts a daily post across more than one site. None of that needed a new product page. It needed a notebook.
 
 ## Sixteen editions in
 
