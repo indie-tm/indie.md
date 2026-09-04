@@ -264,7 +264,7 @@
     "slug": "business-premium-tier",
     "category": "business",
     "title": "Add a premium tier based on what customers ask for",
-    "content": "Don’t guess what people will pay for. Wait for them to tell you. Mircea never planned SingleFax’s $99 lifetime tier. Customers asked for it by email, he built it in an afternoon, and it became a significant revenue stream. The best product roadmap is your inbox.",
+    "content": "Don't guess what people will pay for. Wait for them to tell you. Mircea never planned SingleFax's $99 lifetime tier. Customers asked for it by email, he built it in an afternoon, and it became a significant revenue stream. The best product roadmap is your inbox.",
     "journeySlug": "mircea-singlefax",
     "eventSlug": null,
     "personSlug": "mircea"
@@ -885,7 +885,7 @@
     "slug": "mindset-agency-superpower",
     "category": "mindset",
     "title": "Agency experience is a superpower for shipping fast",
-    "content": "If you’ve spent years building software for clients, you already have the hardest skill in indie hacking: the ability to ship. You know how to scope, build, deploy, and handle payments. Stop thinking of agency experience as a disadvantage. Mircea built SingleFax in a weekend because he’d already solved every technical problem it required, just for other people’s businesses.",
+    "content": "If you've spent years building software for clients, you already have the hardest skill in indie hacking: the ability to ship. You know how to scope, build, deploy, and handle payments. Stop thinking of agency experience as a disadvantage. Mircea built SingleFax in a weekend because he'd already solved every technical problem it required, just for other people's businesses.",
     "journeySlug": "mircea-singlefax",
     "eventSlug": null,
     "personSlug": "mircea"
@@ -1164,7 +1164,7 @@
     "slug": "product-simplest-version",
     "category": "product",
     "title": "Build the simplest version first",
-    "content": "Mircea built SingleFax in a weekend by refusing to add anything beyond the core action: upload, enter a number, pay, send. No user accounts, no dashboards, no analytics. If your v1 takes longer than a week, you’re building too much. Strip it down until a complete stranger can use it in under 60 seconds.",
+    "content": "Mircea built SingleFax in a weekend by refusing to add anything beyond the core action: upload, enter a number, pay, send. No user accounts, no dashboards, no analytics. If your v1 takes longer than a week, you're building too much. Strip it down until a complete stranger can use it in under 60 seconds.",
     "journeySlug": "mircea-singlefax",
     "eventSlug": null,
     "personSlug": "mircea"
@@ -1398,7 +1398,7 @@
     "slug": "seo-how-to-queries",
     "category": "seo",
     "title": "SEO for 'how to' queries drives purchase-intent traffic",
-    "content": "Most indie hackers target broad keywords like “best fax service.” Instead, target the specific “how to” queries your customers actually search for. “How to fax documents to the IRS” attracts someone who needs to fax right now, not someone comparison-shopping. Mircea’s 9 blog posts drive nearly all of SingleFax’s organic traffic, and these visitors convert at a much higher rate than any other channel.",
+    "content": "Most indie hackers target broad keywords like \"best fax service.\" Instead, target the specific \"how to\" queries your customers actually search for. \"How to fax documents to the IRS\" attracts someone who needs to fax right now, not someone comparison-shopping. Mircea's 9 blog posts drive nearly all of SingleFax's organic traffic, and these visitors convert at a much higher rate than any other channel.",
     "journeySlug": "mircea-singlefax",
     "eventSlug": null,
     "personSlug": "mircea"

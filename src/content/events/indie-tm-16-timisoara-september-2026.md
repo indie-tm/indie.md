@@ -12,8 +12,6 @@ presenters:
 
 Two weeks after [Indie TM #15](/events/indie-tm-15-timisoara-august-2026) asked who pays for a compiler of Romanian bureaucracy, we went back to DevPlant. The sixteenth edition was a technical session: two builders, a long table, and a screen that spent the night on automations and a fax. [Raul](/people/raul) brought [eBaza](https://ebaza.ro). [Mircea](/people/mircea) brought [SingleFax](https://singlefax.com). The full first-person stories are in [Raul's eBaza journey](/journeys/raul-ebaza) and [Mircea's SingleFax journey](/journeys/mircea-singlefax). This recap is what the room did.
 
-![Builders around the table at DevPlant Cowork during Indie TM #16, with eBaza on the screen](/images/events/indie-tm-16.jpg)
-
 ## Raul runs eBaza with an army of bots
 
 ![ebaza.ro homepage](/screenshots/ebaza.png)
