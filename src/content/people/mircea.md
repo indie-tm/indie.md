@@ -11,5 +11,5 @@ products:
     url: "https://microsaas.directory"
   - name: "Renzi"
     url: "https://renzi.ro"
-bio: "Developer with 25+ years of software engineering experience who turned client-work expertise into micro-SaaS products. Built SingleFax (no-signup online fax service) and Blahphone (browser-based international calling). Believes the best products solve one problem extremely well."
+bio: "Developer with 25+ years of software engineering experience who turned client-work expertise into micro-SaaS products. Built SingleFax (no-signup online fax service) and Blahphone (browser-based international calling). At Indie TM #16 he walked SingleFax into HIPAA, email and WhatsApp pipes, and a roast about keeping the $5 action visible. Believes the best products solve one problem extremely well."
 ---

@@ -13,5 +13,5 @@ products:
     url: "https://buzzketeer.com"
   - name: "Git Digest"
     url: "https://gitdigest.ai"
-bio: "Software engineer turned indie builder and community organizer. After being fired for trying to create a better work culture, he built Calm Companies, a curated list of companies renowned for how they work and for $19/year people get a weekly newsletter for when any of them are hiring. Organizes the Indie TM meetup in Timisoara, Romania, where local indie hackers present, roast, and sharpen each other's products. Believes curation beats algorithms, simplicity beats features, and a landing page with a Stripe payment button is the best MVP."
+bio: "Software engineer turned indie builder and community organizer. After being fired for trying to create a better work culture, he built Calm Companies, a curated list of companies renowned for how they work and for $19/year people get a weekly newsletter for when any of them are hiring. Organizes the Indie TM meetup in Timisoara, Romania, where local indie hackers present, roast, and sharpen each other's products. At Indie TM #16 he opened eBaza's automations: WhatsApp for older buyers, VIN instead of plate lookups, and a bot for each grind job. Believes curation beats algorithms, simplicity beats features, and a landing page with a Stripe payment button is the best MVP."
 ---

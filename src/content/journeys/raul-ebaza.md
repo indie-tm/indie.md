@@ -1,6 +1,6 @@
 ---
 title: "ebaza.ro: Bolting a Product Onto Traffic That Already Existed"
-subtitle: "How a four-year-old parked domain became an insurance funnel, and what the news taught me about SEO"
+subtitle: "How a four-year-old parked domain became an insurance product, then a WhatsApp close and a set of bots"
 person: "raul"
 date: 2026-05-15
 lessons:
@@ -9,6 +9,9 @@ lessons:
   - "Internal linking is the first lever when a page starts ranking"
   - "Never let a call to action lie about what it does"
   - "For apps, a marketplace listing beats most content backlinks"
+  - "The ad channel that shows up is the one you sell on"
+  - "Ask for the VIN instead of buying a plate lookup"
+  - "Give each grind job its own bot"
 ---
 
 Four years before [ebaza.ro](https://ebaza.ro) did anything, I bought it, along with a handful of other Romanian domains, and let it sit. Nothing happened for a long time. Then over the last few months the Domain Rating climbed, organic traffic followed, and conversions started showing up. The story of eBaza is really two lessons: the patience of domains, and what you do once the traffic finally arrives.
@@ -53,4 +56,34 @@ One side lesson from the same evening: for an app, a backlink from a relevant ma
 
 :::advice{slug="marketplace-backlinks-beat-content-backlinks" category="seo" person="raul" title="For apps, a marketplace listing beats most content backlinks"}
 For an app, a backlink from a relevant marketplace or directory is worth more than most content-driven backlink tactics, because the marketplace's entire purpose is to send qualified, ready-to-buy traffic to tools like yours. That link carries authority and high intent at the same time, while a generic guest-post link carries neither. If your product is an app, prioritize getting listed where your buyers already shop over grinding out articles purely for links. The best backlinks come from pages whose job is to route buyers to you, not from content you wrote to game a ranking.
+:::
+
+The May story was traffic and a quote flow. By [Indie TM #16](/events/indie-tm-16-timisoara-september-2026) the product was a renewal reminder I run with ads, WhatsApp, and a set of bots. This chapter is what I actually do. The room's view of that night is in the recap.
+
+## The ad channel that shows up
+
+I used AI tools to write code and to run Google Ads. I also tried Meta. The Meta campaign did something I had not planned: it pulled in people over 60. They did not want a dashboard. They wanted WhatsApp. One of them sent photos of a 1990 driving licence that morning and asked if I was a person or a robot.
+
+That is the sale now. RCA still renews on a schedule. The buyer who arrived was older than the funnel I had designed. I started to automate the WhatsApp close instead of forcing them back onto the site.
+
+I still have a dumb offline idea I have not built: a giant binder on a car, the kind of physical stunt that makes a stranger take a photo. The ads already found the channel. The binder would just be louder.
+
+:::advice{slug="whatsapp-found-the-older-buyer" category="distribution" person="raul" title="The ad channel that shows up is the one you sell on"}
+Raul's Meta campaign for eBaza did not deliver the dashboard user he had designed for. It delivered people over 60 who wanted to finish an RCA renewal on WhatsApp, one of them sending photos of a 1990 driving licence and asking if he was human. The lesson is not "run Meta." It is to notice which channel the paying stranger already lives in, then move the close there instead of dragging them back to the page that won the click. An ad that finds a buyer on WhatsApp and a product that only works in a browser is two products pretending to be one funnel. Sell where they answered.
+:::
+
+## Ask for the VIN
+
+Plate-to-VIN lookups cost money. After enough timeouts I stopped treating the registry as a required step. If the driver can type the chassis number, I ask for it. I do not buy another mapping call.
+
+:::advice{slug="ask-for-the-vin-skip-the-lookup" category="business" person="raul" title="Ask for the VIN instead of buying a plate lookup"}
+Raul cut eBaza's vehicle-lookup bill by asking drivers for the VIN when they already have it, instead of paying a plate-to-VIN API on every session. The registry lookup is a convenience, not the product. When the provider is slow or the quota is tight, a typed chassis number is cheaper and often more accurate than a mapping you do not control. Before you meter a third-party call, ask whether the user is already holding the identifier you were about to buy. Paid enrichment is a cost you choose. A form field is not.
+:::
+
+## One bot per job
+
+The grind around eBaza is not one job. Outreach to Romanian firms is five emails a day. Bugs need PostHog and the logs. Ads need click-through rates. YouTube needs timestamps. I gave each of those a bot. I do not have a general assistant that "does eBaza." I have a small army, each with one boring task.
+
+:::advice{slug="one-bot-per-job" category="mindset" person="raul" title="Give each grind job its own bot"}
+Raul does not run one AI helper against eBaza. He runs a set: five outreach emails a day to Romanian firms, a bot on PostHog and the logs for bugs, a bot on ad click-through rates, a bot that stamps timestamps onto YouTube. Each job has a narrow input and a repeatable output. A general assistant that "handles the company" looks busy and finishes nothing, because the jobs do not share a prompt. Split the grind until a bot can do one task without a meeting. Then give the next task to the next bot.
 :::

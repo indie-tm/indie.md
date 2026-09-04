@@ -1,6 +1,6 @@
 ---
 title: "The $5 Fax: How a Weekend Project Became a Micro-SaaS"
-subtitle: "Why I built the simplest possible fax service and let SEO do the selling"
+subtitle: "Why I built the simplest possible fax service, and what happened when the channels arrived"
 person: "mircea"
 date: 2026-02-15
 lessons:
@@ -9,6 +9,8 @@ lessons:
   - "Target 'how to' search queries where the reader is ready to buy"
   - "Let customers tell you what to build next"
   - "Twenty years of agency work is the best product bootcamp you'll ever get"
+  - "Sell HIPAA as a paid lane, not a badge"
+  - "Charge to unlock a received fax"
 ---
 
 After 20+ years of running Monocube, my dev agency, I thought I'd seen every client request imaginable. Then I noticed a pattern: half our clients needed to fax documents. IRS forms, legal filings, signed contracts. They all complained about the same thing. Every fax service wanted them to create an account, pick a monthly plan, and commit to a subscription they'd use twice a year.
@@ -78,3 +80,23 @@ SingleFax is not going to be a unicorn. It will never be on the front page of Ha
 It runs itself. There's no customer success team, no onboarding flow, no feature roadmap meetings. Just a simple service that works, a handful of SEO posts that bring in steady traffic, and a payment system that deposits money into my account.
 
 After 20 years of building complex systems for clients, the simplest product I've ever made is the one that actually works for me.
+
+## Then the channels arrived
+
+That was true in February. By [Indie TM #16](/events/indie-tm-16-timisoara-september-2026) the $5 action was still the product, and the rest of the surface had grown.
+
+HIPAA is a paid extra. Medical faxes cannot ride in email. The customer opens them in the account. That is the point of the fee: the procedure, not a badge on the homepage.
+
+People also wanted to send a fax from the tools they already live in. Email-to-fax and WhatsApp-to-fax are those pipes. A flow that faxes the IRS for an EIN is the same idea pointed at a form. [ChatGPT](https://chatgpt.com) and micropayments on [Stripe](https://stripe.com) showed up in the same conversation. Credits and inactivity rules sit next to the lifetime number: you can keep the number, and you can still lose it if you go dark.
+
+The newest money idea is the inbound page. Send stays $5. A received fax can sit locked until someone pays to open it.
+
+:::advice{slug="sell-hipaa-as-a-lane" category="product" person="mircea" title="Sell HIPAA as a paid lane, not a badge"}
+Mircea does not print HIPAA on the SingleFax homepage and hope it covers every fax. He sells it as an extra lane with a real procedure: the fax is read in the account, not forwarded to email. Health data that lands in an inbox is a compliance story you cannot walk back. A badge is marketing. A paid lane is a door, an access rule, and a reason to charge. If your product touches a regulated class of document, split that traffic from the $5 casual send. The occasional IRS form and the clinic fax are not the same customer, and they should not share a delivery path.
+:::
+
+:::advice{slug="charge-to-unlock-the-inbound-fax" category="business" person="mircea" title="Charge to unlock a received fax"}
+SingleFax already charges $5 to send. The newer idea is to let an inbound page sit locked until someone pays to open it. That keeps the no-subscription promise and still monetizes the receive side, where a lifetime number would otherwise become a free mailbox. Occasional-use products die when receive is either free forever or hidden behind a monthly plan. A one-time unlock is the same shape as the original send: a document, a deadline, a card. Price the page that holds the file, not a seat that lasts all year.
+:::
+
+The room had a view on all of this. [The #16 recap](/events/indie-tm-16-timisoara-september-2026) is what they said when the simple product started looking like a suite.
