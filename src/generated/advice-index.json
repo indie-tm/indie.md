@@ -1861,5 +1861,59 @@
     "journeySlug": "vlad-sisif-ai",
     "eventSlug": null,
     "personSlug": "vlad"
+  },
+  {
+    "slug": "sell-the-rules-the-model-still-gets-wrong",
+    "category": "mindset",
+    "title": "When the model writes the code, sell the rules it still gets wrong",
+    "content": "Flowbite's paid components fell 90 to 95 percent once models could write that code, while the free library kept doing more than 500,000 downloads a week. The installs proved the brand. They did not pay the invoices. When a model makes your core cheap, the scarce layer moves. Zoltan moved it to design rules the model has to follow, and to the analytics that say whether the page works. Look at the line item a model just made free. Price the next thing it still gets wrong.",
+    "journeySlug": "zoltan-typeui",
+    "eventSlug": null,
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "write-the-design-skill-in-markdown",
+    "category": "product",
+    "title": "Put the design system in a markdown file the model can read",
+    "content": "TypeUI's design skills are markdown: buttons, navigation, spacing, accessibility, written by a co-founder with fifteen years in UI and UX. Zoltan would rather give a coding model that file than start in Figma. A Figma board is a picture the model has to guess at. A markdown skill is an instruction it can follow. If you sell taste to people who generate code, write the taste down in the format the model already reads. Then charge for the file, the motion, the sound, and the audit, not for another component zip.",
+    "journeySlug": "zoltan-typeui",
+    "eventSlug": null,
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "watch-the-path-not-the-palette",
+    "category": "product",
+    "title": "A color change is not a test. Watch the path.",
+    "content": "TypeUI could keep two Airbnb-style sites feeling like the same product after a color change, and still lose 79.82% of signups by sending people to pricing before login. The palette held. The path did not. Heatmaps, dead clicks, rage clicks, and scroll depth are there so a traffic number has to explain itself. If you ship a redesign, read the step where people stop before you congratulate the visual system. A consistent feeling is not a conversion.",
+    "journeySlug": "zoltan-typeui",
+    "eventSlug": null,
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "write-the-page-a-model-can-cite",
+    "category": "seo",
+    "title": "Write the page you want a model to cite",
+    "content": "TypeUI already gets 34% of its visits from Google, 25% direct, and 10.9% from Reddit, on a 0.3% to 0.5% conversion. The room's next content bet was AIO: posts and comparison tables written so a model quotes them when someone asks what to use. A blog that only chases a keyword misses the answer box. Name the alternatives, put the differences in a table, and make the page specific enough that a model can lift it. Search still sends people. The citation is the new distribution.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-17-timisoara-september-2026",
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "ship-a-plugin-where-the-work-already-happens",
+    "category": "distribution",
+    "title": "Ship a plugin where the buyer is already working",
+    "content": "Zoltan's guerrilla channel was a Chrome extension and a Figma plugin: a backlink, plus a person who is already trying to design. That is higher intent than a post hoping someone wanders in from Google. If your buyer lives inside one tool all day, put a small useful piece of your product there. The install is the introduction. The subscription can come after they have felt the time you saved.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-17-timisoara-september-2026",
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "ask-on-day-30",
+    "category": "business",
+    "title": "Ask on day 30, on a scale from 1 to 10",
+    "content": "TypeUI is at $4,000 to $6,000 a month, and the room did not want another feature before a score. Ask customers, from 1 to 10, if they would recommend it. Ask again when the first month ends, including the people who cancel. A showcase of shipped customer sites does the public proof. A watermark on the output is a tax. The day-30 answer tells you whether the $30 plan bought back the hours you promised, while the person still remembers the first month.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-17-timisoara-september-2026",
+    "personSlug": "zoltan"
   }
 ]

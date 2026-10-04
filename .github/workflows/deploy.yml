@@ -33,6 +33,7 @@ jobs:
 
       - name: Generate OG images
         run: |
+          npm run extract-advice
           pip install Pillow
           python scripts/gen_og.py
 
