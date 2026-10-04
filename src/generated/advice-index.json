@@ -1789,5 +1789,77 @@
     "journeySlug": null,
     "eventSlug": "indie-tm-9-timisoara-may-2026",
     "personSlug": "ionut"
+  },
+  {
+    "slug": "a-wrapper-dies-when-the-model-gets-cheap",
+    "category": "mindset",
+    "title": "A wrapper dies when a better model ships",
+    "content": "sisif.ai reached about $400 a month on someone else's video model, then fell to $80-90 when stronger and cheaper models shipped. Sora was the name the room used. The page did not get worse. The model under the page became a commodity. If your product is a thin layer on one provider, write down what your price does the month a lab ships a better one. Own a job the next model does not do by default, or own the machine that runs it.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-18-timisoara-october-2026",
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "charge-a-dollar-while-the-clip-renders",
+    "category": "business",
+    "title": "Charge a dollar while the clip renders",
+    "content": "Vlad's clip costs about $0.10 and sells for about $1. A paywall of $1 to $3 turned unpaid traffic into 2 or 3 sales a day. Generation is slow enough that the wait can hold a second offer. Price the single clip when the buyer comes once. A subscription is a poor fit for a person who needed one video tonight.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-18-timisoara-october-2026",
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "count-ai-referrals-as-their-own-channel",
+    "category": "distribution",
+    "title": "Count AI referrals as their own channel",
+    "content": "On SingleFax, AI referrals converted at 36.3%, organic search at 20.8%, and direct visits at 11.2%. Mircea treats that AI line as its own channel and checks Bing Webmaster Tools for the pages the answers cite. Plain posts about one job earn the citation. The permanent number is an email after the first $0.99, when the person has already paid. If a model is sending you buyers, give that source a column. A blended \"organic\" number will hide the channel that converts best.",
+    "journeySlug": "mircea-singlefax",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "one-dollar-paywall-on-one-off-buyers",
+    "category": "business",
+    "title": "A one-dollar paywall fits a buyer who comes once",
+    "content": "After cheaper video models cut sisif.ai from about $400 a month to $80-90, Vlad stopped giving the render away. A paywall of $1 to $3 produced 2 or 3 sales a day. The clip costs him about $0.10, so the dollar still leaves room, and self-hosting puts the margin near 70%. His buyers rarely come back and rarely write. Price the single job. Keep the subscription for the person who is actually running a workflow every week.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "publish-the-page-a-model-can-quote",
+    "category": "seo",
+    "title": "Publish the page a model can quote",
+    "content": "The spike came from public templates and pages ChatGPT could cite, including queries about AI video for children. Write the page that answers the job in the words the person already typed into the model. A template the model can point at is distribution. Keep the page factual and narrow enough to lift.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-18-timisoara-october-2026",
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "read-ai-share-of-voice-in-bing",
+    "category": "distribution",
+    "title": "Read your AI share of voice in Bing",
+    "content": "SingleFax converted 36.3% of AI referrals, 20.8% of organic search, and 11.2% of direct visits. Mircea checks Bing Webmaster Tools for the pages an answer cites. Short factual posts earn those citations. The upsell, a permanent fax number, goes out by email after the person has paid for one send. Count AI referrals as their own channel. On this product they buy more often than organic search, and more often than a direct visit.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-18-timisoara-october-2026",
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "sell-the-childrens-clip-to-the-parent",
+    "category": "product",
+    "title": "Sell the children's clip to the parent",
+    "content": "The room treated the children's clip as a product with a buyer, a moment, and a rule. The buyer is the parent. The moment is bedtime or mealtime. The rule is what the model may draw. Vlad's buyers are one-off and quiet, so a form with a reason to answer is how he learns why they came. A picture book can survive a rough line. A frame that is wrong for a child has to be blocked before it renders. Pick those three, then teach the pipeline to follow a timeline.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-18-timisoara-october-2026",
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "templates-a-model-can-cite",
+    "category": "distribution",
+    "title": "Public templates a model can cite beat another launch post",
+    "content": "Vlad's earlier social posts did not find the buyers. Public templates and SEO pages did, once ChatGPT started citing them. The paying queries were specific, including how to make an AI video for a child. Put a finished example where a model can quote it, in the words the buyer already used. That citation is a channel you can count, the same way you count search.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
   }
 ]

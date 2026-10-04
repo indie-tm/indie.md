@@ -11,6 +11,8 @@ lessons:
   - "Twenty years of agency work is the best product bootcamp you'll ever get"
   - "Sell HIPAA as a paid lane, not a badge"
   - "Charge to unlock a received fax"
+  - "Count AI referrals as their own channel"
+  - "A plain post is what an AI answer cites"
 ---
 
 After 20+ years of running Monocube, my dev agency, I thought I'd seen every client request imaginable. Then I noticed a pattern: half our clients needed to fax documents. IRS forms, legal filings, signed contracts. They all complained about the same thing. Every fax service wanted them to create an account, pick a monthly plan, and commit to a subscription they'd use twice a year.
@@ -102,3 +104,17 @@ SingleFax charges $0.99 to send. On the receive side, a lifetime or 30-day numbe
 :::
 
 The room had a view on all of this. [The #16 recap](/events/indie-tm-16-timisoara-september-2026) is what they said when the simple product started looking like a suite.
+
+## The visits that already chose the fax
+
+By [Indie TM #18](/events/indie-tm-18-timisoara-october-2026) I could split the channels.
+
+A visit from an AI answer converted at 36.3%. Organic search converted at 20.8%. Direct converted at 11.2%. The person who arrives from an answer often already has the document and the deadline. The page only has to take the $0.99.
+
+I read share of voice in Bing Webmaster Tools. It shows which of my pages those answers cite. Short, plain posts get cited. The posts that work are the ones that explain one job, such as faxing a form, and then offer the send.
+
+After that first payment, email offers a permanent number. The person has already shown they will pay. The number is the second sale.
+
+:::advice{slug="count-ai-referrals-as-their-own-channel" category="distribution" person="mircea" title="Count AI referrals as their own channel"}
+On SingleFax, AI referrals converted at 36.3%, organic search at 20.8%, and direct visits at 11.2%. Mircea treats that AI line as its own channel and checks Bing Webmaster Tools for the pages the answers cite. Plain posts about one job earn the citation. The permanent number is an email after the first $0.99, when the person has already paid. If a model is sending you buyers, give that source a column. A blended "organic" number will hide the channel that converts best.
+:::
