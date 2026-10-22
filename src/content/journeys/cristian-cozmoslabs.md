@@ -9,6 +9,7 @@ lessons:
   - "Build on top of an existing platform ecosystem, not standalone"
   - "Run a multi-product portfolio under one trusted brand"
   - "Longevity across a decade is the real moat"
+  - "Enter a new platform with AI tools before hiring a new team"
 ---
 
 I run [Cozmoslabs](https://www.cozmoslabs.com), and we build WordPress plugins. [TranslatePress](https://translatepress.com) makes sites multilingual, Profile Builder handles custom user registration, and Paid Member Subscriptions powers membership sites. Over the years that portfolio has reached more than 500,000 brands, with over 6 million plugin downloads behind it. When I closed the presentations at Indie TM #5, I did not talk about a growth hack. I talked about the opposite: how slow, deliberate building turned into a business that has lasted more than a decade.
@@ -57,4 +58,14 @@ What actually defends Cozmoslabs is not any single clever feature. It is that we
 
 :::advice{slug="decade-of-shipping-is-the-moat" category="mindset" person="cristian-antohe" title="Longevity across a decade is the real moat"}
 After more than ten years of shipping, the thing that defends Cozmoslabs is not a single feature but its sheer durability. Content has aged into authority, plugins have aged into reliability, and the brand has aged into trust, and none of that can be cloned by a competitor launching something flashier next month. Cristian's pickiness and slow pace look like handicaps in a market obsessed with speed, yet across a decade they are precisely what made the business hard to displace. Longevity is not a byproduct of the strategy, it is the moat the strategy was built to create.
+:::
+
+## Then Shopify, built by one person
+
+The slow cadence did not mean we stayed on one platform. [TranslatePress](https://translatepress.com) passed 400,000 active installs on WordPress, and when the new AI coding tools arrived we decided to follow merchants to Shopify. We did not hire React developers and we did not outsource it. I built [TranslatePress for Shopify](https://translatepress.com/shopify-translation-app/) myself, on and off, over six months, and showed it at [Indie TM #19](/events/indie-tm-19-timisoara-october-2026).
+
+The architecture is the opposite of the WordPress plugin. There we parse the page into strings and serve them back per language. On Shopify the app writes into the platform's own multilingual API, so the translations live in Shopify's database and stay there even if a merchant turns the app off. We also stopped paying per request to Google Translate, DeepL, and Gemini, and now run our own AI nodes, with models routed through [OpenRouter](https://openrouter.ai).
+
+:::advice{slug="enter-a-new-platform-without-a-new-team" category="product" person="cristian-antohe" title="Enter a new platform without hiring a new team"}
+Cristian built TranslatePress for Shopify himself over six months of on-and-off work with AI coding tools, instead of hiring React developers or outsourcing the app. A decade-old product with 400,000 WordPress installs already knew the problem; what it lacked was a way into a second platform without a second team. AI tools make a founder who knows the domain enough to ship the first version. Use them to test the new market, and hire only once the new platform proves it pays.
 :::
