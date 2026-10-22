@@ -1,4 +1,5 @@
 import { type CollectionEntry, getCollection, getEntry } from "astro:content";
+import { stackCategories, stackTools } from "../data/stack-tools";
 import { type AdviceEntry, getAdviceIndex } from "./advice";
 import { canonicalUrl, SITE_URL } from "./canonical";
 
@@ -96,6 +97,18 @@ export function personToMarkdown(
   }
   if (person.data.website) lines.push(`- Website: ${person.data.website}`);
   lines.push("", "## Bio", "", person.data.bio, "");
+
+  if (person.data.stack.length > 0) {
+    lines.push("## Stack & tools", "");
+    for (const group of person.data.stack) {
+      lines.push(`### ${stackCategories[group.category].label}`, "");
+      for (const id of group.tools) {
+        const tool = stackTools[id];
+        lines.push(`- [${tool.name}](${tool.url}): ${tool.purpose}`);
+      }
+      lines.push("");
+    }
+  }
 
   const personJourneys = journeys.filter((j) => j.data.person === person.id);
   if (personJourneys.length > 0) {

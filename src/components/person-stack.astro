@@ -1,0 +1,213 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { stackCategories, stackTools } from "../data/stack-tools";
+import StackMark from "./stack-mark.astro";
+
+interface Props {
+  stack: CollectionEntry<"people">["data"]["stack"];
+  personId: string;
+}
+const { stack, personId } = Astro.props;
+const toolIds = [...new Set(stack.flatMap((group) => group.tools))];
+const featured = ["nuxt", "codex", "postgres", "nomad", "grokbot"].filter((id) => toolIds.includes(id));
+const SHOWCASE_SIZE = 5;
+const showcase = [...featured, ...toolIds.filter((id) => !featured.includes(id))].slice(0, SHOWCASE_SIZE);
+const ribbon = toolIds.filter((_, index) => index % 2 === 0);
+const titleId = `${personId}-stack-title`;
+---
+
+<section class="container mx-auto px-4 pb-12" aria-labelledby={titleId}>
+  <div class="person-stack">
+    <div class="stack-heading flex flex-wrap items-center justify-between gap-4">
+      <p class="stack-eyebrow"><span></span> STACK &amp; TOOLS</p>
+      <label class="motion-control">
+        <input class="motion-toggle sr-only" type="checkbox" />
+        <svg class="pause-icon" width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="M3 2h2v8H3zm4 0h2v8H7z" /></svg>
+        <svg class="play-icon" width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><path d="m3 2 7 4-7 4z" /></svg>
+        <span class="pause-label">Pause motion</span><span class="play-label">Resume motion</span>
+      </label>
+    </div>
+
+    <div class="stack-stage">
+      <div class="stage-copy">
+        <h2 id={titleId}>The tools behind<br /><em>the things I build.</em></h2>
+        <p>From the first pixel to the infrastructure.<br class="hidden sm:block" /> A few favorites from the things I build.</p>
+        <div class="stage-stats"><span>{toolIds.length} tools</span><span class="stat-divider"></span><span>{stack.length} categories</span><span class="stat-divider"></span><span>One toolkit</span></div>
+      </div>
+      <stack-orbit class="tool-orbit" aria-hidden="true">
+        <div class="orbit-ring orbit-ring-outer"></div><div class="orbit-ring orbit-ring-inner"></div>
+        <span class="orbit-cross orbit-cross-one">+</span><span class="orbit-cross orbit-cross-two">+</span>
+        <div class="orbit-center"><span>build.</span><span>ship. repeat.</span></div>
+        {showcase.map((id, index) => (
+          <div class="floating-tool" data-slot={index} style={`--tile-index: ${index}; --tile-color: ${stackTools[id].color}`}>
+            <div class="floating-tool-face" data-tool-id={id}>
+              <StackMark tool={id} /><span class="tool-name">{stackTools[id].name}</span>
+            </div>
+          </div>
+        ))}
+      </stack-orbit>
+    </div>
+
+    <div class="stack-ribbon" aria-hidden="true">
+      <div class="ribbon-track">
+        {[0, 1].map(() => <div class="ribbon-copy">{ribbon.map((id) => <span class="ribbon-tool"><StackMark tool={id} /><span>{stackTools[id].name}</span></span>)}</div>)}
+      </div>
+    </div>
+
+    <div class="stack-collection">
+      <fieldset class="stack-filters">
+        <legend class="sr-only">Filter stack by category</legend>
+        <label class="filter-option"><input class="sr-only" type="radio" name={`${personId}-stack-filter`} value="all" checked /><span>All tools <small>{toolIds.length}</small></span></label>
+        {stack.map((group) => <label class="filter-option"><input class="sr-only" type="radio" name={`${personId}-stack-filter`} value={group.category} /><span>{stackCategories[group.category].label}</span></label>)}
+      </fieldset>
+
+      <div class="category-grid">
+        {stack.map((group, index) => {
+          const category = stackCategories[group.category];
+          return <article class="category-card" data-category={group.category} style={`--category-color: ${category.color}`}>
+            <div class="category-intro">
+              <div class="category-topline"><span class="category-symbol" aria-hidden="true">{category.symbol}</span><span class="category-number">0{index + 1} / {String(group.tools.length).padStart(2, "0")}</span></div>
+              <h3>{category.label}</h3>
+              <p>{category.caption}</p>
+            </div>
+            <ul class="tool-list" role="list">
+              {group.tools.map((id) => {
+                const tool = stackTools[id];
+                return <li><a class="tool-badge" data-tool-id={id} data-tool-color={tool.color} href={tool.url} target="_blank" rel="noopener noreferrer" title={`${tool.name}: ${tool.purpose}`}><StackMark tool={id} /><span class="tool-name">{tool.name}</span><svg class="badge-arrow" width="10" height="10" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true"><path d="M3 9 9 3M3 3h6v6" /></svg></a></li>;
+              })}
+            </ul>
+          </article>;
+        })}
+      </div>
+      <div class="collection-footer"><span class="footer-note"><span></span> Built with these. Always exploring.</span><span class="footer-link-hint">Pick a badge to explore the tool <span aria-hidden="true">↗</span></span></div>
+    </div>
+  </div>
+</section>
+
+<script>
+  import "../scripts/stack-orbit";
+</script>
+
+<style>
+  .person-stack {
+    --stack-ink: hsl(var(--foreground));
+    --stack-paper: hsl(var(--background));
+    --stack-line: hsl(var(--border));
+    --stack-dim: hsl(var(--muted-foreground));
+    overflow: hidden;
+    position: relative;
+    border: 1px solid var(--stack-line);
+    border-radius: 1.5rem;
+    background: var(--stack-paper);
+    color: var(--stack-ink);
+  }
+  .stack-heading { padding: 1.5rem 2rem 0; }
+  .stack-eyebrow { display: flex; align-items: center; gap: .6rem; color: var(--stack-dim); font-size: .65rem; font-weight: 600; letter-spacing: .16em; }
+  .stack-eyebrow > span { width: .4rem; height: .4rem; border-radius: 50%; background: hsl(var(--primary)); box-shadow: 0 0 0 4px hsl(var(--primary) / .09); }
+  .motion-control { display: inline-flex; align-items: center; gap: .35rem; padding: .5rem .65rem; border: 1px solid var(--stack-line); border-radius: 2rem; color: var(--stack-dim); font-size: .65rem; cursor: pointer; }
+  .motion-control:hover { color: var(--stack-ink); }
+  .motion-control:has(input:focus-visible) { outline: 2px solid hsl(var(--primary)); outline-offset: 4px; }
+  .play-icon, .play-label { display: none; }
+  .motion-control:has(:checked) .play-icon, .motion-control:has(:checked) .play-label { display: inline; }
+  .motion-control:has(:checked) .pause-icon, .motion-control:has(:checked) .pause-label { display: none; }
+  .stack-stage { display: grid; grid-template-columns: 1fr 1fr; min-height: 17.5rem; padding: 1rem 2rem 1.5rem; background: radial-gradient(ellipse at 78% 45%, hsl(var(--primary) / .055), transparent 55%); }
+  .stage-copy { align-self: center; padding: 1rem 0; z-index: 1; }
+  .stage-copy h2 { font-size: clamp(2.25rem, 4.5vw, 3.75rem); line-height: 1.04; letter-spacing: -.035em; }
+  .stage-copy h2 em { font-weight: 400; color: hsl(var(--text-link)); }
+  .stage-copy > p { margin-top: 1.15rem; font-size: .85rem; line-height: 1.8; color: var(--stack-dim); }
+  .stage-stats { display: flex; flex-wrap: wrap; align-items: center; gap: .6rem; margin-top: 1.4rem; font-size: .62rem; color: var(--stack-dim); }
+  .stat-divider { width: 3px; height: 3px; border-radius: 50%; background: var(--stack-line); }
+  .tool-orbit { display: block; position: relative; min-height: 16rem; width: 100%; max-width: 30rem; justify-self: center; }
+  .orbit-ring { position: absolute; top: 50%; left: 50%; border: 1px solid hsl(var(--primary) / .12); border-radius: 50%; transform: translate(-50%, -50%) rotate(-18deg); }
+  .orbit-ring-outer { width: 90%; height: 85%; border-style: dashed; }
+  .orbit-ring-inner { width: 61%; height: 59%; }
+  .orbit-center { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; transform: rotate(-7deg); }
+  .orbit-center > span:first-child { font-family: var(--font-display); font-size: 3.5rem; letter-spacing: -.06em; color: hsl(var(--foreground) / .16); }
+  .orbit-center > span:last-child { color: var(--stack-dim); opacity: .7; font-size: .5rem; letter-spacing: .18em; text-transform: uppercase; }
+  .orbit-cross { position: absolute; color: hsl(var(--primary) / .4); font-family: monospace; font-size: 1rem; }
+  .orbit-cross-one { top: 11%; left: 15%; }.orbit-cross-two { bottom: 5%; right: 18%; }
+  .floating-tool { position: absolute; width: max-content; max-width: 49%; font-size: .85rem; font-weight: 600; animation: tool-float 7s ease-in-out infinite; animation-delay: calc(var(--tile-index) * -1.3s); }
+  .floating-tool-face { display: flex; align-items: center; gap: .6rem; padding: .75rem 1rem; background: color-mix(in srgb, var(--tile-color) 7%, var(--stack-paper)); border: 1px solid color-mix(in srgb, var(--tile-color) 30%, var(--stack-line)); border-radius: 1rem; box-shadow: 0 7px 0 -3px var(--stack-paper), 0 8px 0 -3px var(--stack-line), 0 16px 25px -16px hsl(30 30% 30% / .28); }
+  .floating-tool-face .tool-name { min-width: 0; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; }
+  .floating-tool[data-slot="0"] { top: 0; left: 35%; --tile-rotation: 7deg; }
+  .floating-tool[data-slot="1"] { top: 29%; left: 0; --tile-rotation: -9deg; }
+  .floating-tool[data-slot="2"] { top: 34%; right: 0; --tile-rotation: 9deg; }
+  .floating-tool[data-slot="3"] { bottom: 3%; left: 0; --tile-rotation: -7deg; }
+  .floating-tool[data-slot="4"] { bottom: 0; right: 0; --tile-rotation: 7deg; }
+  .tool-orbit[data-motion-paused] .floating-tool { animation-play-state: paused; }
+  .person-stack:has(.tool-orbit[data-motion-paused]) .ribbon-track { animation-play-state: paused; }
+  .stack-ribbon { overflow: hidden; border-block: 1px solid var(--stack-line); padding: .8rem 0; background: hsl(var(--card) / .6); mask-image: linear-gradient(90deg, transparent, #000 5%, #000 95%, transparent); }
+  .ribbon-track { display: flex; width: max-content; animation: tool-ribbon 75s linear infinite; }
+  .ribbon-copy { display: flex; align-items: center; flex-shrink: 0; gap: 2rem; padding-right: 2rem; }
+  .ribbon-tool { display: inline-flex; align-items: center; gap: .5rem; white-space: nowrap; color: var(--stack-dim); font-size: .72rem; }
+  .stack-ribbon:hover .ribbon-track { animation-play-state: paused; }
+  .stack-collection { padding: 1.5rem 2rem 1rem; }
+  .stack-filters { display: flex; flex-wrap: wrap; gap: .4rem; margin-bottom: 1.4rem; }
+  .filter-option { cursor: pointer; }
+  .filter-option > span { display: flex; align-items: center; gap: .5rem; padding: .55rem .8rem; border-radius: 2rem; color: var(--stack-dim); font-size: .7rem; border: 1px solid transparent; transition: background .2s, color .2s; }
+  .filter-option:hover > span { color: var(--stack-ink); background: hsl(var(--muted)); }
+  .filter-option:has(:checked) > span { color: hsl(var(--primary-foreground)); background: hsl(var(--foreground)); border-color: hsl(var(--foreground)); }
+  :global(.dark) .filter-option:has(:checked) > span { color: hsl(var(--background)); }
+  .filter-option:has(:focus-visible) > span { outline: 2px solid hsl(var(--primary)); outline-offset: 3px; }
+  .filter-option small { font-size: .6rem; opacity: .65; }
+  .category-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .8rem; }
+  .category-card { min-width: 0; padding: 1.3rem; border: 1px solid var(--stack-line); border-radius: 1rem; background: linear-gradient(145deg, color-mix(in srgb, var(--category-color) 9%, var(--stack-paper)), var(--stack-paper) 70%); transition: border-color .25s, box-shadow .25s; }
+  .category-card:hover { border-color: color-mix(in srgb, var(--category-color) 65%, var(--stack-line)); box-shadow: 0 5px 24px -16px color-mix(in srgb, var(--category-color) 55%, var(--stack-ink)); }
+  .category-card[data-category="ai"] { grid-column: 1 / -1; display: grid; grid-template-columns: 1fr 2fr; gap: 2rem; align-items: center; }
+  .category-card[data-category="ai"] .tool-list { margin-top: 0; }
+  .category-topline { display: flex; align-items: center; justify-content: space-between; margin-bottom: 1rem; }
+  .category-symbol { display: inline-flex; align-items: center; justify-content: center; width: 2rem; height: 2rem; border-radius: .65rem; color: color-mix(in srgb, var(--category-color) 45%, var(--stack-ink)); background: color-mix(in srgb, var(--category-color) 20%, transparent); font-family: monospace; font-size: .85rem; }
+  .category-number { font-family: monospace; color: var(--stack-dim); font-size: .55rem; letter-spacing: .06em; }
+  .category-intro h3 { font-family: var(--font-body); font-size: .88rem; font-weight: 600; letter-spacing: -.02em; }
+  .category-intro p { color: var(--stack-dim); font-size: .65rem; line-height: 1.6; margin-top: .25rem; }
+  .tool-list { display: flex; flex-wrap: wrap; gap: .45rem; margin-top: 1.15rem; padding: 0; list-style: none; }
+  .tool-badge { display: inline-flex; align-items: center; gap: .4rem; padding: .3rem .6rem .3rem .3rem; border: 1px solid var(--stack-line); border-radius: .6rem; background: var(--stack-paper); font-size: .67rem; font-weight: 500; white-space: nowrap; box-shadow: 0 2px 2px hsl(30 20% 30% / .025); transition: transform .2s, border-color .2s, box-shadow .2s; }
+  .tool-badge:hover { transform: translateY(-2px); border-color: hsl(var(--primary) / .4); box-shadow: 0 4px 9px -5px hsl(var(--primary) / .3); }
+  .tool-badge:focus-visible { outline: 2px solid hsl(var(--primary)); outline-offset: 3px; }
+  .badge-arrow { color: var(--stack-dim); opacity: .45; }
+  .collection-footer { display: flex; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.3rem .1rem .2rem; color: var(--stack-dim); font-size: .6rem; }
+  .footer-note { display: flex; align-items: center; gap: .45rem; }
+  .footer-note > span { width: .3rem; height: .3rem; background: hsl(var(--accent)); border-radius: 50%; }
+  .footer-link-hint > span { padding-left: .25rem; }
+  .person-stack:has(.motion-toggle:checked) .ribbon-track, .person-stack:has(.motion-toggle:checked) .floating-tool { animation-play-state: paused; }
+  .person-stack:has(.filter-option input:not([value="all"]):checked) .category-grid { grid-template-columns: 1fr; }
+  .person-stack:has(.filter-option input:not([value="all"]):checked) .category-card { display: grid; grid-template-columns: 1fr 2fr; align-items: center; gap: 2rem; }
+  .person-stack:has(input[value="ai"]:checked) .category-card:not([data-category="ai"]),
+  .person-stack:has(input[value="interfaces"]:checked) .category-card:not([data-category="interfaces"]),
+  .person-stack:has(input[value="backend"]:checked) .category-card:not([data-category="backend"]),
+  .person-stack:has(input[value="data"]:checked) .category-card:not([data-category="data"]),
+  .person-stack:has(input[value="infrastructure"]:checked) .category-card:not([data-category="infrastructure"]),
+  .person-stack:has(input[value="cloud"]:checked) .category-card:not([data-category="cloud"]),
+  .person-stack:has(input[value="product"]:checked) .category-card:not([data-category="product"]) { display: none; }
+  @keyframes tool-float { 0%, 100% { transform: translateY(0) rotate(var(--tile-rotation, 0deg)); } 50% { transform: translateY(-9px) rotate(calc(var(--tile-rotation, 0deg) + 2deg)); } }
+  @keyframes tool-ribbon { to { transform: translateX(-50%); } }
+  @media (max-width: 1100px) { .category-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } .floating-tool { font-size: .7rem; } .floating-tool-face { padding: .6rem .75rem; } }
+  @media (max-width: 767px) {
+    .stack-heading { padding: 1.2rem 1.2rem 0; }
+    .stack-stage { grid-template-columns: 1fr; padding: 1rem 1.2rem 1.5rem; }
+    .stage-copy { padding-bottom: 0; }
+    .stage-copy h2 { font-size: 2.6rem; }
+    .stage-copy > p { font-size: .8rem; }
+    .tool-orbit { min-height: 15rem; max-width: 25rem; margin-top: 1rem; }
+    .floating-tool { font-size: .72rem; }
+    .floating-tool-face { gap: .4rem; padding: .6rem; }
+    .stack-collection { padding: 1.2rem; }
+    .stack-filters { gap: .2rem; }
+    .filter-option > span { padding: .6rem .65rem; font-size: .65rem; }
+    .category-grid { grid-template-columns: 1fr; }
+    .person-stack:has(.filter-option input:not([value="all"]):checked) .category-card { grid-template-columns: 1fr; gap: 0; }
+    .category-card { padding: 1.15rem; }
+    .category-card[data-category="ai"] { grid-template-columns: 1fr; gap: 0; }
+    .category-card[data-category="ai"] .tool-list { margin-top: 1.15rem; }
+    .tool-badge { font-size: .72rem; min-height: 2.75rem; padding-right: .7rem; }
+    .collection-footer { padding-top: 1rem; }
+    .footer-link-hint { display: none; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .floating-tool, .ribbon-track { animation: none; }
+    .floating-tool { transform: rotate(var(--tile-rotation, 0deg)); }
+    .tool-badge, .category-card, .filter-option > span { transition: none; }
+    .tool-badge:hover { transform: none; }
+    .motion-control { display: none; }
+  }
+</style>

@@ -1,6 +1,21 @@
 ---
 name: "Mircea"
 avatar: "/avatars/mircea.png"
+stack:
+  - category: ai
+    tools: [cursor, codex, grokbot, mcp, ocrskill]
+  - category: interfaces
+    tools: [typescript, nuxt, vue, astro, tailwind, reactnative, expo, kotlin, compose]
+  - category: backend
+    tools: [node, bun, nitro, drizzle, betterauth]
+  - category: data
+    tools: [postgres, dragonflydb, redpanda, clickhouse, temporal]
+  - category: infrastructure
+    tools: [nomad, docker, proxmox, traefik, caddy, consul, tailscale, grafana, victoriametrics, loki, oneuptime]
+  - category: cloud
+    tools: [cloudflare, hetzner, interserver, runpod]
+  - category: product
+    tools: [stripe, telnyx, posthog, rybbit]
 tagline: "From agency burnout to $4k MRR"
 products:
   - name: "SingleFax"

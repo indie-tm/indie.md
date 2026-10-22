@@ -56,6 +56,20 @@ bio: "A few sentences about who you are and what you build."
 
 Place a 400x400 PNG avatar at `public/avatars/{slug}.png`.
 
+#### Add a profile stack
+
+People can optionally list a curated selection of tools. The shared profile stack renders linked, categorized badges and a rotating showcase. Add tool IDs from `src/data/stack-tools.ts` to the person's frontmatter:
+
+```yaml
+stack:
+  - category: ai
+    tools: [cursor, codex]
+  - category: interfaces
+    tools: [typescript, nuxt, vue]
+```
+
+Available categories are `ai`, `interfaces`, `backend`, `data`, `infrastructure`, `cloud`, and `product`. To add a tool, register its name, official URL, purpose, color, and local logo in `src/data/stack-tools.ts`, then add its logo under `public/stack/`. See [docs/profile-stacks.md](docs/profile-stacks.md) for the component behavior, logo sources, and the full example.
+
 ### Add a journey
 
 Create `src/content/journeys/{slug}.md`:

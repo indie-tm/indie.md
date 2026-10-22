@@ -1,0 +1,26 @@
+---
+import { assetPath } from "../lib/base-url";
+import { stackTools } from "../data/stack-tools";
+
+interface Props { tool: string; }
+const { tool } = Astro.props;
+const entry = stackTools[tool];
+---
+<span class="stack-mark" style={{ "--mark-color": entry.color, "--logo-background": entry.logoBackground }} aria-hidden="true">
+  <img class="stack-logo" src={assetPath(`/stack/${entry.icon}`)} alt="" width="20" height="20" decoding="async" />
+</span>
+
+<style>
+  .stack-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 1.75rem;
+    height: 1.75rem;
+    border-radius: .5rem;
+    background: var(--logo-background, color-mix(in srgb, var(--mark-color) 16%, transparent));
+  }
+  .stack-logo { width: 1.1rem; height: 1.1rem; object-fit: contain; color-scheme: light; }
+  :global(.dark) .stack-mark { background: var(--logo-background, #f8f7f4); }
+</style>

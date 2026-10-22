@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import JourneyCard from '../../components/JourneyCard.astro';
 import EventCard from '../../components/EventCard.astro';
 import CategoryBadge from '../../components/CategoryBadge.astro';
+import PersonStack from '../../components/person-stack.astro';
 import { getCollection, getEntry } from 'astro:content';
 import { getAdviceIndex, getAdviceForEvent, getAllCategories } from '../../lib/advice';
 import { assetPath, href } from "../../lib/base-url";
@@ -119,6 +120,8 @@ const twitterCreator = person.data.twitter
       </div>
     )}
   </section>
+
+  {person.data.stack.length > 0 && <PersonStack stack={person.data.stack} personId={person.id} />}
 
   <!-- Journeys -->
   {journeysWithAdviceCount.length > 0 && (

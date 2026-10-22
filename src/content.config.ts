@@ -1,5 +1,6 @@
 import { defineCollection, z } from "astro:content";
 import { glob } from "astro/loaders";
+import { stackTools } from "./data/stack-tools";
 
 const people = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "src/content/people" }),
@@ -18,6 +19,24 @@ const people = defineCollection({
     // the shortcut handle fields above (twitter/github/linkedin) feed into it
     // at render time.
     sameAs: z.array(z.string().url()).optional(),
+    stack: z
+      .array(
+        z.object({
+          category: z.enum([
+            "ai",
+            "interfaces",
+            "backend",
+            "data",
+            "infrastructure",
+            "cloud",
+            "product",
+          ]),
+          tools: z
+            .array(z.string().refine((id) => Object.hasOwn(stackTools, id), "Unknown stack tool"))
+            .min(1),
+        }),
+      )
+      .default([]),
     products: z
       .array(
         z.object({
