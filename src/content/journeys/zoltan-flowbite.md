@@ -1,5 +1,5 @@
 ---
-title: "From a Rejected ThemeForest Template to 70k a Month"
+title: "From a Rejected ThemeForest Template to 30 Million Downloads"
 subtitle: "How Flowbite grew an open-source component library into a bootstrapped, two-person business"
 person: "zoltan"
 date: 2026-04-10
@@ -19,33 +19,33 @@ My co-founder Robert and I did not start with a product. We started with outsour
 We decided to sell templates instead of hours. We built one, submitted it to ThemeForest, and it got rejected. That is the part of the story most people would quietly delete. We kept going. We submitted more, kept improving the work, and paid attention to what the market reacted to.
 
 :::advice{slug="persist-through-early-rejection" category="mindset" person="zoltan" title="A rejection is a data point, not a verdict"}
-Bergside's first ThemeForest template was rejected, and the company that grew out of it now does 70k a month. The rejection was information about one submission, not a judgment on the whole idea. Most founders treat an early no as proof the plan is wrong and quit one iteration before the thing that works. Zoltan and his co-founder treated it as feedback, shipped the next version, and kept shipping. Separate the verdict on a single attempt from the verdict on the direction, and keep going.
+Bergside's first ThemeForest template was rejected, and the company that grew out of it now builds Flowbite, an open-source library with over 30 million npm downloads. The rejection was information about one submission, not a judgment on the whole idea. Most founders treat an early no as proof the plan is wrong and quit one iteration before the thing that works. Zoltan and his co-founder treated it as feedback, shipped the next version, and kept shipping. Separate the verdict on a single attempt from the verdict on the direction, and keep going.
 :::
 
 ## The Black Friday that pointed at the market
 
-The turning point was a single night. We had built a Tailwind and Figma design system kit, and on one Black Friday it sold 3,000 euros in a few hours. That spike was the clearest signal we ever got. The market was not "templates," it was Tailwind components, and people were ready to pay for them right then.
+The turning point was a single night. We had built a Tailwind and Figma design system kit, and on one Black Friday it spiked in a few hours. That spike was the clearest signal we ever got. The market was not "templates," it was Tailwind components, and people were ready to pay for them right then.
 
 We doubled down on exactly that. We built more Tailwind components, designed them in Figma, started building in public, and that work became [Flowbite](https://flowbite.com).
 
 ![Flowbite homepage](/screenshots/flowbite.png)
 
 :::advice{slug="follow-the-spike-to-the-market" category="product" person="zoltan" title="Let one big spike tell you where the market is"}
-Bergside sold one Tailwind and Figma kit for 3,000 euros in a single Black Friday night, and that one spike redirected the entire company toward Tailwind components. A sudden, sharp sales response is the market telling you where the demand actually lives, in a way no survey or roadmap meeting ever will. When something you ship spikes far beyond the rest, do not treat it as a lucky one-off. Treat it as a map. Drop what is flat and pour your effort into the thing the market just voted for with its wallet.
+One Tailwind and Figma kit spiked in a single Black Friday night, and that one spike redirected the entire company toward Tailwind components. A sudden, sharp sales response is the market telling you where the demand actually lives, in a way no survey or roadmap meeting ever will. When something you ship spikes far beyond the rest, do not treat it as a lucky one-off. Treat it as a map. Drop what is flat and pour your effort into the thing the market just voted for with its wallet.
 :::
 
 ## Open source as the whole funnel
 
 [Flowbite](https://flowbite.com) is an open-source UI component library: over 30 million npm downloads, more than 9,100 GitHub stars, and 600+ components, sections, and pages built on Tailwind CSS and designed in Figma. The open-source library is free, and that is not charity. It is the top of the funnel and the funnel itself. Every developer who installs Flowbite to build something is a developer who already knows and trusts the brand when they need more.
 
-The money comes from the layer on top: pro components, full website sections, and framework integrations for React, Vue, and Svelte. All of it sold as one-time purchases, no subscriptions. Two people, bootstrapped, no outside money, and that model reached 70k a month.
+The money comes from the layer on top: pro components, full website sections, and framework integrations for React, Vue, and Svelte. All of it sold as one-time purchases, no subscriptions. Two people, bootstrapped, no outside money, and for five years that model was the business.
 
 :::advice{slug="open-source-as-distribution" category="distribution" person="zoltan" title="Open source can be your distribution channel"}
 Flowbite's free open-source library has over 30 million npm downloads, and those downloads are the marketing. Instead of buying attention, Bergside gives away a genuinely useful core and lets adoption carry the brand into millions of projects. The developers who already build with the free components are the warm audience for the paid pro components and framework integrations. If your product can have a free core that people install and depend on, the open-source version is not lost revenue, it is the cheapest and most durable distribution you will ever own.
 :::
 
 :::advice{slug="free-core-paid-extras" category="business" person="zoltan" title="Give away the core and sell the extras once"}
-Flowbite reached 70k a month with no recurring revenue at all: the library is free, and pro components, sections, and framework integrations were one-time purchases. A free core removes the adoption decision, and one-time pricing removes the renewal anxiety that makes buyers hesitate. That run is the proof that you do not need a subscription to build a real business. Pick the smallest valuable thing to charge for, sell it once at a fair price, and let a large free top-of-funnel feed it.
+Flowbite became a real business with no recurring revenue at all: the library is free, and pro components, sections, and framework integrations were one-time purchases. A free core removes the adoption decision, and one-time pricing removes the renewal anxiety that makes buyers hesitate. That run is the proof that you do not need a subscription to build a real business. Pick the smallest valuable thing to charge for, sell it once at a fair price, and let a large free top-of-funnel feed it.
 :::
 
 ## What to build next is a search query
@@ -72,7 +72,7 @@ We have shipped a lot of products over the years (Flowbite, [Themesberg](https:/
 
 That one-time model was the business when I told this story. It did not stay the business.
 
-[Flowbite](https://flowbite.com) had brought in between 2 and 3 million euros over five years, at a margin near 70% after tax. The thing we sold was code. The models started writing that code for almost nothing. The drop began in November. In three months we were down about 70 percent. The full fall was 90 to 95 percent.
+[Flowbite](https://flowbite.com) had been selling for five years. The thing we sold was code. The models started writing that code for almost nothing. The drop began in November. In three months we were down about 70 percent. The full fall was 90 to 95 percent.
 
 The open-source library kept moving. It still does more than 500,000 downloads a week on npm. Installs are not invoices.
 

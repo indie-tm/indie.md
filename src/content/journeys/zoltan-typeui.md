@@ -11,11 +11,11 @@ lessons:
   - "Show a customer's site instead of stamping a watermark"
 ---
 
-The earlier years are in [the Flowbite journey](/journeys/zoltan-flowbite): the rejected template, the Black Friday spike, the open-source library, the one-time sales that reached 70k a month. This is what happened when that code stopped being scarce.
+The earlier years are in [the Flowbite journey](/journeys/zoltan-flowbite): the rejected template, the Black Friday spike, the open-source library, the one-time sales that became the business. This is what happened when that code stopped being scarce.
 
 ## November
 
-[Flowbite](https://flowbite.com) had brought in between 2 and 3 million euros over five years. The margin sat near 70% after tax. Robert and I were still two people at [Bergside](https://bergside.com). The product people paid for was code: components, sections, framework kits.
+[Flowbite](https://flowbite.com) had been the business for five years. Robert and I were still two people at [Bergside](https://bergside.com). The product people paid for was code: components, sections, framework kits.
 
 Then the models started writing that code for almost nothing. The drop began in November. In three months we were down about 70 percent. The full fall was 90 to 95 percent.
 
@@ -52,8 +52,6 @@ We changed a flow and sent people straight to the pricing page, past login. Sign
 Sessions do the slower job. I can follow one person through the funnel and see the step where they leave.
 
 We are building a Chrome extension so those clicks show on the live site, not only inside a dashboard. The next piece I want is a model, connected through MCP, that reads the recordings and names the dead clicks and the loading stalls.
-
-Recurring revenue sits between $4,000 and $6,000 a month.
 
 :::advice{slug="watch-the-path-not-the-palette" category="product" person="zoltan" title="A color change is not a test. Watch the path."}
 TypeUI could keep two Airbnb-style sites feeling like the same product after a color change, and still lose 79.82% of signups by sending people to pricing before login. The palette held. The path did not. Heatmaps, dead clicks, rage clicks, and scroll depth are there so a traffic number has to explain itself. If you ship a redesign, read the step where people stop before you congratulate the visual system. A consistent feeling is not a conversion.

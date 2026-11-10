@@ -279,6 +279,15 @@
     "personSlug": "cristian-antohe"
   },
   {
+    "slug": "enter-a-new-platform-without-a-new-team",
+    "category": "product",
+    "title": "Enter a new platform without hiring a new team",
+    "content": "Cristian built TranslatePress for Shopify himself over six months of on-and-off work with AI coding tools, instead of hiring React developers or outsourcing the app. A decade-old product with 400,000 WordPress installs already knew the problem; what it lacked was a way into a second platform without a second team. AI tools make a founder who knows the domain enough to ship the first version. Use them to test the new market, and hire only once the new platform proves it pays.",
+    "journeySlug": "cristian-cozmoslabs",
+    "eventSlug": null,
+    "personSlug": "cristian-antohe"
+  },
+  {
     "slug": "design-for-the-data-class-from-day-one",
     "category": "product",
     "title": "In a regulated vertical, the data class is the product spec",
@@ -774,6 +783,15 @@
     "personSlug": "mircea"
   },
   {
+    "slug": "count-ai-referrals-as-their-own-channel",
+    "category": "distribution",
+    "title": "Count AI referrals as their own channel",
+    "content": "On SingleFax, AI referrals converted at 36.3%, organic search at 20.8%, and direct visits at 11.2%. Mircea treats that AI line as its own channel and checks Bing Webmaster Tools for the pages the answers cite. Plain posts about one job earn the citation. The permanent number is an email after the first $0.99, when the person has already paid. If a model is sending you buyers, give that source a column. A blended \"organic\" number will hide the channel that converts best.",
+    "journeySlug": "mircea-singlefax",
+    "eventSlug": null,
+    "personSlug": "mircea"
+  },
+  {
     "slug": "productize-a-rendering-technique-for-one-vertical",
     "category": "product",
     "title": "Productize a cutting-edge rendering technique for one concrete vertical",
@@ -1071,10 +1089,28 @@
     "personSlug": "vlad"
   },
   {
+    "slug": "one-dollar-paywall-on-one-off-buyers",
+    "category": "business",
+    "title": "A one-dollar paywall fits a buyer who comes once",
+    "content": "After cheaper video models cut sisif.ai from about $400 a month to $80-90, Vlad stopped giving the render away. A paywall of $1 to $3 produced 2 or 3 sales a day. The clip costs him about $0.10, so the dollar still leaves room, and self-hosting puts the margin near 70%. His buyers rarely come back and rarely write. Price the single job. Keep the subscription for the person who is actually running a workflow every week.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "templates-a-model-can-cite",
+    "category": "distribution",
+    "title": "Public templates a model can cite beat another launch post",
+    "content": "Vlad's earlier social posts did not find the buyers. Public templates and SEO pages did, once ChatGPT started citing them. The paying queries were specific, including how to make an AI video for a child. Put a finished example where a model can quote it, in the words the buyer already used. That citation is a channel you can count, the same way you count search.",
+    "journeySlug": "vlad-sisif-ai",
+    "eventSlug": null,
+    "personSlug": "vlad"
+  },
+  {
     "slug": "persist-through-early-rejection",
     "category": "mindset",
     "title": "A rejection is a data point, not a verdict",
-    "content": "Bergside's first ThemeForest template was rejected, and the company that grew out of it now does 70k a month. The rejection was information about one submission, not a judgment on the whole idea. Most founders treat an early no as proof the plan is wrong and quit one iteration before the thing that works. Zoltan and his co-founder treated it as feedback, shipped the next version, and kept shipping. Separate the verdict on a single attempt from the verdict on the direction, and keep going.",
+    "content": "Bergside's first ThemeForest template was rejected, and the company that grew out of it now builds Flowbite, an open-source library with over 30 million npm downloads. The rejection was information about one submission, not a judgment on the whole idea. Most founders treat an early no as proof the plan is wrong and quit one iteration before the thing that works. Zoltan and his co-founder treated it as feedback, shipped the next version, and kept shipping. Separate the verdict on a single attempt from the verdict on the direction, and keep going.",
     "journeySlug": "zoltan-flowbite",
     "eventSlug": null,
     "personSlug": "zoltan"
@@ -1083,7 +1119,7 @@
     "slug": "follow-the-spike-to-the-market",
     "category": "product",
     "title": "Let one big spike tell you where the market is",
-    "content": "Bergside sold one Tailwind and Figma kit for 3,000 euros in a single Black Friday night, and that one spike redirected the entire company toward Tailwind components. A sudden, sharp sales response is the market telling you where the demand actually lives, in a way no survey or roadmap meeting ever will. When something you ship spikes far beyond the rest, do not treat it as a lucky one-off. Treat it as a map. Drop what is flat and pour your effort into the thing the market just voted for with its wallet.",
+    "content": "One Tailwind and Figma kit spiked in a single Black Friday night, and that one spike redirected the entire company toward Tailwind components. A sudden, sharp sales response is the market telling you where the demand actually lives, in a way no survey or roadmap meeting ever will. When something you ship spikes far beyond the rest, do not treat it as a lucky one-off. Treat it as a map. Drop what is flat and pour your effort into the thing the market just voted for with its wallet.",
     "journeySlug": "zoltan-flowbite",
     "eventSlug": null,
     "personSlug": "zoltan"
@@ -1101,7 +1137,7 @@
     "slug": "free-core-paid-extras",
     "category": "business",
     "title": "Give away the core and sell the extras once",
-    "content": "Flowbite reaches 70k a month with no recurring revenue at all: the library is free, and pro components, sections, and framework integrations are one-time purchases. A free core removes the adoption decision, and one-time pricing removes the renewal anxiety that makes buyers hesitate. Bergside proves you do not need a subscription to build a real business. Pick the smallest valuable thing to charge for, sell it once at a fair price, and let a large free top-of-funnel feed it.",
+    "content": "Flowbite became a real business with no recurring revenue at all: the library is free, and pro components, sections, and framework integrations were one-time purchases. A free core removes the adoption decision, and one-time pricing removes the renewal anxiety that makes buyers hesitate. That run is the proof that you do not need a subscription to build a real business. Pick the smallest valuable thing to charge for, sell it once at a fair price, and let a large free top-of-funnel feed it.",
     "journeySlug": "zoltan-flowbite",
     "eventSlug": null,
     "personSlug": "zoltan"
@@ -1112,6 +1148,33 @@
     "title": "Own the layer AI coding tools still leave missing",
     "content": "TypeUI is a bet that as AI generates more of the code, the scarce thing becomes the consistent design layer on top of it. The general pattern for founders in 2026: do not compete with the AI on the work it does well, find the adjacent layer it leaves missing and own that. AI can generate a hundred components; it cannot yet make them feel like one designed product. Look at where the new tools are strong, then build for the gap they create rather than the one they fill.",
     "journeySlug": "zoltan-flowbite",
+    "eventSlug": null,
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "sell-the-rules-the-model-still-gets-wrong",
+    "category": "mindset",
+    "title": "When the model writes the code, sell the rules it still gets wrong",
+    "content": "Flowbite's paid components fell 90 to 95 percent once models could write that code, while the free library kept doing more than 500,000 downloads a week. The installs proved the brand. They did not pay the invoices. When a model makes your core cheap, the scarce layer moves. Zoltan moved it to design rules the model has to follow, and to the analytics that say whether the page works. Look at the line item a model just made free. Price the next thing it still gets wrong.",
+    "journeySlug": "zoltan-typeui",
+    "eventSlug": null,
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "write-the-design-skill-in-markdown",
+    "category": "product",
+    "title": "Put the design system in a markdown file the model can read",
+    "content": "TypeUI's design skills are markdown: buttons, navigation, spacing, accessibility, written by a co-founder with fifteen years in UI and UX. Zoltan would rather give a coding model that file than start in Figma. A Figma board is a picture the model has to guess at. A markdown skill is an instruction it can follow. If you sell taste to people who generate code, write the taste down in the format the model already reads. Then charge for the file, the motion, the sound, and the audit, not for another component zip.",
+    "journeySlug": "zoltan-typeui",
+    "eventSlug": null,
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "watch-the-path-not-the-palette",
+    "category": "product",
+    "title": "A color change is not a test. Watch the path.",
+    "content": "TypeUI could keep two Airbnb-style sites feeling like the same product after a color change, and still lose 79.82% of signups by sending people to pricing before login. The palette held. The path did not. Heatmaps, dead clicks, rage clicks, and scroll depth are there so a traffic number has to explain itself. If you ship a redesign, read the step where people stop before you congratulate the visual system. A consistent feeling is not a conversion.",
+    "journeySlug": "zoltan-typeui",
     "eventSlug": null,
     "personSlug": "zoltan"
   },
@@ -1476,6 +1539,150 @@
     "personSlug": "mircea"
   },
   {
+    "slug": "write-the-page-a-model-can-cite",
+    "category": "seo",
+    "title": "Write the page you want a model to cite",
+    "content": "TypeUI already gets 34% of its visits from Google, 25% direct, and 10.9% from Reddit, on a 0.3% to 0.5% conversion. The room's next content bet was AIO: posts and comparison tables written so a model quotes them when someone asks what to use. A blog that only chases a keyword misses the answer box. Name the alternatives, put the differences in a table, and make the page specific enough that a model can lift it. Search still sends people. The citation is the new distribution.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-17-timisoara-september-2026",
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "ship-a-plugin-where-the-work-already-happens",
+    "category": "distribution",
+    "title": "Ship a plugin where the buyer is already working",
+    "content": "Zoltan's guerrilla channel was a Chrome extension and a Figma plugin: a backlink, plus a person who is already trying to design. That is higher intent than a post hoping someone wanders in from Google. If your buyer lives inside one tool all day, put a small useful piece of your product there. The install is the introduction. The subscription can come after they have felt the time you saved.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-17-timisoara-september-2026",
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "ask-on-day-30",
+    "category": "business",
+    "title": "Ask on day 30, on a scale from 1 to 10",
+    "content": "TypeUI is at $4,000 to $6,000 a month, and the room did not want another feature before a score. Ask customers, from 1 to 10, if they would recommend it. Ask again when the first month ends, including the people who cancel. A showcase of shipped customer sites does the public proof. A watermark on the output is a tax. The day-30 answer tells you whether the $30 plan bought back the hours you promised, while the person still remembers the first month.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-17-timisoara-september-2026",
+    "personSlug": "zoltan"
+  },
+  {
+    "slug": "a-wrapper-dies-when-the-model-gets-cheap",
+    "category": "mindset",
+    "title": "A wrapper dies when a better model ships",
+    "content": "sisif.ai reached about $400 a month on someone else's video model, then fell to $80-90 when stronger and cheaper models shipped. Sora was the name the room used. The page did not get worse. The model under the page became a commodity. If your product is a thin layer on one provider, write down what your price does the month a lab ships a better one. Own a job the next model does not do by default, or own the machine that runs it.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-18-timisoara-october-2026",
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "charge-a-dollar-while-the-clip-renders",
+    "category": "business",
+    "title": "Charge a dollar while the clip renders",
+    "content": "Vlad's clip costs about $0.10 and sells for about $1. A paywall of $1 to $3 turned unpaid traffic into 2 or 3 sales a day. Generation is slow enough that the wait can hold a second offer. Price the single clip when the buyer comes once. A subscription is a poor fit for a person who needed one video tonight.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-18-timisoara-october-2026",
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "publish-the-page-a-model-can-quote",
+    "category": "seo",
+    "title": "Publish the page a model can quote",
+    "content": "The spike came from public templates and pages ChatGPT could cite, including queries about AI video for children. Write the page that answers the job in the words the person already typed into the model. A template the model can point at is distribution. Keep the page factual and narrow enough to lift.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-18-timisoara-october-2026",
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "sell-the-childrens-clip-to-the-parent",
+    "category": "product",
+    "title": "Sell the children's clip to the parent",
+    "content": "The room treated the children's clip as a product with a buyer, a moment, and a rule. The buyer is the parent. The moment is bedtime or mealtime. The rule is what the model may draw. Vlad's buyers are one-off and quiet, so a form with a reason to answer is how he learns why they came. A picture book can survive a rough line. A frame that is wrong for a child has to be blocked before it renders. Pick those three, then teach the pipeline to follow a timeline.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-18-timisoara-october-2026",
+    "personSlug": "vlad"
+  },
+  {
+    "slug": "read-ai-share-of-voice-in-bing",
+    "category": "distribution",
+    "title": "Read your AI share of voice in Bing",
+    "content": "SingleFax converted 36.3% of AI referrals, 20.8% of organic search, and 11.2% of direct visits. Mircea checks Bing Webmaster Tools for the pages an answer cites. Short factual posts earn those citations. The upsell, a permanent fax number, goes out by email after the person has paid for one send. Count AI referrals as their own channel. On this product they buy more often than organic search, and more often than a direct visit.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-18-timisoara-october-2026",
+    "personSlug": "mircea"
+  },
+  {
+    "slug": "cut-the-client-work-to-ship-products",
+    "category": "mindset",
+    "title": "Cut the client work so the products get the whole team",
+    "content": "Cozmoslabs once earned half its revenue from outsourcing and half from its own plugins. The team dropped the outsourcing entirely and kept only the products. A 50/50 split feels safe, but every client deadline takes hours from the thing you own. If your products already carry half the business, the client work is no longer the safety net. It is the ceiling.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-19-timisoara-october-2026",
+    "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "build-the-feature-the-platform-forgot",
+    "category": "product",
+    "title": "Build the feature the platform forgot",
+    "content": "Profile Builder earned money from its first day because WordPress handled login and registration forms badly. Nobody had to be convinced the problem existed: site owners hit it the moment they needed a member area. Look for the job your host platform leaves half done. A gap every user runs into is demand you do not have to create.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-19-timisoara-october-2026",
+    "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "store-translations-in-the-platform-not-a-proxy",
+    "category": "product",
+    "title": "Store the work in the platform, not behind a proxy",
+    "content": "TranslatePress for Shopify writes every translation into Shopify's native multilingual API instead of serving pages through an outside proxy. The merchant keeps the translations if the app is removed, the store loads as fast as before, and the front end stays theirs. That removes the two fears that stop a merchant from installing: lock-in and a slower store. If your app can save its output in the host platform's own storage, do it, and say so on the listing.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-19-timisoara-october-2026",
+    "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "run-your-own-translation-nodes",
+    "category": "business",
+    "title": "Run your own model once the volume is predictable",
+    "content": "TranslatePress moved from Google Translate, DeepL, and Gemini to its own AI processing nodes, which removed the per-request cost on large translation volumes. Models are routed through OpenRouter so the product does not break a provider's rule against reselling its API. Per-call pricing is perfect while you are testing demand. Once you know how many words go through every month, the invoice is a tax on your own success. Price the hardware against it, and read each provider's resale terms before you build on them.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-19-timisoara-october-2026",
+    "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "ask-for-the-review-after-the-refund",
+    "category": "distribution",
+    "title": "Ask for the review right after support solved the problem",
+    "content": "TranslatePress collects reviews by hand: support asks users who just had a good experience, even right after refunding a renewal they did not intend to pay. A refund handled fast is often the moment a customer trusts you most. Asking directly, with no incentive and no third-party review service, keeps the listing clean and the marketplace off your back. Make the ask part of closing a ticket, not a campaign.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-19-timisoara-october-2026",
+    "personSlug": "cristian-antohe"
+  },
+  {
+    "slug": "sell-the-numbers-show-the-3d",
+    "category": "product",
+    "title": "Show the 3D model, sell the numbers",
+    "content": "GlowSpace can generate a 3D model of a renovated building, and it is the part that gets attention in a demo. What banks and investors pay for is the engine underneath: ROI, execution cost, taxes, and permits for the project. If your product has a visual hook and a calculation, open with the hook and price the calculation. A render is easy to copy. A trusted number is what a lender takes to committee.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-19-timisoara-october-2026",
+    "personSlug": "emil-indiricau"
+  },
+  {
+    "slug": "pick-a-buyer-with-a-compliance-duty",
+    "category": "business",
+    "title": "Pick the buyer who has to report every year",
+    "content": "GlowSpace aims first at UK universities: hundreds or thousands of buildings each, and compliance and accessibility standards such as HESA they have to keep meeting. A buyer with a standing obligation renews because the obligation renews. Emil puts these contracts, and those with investment funds, in the tens of thousands of euros a year. When you choose a first segment, look for the one whose rulebook already forces them to measure what you measure.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-19-timisoara-october-2026",
+    "personSlug": "emil-indiricau"
+  },
+  {
+    "slug": "plug-into-the-system-they-already-run",
+    "category": "distribution",
+    "title": "Plug into the system the buyer already runs",
+    "content": "GlowSpace's institutional clients already manage their buildings in property management software, and they will not move their workflow for a new vendor. So the integration is an API into those systems, with pricing moving from a flat subscription to credits that match how much each portfolio actually analyzes. For big organizations, the switching cost is the workflow, not the price. Arrive inside the tool they open every morning, and the sale becomes a configuration.",
+    "journeySlug": null,
+    "eventSlug": "indie-tm-19-timisoara-october-2026",
+    "personSlug": "emil-indiricau"
+  },
+  {
     "slug": "video-content-face-in-corner",
     "category": "product",
     "title": "Record videos with your face in the corner",
@@ -1789,131 +1996,5 @@
     "journeySlug": null,
     "eventSlug": "indie-tm-9-timisoara-may-2026",
     "personSlug": "ionut"
-  },
-  {
-    "slug": "a-wrapper-dies-when-the-model-gets-cheap",
-    "category": "mindset",
-    "title": "A wrapper dies when a better model ships",
-    "content": "sisif.ai reached about $400 a month on someone else's video model, then fell to $80-90 when stronger and cheaper models shipped. Sora was the name the room used. The page did not get worse. The model under the page became a commodity. If your product is a thin layer on one provider, write down what your price does the month a lab ships a better one. Own a job the next model does not do by default, or own the machine that runs it.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-18-timisoara-october-2026",
-    "personSlug": "vlad"
-  },
-  {
-    "slug": "charge-a-dollar-while-the-clip-renders",
-    "category": "business",
-    "title": "Charge a dollar while the clip renders",
-    "content": "Vlad's clip costs about $0.10 and sells for about $1. A paywall of $1 to $3 turned unpaid traffic into 2 or 3 sales a day. Generation is slow enough that the wait can hold a second offer. Price the single clip when the buyer comes once. A subscription is a poor fit for a person who needed one video tonight.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-18-timisoara-october-2026",
-    "personSlug": "vlad"
-  },
-  {
-    "slug": "count-ai-referrals-as-their-own-channel",
-    "category": "distribution",
-    "title": "Count AI referrals as their own channel",
-    "content": "On SingleFax, AI referrals converted at 36.3%, organic search at 20.8%, and direct visits at 11.2%. Mircea treats that AI line as its own channel and checks Bing Webmaster Tools for the pages the answers cite. Plain posts about one job earn the citation. The permanent number is an email after the first $0.99, when the person has already paid. If a model is sending you buyers, give that source a column. A blended \"organic\" number will hide the channel that converts best.",
-    "journeySlug": "mircea-singlefax",
-    "eventSlug": null,
-    "personSlug": "mircea"
-  },
-  {
-    "slug": "one-dollar-paywall-on-one-off-buyers",
-    "category": "business",
-    "title": "A one-dollar paywall fits a buyer who comes once",
-    "content": "After cheaper video models cut sisif.ai from about $400 a month to $80-90, Vlad stopped giving the render away. A paywall of $1 to $3 produced 2 or 3 sales a day. The clip costs him about $0.10, so the dollar still leaves room, and self-hosting puts the margin near 70%. His buyers rarely come back and rarely write. Price the single job. Keep the subscription for the person who is actually running a workflow every week.",
-    "journeySlug": "vlad-sisif-ai",
-    "eventSlug": null,
-    "personSlug": "vlad"
-  },
-  {
-    "slug": "publish-the-page-a-model-can-quote",
-    "category": "seo",
-    "title": "Publish the page a model can quote",
-    "content": "The spike came from public templates and pages ChatGPT could cite, including queries about AI video for children. Write the page that answers the job in the words the person already typed into the model. A template the model can point at is distribution. Keep the page factual and narrow enough to lift.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-18-timisoara-october-2026",
-    "personSlug": "vlad"
-  },
-  {
-    "slug": "read-ai-share-of-voice-in-bing",
-    "category": "distribution",
-    "title": "Read your AI share of voice in Bing",
-    "content": "SingleFax converted 36.3% of AI referrals, 20.8% of organic search, and 11.2% of direct visits. Mircea checks Bing Webmaster Tools for the pages an answer cites. Short factual posts earn those citations. The upsell, a permanent fax number, goes out by email after the person has paid for one send. Count AI referrals as their own channel. On this product they buy more often than organic search, and more often than a direct visit.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-18-timisoara-october-2026",
-    "personSlug": "mircea"
-  },
-  {
-    "slug": "sell-the-childrens-clip-to-the-parent",
-    "category": "product",
-    "title": "Sell the children's clip to the parent",
-    "content": "The room treated the children's clip as a product with a buyer, a moment, and a rule. The buyer is the parent. The moment is bedtime or mealtime. The rule is what the model may draw. Vlad's buyers are one-off and quiet, so a form with a reason to answer is how he learns why they came. A picture book can survive a rough line. A frame that is wrong for a child has to be blocked before it renders. Pick those three, then teach the pipeline to follow a timeline.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-18-timisoara-october-2026",
-    "personSlug": "vlad"
-  },
-  {
-    "slug": "templates-a-model-can-cite",
-    "category": "distribution",
-    "title": "Public templates a model can cite beat another launch post",
-    "content": "Vlad's earlier social posts did not find the buyers. Public templates and SEO pages did, once ChatGPT started citing them. The paying queries were specific, including how to make an AI video for a child. Put a finished example where a model can quote it, in the words the buyer already used. That citation is a channel you can count, the same way you count search.",
-    "journeySlug": "vlad-sisif-ai",
-    "eventSlug": null,
-    "personSlug": "vlad"
-  },
-  {
-    "slug": "sell-the-rules-the-model-still-gets-wrong",
-    "category": "mindset",
-    "title": "When the model writes the code, sell the rules it still gets wrong",
-    "content": "Flowbite's paid components fell 90 to 95 percent once models could write that code, while the free library kept doing more than 500,000 downloads a week. The installs proved the brand. They did not pay the invoices. When a model makes your core cheap, the scarce layer moves. Zoltan moved it to design rules the model has to follow, and to the analytics that say whether the page works. Look at the line item a model just made free. Price the next thing it still gets wrong.",
-    "journeySlug": "zoltan-typeui",
-    "eventSlug": null,
-    "personSlug": "zoltan"
-  },
-  {
-    "slug": "write-the-design-skill-in-markdown",
-    "category": "product",
-    "title": "Put the design system in a markdown file the model can read",
-    "content": "TypeUI's design skills are markdown: buttons, navigation, spacing, accessibility, written by a co-founder with fifteen years in UI and UX. Zoltan would rather give a coding model that file than start in Figma. A Figma board is a picture the model has to guess at. A markdown skill is an instruction it can follow. If you sell taste to people who generate code, write the taste down in the format the model already reads. Then charge for the file, the motion, the sound, and the audit, not for another component zip.",
-    "journeySlug": "zoltan-typeui",
-    "eventSlug": null,
-    "personSlug": "zoltan"
-  },
-  {
-    "slug": "watch-the-path-not-the-palette",
-    "category": "product",
-    "title": "A color change is not a test. Watch the path.",
-    "content": "TypeUI could keep two Airbnb-style sites feeling like the same product after a color change, and still lose 79.82% of signups by sending people to pricing before login. The palette held. The path did not. Heatmaps, dead clicks, rage clicks, and scroll depth are there so a traffic number has to explain itself. If you ship a redesign, read the step where people stop before you congratulate the visual system. A consistent feeling is not a conversion.",
-    "journeySlug": "zoltan-typeui",
-    "eventSlug": null,
-    "personSlug": "zoltan"
-  },
-  {
-    "slug": "write-the-page-a-model-can-cite",
-    "category": "seo",
-    "title": "Write the page you want a model to cite",
-    "content": "TypeUI already gets 34% of its visits from Google, 25% direct, and 10.9% from Reddit, on a 0.3% to 0.5% conversion. The room's next content bet was AIO: posts and comparison tables written so a model quotes them when someone asks what to use. A blog that only chases a keyword misses the answer box. Name the alternatives, put the differences in a table, and make the page specific enough that a model can lift it. Search still sends people. The citation is the new distribution.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-17-timisoara-september-2026",
-    "personSlug": "zoltan"
-  },
-  {
-    "slug": "ship-a-plugin-where-the-work-already-happens",
-    "category": "distribution",
-    "title": "Ship a plugin where the buyer is already working",
-    "content": "Zoltan's guerrilla channel was a Chrome extension and a Figma plugin: a backlink, plus a person who is already trying to design. That is higher intent than a post hoping someone wanders in from Google. If your buyer lives inside one tool all day, put a small useful piece of your product there. The install is the introduction. The subscription can come after they have felt the time you saved.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-17-timisoara-september-2026",
-    "personSlug": "zoltan"
-  },
-  {
-    "slug": "ask-on-day-30",
-    "category": "business",
-    "title": "Ask on day 30, on a scale from 1 to 10",
-    "content": "TypeUI is at $4,000 to $6,000 a month, and the room did not want another feature before a score. Ask customers, from 1 to 10, if they would recommend it. Ask again when the first month ends, including the people who cancel. A showcase of shipped customer sites does the public proof. A watermark on the output is a tax. The day-30 answer tells you whether the $30 plan bought back the hours you promised, while the person still remembers the first month.",
-    "journeySlug": null,
-    "eventSlug": "indie-tm-17-timisoara-september-2026",
-    "personSlug": "zoltan"
   }
 ]
