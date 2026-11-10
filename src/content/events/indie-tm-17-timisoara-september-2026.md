@@ -8,11 +8,11 @@ presenters:
   - zoltan
 ---
 
-Two weeks after [Indie TM #16](/events/indie-tm-16-timisoara-september-2026), where a fax was told to stay simple, we went back to Cowork. [Zoltan](/people/zoltan) had the screen. The last time was [Indie TM #6](/events/indie-tm-6-timisoara-april-2026): a library at 70k a month, and a CLI that did not charge. This night the library had been hit, and [TypeUI](https://typeui.sh) was the business. The years up to the peak are in [his Flowbite journey](/journeys/zoltan-flowbite). The new chapter is in [his TypeUI journey](/journeys/zoltan-typeui). This recap is what the room did with it.
+Two weeks after [Indie TM #16](/events/indie-tm-16-timisoara-september-2026), where a fax was told to stay simple, we went back to Cowork. [Zoltan](/people/zoltan) had the screen. The last time was [Indie TM #6](/events/indie-tm-6-timisoara-april-2026): a library selling one-time components, and a CLI that did not charge. This night the library had been hit, and [TypeUI](https://typeui.sh) was the business. The years up to the peak are in [his Flowbite journey](/journeys/zoltan-flowbite). The new chapter is in [his TypeUI journey](/journeys/zoltan-typeui). This recap is what the room did with it.
 
 ## The invoices stopped
 
-[Zoltan](/people/zoltan) put the old numbers up first. [Flowbite](https://flowbite.com) took in between 2 and 3 million euros over five years, at a margin near 70% after tax, from [Bergside](https://bergside.com). Then the models made component code cheap. The drop began in November. Three months took about 70 percent. The full fall was 90 to 95 percent.
+[Zoltan](/people/zoltan) started with the old business. For five years, [Flowbite](https://flowbite.com) was what [Bergside](https://bergside.com) sold. Then the models made component code cheap. The drop began in November. Three months took about 70 percent. The full fall was 90 to 95 percent.
 
 The open-source project did not go with the revenue. Flowbite still does more than 500,000 downloads a week on npm.
 
@@ -38,8 +38,6 @@ Session review does the slower job: follow one person, and find the step where t
 
 He is building a Chrome extension so those clicks show on the live site, not only in a dashboard. He also wants a model, over MCP, that reads the sessions and names the dead clicks and the loading stalls.
 
-TypeUI's recurring revenue sits between $4,000 and $6,000 a month.
-
 ## Growth, then the channels
 
 The long plan has three names: Creative, Insights, and Growth. Growth would test pieces of UI on its own. Half the visitors see one version. Half see the other. The design the tool can generate gets tied to the conversion it earns. He talked about as much as 30% more revenue. He has not shipped that test.
@@ -63,7 +61,7 @@ The price argument was time. Thirty dollars a month has to buy back more than th
 They also wanted a number. Ask, from 1 to 10, whether a customer would recommend TypeUI. Ask again at day 30, when the first month ends, and ask the people who leave.
 
 :::advice{slug="ask-on-day-30" category="business" person="zoltan" title="Ask on day 30, on a scale from 1 to 10"}
-TypeUI is at $4,000 to $6,000 a month, and the room did not want another feature before a score. Ask customers, from 1 to 10, if they would recommend it. Ask again when the first month ends, including the people who cancel. A showcase of shipped customer sites does the public proof. A watermark on the output is a tax. The day-30 answer tells you whether the $30 plan bought back the hours you promised, while the person still remembers the first month.
+TypeUI is selling, and the room did not want another feature before a score. Ask customers, from 1 to 10, if they would recommend it. Ask again when the first month ends, including the people who cancel. A showcase of shipped customer sites does the public proof. A watermark on the output is a tax. The day-30 answer tells you whether the $30 plan bought back the hours you promised, while the person still remembers the first month.
 :::
 
 ## Seventeen editions in

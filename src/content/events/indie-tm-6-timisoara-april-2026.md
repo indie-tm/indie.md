@@ -1,5 +1,5 @@
 ---
-title: "Indie TM #6: From ThemeForest Rejects to 70k/Month"
+title: "Indie TM #6: From ThemeForest Rejects to 30 Million Downloads"
 subtitle: "What we learned at our sixth meetup at Cowork Timisoara"
 date: 2026-04-03
 location: "Cowork Timisoara - The Office, Timisoara"
@@ -11,19 +11,19 @@ presenters:
   - mile-rosu
 ---
 
-Ten people, a Friday evening in Timisoara, and a guest who flew in with a story worth hearing. [Zoltan](/people/zoltan) took the big screen for the main slot, walking through how [Bergside](https://bergside.com) went from a rejected ThemeForest template to 70k/month. [Vlad](/people/vlad) and [Mile](/people/mile-rosu) followed with lightning demos, and the room did what it does best: roast everything.
+Ten people, a Friday evening in Timisoara, and a guest who flew in with a story worth hearing. [Zoltan](/people/zoltan) took the big screen for the main slot, walking through how [Bergside](https://bergside.com) went from a rejected ThemeForest template to Flowbite. [Vlad](/people/vlad) and [Mile](/people/mile-rosu) followed with lightning demos, and the room did what it does best: roast everything.
 
 ## Zoltan tells the Bergside story
 
 ![Bergside homepage](/screenshots/bergside.png)
 
-[Zoltan](/people/zoltan) started from the beginning. He and his co-founder Robert came from outsourcing, building things for other people. They pivoted to templates, submitted their first one to ThemeForest, and got rejected. They kept going. Then came a Black Friday that changed everything: a Tailwind and Figma design system kit sold 3,000 euros in a single night.
+[Zoltan](/people/zoltan) started from the beginning. He and his co-founder Robert came from outsourcing, building things for other people. They pivoted to templates, submitted their first one to ThemeForest, and got rejected. They kept going. Then came a Black Friday that changed everything: a Tailwind and Figma design system kit spiked in a single night.
 
 That spike proved the market was real. They doubled down on Tailwind components, started building in public, and launched [Flowbite](https://flowbite.com).
 
 ![Flowbite homepage](/screenshots/flowbite.png)
 
-[Flowbite](https://flowbite.com) is now an open-source UI component library with over 30 million npm downloads and 9,100+ GitHub stars. The library ships 600+ components, sections, and pages built with Tailwind CSS utility classes and designed in Figma. Two people, bootstrapped, no outside money. The business model: the open-source library is free, but pro components, full website sections, and framework integrations (React, Vue, Svelte) are paid. No subscriptions, just one-time purchases. That model gets them to 70k/month.
+[Flowbite](https://flowbite.com) is now an open-source UI component library with over 30 million npm downloads and 9,100+ GitHub stars. The library ships 600+ components, sections, and pages built with Tailwind CSS utility classes and designed in Figma. Two people, bootstrapped, no outside money. The business model: the open-source library is free, but pro components, full website sections, and framework integrations (React, Vue, Svelte) are paid. No subscriptions, just one-time purchases.
 
 ### How they decide what to build
 
@@ -119,6 +119,6 @@ The distribution advice was practical: find a friendly church contact and co-des
 
 ## The conversation keeps going
 
-The evening ran past nine. [Zoltan](/people/zoltan)'s story sparked a longer discussion about pricing strategies for digital products, with [Cristian](/people/cristian-antohe) sharing how Cozmoslabs handles annual licensing for WordPress plugins. The contrast was instructive: Flowbite makes 70k/month without recurring revenue, while the WordPress ecosystem lives on yearly renewals. Different markets, different models, both working.
+The evening ran past nine. [Zoltan](/people/zoltan)'s story sparked a longer discussion about pricing strategies for digital products, with [Cristian](/people/cristian-antohe) sharing how Cozmoslabs handles annual licensing for WordPress plugins. The contrast was instructive: Flowbite runs without recurring revenue, while the WordPress ecosystem lives on yearly renewals. Different markets, different models, both working.
 
 Someone suggested the next meetup should go deeper on pricing. Someone else wanted to talk about building for enterprise versus indie markets. The usual problem: too many good topics, too few Friday evenings.
