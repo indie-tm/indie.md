@@ -1,0 +1,58 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { assetPath } from "../lib/base-url";
+import { measurePublicImage } from "../lib/image-dimensions";
+
+interface Props {
+  special: NonNullable<CollectionEntry<"events">["data"]["special"]>;
+}
+
+const { special } = Astro.props;
+const programImageDims = special.programImage
+  ? measurePublicImage(special.programImage.src)
+  : null;
+---
+
+<section class="mb-14 max-w-5xl">
+  <dl class="grid grid-cols-2 md:grid-cols-4 gap-px overflow-hidden rounded-xl border border-border/80 bg-border/80 mb-12">
+    {special.stats.map((stat) => (
+      <div class="flex flex-col-reverse justify-end gap-2 bg-card p-5 md:p-6">
+        <dt class="text-xs font-medium uppercase tracking-wider text-muted-foreground">{stat.label}</dt>
+        <dd class="font-display text-4xl md:text-5xl leading-none text-primary">{stat.value}</dd>
+      </div>
+    ))}
+  </dl>
+
+  <div class="flex flex-col md:flex-row items-start gap-8 md:gap-12">
+    {special.programImage && (
+      <img
+        src={assetPath(special.programImage.src)}
+        alt={special.programImage.alt}
+        width={programImageDims?.width}
+        height={programImageDims?.height}
+        loading="lazy"
+        decoding="async"
+        class="ml-2 md:ml-0 w-40 md:w-56 h-auto shrink-0 -rotate-2 rounded-xl border border-border/60 shadow-[var(--shadow-card)]"
+      />
+    )}
+    <div class="flex-1">
+      <h2 class="font-display text-2xl md:text-3xl text-foreground mb-6">How the evening went</h2>
+      <ol class="ml-1 border-l border-border">
+        {special.program.map((item) => (
+          <li class="relative pb-6 pl-6 last:pb-0">
+            <span class="absolute -left-1 top-1.5 h-2 w-2 rounded-full bg-primary" aria-hidden="true"></span>
+            <p class="text-xs font-medium uppercase tracking-wider text-primary">{item.time}</p>
+            <p class="font-display text-xl leading-snug text-foreground">{item.title}</p>
+            {item.detail && <p class="mt-1 text-sm leading-relaxed text-muted-foreground">{item.detail}</p>}
+            {item.link && (
+              <a href={item.link} target="_blank" rel="noopener" class="mt-1 inline-flex items-center gap-1 text-sm font-medium text-primary hover:underline">
+                Open the talk
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              </a>
+            )}
+          </li>
+        ))}
+      </ol>
+    </div>
+  </div>
+</section>

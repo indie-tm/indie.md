@@ -6,14 +6,21 @@ interface Props {
     subtitle: string;
     date: Date;
     location: string;
+    image?: string;
+    special?: { label: string };
   };
   presenters: { name: string; avatar: string }[];
   adviceCount: number;
 }
 
 import { assetPath, href } from "../lib/base-url";
+import { measurePublicImage } from "../lib/image-dimensions";
+import SpecialEditionBadge from "./special-edition-badge.astro";
 
 const { event, presenters, adviceCount } = Astro.props;
+
+const featuredImage = event.special && event.image ? event.image : null;
+const featuredDims = featuredImage ? measurePublicImage(featuredImage) : null;
 
 const formattedDate = event.date.toLocaleDateString('en-US', {
   month: 'long',
@@ -23,31 +30,47 @@ const formattedDate = event.date.toLocaleDateString('en-US', {
 ---
 
 <a href={href(`/events/${event.slug}`)}
-   class="card-hover group block rounded-xl border border-border/80 bg-card p-6 hover:shadow-[var(--shadow-card-hover)] hover:border-primary/30 transition-all duration-300">
-  <div class="flex items-center gap-2 mb-4">
-    <div class="flex -space-x-2">
-      {presenters.map((p) => (
-        <img src={assetPath(p.avatar)} alt={p.name} width="400" height="400" loading="lazy" decoding="async" class="w-8 h-8 rounded-full object-cover" />
-      ))}
+   class:list={["card-hover group block overflow-hidden rounded-xl border bg-card hover:shadow-[var(--shadow-card-hover)] transition-all duration-300", event.special ? "border-primary/40 hover:border-primary/60 md:col-span-2 md:grid md:grid-cols-5" : "border-border/80 hover:border-primary/30"]}>
+  {featuredImage && (
+    <div class="relative h-56 md:col-span-2 md:h-auto md:min-h-72">
+      <img
+        src={assetPath(featuredImage)}
+        alt={event.title}
+        width={featuredDims?.width}
+        height={featuredDims?.height}
+        loading="lazy"
+        decoding="async"
+        class="absolute inset-0 h-full w-full object-cover"
+      />
     </div>
-    <div class="ml-2">
-      <p class="text-xs text-muted-foreground">{formattedDate}</p>
-      <p class="text-xs text-muted-foreground">{event.location}</p>
+  )}
+  <div class:list={["p-6", event.special && "md:col-span-3 md:p-8"]}>
+    {event.special && <SpecialEditionBadge label={event.special.label} />}
+    <div class="flex items-center gap-2 mb-4">
+      <div class="flex -space-x-2">
+        {presenters.map((p) => (
+          <img src={assetPath(p.avatar)} alt={p.name} width="400" height="400" loading="lazy" decoding="async" class="w-8 h-8 rounded-full object-cover" />
+        ))}
+      </div>
+      <div class="ml-2">
+        <p class="text-xs text-muted-foreground">{formattedDate}</p>
+        <p class="text-xs text-muted-foreground">{event.location}</p>
+      </div>
     </div>
-  </div>
-  <h3 class="font-display text-xl text-foreground group-hover:text-primary transition-colors mb-2 leading-snug">
-    {event.title}
-  </h3>
-  <p class="text-sm text-muted-foreground leading-relaxed mb-3">
-    {event.subtitle}
-  </p>
-  <div class="flex items-center gap-2">
-    <span class="text-xs text-primary font-medium">
-      {adviceCount} tips extracted
-    </span>
-    <span class="text-muted-foreground/40">&middot;</span>
-    <span class="text-xs text-muted-foreground">
-      {presenters.length} presenters
-    </span>
+    <h3 class:list={["font-display text-foreground group-hover:text-primary transition-colors mb-2 leading-snug", event.special ? "text-2xl md:text-3xl" : "text-xl"]}>
+      {event.title}
+    </h3>
+    <p class="text-sm text-muted-foreground leading-relaxed mb-3">
+      {event.subtitle}
+    </p>
+    <div class="flex items-center gap-2">
+      <span class="text-xs text-primary font-medium">
+        {adviceCount} tips extracted
+      </span>
+      <span class="text-muted-foreground/40">&middot;</span>
+      <span class="text-xs text-muted-foreground">
+        {presenters.length} presenters
+      </span>
+    </div>
   </div>
 </a>

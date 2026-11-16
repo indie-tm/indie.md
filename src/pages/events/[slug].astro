@@ -1,6 +1,8 @@
 ---
 import Base from '../../layouts/Base.astro';
 import CategoryBadge from '../../components/CategoryBadge.astro';
+import SpecialEditionBadge from '../../components/special-edition-badge.astro';
+import SpecialEventProgram from '../../components/special-event-program.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import { getAdviceForEvent, getAllCategories } from '../../lib/advice';
 import { assetPath, href } from "../../lib/base-url";
@@ -36,6 +38,7 @@ const formattedDate = event.data.date.toLocaleDateString('en-US', {
 });
 
 const heroDims = event.data.image ? measurePublicImage(event.data.image) : null;
+const special = event.data.special;
 ---
 <Base title={`${event.data.title} | indie.md`} description={event.data.subtitle} canonicalPath={`/events/${event.id}`} ogType="article" ogImage={event.data.ogImage ?? `/og/events/${event.id}.png`} markdownMirror>
   <script type="application/ld+json" set:html={JSON.stringify({
@@ -83,6 +86,7 @@ const heroDims = event.data.image ? measurePublicImage(event.data.image) : null;
 
     <!-- Event header -->
     <div class="mb-8">
+      {special && <SpecialEditionBadge label={special.label} />}
       <div class="flex items-center flex-wrap gap-x-3 gap-y-1 text-sm text-muted-foreground mb-2">
         <span>{formattedDate} &middot; {event.data.location}</span>
         {event.data.link && (
@@ -93,7 +97,7 @@ const heroDims = event.data.image ? measurePublicImage(event.data.image) : null;
           </a>
         )}
       </div>
-      <h1 class="animate-fade-up font-display text-3xl md:text-5xl leading-[1.1] tracking-tight text-foreground mb-3">
+      <h1 class:list={["animate-fade-up font-display leading-[1.1] tracking-tight text-foreground mb-3", special ? "text-4xl md:text-6xl max-w-4xl" : "text-3xl md:text-5xl"]}>
         {event.data.title}
       </h1>
       <p class="text-lg text-muted-foreground leading-relaxed max-w-2xl">
@@ -103,7 +107,7 @@ const heroDims = event.data.image ? measurePublicImage(event.data.image) : null;
 
     <!-- Event image -->
     {event.data.image && (
-      <div class="mb-10 max-w-2xl">
+      <div class:list={["mb-10", special ? "max-w-5xl" : "max-w-2xl"]}>
         <img
           src={assetPath(event.data.image)}
           alt={event.data.title}
@@ -126,6 +130,8 @@ const heroDims = event.data.image ? measurePublicImage(event.data.image) : null;
         </a>
       ))}
     </div>
+
+    {special && <SpecialEventProgram special={special} />}
 
     <!-- Event content -->
     <div class="prose prose-lg max-w-2xl
