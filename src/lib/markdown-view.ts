@@ -68,6 +68,13 @@ export async function eventToMarkdown(event: EventEntry): Promise<string> {
     `- Canonical URL: ${url}`,
   ];
   if (event.data.link) lines.push(`- Event link: ${event.data.link}`);
+  if (event.data.special) {
+    lines.push("", `## Program (${event.data.special.label})`, "");
+    for (const item of event.data.special.program) {
+      const title = item.link ? `[${item.title}](${item.link})` : item.title;
+      lines.push(`- ${item.time}: ${title}${item.detail ? ` (${item.detail})` : ""}`);
+    }
+  }
   lines.push("", stripAdviceDirectives(event.body ?? ""));
   return `${lines.join("\n").trim()}\n`;
 }
