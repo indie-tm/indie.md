@@ -46,13 +46,13 @@ const formattedDate = event.date.toLocaleDateString('en-US', {
   )}
   <div class:list={["p-6", event.special && "md:col-span-3 md:p-8"]}>
     {event.special && <SpecialEditionBadge label={event.special.label} />}
-    <div class="flex items-center gap-2 mb-4">
-      <div class="flex -space-x-2">
+    <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mb-4">
+      <div class="flex shrink-0 -space-x-2">
         {presenters.map((p) => (
           <img src={assetPath(p.avatar)} alt={p.name} width="400" height="400" loading="lazy" decoding="async" class="w-8 h-8 rounded-full object-cover" />
         ))}
       </div>
-      <div class="ml-2">
+      <div>
         <p class="text-xs text-muted-foreground">{formattedDate}</p>
         <p class="text-xs text-muted-foreground">{event.location}</p>
       </div>

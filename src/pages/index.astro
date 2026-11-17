@@ -138,7 +138,7 @@ const latestAdvice = await Promise.all(
       <p class="text-muted-foreground leading-relaxed max-w-2xl mb-8">
         Behind the site is a real, in-person community: Indie TM. Builders in Timișoara meet up every two weeks to demo what they're shipping, trade tactics, and give each other honest feedback. Each recap below turns those conversations into advice anyone can use.
       </p>
-      <div class="animate-stagger grid grid-cols-1 md:grid-cols-2 gap-5">
+      <div class="animate-stagger grid grid-flow-dense grid-cols-1 md:grid-cols-2 gap-5">
         {/* Upcoming event card */}
         {NEXT_EVENT.link && (
           <a href={NEXT_EVENT.link} target="_blank" rel="noopener noreferrer"
